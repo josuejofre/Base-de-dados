@@ -1,0 +1,42 @@
+[
+    {
+        "nome": "Feedback 360 Graus",
+        "descricao": "Um processo de avaliação no qual o funcionário recebe feedback não apenas de seu supervisor, mas também de seus pares, subordinados diretos e, às vezes, até de clientes. O objetivo é fornecer uma visão holística sobre suas competências e comportamentos.",
+        "quando_usar": "Durante ciclos de avaliação de desempenho para fornecer um feedback rico e multifacetado, ou para planos de desenvolvimento individual (PDI).",
+        "link": "https://www.qualtrics.com/experience-management/employee/360-feedback/",
+        "categorias": ["Desempenho", "Desenvolvimento"],
+        "imagem": "https://images.unsplash.com/photo-1556155092-490a1ba16284?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600"
+    },
+    {
+        "nome": "One-on-One (1:1)",
+        "descricao": "Reuniões regulares e privadas entre um gestor e um membro da equipe. São uma oportunidade para discutir progresso, desafios, desenvolvimento de carreira e dar/receber feedback contínuo.",
+        "quando_usar": "De forma contínua (semanal ou quinzenalmente) para manter o alinhamento, construir confiança e apoiar o crescimento do colaborador.",
+        "link": "https://www.atlassian.com/pt/team-playbook/plays/one-on-one-meeting",
+        "categorias": ["Engajamento", "Desempenho", "Desenvolvimento"],
+        "imagem": "https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600"
+    },
+    {
+        "nome": "Plano de Desenvolvimento Individual (PDI)",
+        "descricao": "Um plano de ação estruturado para ajudar os funcionários a aprimorar suas habilidades e avançar em suas carreiras. É criado em colaboração entre o funcionário e seu gestor.",
+        "quando_usar": "Após avaliações de desempenho, ou a qualquer momento para focar no crescimento profissional, alinhando os objetivos do indivíduo com os da empresa.",
+        "link": "https://www.indeed.com/career-advice/career-development/professional-development-plan",
+        "categorias": ["Desenvolvimento", "Carreira"],
+        "imagem": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600"
+    },
+    {
+        "nome": "Entrevista por Competências (Behavioral Interview)",
+        "descricao": "Uma técnica de entrevista onde o candidato é solicitado a descrever situações passadas para demonstrar competências específicas. A premissa é que o comportamento passado é o melhor previsor do comportamento futuro.",
+        "quando_usar": "Durante o processo de recrutamento e seleção para avaliar habilidades comportamentais (soft skills) de forma objetiva.",
+        "link": "https://www.thebalancecareers.com/behavioral-job-interviews-2059620",
+        "categorias": ["Recrutamento"],
+        "imagem": "https://images.unsplash.com/photo-1573497491208-6b1acb260507?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600"
+    },
+    {
+        "nome": "Pesquisa de Clima e Engajamento",
+        "descricao": "Uma ferramenta para medir a percepção e a satisfação dos funcionários em relação ao ambiente de trabalho, liderança, cultura e outros fatores. Os resultados ajudam a identificar pontos de melhoria.",
+        "quando_usar": "Periodicamente (anual ou semestralmente) para monitorar a saúde organizacional e guiar iniciativas de melhoria do ambiente de trabalho.",
+        "link": "https://www.qualtrics.com/experience-management/employee/employee-engagement/",
+        "categorias": ["Engajamento", "Cultura"],
+        "imagem": "https://images.unsplash.com/photo-1516298773066-c48f8e9bd92b?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600"
+    }
+]

@@ -1,0 +1,187 @@
+[
+    {
+        "nome": "Análise SWOT",
+        "descricao": "Uma estrutura de planejamento estratégico usada para avaliar as Forças (Strengths), Fraquezas (Weaknesses), Oportunidades (Opportunities) e Ameaças (Threats) envolvidas em um projeto ou negócio.",
+        "quando_usar": "No início de um projeto, no planejamento estratégico trimestral/anual, ou ao avaliar uma nova iniciativa para entender o cenário interno e externo.",
+        "link": "https://www.atlassian.com/pt/team-playbook/plays/swot-analysis",
+        "categorias": ["Introdução", "Maturidade"],
+        "imagem": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# Análise SWOT\n\n**Descrição:** Uma estrutura de planejamento estratégico usada para avaliar as **Forças (Strengths)**, **Fraquezas (Weaknesses)**, **Oportunidades (Opportunities)** e **Ameaças (Threats)** envolvidas em um projeto ou negócio.\n\n**Quando usar:** No início de um projeto, no planejamento estratégico trimestral/anual, ou ao avaliar uma nova iniciativa para entender o cenário interno e externo.\n\n---\n\n## Exemplo Prático: Lançamento de um App de Delivery\n\nImagine uma startup que deseja lançar um novo aplicativo de delivery de comida em uma cidade de médio porte. A equipe se reúne para realizar uma Análise SWOT:\n\n| Fatores Internos | Fatores Externos |\n| :--- | :--- |\n| **Forças (Strengths)** | **Oportunidades (Opportunities)** |\n| - Equipe de desenvolvimento ágil e experiente.<br>- Interface de usuário intuitiva e moderna.<br>- Parceria inicial com 3 restaurantes populares. | - Crescimento do mercado de delivery na região.<br>- Concorrentes com taxas de entrega altas.<br>- População jovem e conectada. |\n| **Fraquezas (Weaknesses)** | **Ameaças (Threats)** |\n| - Orçamento de marketing limitado.<br>- Marca desconhecida no mercado.<br>- Pouca experiência em logística de entrega. | - Concorrência forte de apps já estabelecidos.<br>- Possível crise econômica diminuindo o gasto médio.<br>- Mudanças na legislação de trabalho para entregadores. |\n\n### Estratégias Derivadas\n\n*   **Alavancagem (Forças + Oportunidades):** Usar a interface intuitiva em campanhas de marketing digital focadas no público jovem para destacar a facilidade de uso em comparação com concorrentes.\n*   **Mitigação (Fraquezas + Ameaças):** Buscar um investimento anjo para aumentar o orçamento de marketing e competir de forma mais agressiva com os players estabelecidos.\n\n---\n\n### Links Relevantes\n\n*   [Guia da Atlassian sobre SWOT](https://www.atlassian.com/pt/team-playbook/plays/swot-analysis)\n*   [Vídeo Explicativo (Exemplo)](https://www.youtube.com/watch?v=I_g_8Yv_S2s)"
+    },
+    {
+        "nome": "Método MoSCoW",
+        "descricao": "Uma técnica de priorização usada para ajudar as partes interessadas a entender a importância de cada requisito. MoSCoW é um acrônimo para Must have (Deve ter), Should have (Deveria ter), Could have (Poderia ter) e Won't have (Não terá).",
+        "quando_usar": "Durante o planejamento de releases ou sprints para priorizar funcionalidades, especialmente quando há restrições de tempo ou recursos.",
+        "link": "https://www.productplan.com/glossary/moscow-prioritization/",
+        "categorias": ["Desenvolvimento"],
+        "imagem": "https://images.unsplash.com/photo-1556761175-577389e6a1da?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600"
+    },
+    {
+        "nome": "5 Porquês (5 Whys)",
+        "descricao": "Uma técnica de análise de causa raiz que envolve perguntar 'Por quê?' repetidamente (geralmente cinco vezes) para explorar as relações de causa e efeito subjacentes a um problema específico e chegar à sua origem.",
+        "quando_usar": "Na resolução de problemas, análise de incidentes ou quando um defeito é encontrado, para entender a causa fundamental em vez de tratar apenas os sintomas.",
+        "link": "https://www.mindtools.com/pages/article/newTMC_5W.htm",
+        "categorias": ["Desenvolvimento", "Maturidade", "Declínio"],
+        "imagem": "https://images.unsplash.com/photo-1506935078239-1506dd94a260?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600"
+    },
+    {
+        "nome": "Histórias de Usuário (User Stories)",
+        "descricao": "Uma descrição informal e geral de uma funcionalidade de software escrita da perspectiva do usuário final. O formato comum é: 'Como um [tipo de usuário], eu quero [um objetivo] para que [um benefício]'.",
+        "quando_usar": "Em ambientes ágeis, para definir requisitos de produto e funcionalidades de forma centrada no usuário, compondo o backlog do produto.",
+        "link": "https://www.atlassian.com/pt/agile/project-management/user-stories",
+        "categorias": ["Desenvolvimento"],
+        "imagem": "https://images.unsplash.com/photo-1587614295999-6c1c13675123?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600"
+    },
+    {
+        "nome": "Business Model Canvas",
+        "descricao": "Uma ferramenta de gerenciamento estratégico que permite descrever, projetar, desafiar, inventar e pivotar seu modelo de negócios. Consiste em 9 blocos que cobrem as principais áreas de um negócio.",
+        "quando_usar": "Ao criar um novo negócio, desenvolver um novo produto, ou revisar e inovar um modelo de negócios existente.",
+        "link": "https://www.strategyzer.com/canvas/business-model-canvas",
+        "categorias": ["Introdução"],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Business_Model_Canvas.png/640px-Business_Model_Canvas.png"
+    },
+    {
+        "nome": "Jobs to be Done (JTBD)",
+        "descricao": "Uma abordagem que foca no 'trabalho' que o cliente está tentando realizar. Ajuda a entender a motivação principal do cliente para 'contratar' um produto ou serviço, indo além das características demográficas ou do produto.",
+        "quando_usar": "Na fase de descoberta de produto, para inovar e criar soluções que atendam às necessidades reais e profundas dos clientes, em vez de apenas adicionar funcionalidades.",
+        "link": "https://jtbd.info/2-what-is-jobs-to-be-done-jtbd-796f7218a4c5",
+        "categorias": ["Introdução", "Crescimento"],
+        "imagem": "https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600"
+    },
+    {
+        "nome": "Design Sprint",
+        "descricao": "Um processo de cinco dias, com tempo limitado, para responder a questões críticas de negócios por meio de design, prototipagem e teste de ideias com os clientes. Popularizado pelo Google Ventures.",
+        "quando_usar": "Para dar o pontapé inicial em um grande projeto, validar uma ideia de alto risco, ou resolver um problema complexo de design ou negócio de forma rápida e colaborativa.",
+        "link": "https://www.thesprintbook.com/the-design-sprint",
+        "categorias": ["Introdução", "Desenvolvimento"],
+        "imagem": "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600"
+    },
+    {
+        "nome": "Personas",
+        "descricao": "Criação de personagens fictícios que representam os diferentes tipos de usuários de um produto ou serviço. As personas ajudam a equipe a tomar decisões de design centradas no usuário.",
+        "quando_usar": "Durante todo o ciclo de vida do produto, desde a concepção até o design e marketing, para garantir que as necessidades e objetivos do público-alvo sejam sempre considerados.",
+        "link": "https://www.interaction-design.org/literature/topics/personas",
+        "categorias": ["Introdução", "Crescimento"],
+        "imagem": "https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600"
+    },
+    {
+        "nome": "Mapa de Empatia",
+        "descricao": "Uma ferramenta colaborativa para obter uma compreensão mais profunda dos clientes. Ajuda a visualizar o que o usuário diz, pensa, sente e faz, revelando suas verdadeiras necessidades e dores.",
+        "quando_usar": "No início do processo de design, para sintetizar pesquisas sobre usuários e construir personas mais robustas.",
+        "link": "https://www.nngroup.com/articles/empathy-mapping/",
+        "categorias": ["Introdução"],
+        "imagem": "https://images.unsplash.com/photo-1593445839332-7d9a4433d34c?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600"
+    },
+    {
+        "nome": "Teste A/B",
+        "descricao": "Um método de experimentação que consiste em comparar duas versões de uma página da web, e-mail ou outro ativo de marketing para determinar qual delas tem melhor desempenho. A versão A é a 'controle' e a B é a 'variante'.",
+        "quando_usar": "Para otimizar taxas de conversão, melhorar a experiência do usuário ou validar hipóteses sobre o que funciona melhor com seu público. Ideal para refinar elementos específicos.",
+        "link": "https://vwo.com/ab-testing/",
+        "categorias": ["Crescimento", "Maturidade"],
+        "imagem": "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600"
+    },
+    {
+        "nome": "WSJF (Weighted Shortest Job First)",
+        "descricao": "Um modelo de priorização usado para sequenciar trabalhos (como funcionalidades, capacidades e épicos) para produzir o máximo valor econômico. Em SAFe, o WSJF é estimado como o Custo do Atraso (Cost of Delay) dividido pelo tamanho do trabalho.",
+        "quando_usar": "No planejamento de Program Increments (PI) em ambientes SAFe ou para priorizar o backlog de forma contínua com base no valor econômico.",
+        "link": "https://www.scaledagileframework.com/wsjf/",
+        "categorias": ["Desenvolvimento", "Crescimento"],
+        "imagem": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600"
+    },
+    {
+        "nome": "Casos de Uso (Use Cases)",
+        "descricao": "Uma técnica para capturar requisitos funcionais de um sistema. Casos de uso descrevem a interação passo a passo entre um ator (um usuário ou outro sistema) e o sistema para atingir um objetivo específico.",
+        "quando_usar": "Durante a fase de análise e elicitação de requisitos para detalhar como os usuários interagirão com o sistema e o que o sistema deve fazer em resposta.",
+        "link": "https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-use-case-diagram/",
+        "categorias": ["Desenvolvimento"],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Use_case_restaurant_model.svg/640px-Use_case_restaurant_model.svg.png"
+    },
+    {
+        "nome": "Diagramas UML",
+        "descricao": "A Linguagem de Modelagem Unificada (UML) é uma linguagem padrão para especificar, visualizar, construir e documentar os artefatos de um sistema de software. Inclui diagramas como o de Classe, Sequência, Atividade, etc.",
+        "quando_usar": "Durante o design e a documentação de sistemas para comunicar a arquitetura, o comportamento e a estrutura do software para a equipe de desenvolvimento e outras partes interessadas.",
+        "link": "https://www.uml.org/",
+        "categorias": ["Desenvolvimento", "Introdução"],
+        "imagem": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600"
+    },
+    {
+        "nome": "Brainstorming",
+        "descricao": "Uma técnica de elicitação de requisitos em grupo que incentiva a geração de um grande volume de ideias sobre um tópico, sem críticas iniciais. O objetivo é explorar diversas possibilidades antes de refinar e selecionar as melhores.",
+        "quando_usar": "No início de um projeto para gerar ideias de funcionalidades (fase de Introdução), para resolver um problema complexo ou para encontrar novas abordagens para um produto em Maturidade.",
+        "link": "https://www.atlassian.com/pt/team-playbook/plays/brainstorming",
+        "categorias": ["Introdução", "Maturidade"],
+        "imagem": "https://images.unsplash.com/photo-1519791883288-dc8bd696e667?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600"
+    },
+    {
+        "nome": "Entrevistas",
+        "descricao": "Uma técnica fundamental de elicitação onde o analista conversa com as partes interessadas (stakeholders) para coletar informações, requisitos, opiniões e atitudes. Pode ser estruturada, não estruturada ou semiestruturada.",
+        "quando_usar": "Em todas as fases do ciclo de vida, especialmente na Introdução e Desenvolvimento para entender as necessidades do usuário, e na Maturidade/Declínio para obter feedback sobre problemas.",
+        "link": "https://www.nngroup.com/articles/user-interviews/",
+        "categorias": ["Introdução", "Desenvolvimento", "Maturidade"],
+        "imagem": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600"
+    },
+    {
+        "nome": "Prototipagem",
+        "descricao": "Criação de um modelo inicial, mock-up ou versão funcional parcial de um produto para validar ideias e coletar feedback dos usuários antes do desenvolvimento completo. Varia de baixa fidelidade (rabiscos) a alta fidelidade (interativos).",
+        "quando_usar": "Na fase de Introdução e Desenvolvimento para testar conceitos, validar o fluxo do usuário e refinar a usabilidade com baixo custo.",
+        "link": "https://www.interaction-design.org/literature/topics/prototyping",
+        "categorias": ["Introdução", "Desenvolvimento"],
+        "imagem": "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600"
+    },
+    {
+        "nome": "Workshops de Requisitos",
+        "descricao": "Uma sessão de trabalho focada e colaborativa que reúne as principais partes interessadas para definir, priorizar e refinar requisitos em um curto período. É mais estruturado que um brainstorming.",
+        "quando_usar": "Ideal para acelerar a fase de elicitação e análise de requisitos, garantindo alinhamento entre todos os envolvidos no início do Desenvolvimento.",
+        "link": "https://www.batimes.com/articles/facilitating-a-requirements-workshop.html",
+        "categorias": ["Desenvolvimento", "Introdução"],
+        "imagem": "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600"
+    },
+    {
+        "nome": "Análise de Documentos",
+        "descricao": "Técnica de elicitação que envolve o estudo de documentação existente sobre o negócio e o sistema, como manuais, políticas, relatórios e especificações antigas, para extrair requisitos e regras de negócio.",
+        "quando_usar": "No início de um projeto para entender o contexto atual (AS-IS), ou ao trabalhar com sistemas legados para entender seu funcionamento.",
+        "link": "https://www.modernanalyst.com/Resources/Articles/tabid/115/ID/1425/Document-Analysis-A-Business-Analysis-Technique-in-a-Nutshell.aspx",
+        "categorias": ["Introdução", "Desenvolvimento"],
+        "imagem": "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600"
+    },
+    {
+        "nome": "Diagrama de Classes (UML)",
+        "descricao": "Descreve a estrutura estática de um sistema, mostrando suas classes, atributos, operações (ou métodos) e as relações entre os objetos. É a base da modelagem orientada a objetos.",
+        "quando_usar": "Durante a fase de design técnico e desenvolvimento para definir a arquitetura do software e a estrutura do banco de dados.",
+        "link": "https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-classes-uml",
+        "categorias": ["Desenvolvimento"],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Uml_classes_en.svg/640px-Uml_classes_en.svg.png"
+    },
+    {
+        "nome": "Diagrama de Sequência (UML)",
+        "descricao": "Um diagrama de interação que mostra como os processos ou objetos operam uns com os outros e em que ordem. Ilustra as mensagens trocadas entre os objetos ao longo do tempo.",
+        "quando_usar": "Para detalhar a lógica de um caso de uso específico, entender o fluxo de chamadas em uma API ou visualizar o comportamento de um sistema em tempo de execução.",
+        "link": "https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-sequence-diagram/",
+        "categorias": ["Desenvolvimento"],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Sequence_diagram_for_online_shopping.png/640px-Sequence_diagram_for_online_shopping.png"
+    },
+    {
+        "nome": "Diagrama de Atividades (UML)",
+        "descricao": "Representa graficamente os fluxos de trabalho de atividades e ações passo a passo. É útil para modelar processos de negócio, fluxos de sistema e lógica complexa.",
+        "quando_usar": "Para mapear um processo de negócio (ex: processo de compra), descrever a lógica de uma operação ou visualizar os passos de um algoritmo.",
+        "link": "https://www.lucidchart.com/pages/pt/diagrama-de-atividades-uml",
+        "categorias": ["Desenvolvimento", "Introdução"],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/UML_activity_diagram_example.svg/640px-UML_activity_diagram_example.svg.png"
+    },
+    {
+        "nome": "OKRs (Objectives and Key Results)",
+        "descricao": "Uma metodologia de definição de metas para alinhar equipes em torno de objetivos ambiciosos e mensuráveis. Um Objetivo é o 'o quê' (qualitativo), e os Key Results são o 'como' (quantitativos) que medem o progresso em direção ao objetivo.",
+        "quando_usar": "Para planejamento estratégico trimestral ou anual, alinhando a empresa em torno de prioridades claras e focando em resultados (outcomes) em vez de apenas tarefas (outputs).",
+        "link": "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+        "categorias": ["Introdução", "Crescimento", "Maturidade"],
+        "imagem": "https://images.unsplash.com/photo-1557426272-fc759fdf7a8d?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600"
+    },
+    {
+        "nome": "Método 5W2H",
+        "descricao": "Uma ferramenta de checklist usada para elaborar planos de ação e definir atividades de forma clara e completa. O nome é um acrônimo para What (O quê?), Why (Por quê?), Where (Onde?), When (Quando?), Who (Quem?), How (Como?) e How much (Quanto custa?).",
+        "quando_usar": "Para detalhar um plano de ação, delegar tarefas ou garantir que todos os aspectos de uma nova iniciativa foram considerados. Muito útil após um brainstorming ou definição de objetivos.",
+        "link": "https://www.forbes.com/advisor/business/5w2h-method/",
+        "categorias": ["Introdução", "Desenvolvimento"],
+        "imagem": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600"
+    }
+]

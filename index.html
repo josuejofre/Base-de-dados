@@ -1,0 +1,43 @@
+<!DOCTYPE html> <!-- Define o tipo de documento como HTML5 -->
+<html lang="pt-br"> <!-- Elemento raiz do HTML, define o idioma da página como português do Brasil -->
+<head> <!-- Seção de metadados, não visível na página -->
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8 para suportar a maioria dos caracteres e símbolos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a viewport para que o site seja responsivo em diferentes dispositivos -->
+    <link rel="stylesheet" href="style.css"> <!-- Vincula o arquivo de estilos CSS externo para estilizar a página -->
+    <title>Base de Conhecimento</title> <!-- Define o título que aparece na aba do navegador -->
+</head>
+<body> <!-- Corpo do documento, contém todo o conteúdo visível da página -->
+
+    <!-- Seção do cabeçalho da página -->
+    <header>
+        <div class="controles-container">
+            <div class="assunto-container">
+                <label for="assunto-select">Assunto:</label>
+                <select id="assunto-select">
+                    <option value="techniques" selected>Técnicas de Análise de Negócios e Produtos</option>
+                    <option value="gestao_pessoas">Gestão de Pessoas</option>
+                    <option value="ferramentas_ia">Ferramentas de IA</option>
+                    <option value="metodologias_ageis">Metodologias Ágeis</option>
+                    <option value="design_produto">Design de Produto</option>
+                </select>
+            </div>
+            <input id="caixa-busca" type="text" placeholder="Digite para buscar..."> <!-- Campo de texto para o usuário inserir a busca -->
+        </div>
+    </header>
+
+    <!-- Seção principal do conteúdo da página -->
+    <main>
+        <!-- Contêiner para os botões de filtro de categoria -->
+        <div id="filtros-categoria" class="filtros-container"></div>
+
+        <!-- A seção de resultados será preenchida dinamicamente pelo JavaScript -->
+        <section id="resultados"></section> 
+    </main>
+
+    <!-- Seção do rodapé da página -->
+    <footer class="footer">
+        <p class="footer-credit">Página criada por Josué Jofre, acesse <a href="https://www.linkedin.com/in/josuejofre/" target="_blank">linkedin</a></p>
+    </footer>
+    <script src="script.js"></script> <!-- Vincula o arquivo JavaScript para adicionar interatividade -->
+</body>
+</html>

@@ -1,0 +1,222 @@
+[
+    {
+        "nome": "Design System",
+        "descricao": "Uma coleção de componentes reutilizáveis, guiada por padrões claros, que pode ser montada para construir qualquer número de aplicações. Garante consistência e eficiência no design e desenvolvimento.",
+        "quando_usar": "Em produtos ou empresas com múltiplas equipes e aplicações, para manter a consistência da marca e da experiência do usuário, e acelerar o desenvolvimento.",
+        "link": "https://www.nngroup.com/articles/design-systems-101/",
+        "categorias": ["UI", "UX", "Escala"],
+        "imagem": "https://images.unsplash.com/photo-1611926653458-092a4234cfb2?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-20",
+        "nivel": "Avançado",
+        "tempo_aplicar": "Meses (para construir)"
+    },
+    {
+        "nome": "Heurísticas de Usabilidade de Nielsen",
+        "descricao": "Um conjunto de 10 princípios gerais para o design de interfaces de usuário. Não são regras específicas, mas diretrizes que ajudam a identificar e resolver problemas de usabilidade.",
+        "quando_usar": "Durante a avaliação de um design (avaliação heurística) para encontrar problemas de usabilidade, ou como um guia durante o processo de criação da interface.",
+        "link": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "categorias": ["UX", "Avaliação"],
+        "imagem": "https://images.unsplash.com/photo-1587440871875-191322ee64b0?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-20",
+        "nivel": "Iniciante",
+        "tempo_aplicar": "Horas (para avaliar)"
+    },
+    {
+        "nome": "Double Diamond",
+        "descricao": "Um modelo de processo de design popularizado pelo British Design Council, que descreve os modos de pensar divergente e convergente. Consiste em quatro fases: Descobrir, Definir, Desenvolver e Entregar.",
+        "quando_usar": "Para estruturar um processo de design do início ao fim, garantindo que o problema seja bem definido antes de saltar para as soluções.",
+        "link": "https://www.designcouncil.org.uk/our-resources/guide/double-diamond-our-evolved-model/",
+        "categorias": ["Processo de Design", "Estratégia"],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Double_diamond.png/640px-Double_diamond.png",
+        "ultima_atualizacao": "2024-05-21",
+        "nivel": "Iniciante",
+        "tempo_aplicar": "Semanas/Meses (processo completo)"
+    },
+    {
+        "nome": "Mapa da Jornada do Usuário",
+        "descricao": "Uma visualização do processo que um usuário ou cliente passa para atingir um objetivo. Mapeia os pontos de contato, ações, pensamentos e emoções do usuário ao longo do tempo.",
+        "quando_usar": "Para entender a experiência do usuário de ponta a ponta, identificar pontos de dor e encontrar oportunidades de melhoria.",
+        "link": "https://www.nngroup.com/articles/journey-mapping-101/",
+        "categorias": ["UX", "Pesquisa"],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Customer_Journey_Map_Template.png/640px-Customer_Journey_Map_Template.png",
+        "ultima_atualizacao": "2024-05-21",
+        "nivel": "Intermediário",
+        "tempo_aplicar": "1-2 dias"
+    },
+    {
+        "nome": "Wireframing",
+        "descricao": "Um esboço de baixa fidelidade que representa a estrutura esquelética de uma interface. Foca na alocação de espaço, priorização de conteúdo e funcionalidades, ignorando cores e estilos.",
+        "quando_usar": "No início do processo de design de interface para alinhar a estrutura e o layout com a equipe antes de investir tempo no design visual detalhado.",
+        "link": "https://www.experienceux.co.uk/faqs/what-is-wireframing/",
+        "categorias": ["UI", "Prototipagem"],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Wireframe_example.png/640px-Wireframe_example.png",
+        "ultima_atualizacao": "2024-05-21",
+        "nivel": "Iniciante",
+        "tempo_aplicar": "Horas"
+    },
+    {
+        "nome": "Design Thinking",
+        "descricao": "Uma abordagem iterativa e centrada no ser humano para a resolução de problemas. Envolve 5 fases: Empatia, Definição, Ideação, Prototipagem e Teste. O objetivo é entender profundamente o usuário para criar soluções inovadoras e eficazes.",
+        "quando_usar": "Para abordar problemas complexos ou mal definidos, inovar em produtos e serviços, ou melhorar a experiência do usuário. É um mindset que pode ser aplicado a quase qualquer desafio.",
+        "link": "https://www.interaction-design.org/literature/topics/design-thinking",
+        "categorias": ["Processo de Design", "Estratégia", "Inovação"],
+        "imagem": "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-23",
+        "nivel": "Iniciante",
+        "tempo_aplicar": "Semanas/Meses (processo completo)"
+    },
+    {
+        "nome": "Crazy 8s",
+        "descricao": "Um método de ideação rápida que faz parte do Design Sprint. Cada participante dobra uma folha de papel em 8 seções e tem 8 minutos para esboçar 8 ideias diferentes (uma por minuto).",
+        "quando_usar": "Durante a fase de ideação para gerar um grande volume de soluções em um curto espaço de tempo, incentivando o pensamento criativo e evitando o apego à primeira ideia.",
+        "link": "https://designsprintkit.withgoogle.com/methodology/phase3-sketch/crazy-8s",
+        "categorias": ["Processo de Design", "Ideação"],
+        "imagem": "https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-23",
+        "nivel": "Iniciante",
+        "tempo_aplicar": "10-15 minutos"
+    },
+    {
+        "nome": "How Might We (HMW)",
+        "descricao": "Uma técnica para reformular problemas e insights em perguntas de oportunidade. Em vez de focar no problema ('O usuário não consegue encontrar o botão'), a pergunta se torna 'Como podemos tornar o botão mais visível para o usuário?'.",
+        "quando_usar": "Após a fase de pesquisa e definição do problema, para transformar os desafios identificados em pontos de partida para o brainstorming e a ideação.",
+        "link": "https://www.ideou.com/blog/how-might-we-questions",
+        "categorias": ["Processo de Design", "Estratégia", "Ideação"],
+        "imagem": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-23",
+        "nivel": "Iniciante",
+        "tempo_aplicar": "Menos de 1 hora"
+    },
+    {
+        "nome": "Matriz CSD (Certezas, Suposições e Dúvidas)",
+        "descricao": "Uma ferramenta colaborativa para alinhar o conhecimento de uma equipe no início de um projeto. As informações são organizadas em três colunas: Certezas (fatos comprovados), Suposições (hipóteses a serem validadas) e Dúvidas (perguntas a serem respondidas).",
+        "quando_usar": "No início de um projeto ou de uma nova fase (como um Design Sprint) para mapear o conhecimento atual, identificar riscos (suposições) e direcionar os esforços de pesquisa (dúvidas).",
+        "link": "https://brasil.uxdesign.cc/matriz-csd-o-que-e-e-como-usar-735a34952d3f",
+        "categorias": ["Processo de Design", "Estratégia", "Pesquisa"],
+        "imagem": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-23",
+        "nivel": "Iniciante",
+        "tempo_aplicar": "Menos de 1 hora"
+    },
+    {
+        "nome": "Mapa de Descoberta (Discovery Mapping)",
+        "descricao": "Uma técnica visual e colaborativa para estruturar o processo de descoberta de um produto. Ajuda a mapear o que sabemos, o que não sabemos e como planejamos aprender, conectando os objetivos de negócio aos problemas dos usuários e às possíveis soluções.",
+        "quando_usar": "No início da fase de descoberta para alinhar a equipe, planejar atividades de pesquisa e criar um caminho claro desde a compreensão do problema até a validação de soluções.",
+        "link": "https://www.producttalk.org/2021/08/product-discovery/",
+        "categorias": ["Pesquisa", "Estratégia", "Processo de Design"],
+        "imagem": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-23",
+        "nivel": "Intermediário",
+        "tempo_aplicar": "Dias"
+    },
+    {
+        "nome": "LTV (Lifetime Value)",
+        "descricao": "Uma métrica que estima o lucro líquido total gerado por um cliente ao longo de todo o seu relacionamento com a empresa. Ajuda a entender o valor a longo prazo de cada cliente.",
+        "quando_usar": "Para tomar decisões estratégicas sobre marketing, aquisição de clientes e retenção. Essencial para avaliar se o Custo de Aquisição de Cliente (CAC) é sustentável.",
+        "link": "https://resultadosdigitais.com.br/blog/ltv-lifetime-value/",
+        "categorias": ["Métricas", "Estratégia", "Financeiro"],
+        "imagem": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-23",
+        "nivel": "Intermediário",
+        "tempo_aplicar": "Horas (para calcular)"
+    },
+    {
+        "nome": "CAC (Custo de Aquisição de Cliente)",
+        "descricao": "A métrica que calcula o custo total para adquirir um novo cliente. Inclui todos os custos de marketing e vendas divididos pelo número de novos clientes adquiridos em um período.",
+        "quando_usar": "Para avaliar a eficiência das campanhas de marketing e vendas. Deve ser analisado em conjunto com o LTV para garantir a lucratividade do modelo de negócio (LTV > CAC).",
+        "link": "https://resultadosdigitais.com.br/blog/custo-de-aquisicao-por-cliente/",
+        "categorias": ["Métricas", "Marketing", "Financeiro"],
+        "imagem": "https://images.unsplash.com/photo-1579621970795-87facc2f976d?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-23",
+        "nivel": "Intermediário",
+        "tempo_aplicar": "Horas (para calcular)"
+    },
+    {
+        "nome": "ARPU (Average Revenue Per User)",
+        "descricao": "Receita Média por Usuário. Uma métrica que indica quanto de receita uma empresa gera de um único usuário, em média, durante um determinado período. É calculada dividindo a receita total pelo número de usuários.",
+        "quando_usar": "Para entender a monetização de uma base de usuários, comparar o desempenho entre diferentes períodos ou segmentos de clientes e prever receitas futuras.",
+        "link": "https://www.investopedia.com/terms/a/arpu.asp",
+        "categorias": ["Métricas", "Financeiro"],
+        "imagem": "https://images.unsplash.com/photo-1639754032243-325582a4d04c?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-23",
+        "nivel": "Iniciante",
+        "tempo_aplicar": "Horas (para calcular)"
+    },
+    {
+        "nome": "NPS (Net Promoter Score)",
+        "descricao": "Uma métrica de lealdade do cliente que mede a probabilidade de os clientes recomendarem sua empresa, produto ou serviço a outras pessoas. Baseia-se em uma única pergunta: 'Em uma escala de 0 a 10, o quanto você recomendaria...?'",
+        "quando_usar": "Para medir a satisfação e lealdade do cliente de forma contínua, identificar promotores e detratores da marca e obter feedback qualitativo para melhorias.",
+        "link": "https://www.netpromoter.com/know/",
+        "categorias": ["Métricas", "UX", "Satisfação do Cliente"],
+        "imagem": "https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-23",
+        "nivel": "Iniciante",
+        "tempo_aplicar": "Dias (para coletar respostas)"
+    },
+    {
+        "nome": "Ativação (Activation)",
+        "descricao": "Uma métrica que mede quando um novo usuário realiza uma ação chave em seu produto que indica que ele extraiu valor pela primeira vez (o 'momento aha'). É um passo crucial na jornada do usuário, após a aquisição.",
+        "quando_usar": "Para entender a eficácia do onboarding de novos usuários e otimizar a primeira experiência do produto, garantindo que os usuários entendam seu valor rapidamente para aumentar a retenção.",
+        "link": "https://amplitude.com/blog/activation-metrics",
+        "categorias": ["Métricas", "UX", "Crescimento"],
+        "imagem": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-23",
+        "nivel": "Intermediário",
+        "tempo_aplicar": "Contínuo (para monitorar)"
+    },
+    {
+        "nome": "Hábitos de Descoberta Contínua (Continuous Discovery Habits)",
+        "descricao": "Uma abordagem estruturada, popularizada por Teresa Torres, onde a equipe de produto (trio de produto) interage com clientes semanalmente para realizar pequenas atividades de pesquisa, como entrevistas contínuas. O objetivo é tomar decisões de produto com base em insights frequentes e atualizados.",
+        "quando_usar": "Para equipes que desejam infundir a descoberta de produtos em seu ritmo semanal, garantindo que estão constantemente aprendendo com os usuários e reduzindo os riscos de construir a coisa errada.",
+        "link": "https://www.producttalk.org/continuous-discovery-habits-book/",
+        "categorias": ["Pesquisa", "Discovery Contínuo", "Processo de Design"],
+        "imagem": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-23",
+        "nivel": "Intermediário",
+        "tempo_aplicar": "Contínuo"
+    },
+    {
+        "nome": "Opportunity Solution Tree (OST)",
+        "descricao": "Uma ferramenta visual de pensamento criada por Teresa Torres para ajudar as equipes a conectar suas atividades diárias com os resultados de negócio desejados. Mapeia o caminho de um resultado, através de oportunidades (necessidades do cliente), para múltiplas soluções e experimentos.",
+        "quando_usar": "Para estruturar o processo de descoberta contínua, priorizar oportunidades com base em seu impacto no resultado e garantir que a equipe não se apaixone por uma única solução antes de validar a oportunidade.",
+        "link": "https://www.producttalk.org/opportunity-solution-tree-ost/",
+        "categorias": ["Estratégia", "Discovery Contínuo", "Processo de Design"],
+        "imagem": "https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-23",
+        "nivel": "Avançado",
+        "tempo_aplicar": "Contínuo"
+    },
+    {
+        "nome": "Análise de Coorte (Cohort Analysis)",
+        "descricao": "Uma forma de análise comportamental que divide os usuários em grupos (coortes) com características comuns, geralmente baseadas na data em que começaram a usar o produto. Permite analisar como o comportamento desses grupos muda ao longo do tempo.",
+        "quando_usar": "Para entender a retenção de usuários, o impacto de mudanças no produto ao longo do tempo e como diferentes grupos de usuários se comportam. Essencial para medir a saúde do produto a longo prazo.",
+        "link": "https://amplitude.com/blog/cohort-analysis",
+        "categorias": ["Métricas", "Análise de Dados", "Product Analytics"],
+        "imagem": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-23",
+        "nivel": "Intermediário",
+        "tempo_aplicar": "Horas (para analisar)"
+    },
+    {
+        "nome": "Análise de Funil (Funnel Analysis)",
+        "descricao": "Uma técnica para visualizar e medir a jornada do usuário através de uma série de etapas para completar um objetivo (ex: cadastro, compra). A análise mostra as taxas de conversão e abandono em cada etapa do funil.",
+        "quando_usar": "Para identificar gargalos e pontos de atrito na experiência do usuário, otimizar fluxos de conversão e entender onde os usuários estão desistindo de um processo.",
+        "link": "https://mixpanel.com/topics/funnel-analysis/",
+        "categorias": ["Métricas", "UX", "Product Analytics"],
+        "imagem": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-23",
+        "nivel": "Iniciante",
+        "tempo_aplicar": "Horas (para analisar)"
+    },
+    {
+        "nome": "Análise de Causalidade (Causal Inference)",
+        "descricao": "Um campo da análise de dados que busca entender as relações de causa e efeito. Em vez de apenas observar correlações (ex: usuários que clicam no botão X compram mais), busca determinar se o botão X realmente *causa* o aumento nas compras.",
+        "quando_usar": "Para medir o impacto real de uma nova funcionalidade ou mudança no produto. Métodos como Testes A/B são a forma mais comum de estabelecer causalidade em produtos digitais.",
+        "link": "https://www.masterclass.com/articles/causal-analysis-explained",
+        "categorias": ["Métricas", "Análise de Dados", "Product Analytics", "Estratégia"],
+        "imagem": "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-23",
+        "nivel": "Avançado",
+        "tempo_aplicar": "Dias/Semanas (para planejar e executar testes)"
+    }
+]

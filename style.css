@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap'); /* Importa a fonte 'Quicksand' do Google Fonts para ser usada na página. */
+
+* {
+    box-sizing: border-box; /* Garante que padding e border sejam incluídos no tamanho total do elemento, não adicionados a ele. */
+}
+
+:root {
+    --primary-color: #8ab4f8; /* Define uma variável para a cor primária (azul claro). */
+    --secondary-color: #e8eaed; /* Define uma variável para a cor secundária (cinza claro). */
+    --tertiary-color: #9aa0a6; /* Define uma variável para a cor terciária (cinza médio). */
+    --bg-color: #202124; /* Define uma variável para a cor de fundo (cinza escuro). */
+}
+
+body {
+    margin: 0; /* Remove a margem padrão do navegador para o corpo da página. */
+    background: var(--bg-color); /* Aplica a cor de fundo definida na variável --bg-color. */
+    color: var(--secondary-color); /* Define a cor padrão do texto usando a variável --secondary-color. */
+    font-family: "Quicksand", sans-serif; /* Define a família da fonte para toda a página. */
+}
+
+header {
+    padding: 2rem 1rem; /* Define o espaçamento interno (2rem em cima/baixo, 1rem nos lados). */
+    display: flex; /* Habilita o layout flexbox para alinhar os itens internos. */
+    align-items: center; /* Alinha os itens do flexbox verticalmente ao centro. */
+    justify-content: center; /* Centraliza os itens do flexbox. */
+    position: sticky; /* Faz o cabeçalho ficar fixo no topo da tela ao rolar a página. */
+    top: 0; /* Define a posição do topo para o elemento 'sticky'. */
+    background: var(--bg-color); /* Define a cor de fundo do cabeçalho. */
+    z-index: 10; /* Garante que o cabeçalho fique acima de outros elementos da página. */
+    border-bottom: 1px solid var(--bg-color); /* Adiciona uma linha sutil na parte inferior do cabeçalho. */
+    gap: 1rem; /* Define um espaçamento de 1rem entre os elementos do flexbox. */
+}
+
+.controles-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+#caixa-busca {
+    padding: 0.375rem 0.75rem; /* Define o espaçamento interno do campo de texto. */
+    border-radius: 1rem; /* Arredonda as bordas do campo de texto. */
+    border: 1px solid var(--tertiary-color); /* Define uma borda com a cor terciária. */
+    background: var(--bg-color); /* Define a cor de fundo do campo de texto. */
+    font-family: inherit; /* Faz o campo de texto herdar a fonte do elemento pai. */
+    font-size: 1.5rem; /* Define o tamanho da fonte do texto digitado. */
+    transition: all 0.2s ease; /* Adiciona uma transição suave para todas as propriedades ao mudar de estado. */
+    width: 30rem; /* Define a largura do campo de texto. */
+    color: var(--secondary-color); /* Define a cor do texto digitado. */
+    /* margin-right: .5rem; /* Removido para usar gap do flexbox */
+}
+
+.assunto-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.assunto-container label { /* Novo estilo para o label "Assunto:" */
+    font-size: 1.2rem; /* Aumenta o tamanho da fonte */
+    font-weight: 500; /* Mantém o peso da fonte */
+    color: var(--secondary-color); /* Garante boa visibilidade */
+}
+
+#assunto-select {
+    background-color: var(--bg-color);
+    color: var(--secondary-color);
+    border: 1px solid var(--tertiary-color);
+    border-radius: 1rem;
+    padding: 0.75rem 1rem; /* Mantém o padding */
+    font-family: inherit;
+    font-size: 1.1rem; /* Mantém o tamanho da fonte */
+    font-weight: 500;
+}
+
+#caixa-busca::placeholder {
+    font-size: 1.2rem; /* Define o tamanho da fonte do texto de exemplo (placeholder). */
+    font-weight: 300; /* Define o peso da fonte do placeholder como leve. */
+    color: var(--tertiary-color); /* Define a cor do texto do placeholder. */
+}
+
+#caixa-busca:focus {
+    outline: none; /* Remove a borda de foco padrão do navegador. */
+    border-color: var(--bg-color); /* Muda a cor da borda quando o campo está em foco. */
+    box-shadow: 0 0 0 0.1rem var(--tertiary-color); /* Adiciona uma sombra para indicar que o campo está focado. */
+}
+
+#botao-busca {
+    padding: 0.75rem 1.5rem; /* Ajustado para ser mais proporcional ao select */
+    border-radius: 1rem; /* Arredonda as bordas do botão. */
+    border: none; /* Remove a borda padrão do botão. */
+    cursor: pointer; /* Muda o cursor para uma mão para indicar que é clicável. */
+    font-family: inherit; /* Faz o botão herdar a fonte do elemento pai. */
+    font-weight: 500; /* Define o peso da fonte do texto do botão. */
+    font-size: 1rem; /* Define o tamanho da fonte do texto do botão. */
+    white-space: nowrap; /* Impede que o texto do botão quebre em várias linhas. */
+    transition: background-color 0.2s ease, color 0.2s ease; /* Adiciona uma transição suave para a cor de fundo e a cor do texto. */
+    background-color: var(--primary-color); /* Cor de fundo mais visível */
+    color: var(--bg-color); /* Cor do texto para contraste */
+    border: 1px solid var(--primary-color); /* Borda da mesma cor */
+}
+
+#botao-busca:hover {
+    background-color: var(--primary-color); /* Muda a cor de fundo quando o mouse está sobre o botão. */
+    color: var(--bg-color); /* Muda a cor do texto quando o mouse está sobre o botão. */
+    box-shadow: 0 0 0 0.1rem var(--primary-color); /* Adiciona uma sombra para destacar o botão no estado hover. */
+}
+
+#botao-busca:active {
+    transform: scale(0.98); /* Diminui ligeiramente o tamanho do botão ao ser clicado, dando feedback visual. */
+}
+
+.filtros-container {
+    display: flex; /* Habilita o layout flexbox. */
+    justify-content: center; /* Centraliza os botões. */
+    flex-wrap: wrap; /* Permite que os botões quebrem para a próxima linha em telas menores. */
+    gap: 0.5rem; /* Espaçamento entre os botões. */
+    margin-bottom: 2rem; /* Margem inferior para separar dos resultados. */
+}
+
+.filtro-btn {
+    padding: 0.5rem 1rem; /* Espaçamento interno. */
+    border-radius: 1rem; /* Bordas arredondadas. */
+    border: 1px solid var(--tertiary-color); /* Borda sutil. */
+    background-color: transparent; /* Fundo transparente. */
+    color: var(--tertiary-color); /* Cor do texto. */
+    cursor: pointer; /* Cursor de mão para indicar que é clicável. */
+    transition: all 0.2s ease; /* Transição suave para todas as propriedades. */
+    font-family: inherit; /* Herda a fonte. */
+}
+
+.filtro-btn:hover, .filtro-btn.active {
+    background-color: var(--primary-color); /* Cor de fundo ao passar o mouse ou quando ativo. */
+    color: var(--bg-color); /* Cor do texto ao passar o mouse ou quando ativo. */
+    border-color: var(--primary-color); /* Cor da borda ao passar o mouse ou quando ativo. */
+}
+
+#resultados {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Cria um grid responsivo */
+    gap: 1.5rem; /* Espaçamento entre os cartões */
+    padding: 0 1rem; /* Espaçamento lateral para a seção de resultados */
+}
+
+main {
+    overflow-y: scroll; /* Adiciona uma barra de rolagem vertical se o conteúdo for maior que a altura definida. */
+    max-width: 80rem; /* Define a largura máxima para o conteúdo principal. */
+    margin: 0 auto; /* Centraliza o conteúdo principal horizontalmente na página. */
+    margin-top: 2rem; /* Adiciona uma margem no topo para separar do cabeçalho. */
+    height: calc(100vh - 10rem - 4rem); /* Calcula a altura do main para ocupar o espaço restante da tela (altura da viewport - altura do header - altura do footer). */
+}
+
+article {
+    background: #2a2b2e; /* Cor de fundo do cartão */
+    border-radius: 0.75rem; /* Bordas arredondadas */
+    padding: 1.5rem; /* Padding interno para o cartão */
+    margin-bottom: 0; /* Removido, o gap do grid controla o espaçamento */
+    transition: all 0.3s ease; /* Adiciona uma transição suave para a cor de fundo e da borda. */
+    overflow: hidden; /* Garante que a imagem não vaze das bordas arredondadas */
+    border: 1px solid #3c4043; /* Borda sutil padrão */
+    display: flex; /* Layout flexível */
+    flex-direction: column; /* Itens empilhados verticalmente */
+    gap: 0.5rem; /* Espaçamento entre os elementos internos */
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between; /* Título na esquerda, imagem na direita */
+    align-items: center; /* Alinha verticalmente o título e o ícone */
+    gap: 1rem; /* Espaço entre título e imagem */
+    margin-bottom: 0.5rem; /* Espaço abaixo do cabeçalho */
+}
+
+.conteudo-texto { /* Mantido apenas para o skeleton loader */
+    /* Este seletor não é mais usado para o layout principal */
+}
+
+.conteudo-imagem img {
+    width: 48px; /* Define a largura do ícone */
+    height: 48px; /* Define a altura do ícone */
+    border-radius: 0.25rem; /* Bordas levemente arredondadas para a imagem */
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+    border: 1px solid #4a4e52; /* Borda sutil na imagem */
+    display: block; /* Garante comportamento de bloco consistente */
+}
+
+.conteudo-imagem {
+    background-color: rgba(32, 33, 36, 0.8); /* Fundo semi-transparente para destacar a imagem */
+    border-radius: 0.35rem; /* Bordas arredondadas para o contêiner da imagem */
+    padding: 5px; /* Pequeno preenchimento ao redor da imagem */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+    flex-shrink: 0; /* Impede que a imagem encolha */
+}
+
+article:hover {
+    transform: translateY(-5px); /* Efeito de "levantar" o cartão */
+    border-color: var(--primary-color); /* Borda acende com a cor primária */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 0 15px rgba(138, 180, 248, 0.1); /* Sombra e brilho futurista */
+    cursor: pointer; /* Muda o cursor para uma mão para indicar que é clicável. */
+}
+article h2 {
+    margin-top: 0; /* Remove a margem superior padrão do h2. */
+    font-weight: 600; /* Define o peso da fonte como semi-negrito. */
+    font-size: 1.4rem; /* Ajusta o tamanho da fonte para o cartão */
+    border-bottom: none; /* Remove a borda inferior. */
+    padding-bottom: 0; /* Remove o espaçamento interno inferior. */
+    margin-bottom: 0.25rem; /* Adiciona uma pequena margem inferior. */
+    word-break: break-word; /* Garante que o título quebre a linha e não estoure o layout */
+    color: var(--primary-color); /* Define a cor do texto do título do artigo. */
+}
+
+article p {
+    margin: 0.5rem 0; /* Define as margens superior e inferior do parágrafo. */
+    line-height: 1.6; /* Aumenta a altura da linha para melhorar a legibilidade. */
+    font-size: 0.95rem; /* Leve ajuste no tamanho da fonte */
+    margin-bottom: 0.5rem; /* Adiciona uma margem inferior. */
+    color: var(--secondary-color); /* Define a cor do texto do parágrafo. */
+}
+
+article p strong {
+    color: var(--tertiary-color); /* Define a cor para o texto em negrito dentro de um parágrafo. */
+    font-weight: 400; /* Define o peso da fonte como normal (sobrescreve o negrito padrão). */
+}
+
+article a {
+    color: var(--primary-color); /* Define a cor dos links dentro de um artigo. */
+    margin-top: auto; /* Empurra o link "Saiba mais" para o final do cartão */
+    text-decoration: none; /* Remove o sublinhado padrão dos links. */
+    font-weight: 200; /* Define o peso da fonte como extra-leve. */
+}
+
+article a:hover {
+    text-decoration: underline; /* Adiciona um sublinhado quando o mouse está sobre o link. */
+}
+
+article .highlight { /* Estilo para o destaque da busca */
+    background-color: #f8d76a;
+    color: var(--bg-color);
+    border-radius: 3px;
+}
+
+/* --- Skeleton Loader Styles --- */
+.skeleton {
+  background-color: #2a2b2e;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  cursor: progress;
+  border-bottom-color: #2a2b2e;
+}
+
+.skeleton .conteudo-texto {
+  gap: 0.75rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.skeleton-line {
+  background: linear-gradient(90deg, #3c4043 25%, #4a4e52 50%, #3c4043 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 0.25rem;
+  height: 1em; /* Altura padrão da linha */
+}
+
+.skeleton-title {
+  height: 1.6rem; /* Corresponde ao h2 */
+  width: 50%;
+}
+
+.skeleton-text {
+  height: 1rem; /* Corresponde ao p */
+}
+
+.skeleton-image .skeleton-line {
+  width: 150px;
+  height: 100px; /* Altura aproximada da imagem */
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.footer {
+    position: absolute; /* Posiciona o rodapé de forma absoluta em relação ao `body`. */
+    bottom: 0; /* Alinha o rodapé na parte inferior da página. */
+    left: 0; /* Alinha o rodapé à esquerda da página. */
+    width: 100%; /* Faz o rodapé ocupar 100% da largura da página. */
+    color: var(--tertiary-color); /* Define a cor do texto do rodapé. */
+    background-color: var(--bg-color); /* Define a cor de fundo do rodapé. */
+    padding: 15px 20px; /* Define o espaçamento interno do rodapé. */
+    border-top: 1px solid #3c4043; /* Adiciona uma linha na parte superior do rodapé. */
+    font-size: 0.8rem; /* Define o tamanho da fonte do texto do rodapé. */
+}
+
+.footer { /* Ajusta o footer para ser um flex container */
+    display: flex;
+    flex-direction: column; /* Empilha os itens verticalmente */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    gap: 5px; /* Pequeno espaçamento entre os elementos do rodapé */
+}
+
+.footer-credit { /* Estilo para o novo parágrafo de crédito */
+    font-size: 0.9rem;
+    color: var(--tertiary-color);
+    margin: 0; /* Remove margem padrão do parágrafo */
+}
+
+.footer-credit a { /* Estilo para o link dentro do crédito */
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.footer-credit a:hover {
+    text-decoration: underline;
+}
+
+.card-meta-info { /* Contêiner para os novos metadados */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: var(--tertiary-color);
+}
+
+.footer-location {
+    color: #9aa0a6; /* Define a cor do texto para a localização no rodapé. */
+    margin-bottom: 10px; /* Adiciona uma margem inferior. */
+}
+
+@media (max-width: 768px) {
+    header { /* Início das regras para telas com largura máxima de 768px (tablets). */
+        flex-direction: column; /* Organiza os itens do cabeçalho em uma coluna. */
+        padding: 1rem; /* Reduz o espaçamento interno do cabeçalho. */
+    }
+
+    header h1 {
+        text-align: center; /* Centraliza o texto do título. */
+        margin-bottom: 1rem; /* Adiciona uma margem inferior para separar do campo de busca. */
+    }
+
+    main {
+        margin-top: 1rem; /* Reduz a margem superior do main em telas menores */
+        height: auto; /* Permite que o main cresça conforme o conteúdo */
+    }
+
+    article {
+        /* Mantém o layout de coluna padrão do article */
+        /* O layout de coluna do article já funciona bem aqui */
+    }
+
+    article:hover {
+        /* Remove hover effects for touch devices */
+        transform: none;
+        box-shadow: none;
+    }
+
+    .conteudo-imagem {
+        display: none; /* Oculta a imagem em telas menores para dar espaço ao texto */
+    }
+}
+
+@media (max-width: 480px) {
+    #caixa-busca,
+    #caixa-busca::placeholder {
+        font-size: 1rem; /* Reduz o tamanho da fonte do campo de texto e do seu placeholder. */
+    }
+
+    article h2 {
+        font-size: 1.3rem; /* Reduz o tamanho da fonte dos títulos dos artigos. */
+    }
+
+    .controles-container {
+        display: flex; /* Habilita o layout flexbox para o container do input e botão. */
+        align-items: center; /* Alinha os itens verticalmente ao centro. */
+        justify-content: center; /* Centraliza os itens horizontalmente. */
+        flex-direction: column; /* Organiza os itens em uma coluna. */
+        gap: 0.5rem; /* Define um espaçamento entre o input e o botão. */
+    }
+
+    .footer {
+        display: none; /* Oculta o rodapé em telas muito pequenas para economizar espaço. */
+    }
+
+}

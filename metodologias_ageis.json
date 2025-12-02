@@ -1,0 +1,55 @@
+[
+    {
+        "nome": "Scrum",
+        "descricao": "Um framework ágil para gerenciar projetos complexos, focado em ciclos curtos de desenvolvimento chamados Sprints. Promove a colaboração, a adaptação e a entrega de valor incremental.",
+        "quando_usar": "Projetos com requisitos que mudam rapidamente, onde a entrega de valor em pequenas partes é crucial. Ideal para equipes de desenvolvimento de software.",
+        "link": "https://www.atlassian.com/br/agile/scrum",
+        "categorias": ["Framework", "Desenvolvimento"],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Scrum_task_board.jpg/640px-Scrum_task_board.jpg",
+        "detalhes_markdown": "# Scrum: Um Guia Prático\n\n**Descrição:** Um framework ágil para gerenciar projetos complexos, focado em ciclos curtos de desenvolvimento chamados Sprints. Promove a colaboração, a adaptação e a entrega de valor incremental. O Scrum é fundamentado no empirismo, o que significa que o conhecimento vem da experiência e as decisões são baseadas no que é observado.\n\n**Quando usar:** Projetos com requisitos que mudam rapidamente, onde a entrega de valor em pequenas partes é crucial. Ideal para equipes de desenvolvimento de software, mas aplicável a diversas outras áreas.\n\n---\n\n## Os Pilares do Scrum\n\nO Scrum é baseado em três pilares:\n*   **Transparência:** O trabalho e o progresso devem ser visíveis para todos os envolvidos.\n*   **Inspeção:** Os artefatos do Scrum e o progresso em direção às metas devem ser inspecionados frequentemente.\n*   **Adaptação:** Se a inspeção revelar desvios indesejados, o processo ou o produto deve ser ajustado.\n\n---\n\n## As Cerimônias (Eventos) do Scrum e suas Durações\n\nUma dúvida muito comum é sobre a duração de cada evento do Scrum. A regra geral é que a duração é proporcional ao tamanho da Sprint. Os valores abaixo são **time-boxes**, ou seja, durações **máximas**. Se o objetivo do evento for alcançado antes, ele pode terminar mais cedo.\n\n| Evento (Cerimônia) | Duração para Sprint de 1 Semana | Duração para Sprint de 2 Semanas | Duração para Sprint de 4 Semanas (1 Mês) |\n| :--- | :--- | :--- | :--- |\n| **Sprint Planning** | Máximo de 2 horas | Máximo de 4 horas | Máximo de 8 horas |\n| **Daily Scrum** | 15 minutos (fixo) | 15 minutos (fixo) | 15 minutos (fixo) |\n| **Sprint Review** | Máximo de 1 hora | Máximo de 2 horas | Máximo de 4 horas |\n| **Sprint Retrospective** | Máximo de 45 minutos | Máximo de 1.5 horas | Máximo de 3 horas |\n\n### Detalhes dos Eventos\n\n*   **Sprint Planning (Planejamento da Sprint):**\n    *   **Propósito:** Definir o que pode ser entregue na Sprint e como o trabalho será realizado. A equipe seleciona itens do Product Backlog e cria um plano para a Sprint, o Sprint Backlog.\n\n*   **Daily Scrum (Reunião Diária):**\n    *   **Propósito:** Inspecionar o progresso em direção à Meta da Sprint e adaptar o Sprint Backlog conforme necessário. Não é uma reunião de status para o gestor, mas um alinhamento para os Desenvolvedores.\n    *   **Duração:** Sempre 15 minutos, independentemente do tamanho da Sprint.\n\n*   **Sprint Review (Revisão da Sprint):**\n    *   **Propósito:** Inspecionar o resultado da Sprint (o Incremento) e adaptar o Product Backlog. É uma sessão de trabalho colaborativa com as partes interessadas (stakeholders) para obter feedback.\n\n*   **Sprint Retrospective (Retrospectiva da Sprint):**\n    *   **Propósito:** Planejar maneiras de aumentar a qualidade e a eficácia. A equipe inspeciona como foi a última Sprint em relação a indivíduos, interações, processos, ferramentas e sua Definição de Pronto.\n\n### E o Refinamento do Backlog (Grooming)?\n\nO refinamento não é um evento formal do Scrum, mas uma **atividade contínua**. A recomendação é que a equipe dedique **até 10% do tempo da Sprint** para refinar o Product Backlog (esclarecer itens, estimar, dividir épicos). Isso garante que os itens no topo do backlog estejam prontos para as próximas Sprints.\n\n---\n\n### Links Relevantes\n\n*   [O Guia Oficial do Scrum (2020)](https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-Portuguese-Brazilian.pdf) - A fonte definitiva para todas as regras e conceitos."
+    },
+    {
+        "nome": "Kanban",
+        "descricao": "Um método visual para gerenciar o fluxo de trabalho. Utiliza um quadro (Kanban board) para visualizar tarefas, limitar o trabalho em progresso (WIP) e maximizar a eficiência.",
+        "quando_usar": "Para equipes que precisam de um fluxo de trabalho contínuo, como suporte, manutenção ou operações. Excelente para visualizar gargalos.",
+        "link": "https://www.atlassian.com/br/agile/kanban",
+        "categorias": ["Método", "Fluxo Contínuo"],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Kanban-board-example.png/640px-Kanban-board-example.png",
+        "ultima_atualizacao": "2024-05-22",
+        "nivel": "Iniciante",
+        "tempo_aplicar": "Dias (para configurar)"
+    },
+    {
+        "nome": "SAFe (Scaled Agile Framework)",
+        "descricao": "Um conjunto de padrões de organização e fluxo de trabalho para implementar práticas ágeis em escala empresarial. Fornece um guia detalhado para grandes empresas.",
+        "quando_usar": "Em grandes organizações que precisam coordenar múltiplas equipes ágeis trabalhando em um mesmo produto ou solução complexa.",
+        "link": "https://www.scaledagileframework.com/",
+        "categorias": ["Framework", "Escala", "Empresarial"],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/SAFe_6.0_Overview.png/640px-SAFe_6.0_Overview.png",
+        "ultima_atualizacao": "2024-05-22",
+        "nivel": "Avançado",
+        "tempo_aplicar": "Meses (para implementar)"
+    },
+    {
+        "nome": "XP (Extreme Programming)",
+        "descricao": "Uma metodologia ágil focada em melhorar a qualidade do software e a capacidade de resposta às mudanças. Enfatiza práticas técnicas como TDD, programação em par e integração contínua.",
+        "quando_usar": "Em projetos com requisitos vagos ou que mudam rapidamente, onde a alta qualidade do código e a colaboração próxima com o cliente são essenciais.",
+        "link": "http://www.extremeprogramming.org/",
+        "categorias": ["Metodologia", "Desenvolvimento", "Qualidade"],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Extreme_Programming_process.svg/640px-Extreme_Programming_process.svg.png",
+        "ultima_atualizacao": "2024-05-22",
+        "nivel": "Intermediário",
+        "tempo_aplicar": "Contínuo"
+    },
+    {
+        "nome": "Lean Software Development",
+        "descricao": "Uma adaptação dos princípios do Lean Manufacturing para o desenvolvimento de software. Foca em otimizar o todo, eliminar desperdícios, entregar rápido e empoderar a equipe.",
+        "quando_usar": "Para otimizar o fluxo de valor de ponta a ponta, reduzir o tempo de ciclo e focar na entrega de valor real ao cliente, eliminando atividades que não agregam valor.",
+        "link": "https://www.poppendieck.com/",
+        "categorias": ["Princípios", "Fluxo Contínuo", "Otimização"],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Lean_software_development_principles.svg/640px-Lean_software_development_principles.svg.png",
+        "ultima_atualizacao": "2024-05-22",
+        "nivel": "Intermediário",
+        "tempo_aplicar": "Contínuo"
+    }
+]

@@ -1,0 +1,111 @@
+[
+    {
+        "nome": "ChatGPT (OpenAI)",
+        "descricao": "Um modelo de linguagem de grande escala treinado para entender e gerar texto de forma conversacional. Pode ser usado para brainstorming, redação, programação, tradução e muito mais.",
+        "quando_usar": "Para acelerar tarefas de escrita, gerar ideias, depurar código, ou como um assistente de pesquisa para obter resumos sobre tópicos complexos.",
+        "link": "https://chat.openai.com/",
+        "categorias": ["Geração de Texto", "Assistente Virtual"],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/640px-ChatGPT_logo.svg.png"
+    },
+    {
+        "nome": "Midjourney",
+        "descricao": "Uma ferramenta de inteligência artificial que gera imagens a partir de descrições textuais (prompts). É conhecida por criar imagens artísticas e de alta qualidade.",
+        "quando_usar": "Para criar arte conceitual, ilustrações para marketing, storyboards, ou para visualizar ideias de design de forma rápida.",
+        "link": "https://www.midjourney.com/",
+        "categorias": ["Geração de Imagem"],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Midjourney_Emblem.jpg/640px-Midjourney_Emblem.jpg"
+    },
+    {
+        "nome": "GitHub Copilot",
+        "descricao": "Um programador em par com IA que sugere código e funções inteiras em tempo real, diretamente no seu editor de código. É alimentado pelo modelo Codex da OpenAI.",
+        "quando_usar": "Durante o desenvolvimento de software para acelerar a codificação, aprender novas bibliotecas, reduzir a escrita de código repetitivo e encontrar soluções para problemas de programação.",
+        "link": "https://github.com/features/copilot",
+        "categorias": ["Desenvolvimento de Software", "Automação"],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Github-copilot-logo.svg/640px-Github-copilot-logo.svg.png"
+    },
+    {
+        "nome": "Tableau (com Einstein)",
+        "descricao": "Uma plataforma de análise visual que ajuda as pessoas a ver e entender dados. Com a integração do Einstein (IA da Salesforce), oferece análises preditivas e insights automatizados.",
+        "quando_usar": "Para criar dashboards interativos, explorar grandes conjuntos de dados, identificar tendências e padrões, e comunicar insights de negócios de forma visual.",
+        "link": "https://www.tableau.com/products/einstein-discovery",
+        "categorias": ["Análise de Dados", "Business Intelligence"],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Tableau_Software_Logo.svg/640px-Tableau_Software_Logo.svg.png"
+    },
+    {
+        "nome": "Zapier",
+        "descricao": "Uma ferramenta de automação online que conecta seus aplicativos e serviços favoritos. Permite criar fluxos de trabalho (Zaps) que automatizam tarefas repetitivas sem a necessidade de codificação.",
+        "quando_usar": "Para automatizar processos de negócios, como notificar uma equipe no Slack sobre um novo lead de vendas, criar tarefas em um gerenciador de projetos a partir de e-mails, etc.",
+        "link": "https://zapier.com/",
+        "categorias": ["Automação", "Produtividade"],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Zapier_logo.svg"
+    },
+    {
+        "nome": "Make (formerly Integromat)",
+        "descricao": "Uma plataforma de automação visual que permite projetar, construir e automatizar qualquer coisa, desde tarefas simples até fluxos de trabalho complexos, conectando centenas de aplicativos e serviços.",
+        "quando_usar": "Para criar automações avançadas que exigem lógica complexa, manipulação de dados e múltiplos passos, superando as capacidades de ferramentas mais simples.",
+        "link": "https://www.make.com/",
+        "categorias": ["Automação", "Produtividade"],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Make_com_logo.svg/640px-Make_com_logo.svg.png"
+    },
+    {
+        "nome": "n8n",
+        "descricao": "Uma ferramenta de automação de fluxo de trabalho de código aberto e extensível. Permite conectar qualquer aplicativo com uma API para passar e manipular dados entre eles sem a necessidade de código.",
+        "quando_usar": "Quando se precisa de uma solução de automação auto-hospedada (on-premises) para maior controle de dados, ou para criar nós personalizados para serviços não suportados nativamente.",
+        "link": "https://n8n.io/",
+        "categorias": ["Automação", "Desenvolvimento de Software"],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/N8n-logo.svg/640px-N8n-logo.svg.png"
+    },
+    {
+        "nome": "Canva (Magic Studio)",
+        "descricao": "Uma plataforma de design gráfico que integrou um conjunto de ferramentas de IA chamado Magic Studio. Permite gerar imagens, textos, animações e layouts, além de editar fotos e vídeos com comandos simples.",
+        "quando_usar": "Para criar rapidamente materiais de marketing, posts para redes sociais, apresentações e outros designs visuais, utilizando IA para acelerar o processo criativo.",
+        "link": "https://www.canva.com/magic-studio/",
+        "categorias": ["Geração de Imagem", "Geração de Texto", "Design"],
+        "imagem": "https://upload.wikimedia.org/wikipedia/en/thumb/c/ca/Canva_logo.svg/640px-Canva_logo.svg.png"
+    },
+    {
+        "nome": "Google Vertex AI",
+        "descricao": "A plataforma unificada de machine learning do Google Cloud. Permite que desenvolvedores construam, implantem e escalem modelos de ML mais rapidamente, com ferramentas pré-treinadas e personalizadas.",
+        "quando_usar": "Para projetos de machine learning de nível empresarial, como treinar modelos personalizados, criar pipelines de MLOps, e utilizar APIs de IA do Google para visão, linguagem e dados estruturados.",
+        "link": "https://cloud.google.com/vertex-ai",
+        "categorias": ["Desenvolvimento de Software", "Análise de Dados", "MLOps"],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Google_Cloud_Vertex_AI_logo.svg/640px-Google_Cloud_Vertex_AI_logo.svg.png"
+    },
+    {
+        "nome": "NotebookLM",
+        "descricao": "Um assistente de pesquisa e escrita baseado em IA do Google. Permite que você faça upload de suas próprias fontes (documentos, PDFs, notas) e use a IA para fazer perguntas, gerar resumos e obter insights sobre seu próprio conteúdo.",
+        "quando_usar": "Para pesquisadores, estudantes e escritores que precisam sintetizar informações de múltiplas fontes, encontrar conexões em seus documentos e acelerar a redação de artigos ou relatórios.",
+        "link": "https://notebooklm.google.com/",
+        "categorias": ["Assistente Virtual", "Pesquisa", "Geração de Texto"],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/NotebookLM_logo.svg/640px-NotebookLM_logo.svg.png"
+    },
+    {
+        "nome": "Auto-GPT",
+        "descricao": "Um agente de IA experimental e de código aberto que utiliza os modelos GPT-4 da OpenAI para tentar alcançar um objetivo complexo de forma autônoma, dividindo-o em subtarefas e usando a internet e outras ferramentas.",
+        "quando_usar": "Para explorar as capacidades de agentes autônomos, realizar pesquisas complexas, ou automatizar tarefas multifacetadas que requerem acesso à internet e execução de comandos. Requer conhecimento técnico para configurar.",
+        "link": "https://github.com/Significant-Gravitas/Auto-GPT",
+        "categorias": ["Agentes de IA", "Desenvolvimento de Software", "Automação"],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Auto-GPT_logo.svg/640px-Auto-GPT_logo.svg.png"
+    },
+    {
+        "nome": "AgentGPT",
+        "descricao": "Uma plataforma que permite montar e implantar agentes de IA autônomos diretamente no navegador. O usuário define um objetivo e o agente tenta alcançá-lo criando e executando uma lista de tarefas.",
+        "quando_usar": "Para experimentar a criação de agentes de IA sem a necessidade de configuração de ambiente local. Útil para tarefas de pesquisa, planejamento e criação de conteúdo de forma autônoma.",
+        "link": "https://agentgpt.reworkd.ai/",
+        "categorias": ["Agentes de IA", "Produtividade", "Assistente Virtual"]
+    },
+    {
+        "nome": "BabyAGI",
+        "descricao": "Um script de gerenciamento de tarefas com IA que cria, prioriza e executa tarefas com base em um objetivo inicial. É mais um framework conceitual do que uma ferramenta pronta, inspirando muitos outros projetos de agentes.",
+        "quando_usar": "Como base para entender o funcionamento de um loop de agente autônomo (criação, priorização, execução). Ideal para desenvolvedores que querem construir seus próprios agentes de IA.",
+        "link": "https://github.com/yoheinakajima/babyagi",
+        "categorias": ["Agentes de IA", "Desenvolvimento de Software"]
+    },
+    {
+        "nome": "CrewAI",
+        "descricao": "Um framework para orquestrar agentes de IA colaborativos. Permite criar equipes de agentes especializados que trabalham juntos para resolver tarefas complexas, cada um com seu próprio papel e ferramentas.",
+        "quando_usar": "Para construir sistemas multi-agente sofisticados, como uma equipe de pesquisa de mercado virtual ou um time de desenvolvimento de software automatizado. Requer programação em Python.",
+        "link": "https://www.crewai.com/",
+        "categorias": ["Agentes de IA", "Desenvolvimento de Software", "Automação"]
+    }
+]

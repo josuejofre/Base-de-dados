@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Estilos adicionais para a página de detalhes -->
+    <style>
+        .detalhe-wrapper {
+            max-width: 1100px; /* Aumentamos a largura máxima */
+            width: 90%; /* Ocupa 90% da largura da tela */
+            margin: 2rem auto; /* Centraliza o conteúdo */
+        }
+        .detalhe-container {
+            padding: 2rem;
+            background: #2a2b2e;
+            border-radius: 0.75rem;
+            border: 1px solid #3c4043;
+        }
+        .detalhe-container h1, .detalhe-container h2 {
+            color: var(--primary-color);
+        }
+        /* Sobrescreve o estilo do 'main' para a página de detalhes */
+        main {
+            height: auto; /* Permite que o conteúdo cresça verticalmente */
+            overflow-y: visible; /* Remove a barra de rolagem interna */
+            padding-bottom: 4rem; /* Adiciona espaço no final da página */
+        }
+    </style>
+    <title>Detalhes</title>
+</head>
+<body>
+    <main id="detalhe-main">
+        <!-- O conteúdo será inserido aqui pelo detalhe.js -->
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="detalhe.js"></script>
+</body>
+</html>
