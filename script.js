@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'ferramentas_ia': 'ferramentas_ia.json',
         'metodologias_ageis': 'metodologias_ageis.json',
         'design_produto': 'design_produto.json',
+        'metricas_indicadores': 'metricas_indicadores.json',
     };
 
     // Função assíncrona para carregar os dados do arquivo JSON.
