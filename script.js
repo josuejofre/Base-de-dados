@@ -15,7 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const subjectFiles = {
         'techniques': 'techniques.json',
         'gestao_pessoas': 'gestao_pessoas.json',
+        'gestao_times': 'gestao_times.json',
         'ferramentas_ia': 'ferramentas_ia.json',
+        'gestao_sistemas': 'gestao_sistemas.json',
         'metodologias_ageis': 'metodologias_ageis.json',
         'design_produto': 'design_produto.json',
         'metricas_indicadores': 'metricas_indicadores.json',
