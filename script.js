@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const resultsContainer = document.getElementById('resultados');
     const categoryFiltersContainer = document.getElementById('filtros-categoria');
     const subjectSelect = document.getElementById('assunto-select');
-    
+
     // Variável para armazenar todos os dados das técnicas carregadas do JSON.
     let allTechniques = [];
     // Variável para rastrear a categoria atualmente selecionada.
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
             resultsContainer.innerHTML = '<p>Nenhuma técnica encontrada.</p>';
             return;
         }
-        
+
         // Função auxiliar para destacar o termo de busca no texto.
         const highlightText = (text, term) => {
             if (!term.trim()) return text; // Se não houver termo de busca, retorna o texto original.
@@ -81,11 +81,14 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         // Para cada técnica, cria um elemento <article> e o preenche com os dados.
-        techniques.forEach(tech => {
+        techniques.forEach((tech, index) => {
             const article = document.createElement('article');
+            // Adiciona um delay escalonado para a animação de entrada
+            article.style.animationDelay = `${index * 0.05}s`;
+
             const highlightedName = highlightText(tech.nome, searchTerm);
             const highlightedDesc = highlightText(tech.descricao, searchTerm);
-            
+
             // A lógica da imagem foi comentada para revisão de direitos autorais e links quebrados.
             // const imageHtml = tech.imagem ? 
             //     `<div class="conteudo-imagem">
@@ -123,7 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Extrai todas as categorias únicas do array de técnicas.
         const categories = ['Todos', ...new Set(allTechniques.flatMap(tech => tech.categorias || []))];
-        
+
         categoryFiltersContainer.innerHTML = ''; // Limpa filtros existentes.
 
         // 2. Cria os botões, adicionando a contagem ao texto.
@@ -140,7 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Adiciona um evento de clique para cada botão de categoria.
             button.addEventListener('click', () => {
                 activeCategory = category; // Atualiza a categoria ativa.
-                
+
                 // Atualiza a classe 'active' para o botão clicado.
                 document.querySelectorAll('.filtro-btn').forEach(btn => btn.classList.remove('active'));
                 button.classList.add('active');
@@ -164,7 +167,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // 2. Filtra pelo termo de busca dentro do resultado da categoria
         const searchTerm = searchInput.value.toLowerCase(); // Pega o valor do input e converte para minúsculas.
-        const finalFiltered = filteredByCategory.filter(tech => 
+        const finalFiltered = filteredByCategory.filter(tech =>
             tech.nome.toLowerCase().includes(searchTerm) ||
             tech.descricao.toLowerCase().includes(searchTerm)
         );

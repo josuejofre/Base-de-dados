@@ -121,5 +121,95 @@
         "link": "https://www.crewai.com/",
         "categorias": ["Agentes de IA", "Desenvolvimento de Software", "Automação"],
         "detalhes_markdown": "# CrewAI\n\n**Descrição:** O CrewAI é um framework em Python projetado para orquestrar **agentes de IA colaborativos**. Em vez de ter um único agente tentando fazer tudo, o CrewAI permite que você crie uma 'equipe' (crew) de agentes especializados, cada um com seu próprio papel, contexto e ferramentas, que trabalham juntos para resolver tarefas complexas.\n\n**Quando usar:** Para construir sistemas multi-agente sofisticados que imitam a colaboração de uma equipe humana. Exemplos incluem uma equipe de pesquisa de mercado virtual (um agente pesquisador, um agente analista, um agente redator) ou um time de desenvolvimento de software automatizado. **Requer programação em Python.**\n\n---\n\n## Conceitos Fundamentais\n\n*   **Agentes (Agents):** Os membros da equipe. Cada agente é definido com:\n    *   **Papel (Role):** Sua especialidade (ex: 'Analista de Marketing Sênior').\n    *   **Objetivo (Goal):** O que ele é responsável por alcançar.\n    *   **História de Fundo (Backstory):** Um contexto que ajuda o LLM a incorporar melhor o papel.\n    *   **Ferramentas (Tools):** As capacidades que o agente pode usar (ex: ferramenta de busca na web, ferramenta de acesso a uma API).\n\n*   **Tarefas (Tasks):** As atividades que os agentes precisam executar. Cada tarefa é atribuída a um agente específico.\n\n*   **Equipe (Crew):** O conjunto de agentes e tarefas que trabalharão juntos.\n\n*   **Processo (Process):** A forma como a equipe colabora. Pode ser sequencial (um agente termina, o próximo começa) ou hierárquico.\n\n## Exemplo de uma Equipe\n\n**Objetivo:** Criar um relatório sobre o futuro da IA no Brasil.\n\n*   **Agente 1: Pesquisador**\n    *   **Papel:** Especialista em encontrar informações na web.\n    *   **Tarefa:** Encontrar 5 artigos recentes sobre o mercado de IA no Brasil.\n\n*   **Agente 2: Analista**\n    *   **Papel:** Especialista em sintetizar informações e identificar tendências.\n    *   **Tarefa:** Ler os artigos encontrados pelo pesquisador e criar um resumo dos principais pontos e tendências.\n\n*   **Agente 3: Redator**\n    *   **Papel:** Escritor especialista em criar conteúdo claro e conciso.\n    *   **Tarefa:** Usar o resumo do analista para escrever um relatório final de 500 palavras.\n\n### Links Relevantes\n\n*   Site Oficial do CrewAI\n*   Documentação do CrewAI"
+    },
+    {
+        "nome": "Google Imagem 4",
+        "descricao": "Evolução da criação de imagens, elevando o nível do hallmark imaging. Entrega fotorrealismo impressionante e lida magistralmente com texturas dentro das artes, focando na precisão visual que faltava.",
+        "quando_usar": "Para criação de imagens fotorrealistas e artísticas com foco em precisão visual e texturas.",
+        "link": "https://ai.google.dev/imagem4",
+        "categorias": ["Geração de Imagem", "Design"],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Google_Cloud_Vertex_AI_logo.svg/640px-Google_Cloud_Vertex_AI_logo.svg.png",
+        "detalhes_markdown": "# Google Imagem 4\n\n**Descrição:** Evolução da criação de imagens, elevando o nível do hallmark imaging. Entrega fotorrealismo impressionante e lida magistralmente com texturas dentro das artes, focando na precisão visual que faltava.\n\n**Quando usar:** Para criação de imagens fotorrealistas e artísticas com foco em precisão visual e texturas."
+    },
+    {
+        "nome": "Google Antigravity",
+        "descricao": "O futuro da programação \"agnóstico\". Neste IDE avançado, você atua como um arquiteto, enquanto os assistentes de IA (via Gemini Gems) fazem o trabalho pesado: planejam, codificam, testam e depuram o software para você.",
+        "quando_usar": "Para desenvolvedores que desejam atuar como arquitetos, delegando o planejamento, codificação, teste e depuração de software a assistentes de IA.",
+        "link": "https://ai.google.dev/antigravity",
+        "categorias": ["Desenvolvimento de Software", "Automação", "Agentes de IA"],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Google_Cloud_Vertex_AI_logo.svg/640px-Google_Cloud_Vertex_AI_logo.svg.png",
+        "detalhes_markdown": "# Google Antigravity\n\n**Descrição:** O futuro da programação \"agnóstico\". Neste IDE avançado, você atua como um arquiteto, enquanto os assistentes de IA (via Gemini Gems) fazem o trabalho pesado: planejam, codificam, testam e depuram o software para você.\n\n**Quando usar:** Para desenvolvedores que desejam atuar como arquitetos, delegando o planejamento, codificação, teste e depuração de software a assistentes de IA."
+    },
+    {
+        "nome": "Google Stitch",
+        "descricao": "A ponte direta entre sua imaginação e o design de UI. Basta descrever o que você quer e a ferramenta cria o layout, as interações funcionais e o código, cortando drasticamente o tempo de prototipagem.",
+        "quando_usar": "Para designers e desenvolvedores que desejam criar layouts de UI, interações funcionais e código a partir de descrições textuais, acelerando o tempo de prototipagem.",
+        "link": "https://ai.google.dev/stitch",
+        "categorias": ["Design", "Desenvolvimento de Software", "Geração de Código"],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Google_Cloud_Vertex_AI_logo.svg/640px-Google_Cloud_Vertex_AI_logo.svg.png",
+        "detalhes_markdown": "# Google Stitch\n\n**Descrição:** A ponte direta entre sua imaginação e o design de UI. Basta descrever o que você quer e a ferramenta cria o layout, as interações funcionais e o código, cortando drasticamente o tempo de prototipagem.\n\n**Quando usar:** Para designers e desenvolvedores que desejam criar layouts de UI, interações funcionais e código a partir de descrições textuais, acelerando o tempo de prototipagem."
+    },
+    {
+        "nome": "Gemini Gems",
+        "descricao": "Seus clones digitais para tarefas repetitivas. Configure assistentes de IA com instruções personalizadas para atuarem como managers, revisores ou especialistas em processos específicos da sua rotina.",
+        "quando_usar": "Para automatizar tarefas repetitivas e delegar funções específicas a assistentes de IA personalizados, como gerenciamento, revisão ou especialização em processos.",
+        "link": "https://ai.google.dev/gems",
+        "categorias": ["Agentes de IA", "Automação", "Produtividade"],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Google_Cloud_Vertex_AI_logo.svg/640px-Google_Cloud_Vertex_AI_logo.svg.png",
+        "detalhes_markdown": "# Gemini Gems\n\n**Descrição:** Seus clones digitais para tarefas repetitivas. Configure assistentes de IA com instruções personalizadas para atuarem como managers, revisores ou especialistas em processos específicos da sua rotina.\n\n**Quando usar:** Para automatizar tarefas repetitivas e delegar funções específicas a assistentes de IA personalizados, como gerenciamento, revisão ou especialização em processos."
+    },
+    {
+        "nome": "Google Whisk",
+        "descricao": "Para quem vê a IA como pincel. Uma ferramenta experimental que permite fundir estilos, objetos e cenários para criar photo-montages com uma estética única e artística.",
+        "quando_usar": "Para artistas e designers que desejam criar photo-montages únicos, fundindo estilos, objetos e cenários com a ajuda de IA.",
+        "link": "https://ai.google.dev/whisk",
+        "categorias": ["Geração de Imagem", "Design"],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Google_Cloud_Vertex_AI_logo.svg/640px-Google_Cloud_Vertex_AI_logo.svg.png",
+        "detalhes_markdown": "# Google Whisk\n\n**Descrição:** Para quem vê a IA como pincel. Uma ferramenta experimental que permite fundir estilos, objetos e cenários para criar photo-montages com uma estética única e artística.\n\n**Quando usar:** Para artistas e designers que desejam criar photo-montages únicos, fundindo estilos, objetos e cenários com a ajuda de IA."
+    },
+    {
+        "nome": "Nano Banana Pro",
+        "descricao": "O poder da edição de imagens via conversas. Adiciona uma camada de prompt que permite que você peça alterações complexas na imagem usando linguagem simples, e a IA executa com qualidade profissional.",
+        "quando_usar": "Para edição de imagens avançada através de comandos de linguagem natural, permitindo alterações complexas com facilidade e qualidade profissional.",
+        "link": "https://nanobanana.pro/",
+        "categorias": ["Edição de Imagem", "Geração de Imagem"],
+        "imagem": "https://images.unsplash.com/photo-1550645612-83f5d594b671?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# Nano Banana Pro\n\n**Descrição:** O poder da edição de imagens via conversas. Adiciona uma camada de prompt que permite que você peça alterações complexas na imagem usando linguagem simples, e a IA executa com qualidade profissional.\n\n**Quando usar:** Para edição de imagens avançada através de comandos de linguagem natural, permitindo alterações complexas com facilidade e qualidade profissional."
+    },
+    {
+        "nome": "Google Veo 3.1",
+        "descricao": "A fronteira final do vídeo generativo. Utilizando uma nova arquitetura de difusão, ele cria vídeos com movimento fluido e coerência realista a partir de simples comandos de texto.",
+        "quando_usar": "Para criação de vídeos generativos com movimento fluido e realismo a partir de descrições textuais.",
+        "link": "https://ai.google.dev/veo",
+        "categorias": ["Geração de Vídeo", "Geração de Mídia"],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Google_Cloud_Vertex_AI_logo.svg/640px-Google_Cloud_Vertex_AI_logo.svg.png",
+        "detalhes_markdown": "# Google Veo 3.1\n\n**Descrição:** A fronteira final do vídeo generativo. Utilizando uma nova arquitetura de difusão, ele cria vídeos com movimento fluido e coerência realista a partir de simples comandos de texto.\n\n**Quando usar:** Para criação de vídeos generativos com movimento fluido e realismo a partir de descrições textuais."
+    },
+    {
+        "nome": "Google Opal",
+        "descricao": "A democratização do desenvolvimento de IA. Crie pequenas aplicações funcionais em minutos, sem precisar ser um especialista em código, e compartilhe o link com qualquer pessoa na hora.",
+        "quando_usar": "Para criar pequenas aplicações funcionais baseadas em IA rapidamente, sem necessidade de conhecimento avançado em programação, e compartilhá-las facilmente.",
+        "link": "https://ai.google.dev/opal",
+        "categorias": ["Desenvolvimento de Software", "Low-Code/No-Code", "IA"],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Google_Cloud_Vertex_AI_logo.svg/640px-Google_Cloud_Vertex_AI_logo.svg.png",
+        "detalhes_markdown": "# Google Opal\n\n**Descrição:** A democratização do desenvolvimento de IA. Crie pequenas aplicações funcionais em minutos, sem precisar ser um especialista em código, e compartilhe o link com qualquer pessoa na hora.\n\n**Quando usar:** Para criar pequenas aplicações funcionais baseadas em IA rapidamente, sem necessidade de conhecimento avançado em programação, e compartilhá-las facilmente."
+    },
+    {
+        "nome": "Google AI Studio",
+        "descricao": "O playground definitivo para desenvolvedores. Um website ágil para testar, iterar e integrar os modelos mais recentes do Google diretamente nos seus protótipos de aplicativos.",
+        "quando_usar": "Para desenvolvedores que desejam testar, iterar e integrar os modelos de IA do Google em seus protótipos de aplicativos de forma ágil.",
+        "link": "https://ai.google.dev/studio",
+        "categorias": ["Desenvolvimento de Software", "IA", "Ferramentas"],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Google_Cloud_Vertex_AI_logo.svg/640px-Google_Cloud_Vertex_AI_logo.svg.png",
+        "detalhes_markdown": "# Google AI Studio\n\n**Descrição:** O playground definitivo para desenvolvedores. Um website ágil para testar, iterar e integrar os modelos mais recentes do Google diretamente nos seus protótipos de aplicativos.\n\n**Quando usar:** Para desenvolvedores que desejam testar, iterar e integrar os modelos de IA do Google em seus protótipos de aplicativos de forma ágil."
+    },
+    {
+        "nome": "Google Pomelli",
+        "descricao": "Criatividade de marca em escala. Essa IA gera ativos de marketing personalizados que não apenas engajam, mas respeitam rigorosamente o guia de estilo e a identidade visual da sua empresa.",
+        "quando_usar": "Para gerar ativos de marketing personalizados em escala, garantindo engajamento e aderência à identidade visual da marca.",
+        "link": "https://labs.google.com/pomelli/about/",
+        "categorias": ["Marketing", "Geração de Conteúdo", "Design"],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Google_Cloud_Vertex_AI_logo.svg/640px-Google_Cloud_Vertex_AI_logo.svg.png",
+        "detalhes_markdown": "# Google Pomelli\n\n**Descrição:** Criatividade de marca em escala. Essa IA gera ativos de marketing personalizados que não apenas engajam, mas respeitam rigorosamente o guia de estilo e a identidade visual da sua empresa.\n\n**Quando usar:** Para gerar ativos de marketing personalizados em escala, garantindo engajamento e aderência à identidade visual da marca."
     }
 ]
