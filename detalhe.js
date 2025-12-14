@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Função para carregar os dados e encontrar o item específico.
     async function loadItemDetails() {
         try {
-            const response = await fetch(subjectFile);
+            const response = await fetch(subjectFile + '?t=' + new Date().getTime());
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
@@ -53,7 +53,12 @@ document.addEventListener('DOMContentLoaded', () => {
     function displayItemDetails(item) {
         document.title = item.nome; // Atualiza o título da aba do navegador.
 
-        const imageHtml = item.imagem ? `<img src="${item.imagem}" alt="Imagem de ${item.nome}" style="max-width: 100%; border-radius: 0.5rem; margin-bottom: 1rem;">` : '';
+        const imageHtml = item.imagem ? `
+            <div style="text-align: center;"> <!-- Centraliza a imagem -->
+                <a href="${item.imagem}" target="_blank" title="Clique para ver a imagem original">
+                    <img src="${item.imagem}" alt="Imagem de ${item.nome}" style="max-width: 50%; border-radius: 0.5rem; margin-bottom: 1rem; cursor: pointer; transition: transform 0.2s;">
+                </a>
+            </div>` : '';
 
         // Gera HTML para Áudio
         const audioHtml = item.audio ? `
@@ -66,14 +71,43 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>` : '';
 
         // Gera HTML para Vídeo
-        const videoHtml = item.video ? `
-            <div class="media-container">
-                <h3>▶️ Vídeo Explicativo</h3>
-                <video controls>
-                    <source src="${item.video}" type="video/mp4">
-                    Seu navegador não suporta o elemento de vídeo.
-                </video>
-            </div>` : '';
+        // Gera HTML para Vídeo (Suporta YouTube e Local)
+        let videoHtml = '';
+        if (item.video) {
+            if (item.video.includes('youtube.com') || item.video.includes('youtu.be')) {
+                // Extrai o ID do vídeo do YouTube
+                let videoId = '';
+                if (item.video.includes('youtube.com/watch?v=')) {
+                    videoId = item.video.split('v=')[1].split('&')[0];
+                } else if (item.video.includes('youtu.be/')) {
+                    videoId = item.video.split('youtu.be/')[1];
+                }
+
+                if (videoId) {
+                    videoHtml = `
+                        <div class="media-container">
+                            <h3>▶️ Vídeo Explicativo</h3>
+                            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 0.5rem;">
+                                <iframe src="https://www.youtube.com/embed/${videoId}" 
+                                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+                                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>`;
+                }
+            } else {
+                // Vídeo Local
+                videoHtml = `
+                    <div class="media-container">
+                        <h3>▶️ Vídeo Explicativo</h3>
+                        <video controls style="width: 100%; border-radius: 0.5rem;">
+                            <source src="${item.video}" type="video/mp4">
+                            Seu navegador não suporta o elemento de vídeo.
+                        </video>
+                    </div>`;
+            }
+        }
 
         // Constrói o conteúdo em Markdown.
         const markdownContent = item.detalhes_markdown || `
@@ -106,8 +140,8 @@ Este é um exemplo genérico. Para um uso real, consulte a documentação oficia
                 <div class="detalhe-container">
                     ${imageHtml}
                     ${audioHtml}
-                    ${videoHtml}
                     ${htmlContent}
+                    ${videoHtml}
                     <p style="margin-top: 2rem; border-top: 1px solid #3c4043; padding-top: 1rem;">Para mais informações, acesse o <a href="${item.link}" target="_blank">link original</a>.</p>
                 </div>
             </div>

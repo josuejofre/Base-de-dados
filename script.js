@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             displaySkeletonLoader(5); // Exibe 5 cards de esqueleto.
             categoryFiltersContainer.innerHTML = ''; // Limpa os filtros de categoria antigos.
-            const response = await fetch(subjectFile); // Faz a requisição para o arquivo do assunto selecionado.
+            const response = await fetch(subjectFile + '?t=' + new Date().getTime()); // Faz a requisição para o arquivo do assunto selecionado (com cache buster).
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
