@@ -62,6 +62,27 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    // Variável para armazenar os IDs dos favoritos (usando o nome da técnica como ID único por enquanto).
+    let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+
+    // Função para salvar favoritos no localStorage
+    function saveFavorites() {
+        localStorage.setItem('favorites', JSON.stringify(favorites));
+    }
+
+    // Função para alternar o estado de favorito
+    function toggleFavorite(techName, btnElement) {
+        const index = favorites.indexOf(techName);
+        if (index === -1) {
+            favorites.push(techName);
+            btnElement.classList.add('active');
+        } else {
+            favorites.splice(index, 1);
+            btnElement.classList.remove('active');
+        }
+        saveFavorites();
+    }
+
     // Função para renderizar e exibir as técnicas na página.
     function displayTechniques(techniques, searchTerm = '') {
         resultsContainer.innerHTML = ''; // Limpa os resultados anteriores.
@@ -88,21 +109,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const highlightedName = highlightText(tech.nome, searchTerm);
             const highlightedDesc = highlightText(tech.descricao, searchTerm);
-
-            // A lógica da imagem foi comentada para revisão de direitos autorais e links quebrados.
-            // const imageHtml = tech.imagem ? 
-            //     `<div class="conteudo-imagem">
-            //         <img src="${tech.imagem}" alt="img">
-            //     </div>` : '';
+            const isFavorite = favorites.includes(tech.nome);
 
             article.innerHTML = `
+                <button class="btn-favorito ${isFavorite ? 'active' : ''}" title="Favoritar">
+                    ★
+                </button>
                 <div class="card-header">
                     <h2>${highlightedName}</h2>
-                    ${'' /* imageHtml */}
                 </div>
                 <p>${highlightedDesc}</p>
                 <p><strong>Quando usar:</strong> ${tech.quando_usar}</p>
             `;
+
+            // Adiciona evento ao botão de favorito
+            const favBtn = article.querySelector('.btn-favorito');
+            favBtn.addEventListener('click', (e) => {
+                e.stopPropagation(); // Impede que o clique abra o detalhe do card
+                toggleFavorite(tech.nome, favBtn);
+            });
 
             // Adiciona um evento de clique ao card inteiro para abrir a página de detalhes.
             const detailUrl = `detalhe.html?subject=${subjectSelect.value}&name=${encodeURIComponent(tech.nome)}`;

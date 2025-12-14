@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
             const items = await response.json();
-            
+
             // Encontra o item pelo nome.
             const item = items.find(i => i.nome === itemName);
 
@@ -55,9 +55,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const imageHtml = item.imagem ? `<img src="${item.imagem}" alt="Imagem de ${item.nome}" style="max-width: 100%; border-radius: 0.5rem; margin-bottom: 1rem;">` : '';
 
+        // Gera HTML para Áudio
+        const audioHtml = item.audio ? `
+            <div class="media-container">
+                <h3>🎧 Áudio Resumo (NotebookLM)</h3>
+                <audio controls>
+                    <source src="${item.audio}" type="audio/mpeg">
+                    Seu navegador não suporta o elemento de áudio.
+                </audio>
+            </div>` : '';
+
+        // Gera HTML para Vídeo
+        const videoHtml = item.video ? `
+            <div class="media-container">
+                <h3>▶️ Vídeo Explicativo</h3>
+                <video controls>
+                    <source src="${item.video}" type="video/mp4">
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
+            </div>` : '';
+
         // Constrói o conteúdo em Markdown.
-        // Você pode adicionar um campo 'detalhes_markdown' no seu JSON para conteúdo customizado.
-        // Se não existir, geramos um Markdown básico a partir dos campos existentes.
         const markdownContent = item.detalhes_markdown || `
 # ${item.nome}
 
@@ -87,6 +105,8 @@ Este é um exemplo genérico. Para um uso real, consulte a documentação oficia
             <div class="detalhe-wrapper">
                 <div class="detalhe-container">
                     ${imageHtml}
+                    ${audioHtml}
+                    ${videoHtml}
                     ${htmlContent}
                     <p style="margin-top: 2rem; border-top: 1px solid #3c4043; padding-top: 1rem;">Para mais informações, acesse o <a href="${item.link}" target="_blank">link original</a>.</p>
                 </div>

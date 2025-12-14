@@ -378,3 +378,54 @@ article .highlight {
         flex-grow: 1;
     }
 }
+/* --- Favorites Button --- */
+.btn-favorito {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    z-index: 2;
+    padding: 0;
+    line-height: 1;
+}
+
+.btn-favorito:hover {
+    transform: scale(1.2);
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.btn-favorito.active {
+    color: #ffd700; /* Dourado */
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+
+/* --- Media Players --- */
+.media-container {
+    margin-bottom: 2rem;
+}
+
+.media-container h3 {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+audio, video {
+    width: 100%;
+    border-radius: 8px;
+    outline: none;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+video {
+    max-height: 400px;
+    background: #000;
+}
+
