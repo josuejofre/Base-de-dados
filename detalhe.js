@@ -55,8 +55,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const imageHtml = item.imagem ? `
             <div style="text-align: center;"> <!-- Centraliza a imagem -->
-                <a href="${item.imagem}" target="_blank" title="Clique para ver a imagem original">
-                    <img src="${item.imagem}" alt="Imagem de ${item.nome}" style="max-width: 50%; border-radius: 0.5rem; margin-bottom: 1rem; cursor: pointer; transition: transform 0.2s;">
+                <a href="${item.imagem}?t=${new Date().getTime()}" target="_blank" title="Clique para ver a imagem original">
+                    <img src="${item.imagem}?t=${new Date().getTime()}" alt="Imagem de ${item.nome}" style="max-width: 50%; border-radius: 0.5rem; margin-bottom: 1rem; cursor: pointer; transition: transform 0.2s;">
                 </a>
             </div>` : '';
 
