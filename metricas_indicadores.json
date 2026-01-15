@@ -303,5 +303,37 @@
         "nivel": "Intermediário",
         "tempo_aplicar": "Contínuo",
         "detalhes_markdown": "# CFR (Change Failure Rate): Equilibrando Velocidade e Estabilidade\n\n**Descrição:** O Change Failure Rate (Taxa de Falha de Mudança) é a porcentagem de mudanças lançadas em produção que resultam em serviço degradado e exigem remediação (ex: exige um hotfix, rollback, fix-forward ou patch). É uma métrica de **estabilidade**.\n\n**Quando usar:** Para medir a qualidade do processo de desenvolvimento e deploy. Se as equipes estão entregando rápido (High Deployment Frequency) mas quebrando a produção frequentemente (High CFR), o processo não é sustentável.\n\n---\n\n## Como Calcular o CFR\n\n`CFR = (Número de Deploys com Falha / Número Total de Deploys) * 100`\n\n*   **Deploys com Falha:** Qualquer deploy que causou um incidente, indisponibilidade ou precisou de intervenção manual para correção posterior.\n*   **Total de Deploys:** Quantas vezes você fez deploy para produção no período.\n\n### Exemplo:\n\nEm um mês, uma equipe realizou **20 deploys**.\nDesses, **3 causaram erros** críticos que exigiram rollback ou hotfix rápido.\n\n**CFR = (3 / 20) * 100 = 15%**\n\n---\n\n## Benchmarks DORA (DevOps Research and Assessment)\n\nO CFR é uma das 4 métricas do DORA. Os benchmarks variam, mas geralmente:\n\n*   **Elite Performers:** 0% - 15% (Falham raramente)\n*   **High/Medium/Low Performers:** Podem variar entre 16% e 60%.\n\n**Nota:** O objetivo é manter uma taxa baixa e gerenciável enquanto se mantém a velocidade.\n\n## Como Melhorar o CFR?\n\n1.  **Testes Automatizados:** Aumentar a cobertura de testes.\n2.  **Code Review:** Melhorar os processos de revisão.\n3.  **Ambientes de Staging:** Garantir que o ambiente de testes seja similar à produção.\n4.  **Canary Releases:** Liberar a mudança para poucos usuários primeiro."
+    },
+    {
+        "nome": "MAU (Monthly Active Users)",
+        "descricao": "Usuários Ativos Mensais. Uma métrica que conta o número de usuários únicos que realizaram alguma ação significativa no seu produto nos últimos 30 dias (ou no último mês calendário).",
+        "quando_usar": "Para medir o crescimento geral e a saúde da base de usuários a longo prazo. É um indicador chave de escala e alcance de mercado.",
+        "link": "https://amplitude.com/blog/mau-monthly-active-users",
+        "categorias": [
+            "Métricas",
+            "Crescimento",
+            "Produto"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2026-01-15",
+        "nivel": "Iniciante",
+        "tempo_aplicar": "Contínuo",
+        "detalhes_markdown": "# MAU (Monthly Active Users): Quem Está Usando Seu Produto?\n\n**Descrição:** O MAU (Monthly Active Users) conta o número de usuários **únicos** que interagiram com o seu produto ou serviço dentro de um período de **30 dias** (ou mês calendário). É a métrica padrão para medir o tamanho da base de usuários de muitos produtos digitais.\n\n**Quando usar:** Para acompanhar o crescimento do produto a médio/longo prazo e entender o alcance da sua marca. É frequentemente usado por investidores para avaliar a tração de uma startup.\n\n---\n\n## Como Calcular\n\n1.  **Defina 'Atividade':** O que conta como um usuário ativo? Apenas abrir o app (login)? Ou realizar uma ação específica (ex: dar play em uma música, enviar uma mensagem)? A definição deve ser consistente.\n2.  **Conte Usuários Únicos:** Se o mesmo usuário entrar 50 vezes no mês, ele conta como **1 MAU**.\n3.  **Janela de Tempo:** some todos os usuários únicos nos últimos 30 dias.\n\n## Cuidados com o MAU\n\n*   **Métrica de Vaidade?** O MAU pode ser uma métrica de vaidade se não for acompanhado de métricas de engajamento (como DAU ou Retenção). Você pode ter milhões de MAU mas ninguém usando o produto diariamente.\n*   **Definição Variável:** Certifique-se de que a definição de 'ativo' faça sentido para o valor do seu produto."
+    },
+    {
+        "nome": "DAU (Daily Active Users)",
+        "descricao": "Usuários Ativos Diários. Uma métrica que conta o número de usuários únicos que interagiram com o produto em um único dia (24 horas).",
+        "quando_usar": "Para produtos de uso frequente (redes sociais, apps de produtividade, jogos) onde o hábito diário é importante. Mede a \"aderência\" (stickiness) do produto.",
+        "link": "https://amplitude.com/blog/dau-daily-active-users",
+        "categorias": [
+            "Métricas",
+            "Engajamento",
+            "Produto"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2026-01-15",
+        "nivel": "Iniciante",
+        "tempo_aplicar": "Contínuo",
+        "detalhes_markdown": "# DAU (Daily Active Users): Engajamento Diário\n\n**Descrição:** O DAU (Daily Active Users) conta o número de usuários **únicos** que realizaram uma ação qualificada no seu produto em um período de **24 horas**. Ele reflete a intensidade do uso do produto.\n\n**Quando usar:** Ideal para produtos que esperam ser parte da rotina diária dos usuários, como redes sociais, ferramentas de comunicação (Slack, Whatsapp), jogos ou apps de notícias.\n\n---\n\n## A Relação DAU/MAU (Stickiness)\n\nA divisão do DAU pelo MAU fornece uma métrica chamada **Stickiness** (Aderência), que mede a frequência com que os usuários mensais retornam diariamente.\n\n`Stickiness = DAU / MAU`\n\n*   **Exemplo:** Se você tem 1.000 MAU e 200 DAU, sua aderência é de 20%. Isso significa que, em média, seus usuários usam o produto 6 dias por mês (30 dias * 20%).\n*   **Benchmark:** Produtos de classe mundial (como Facebook) costumam ter uma taxa de aderência acima de 50%."
     }
 ]
