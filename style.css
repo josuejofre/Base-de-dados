@@ -193,9 +193,56 @@ main {
 .filtros-wrapper {
     display: flex;
     flex-direction: column;
+    gap: 1.25rem;
+    margin-bottom: 3.5rem;
+    background: rgba(255, 255, 255, 0.02);
+    padding: 1.5rem;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-subtle);
+}
+
+.filtros-header {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 1.5rem;
-    margin-bottom: 4rem;
+    width: 100%;
+}
+
+.btn-text-toggle {
+    background: none;
+    border: none;
+    color: var(--primary-accent);
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.btn-text-toggle:hover {
+    background: rgba(99, 102, 241, 0.1);
+    text-decoration: underline;
+}
+
+.filtros-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    overflow: hidden;
+    transition: max-height 0.5s cubic-bezier(0, 1, 0, 1); /* Animação suave para altura variável */
+}
+
+/* Estado Retraído */
+.filtros-container.collapsed {
+    max-height: 90px; /* Aproximadamente 2 linhas */
+}
+
+/* Estado Expandido */
+.filtros-container.expanded {
+    max-height: 1000px; /* Altura máxima arbitrária para permitir expansão */
+    transition: max-height 0.8s ease-in;
 }
 
 .filtro-label {
@@ -205,13 +252,6 @@ main {
     font-weight: 500;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-}
-
-.filtros-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 0.75rem;
 }
 
 .filtro-btn {
@@ -493,6 +533,45 @@ mark {
     background: var(--primary-accent);
     color: #fff;
     box-shadow: 0 8px 20px var(--primary-accent-glow);
+}
+
+/* --- AI Search Controls --- */
+#ai-controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#btn-activate-ai {
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(56, 189, 248, 0.2));
+    border-color: var(--primary-accent);
+}
+
+#btn-activate-ai:hover {
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.3), rgba(56, 189, 248, 0.3));
+    box-shadow: 0 0 15px var(--primary-accent-glow);
+}
+
+#btn-activate-ai.loading {
+    display: none;
+}
+
+/* AI Match Badge */
+.ai-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    background: linear-gradient(90deg, var(--primary-accent), var(--secondary-accent));
+    color: #fff;
+    padding: 0.25rem 0.6rem;
+    border-radius: 100px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    width: fit-content;
+    z-index: 5;
+    box-shadow: 0 4px 10px rgba(99, 102, 241, 0.4);
 }
 
 /* --- Timeline Layout Adjustments --- */

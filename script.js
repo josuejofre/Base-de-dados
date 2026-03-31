@@ -1,15 +1,44 @@
+import { loadAIModel, generateAllEmbeddings, semanticSearch } from './ai_search.js';
+
 // Aguarda o conteúdo do DOM ser totalmente carregado antes de executar o script.
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
     // Seleciona os elementos do DOM com os quais vamos interagir.
     const searchInput = document.getElementById('caixa-busca');
     const resultsContainer = document.getElementById('resultados');
     const categoryFiltersContainer = document.getElementById('filtros-categoria');
     const subjectSelect = document.getElementById('assunto-select');
 
-    // Variável para armazenar todos os dados das técnicas carregadas do JSON.
-    let allTechniques = [];
+    const filtersWrapper = document.querySelector('.filtros-wrapper');
+    const btnToggleFiltros = document.getElementById('btn-toggle-filtros');
+
+    // --- Lógica de Expandir/Retrair Filtros ---
+    if (btnToggleFiltros) {
+        btnToggleFiltros.addEventListener('click', () => {
+            const isCollapsed = categoryFiltersContainer.classList.contains('collapsed');
+            
+            if (isCollapsed) {
+                categoryFiltersContainer.classList.remove('collapsed');
+                categoryFiltersContainer.classList.add('expanded');
+                btnToggleFiltros.textContent = 'Ver menos filtros ▴';
+            } else {
+                categoryFiltersContainer.classList.remove('expanded');
+                categoryFiltersContainer.classList.add('collapsed');
+                btnToggleFiltros.textContent = 'Ver todos os filtros ▾';
+            }
+        });
+    }
+
+    // Elementos de Controle de IA
+    const btnActivateAI = document.getElementById('btn-activate-ai');
+    const aiLoadingContainer = document.getElementById('ai-loading-container');
+    const aiProgressBar = document.getElementById('ai-progress-bar');
+    const aiStatusText = document.getElementById('ai-status');
+
+    let allTechniques = []; // Todas as técnicas carregadas de todos os JSONs.
     // Variável para rastrear a categoria atualmente selecionada.
     let activeCategory = 'Todos';
+    let isAIActive = false;
+    let isAILoading = false;
 
     // Mapeia os valores do select para os nomes dos arquivos JSON.
     const subjectFiles = {
@@ -50,6 +79,43 @@ document.addEventListener('DOMContentLoaded', () => {
             console.error("Não foi possível carregar as técnicas:", error);
             resultsContainer.innerHTML = "<p>Erro ao carregar os dados. Tente novamente mais tarde.</p>";
         }
+    }
+
+    // --- Lógica de Ativação da IA ---
+    if (btnActivateAI) {
+        btnActivateAI.addEventListener('click', async () => {
+            if (isAILoading || isAIActive) return;
+
+            isAILoading = true;
+            btnActivateAI.classList.add('loading');
+            if (aiLoadingContainer) aiLoadingContainer.style.display = 'flex';
+
+            try {
+                // 1. Carrega o Modelo
+                await loadAIModel((progress) => {
+                    if (aiProgressBar) aiProgressBar.style.width = `${progress}%`;
+                    if (aiStatusText) aiStatusText.textContent = `Baixando IA: ${Math.round(progress)}%`;
+                });
+
+                if (aiStatusText) aiStatusText.textContent = 'Indexando Base de Conhecimento...';
+                // 2. Gera Embeddings
+                await generateAllEmbeddings(allTechniques);
+
+                isAIActive = true;
+                if (aiLoadingContainer) aiLoadingContainer.innerHTML = '<span style="color: #4ade80; font-size: 0.8rem; font-weight: 600;">✨ IA Ativa</span>';
+                
+                // Re-aplica filtros para mostrar poder da IA imediatamente se houver busca
+                applyFilters();
+            } catch (error) {
+                if (aiStatusText) {
+                    aiStatusText.textContent = 'Erro ao carregar IA.';
+                    aiStatusText.style.color = '#ef4444';
+                }
+                btnActivateAI.classList.remove('loading');
+            } finally {
+                isAILoading = false;
+            }
+        });
     }
 
     // Função para exibir o efeito de carregamento (skeleton screen).
@@ -121,6 +187,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const isFavorite = favorites.includes(tech.nome);
 
             article.innerHTML = `
+                ${tech.aiScore ? `<div class="ai-badge">✨ IA Score: ${Math.round(tech.aiScore * 100)}%</div>` : ''}
                 <button class="btn-favorito ${isFavorite ? 'active' : ''}" title="Favoritar">
                     ★
                 </button>
@@ -196,18 +263,36 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Função principal que aplica tanto o filtro de categoria quanto o de busca.
-    function applyFilters() {
+    async function applyFilters() {
         const searchTerm = searchInput.value.toLowerCase().trim();
         const selectedSubject = subjectSelect.value;
         
-        let filtered;
+        let filtered = [];
         
         // Se houver termo de busca, pesquisa em TODOS os itens (Global Search)
         if (searchTerm !== '') {
             filtered = allTechniques.filter(tech =>
                 tech.nome.toLowerCase().includes(searchTerm) ||
-                tech.descricao.toLowerCase().includes(searchTerm)
+                tech.descricao.toLowerCase().includes(searchTerm) ||
+                (tech.categorias && tech.categorias.some(cat => cat.toLowerCase().includes(searchTerm)))
             );
+
+            // --- MELHORIA COM IA ---
+            if (isAIActive && filtered.length < 5) {
+                const semanticResults = await semanticSearch(searchTerm);
+                
+                // Mesclar resultados da IA que ainda não estão no filtro de texto
+                semanticResults.forEach(aiRes => {
+                    const alreadyFound = filtered.find(f => f.nome === aiRes.nome);
+                    if (!alreadyFound) {
+                        const originalTech = allTechniques.find(t => t.nome === aiRes.nome);
+                        if (originalTech) {
+                            filtered.push({ ...originalTech, aiScore: aiRes.score });
+                        }
+                    }
+                });
+            }
+
             // Se houver busca global, também filtramos pela categoria se não for "Todos"
             if (activeCategory !== 'Todos') {
                 filtered = filtered.filter(tech => tech.categorias?.includes(activeCategory));
