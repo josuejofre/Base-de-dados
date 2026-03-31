@@ -1,2 +1,5 @@
 Livro_Gestao_Pessoas_Produtos_Sistemas.docx
 Livro_Gestao_Pessoas_Produtos_Sistemas.md
+node_modules/
+dist/
+.vite/

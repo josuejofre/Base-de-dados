@@ -24,18 +24,28 @@ document.addEventListener('DOMContentLoaded', () => {
         'estudos_futuros': 'estudos_futuros.json',
     };
 
-    // Função assíncrona para carregar os dados do arquivo JSON.
-    async function loadData(subjectFile) {
+    // Função assíncrona para carregar todos os dados de todos os arquivos JSON.
+    async function loadData() {
         try {
             displaySkeletonLoader(5); // Exibe 5 cards de esqueleto.
             categoryFiltersContainer.innerHTML = ''; // Limpa os filtros de categoria antigos.
-            const response = await fetch(subjectFile + '?t=' + new Date().getTime()); // Faz a requisição para o arquivo do assunto selecionado (com cache buster).
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
-            allTechniques = await response.json(); // Converte a resposta para JSON e armazena.
+            
+            // Cria um array de promessas para carregar todos os assuntos simultaneamente.
+            const fetchPromises = Object.entries(subjectFiles).map(async ([key, fileName]) => {
+                const response = await fetch(fileName + '?t=' + new Date().getTime());
+                if (!response.ok) throw new Error(`Erro ao carregar ${fileName}`);
+                const data = await response.json();
+                // Adiciona a propriedade 'subject' em cada item para sabermos de onde ele veio.
+                return data.map(item => ({ ...item, subject: key }));
+            });
+
+            // Aguarda a conclusão de todas as requisições.
+            const results = await Promise.all(fetchPromises);
+            // Achata o array de arrays em um único array global.
+            allTechniques = results.flat();
+
             setupCategoryFilters(); // Configura os botões de filtro de categoria.
-            applyFilters(); // Aplica os filtros (inicialmente, mostra todos).
+            applyFilters(); // Aplica os filtros iniciais.
         } catch (error) {
             console.error("Não foi possível carregar as técnicas:", error);
             resultsContainer.innerHTML = "<p>Erro ao carregar os dados. Tente novamente mais tarde.</p>";
@@ -96,16 +106,13 @@ document.addEventListener('DOMContentLoaded', () => {
         // Função auxiliar para destacar o termo de busca no texto.
         const highlightText = (text, term) => {
             if (!term.trim()) return text; // Se não houver termo de busca, retorna o texto original.
-            // Cria uma expressão regular para encontrar o termo de forma global (g) e insensível a maiúsculas/minúsculas (i).
             const regex = new RegExp(`(${term})`, 'gi');
-            // Substitui o termo encontrado pela tag <mark>, que destaca o texto, preservando a capitalização original.
             return text.replace(regex, '<mark>$1</mark>');
         };
 
         // Para cada técnica, cria um elemento <article> e o preenche com os dados.
         techniques.forEach((tech, index) => {
             const article = document.createElement('article');
-            // Adiciona um delay escalonado para a animação de entrada
             article.style.animationDelay = `${index * 0.05}s`;
 
             const highlightedName = highlightText(tech.nome, searchTerm);
@@ -121,60 +128,64 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
                 <p>${highlightedDesc}</p>
                 <p><strong>Quando usar:</strong> ${tech.quando_usar}</p>
+                <div class="card-footer" style="margin-top: 1rem; font-size: 0.8rem; color: var(--text-secondary); display: flex; justify-content: space-between;">
+                    <span>📂 ${subjectSelect.querySelector(`option[value="${tech.subject}"]`).textContent}</span>
+                </div>
             `;
 
             // Adiciona evento ao botão de favorito
             const favBtn = article.querySelector('.btn-favorito');
             favBtn.addEventListener('click', (e) => {
-                e.stopPropagation(); // Impede que o clique abra o detalhe do card
+                e.stopPropagation();
                 toggleFavorite(tech.nome, favBtn);
             });
 
-            // Adiciona um evento de clique ao card inteiro para abrir a página de detalhes.
-            const detailUrl = `detalhe.html?subject=${subjectSelect.value}&name=${encodeURIComponent(tech.nome)}`;
+            // Usa o subject do item para o link, não o selecionado no dropdown global
+            const detailUrl = `detalhe.html?subject=${tech.subject}&name=${encodeURIComponent(tech.nome)}`;
             article.addEventListener('click', () => {
                 window.open(detailUrl, '_blank');
             });
 
-            resultsContainer.appendChild(article); // Adiciona o artigo ao contêiner de resultados.
+            resultsContainer.appendChild(article);
         });
     }
 
     // Função para configurar e criar os botões de filtro de categoria.
     function setupCategoryFilters() {
-        // 1. Calcula a contagem de itens para cada categoria.
-        const categoryCounts = allTechniques.reduce((acc, tech) => {
+        const searchTerm = searchInput.value.trim();
+        
+        // Determina o pool de itens para calcular as categorias:
+        // Se houver busca, considera todos. Se não, apenas o assunto selecionado.
+        const pool = searchTerm !== '' 
+            ? allTechniques 
+            : allTechniques.filter(tech => tech.subject === subjectSelect.value);
+
+        const categoryCounts = pool.reduce((acc, tech) => {
             (tech.categorias || []).forEach(category => {
                 acc[category] = (acc[category] || 0) + 1;
             });
             return acc;
         }, {});
 
-        // Extrai todas as categorias únicas do array de técnicas.
-        const categories = ['Todos', ...new Set(allTechniques.flatMap(tech => tech.categorias || []))];
+        const categories = ['Todos', ...new Set(pool.flatMap(tech => tech.categorias || []))];
 
-        categoryFiltersContainer.innerHTML = ''; // Limpa filtros existentes.
+        categoryFiltersContainer.innerHTML = '';
 
-        // 2. Cria os botões, adicionando a contagem ao texto.
         categories.forEach(category => {
             const button = document.createElement('button');
             button.className = 'filtro-btn';
-            const count = category === 'Todos' ? allTechniques.length : (categoryCounts[category] || 0);
-            button.textContent = `${category} (${count})`; // Ex: "Desenvolvimento (8)"
+            const count = category === 'Todos' ? pool.length : (categoryCounts[category] || 0);
+            button.textContent = `${category} (${count})`;
 
             if (category === activeCategory) {
-                button.classList.add('active'); // Marca o botão "Todos" como ativo inicialmente.
+                button.classList.add('active');
             }
 
-            // Adiciona um evento de clique para cada botão de categoria.
             button.addEventListener('click', () => {
-                activeCategory = category; // Atualiza a categoria ativa.
-
-                // Atualiza a classe 'active' para o botão clicado.
+                activeCategory = category;
                 document.querySelectorAll('.filtro-btn').forEach(btn => btn.classList.remove('active'));
                 button.classList.add('active');
-
-                applyFilters(); // Reaplica os filtros.
+                applyFilters();
             });
             categoryFiltersContainer.appendChild(button);
         });
@@ -182,35 +193,46 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Função principal que aplica tanto o filtro de categoria quanto o de busca.
     function applyFilters() {
-        // 1. Filtra por categoria
-        let filteredByCategory;
-        if (activeCategory === 'Todos') {
-            filteredByCategory = allTechniques; // Se "Todos", usa a lista completa.
-        } else {
-            // Filtra as técnicas que incluem a categoria ativa.
-            filteredByCategory = allTechniques.filter(tech => tech.categorias?.includes(activeCategory));
+        const searchTerm = searchInput.value.toLowerCase().trim();
+        const selectedSubject = subjectSelect.value;
+        
+        let filtered;
+        
+        // Se houver termo de busca, pesquisa em TODOS os itens (Global Search)
+        if (searchTerm !== '') {
+            filtered = allTechniques.filter(tech =>
+                tech.nome.toLowerCase().includes(searchTerm) ||
+                tech.descricao.toLowerCase().includes(searchTerm)
+            );
+            // Se houver busca global, também filtramos pela categoria se não for "Todos"
+            if (activeCategory !== 'Todos') {
+                filtered = filtered.filter(tech => tech.categorias?.includes(activeCategory));
+            }
+        } 
+        // Se NÃO houver busca, filtra pelo Assunto selecionado
+        else {
+            filtered = allTechniques.filter(tech => tech.subject === selectedSubject);
+            if (activeCategory !== 'Todos') {
+                filtered = filtered.filter(tech => tech.categorias?.includes(activeCategory));
+            }
         }
 
-        // 2. Filtra pelo termo de busca dentro do resultado da categoria
-        const searchTerm = searchInput.value.toLowerCase(); // Pega o valor do input e converte para minúsculas.
-        const finalFiltered = filteredByCategory.filter(tech =>
-            tech.nome.toLowerCase().includes(searchTerm) ||
-            tech.descricao.toLowerCase().includes(searchTerm)
-        );
-
-        displayTechniques(finalFiltered, searchTerm); // Exibe o resultado final, passando o termo de busca.
+        displayTechniques(filtered, searchTerm);
     }
 
-    // Adiciona um 'escutador' de eventos ao campo de busca para filtrar em tempo real.
-    searchInput.addEventListener('input', applyFilters);
-
-    // Adiciona um 'escutador' de eventos ao seletor de assunto.
-    subjectSelect.addEventListener('change', (event) => {
-        const selectedSubject = event.target.value;
-        const fileName = subjectFiles[selectedSubject];
-        loadData(fileName); // Carrega os dados do novo assunto.
+    // Listeners
+    searchInput.addEventListener('input', () => {
+        activeCategory = 'Todos'; // Reseta categoria ao começar nova busca
+        setupCategoryFilters();
+        applyFilters();
     });
 
-    // Carrega os dados assim que a página é aberta.
-    loadData(subjectFiles[subjectSelect.value]);
+    subjectSelect.addEventListener('change', () => {
+        activeCategory = 'Todos'; // Reseta categoria ao mudar assunto
+        setupCategoryFilters();
+        applyFilters();
+    });
+
+    // Inicialização
+    loadData();
 });
