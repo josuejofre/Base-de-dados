@@ -211,5 +211,14 @@
         "categorias": ["Marketing", "Geração de Conteúdo", "Design"],
         "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Google_Cloud_Vertex_AI_logo.svg/640px-Google_Cloud_Vertex_AI_logo.svg.png",
         "detalhes_markdown": "# Google Pomelli\n\n**Descrição:** Criatividade de marca em escala. Essa IA gera ativos de marketing personalizados que não apenas engajam, mas respeitam rigorosamente o guia de estilo e a identidade visual da sua empresa.\n\n**Quando usar:** Para gerar ativos de marketing personalizados em escala, garantindo engajamento e aderência à identidade visual da marca."
+    },
+    {
+        "nome": "Napkin AI",
+        "descricao": "Ferramenta de inteligência artificial que transforma texto em gráficos, diagramas e ilustrações de forma instantânea, facilitando a comunicação visual.",
+        "quando_usar": "Para criar diagramas, fluxogramas e mapas mentais rapidamente a partir de anotações ou textos, ideal para apresentações e documentação.",
+        "link": "https://www.napkin.ai/",
+        "categorias": ["Geração de Imagem", "Produtividade", "Design"],
+        "imagem": "https://images.unsplash.com/photo-1542626991-cbc4e32524cc?ixlib=rb-4.0.3&auto=format&fit=crop&w=640&q=80",
+        "detalhes_markdown": "# Napkin AI\n\n**Descrição:** O Napkin AI é uma ferramenta inovadora que converte texto simples em gráficos e diagramas visualmente explicativos. Usando inteligência artificial, ele analisa o seu texto e gera representações visuais como fluxogramas, diagramas de Venn, jornadas de usuário e muito mais, tudo automaticamente.\n\n**Quando usar:** Quando precisar explicar ideias complexas visualmente de forma rápida, sem gastar horas desenhando formas e setas em softwares de diagramação tradicionais. É perfeito para criar recursos visuais para documentos de produto, apresentações e anotações de reuniões.\n\n---\n\n## Principais Casos de Uso\n\n*   **Documentação Dinâmica:** Transforme PRDs (Product Requirements Documents) e wikis em documentos visuais atraentes.\n*   **Brainstorming:** Converta anotações soltas e ideias de sessões de planejamento em mapas mentais estruturados.\n*   **Apresentações Ágeis:** Crie slides com esquemas complexos apenas digitando o que você quer mostrar.\n\n## Benefícios\n\n*   **Economia de Tempo:** Gera esquemas que levariam minutos ou horas em questão de segundos.\n*   **Foco na Ação:** Mantém o foco no 'o quê' (o conteúdo) em vez do 'como' (o design visual).\n\n### Links Relevantes\n\n*   [Site Oficial do Napkin AI](https://www.napkin.ai/)"
     }
 ]

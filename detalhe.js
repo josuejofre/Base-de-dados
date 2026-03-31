@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'design_produto': 'design_produto.json',
         'metricas_indicadores': 'metricas_indicadores.json',
         'gestao_sistemas': 'gestao_sistemas.json',
+        'estudos_futuros': 'estudos_futuros.json',
     };
 
     // Pega os parâmetros da URL.

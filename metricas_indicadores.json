@@ -335,5 +335,22 @@
         "nivel": "Iniciante",
         "tempo_aplicar": "Contínuo",
         "detalhes_markdown": "# DAU (Daily Active Users): Engajamento Diário\n\n**Descrição:** O DAU (Daily Active Users) conta o número de usuários **únicos** que realizaram uma ação qualificada no seu produto em um período de **24 horas**. Ele reflete a intensidade do uso do produto.\n\n**Quando usar:** Ideal para produtos que esperam ser parte da rotina diária dos usuários, como redes sociais, ferramentas de comunicação (Slack, Whatsapp), jogos ou apps de notícias.\n\n---\n\n## A Relação DAU/MAU (Stickiness)\n\nA divisão do DAU pelo MAU fornece uma métrica chamada **Stickiness** (Aderência), que mede a frequência com que os usuários mensais retornam diariamente.\n\n`Stickiness = DAU / MAU`\n\n*   **Exemplo:** Se você tem 1.000 MAU e 200 DAU, sua aderência é de 20%. Isso significa que, em média, seus usuários usam o produto 6 dias por mês (30 dias * 20%).\n*   **Benchmark:** Produtos de classe mundial (como Facebook) costumam ter uma taxa de aderência acima de 50%."
+    },
+    {
+        "nome": "MTTR (Mean Time To Repair)",
+        "descricao": "O tempo médio necessário para reparar um sistema ou componente com falha. É uma métrica crucial para incidentes e manutenção.",
+        "quando_usar": "Para avaliar a eficiência das equipes de suporte e DevOps na resolução de incidentes. Quanto menor o MTTR, menor o impacto nos usuários.",
+        "link": "https://www.atlassian.com/incident-management/kpis/common-metrics",
+        "categorias": [
+            "Métricas",
+            "DevOps",
+            "Suporte",
+            "Qualidade"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2026-01-23",
+        "nivel": "Intermediário",
+        "tempo_aplicar": "Contínuo",
+        "detalhes_markdown": "# MTTR (Mean Time To Repair): Tempo Médio de Reparo\n\n**Descrição:** O MTTR (Mean Time To Repair) é a métrica que calcula o tempo médio necessário para reparar um sistema, componente ou dispositivo com falha e restaurá-lo à funcionalidade total. Inclui o tempo de diagnóstico e o tempo de reparo em si.\n\n**Variações e Sinônimos:**\nDependendo do contexto (DevOps, QA, Suporte), esta métrica pode aparecer com outros nomes ou nuances:\n*   **Tempo de Resolução de Bug:** Focado especificamente em defeitos de software.\n*   **Turnaround Time:** Muitas vezes usado para descrever o tempo total desde a abertura até o fechamento de um chamado.\n*   **Defect Resolution Duration:** Duração da resolução do defeito.\n\n**Quando usar:** Para monitorar a eficiência da equipe de resposta a incidentes e manutenção. Em DevOps, é uma métrica chave (DORA metrics) para garantir estabilidade.\n\n---\n\n## Como Calcular\n\n`MTTR = Tempo Total Gasto em Reparos / Número Total de Reparos`\n\n### Exemplo:\nSe em um mês houve 5 incidentes que levaram um total de 10 horas para serem corrigidos:\n\n**MTTR = 10 horas / 5 incidentes = 2 horas**\n\nIsso significa que, em média, leva-se 2 horas para restaurar o serviço."
     }
 ]
