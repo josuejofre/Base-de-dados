@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
         resultsContainer.innerHTML = ''; // Limpa os resultados anteriores.
 
         if (techniques.length === 0) {
-            resultsContainer.innerHTML = '<p>Nenhuma técnica encontrada.</p>';
+            resultsContainer.innerHTML = '<p style="text-align: center; grid-column: 1/-1; padding: 3rem; color: var(--text-muted);">Nenhuma técnica encontrada no momento.</p>';
             return;
         }
 
@@ -113,7 +113,8 @@ document.addEventListener('DOMContentLoaded', () => {
         // Para cada técnica, cria um elemento <article> e o preenche com os dados.
         techniques.forEach((tech, index) => {
             const article = document.createElement('article');
-            article.style.animationDelay = `${index * 0.05}s`;
+            // Animação escalonada sofisticada
+            article.style.animationDelay = `${index * 0.08}s`;
 
             const highlightedName = highlightText(tech.nome, searchTerm);
             const highlightedDesc = highlightText(tech.descricao, searchTerm);
@@ -127,9 +128,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     <h2>${highlightedName}</h2>
                 </div>
                 <p>${highlightedDesc}</p>
-                <p><strong>Quando usar:</strong> ${tech.quando_usar}</p>
-                <div class="card-footer" style="margin-top: 1rem; font-size: 0.8rem; color: var(--text-secondary); display: flex; justify-content: space-between;">
+                <div class="quando-usar">
+                    <strong>📍 Quando usar:</strong> ${tech.quando_usar}
+                </div>
+                <div class="card-footer">
                     <span>📂 ${subjectSelect.querySelector(`option[value="${tech.subject}"]`).textContent}</span>
+                    <span>Saiba mais →</span>
                 </div>
             `;
 
