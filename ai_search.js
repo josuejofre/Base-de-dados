@@ -1,4 +1,4 @@
-import { pipeline, env } from '@xenova/transformers';
+import { pipeline, env } from 'https://cdn.jsdelivr.net/npm/@xenova/transformers';
 
 // Configuração para permitir execução no browser
 env.allowLocalModels = false;
