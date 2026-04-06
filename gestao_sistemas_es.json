@@ -1,0 +1,171 @@
+[
+    {
+        "nome": "Disponibilidad (Uptime)",
+        "descricao": "Mide el porcentaje de tiempo que el sistema está operacional y disponible.",
+        "quando_usar": "Monitorizar salud de sistemas y cumplimiento de SLAs.",
+        "link": "https://aws.amazon.com/what-is/uptime/",
+        "categorias": [
+            "Gestión de Sistemas",
+            "KPIs"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1581092921539-a0a18a033334?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# Disponibilidad (Uptime)\n\n**Descripción:** Porcentaje de tiempo que un sistema es accesible. Vital para la continuidad del negocio.\n\n| Disponibilidad | Tiempo de inactividad por año |\n| :--- | :--- |\n| 99% (\"Dos nueves\") | 3.65 días |\n| 99.9% (\"Tres nueves\") | 8.77 horas |\n| 99.99% (\"Cuatro nueves\") | 52.6 minutos |\n| 99.999% (\"Cinco nueves\") | 5.26 minutos |",
+        "slug": "disponibilidade-uptime"
+    },
+    {
+        "nome": "MTBF (Tiempo Medio Entre Fallos)",
+        "descricao": "Indicador de fiabilidad que mide el tiempo promedio de operación sin fallos.",
+        "quando_usar": "Evaluar hardware/software y planificar mantenimiento preventivo.",
+        "link": "https://www.atlassian.com/incident-management/kpis/mtbf",
+        "categorias": [
+            "Gestión de Sistemas",
+            "KPIs"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# MTBF (Mean Time Between Failures)\n\n`MTBF = Tiempo de Operación / Número de Fallos`. Mide la fiabilidad en sistemas reparables.",
+        "slug": "tempo-medio-entre-falhas-mtbf"
+    },
+    {
+        "nome": "MTTR (Tiempo Medio de Reparación)",
+        "descricao": "Velocidad de recuperación tras un fallo. Indica eficiencia del equipo de soporte.",
+        "quando_usar": "Para equipos de DevOps y SRE para evaluar procesos de resolución.",
+        "link": "https://www.atlassian.com/incident-management/kpis/mttr",
+        "categorias": [
+            "Gestión de Sistemas",
+            "KPIs"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# MTTR (Mean Time To Repair)\n\nCalcula el tiempo promedio desde la interrupción hasta la restauración del servicio. Clave en métricas DORA.",
+        "slug": "tempo-medio-para-reparo-mttr"
+    },
+    {
+        "nome": "Latencia / Tiempo de Respuesta",
+        "descricao": "Velocidad de procesamiento de peticiones (demora entre solicitud y respuesta).",
+        "quando_usar": "Medir performance de interfaces y APIs.",
+        "link": "https://aws.amazon.com/what-is/latency/",
+        "categorias": [
+            "Gestión de Sistemas",
+            "KPIs"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1545989253-02b27039a389?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# Latencia y Performance\n\nMonitorizar percentiles (p50, p95, p99) para entender la experiencia real de la mayoría de los usuarios.",
+        "slug": "latenciatempo-de-resposta"
+    },
+    {
+        "nome": "Utilización de Recursos",
+        "descricao": "Monitorización de CPU, memoria y disco para gestión de capacidad.",
+        "quando_usar": "Capacity planning y optimización de costes en la nube.",
+        "link": "https://www.datadoghq.com/blog/monitoring-101-collecting-data/",
+        "categorias": [
+            "Gestión de Sistemas",
+            "KPIs"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1591453089873-1f32420045ac?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# Recursos: CPU, RAM y Disco\n\nVital para evitar cuellos de botella y prevenir fallos críticos por falta de espacio o saturación.",
+        "slug": "utilizacao-de-recursos"
+    },
+    {
+        "nome": "ITSM/ITIL",
+        "descricao": "Procesos estructurados para gestión de Incidentes, Problemas y Cambios.",
+        "quando_usar": "Estandarizar entrega de servicios TI y alinear con negocio.",
+        "link": "https://www.atlassian.com/itsm",
+        "categorias": [
+            "Gestión de Sistemas",
+            "Técnicas"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# ITSM y ITIL: Gobierno de TI\n\nGestión de Servicios para mejorar eficiencia, reducir inactividad y garantizar calidad.",
+        "slug": "gerenciamento-de-servicos-de-ti-itsmitil"
+    },
+    {
+        "nome": "Infraestructura como Código (IaC)",
+        "descricao": "Provisionamiento y gestión de TI mediante archivos de definición.",
+        "quando_usar": "Crear entornos repetibles y evitar 'drift' de configuración.",
+        "link": "https://aws.amazon.com/what-is/infrastructure-as-code/",
+        "categorias": [
+            "Gestión de Sistemas",
+            "DevOps"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1605648916319-448373a0b1f7?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# IaC: Terraform, Ansible\n\nTratar la infraestructura como software: versionado (Git), testeado y automatizado.",
+        "slug": "infraestrutura-como-codigo-iac"
+    },
+    {
+        "nome": "Observabilidad",
+        "descricao": "Monitorización (qué se rompió) vs Observabilidad (por qué se rompió).",
+        "quando_usar": "Depuración de fallos complejos en arquitecturas distribuidas.",
+        "link": "https://www.redhat.com/en/topics/cloud-native-apps/observability-vs-monitoring",
+        "categorias": [
+            "Gestión de Sistemas",
+            "DevOps"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# Pilares: Logs, Métricas y Trazas\n\nEsencial para microservicios. Permite entender el estado interno a partir de outputs externos.",
+        "slug": "monitoramento-e-observabilidade"
+    },
+    {
+        "nome": "BCDR (Continuidad de Negocio)",
+        "descricao": "Garantizar operación tras un desastre mediante RTO y RPO.",
+        "quando_usar": "Sistemas críticos con gran impacto financiero.",
+        "link": "https://aws.amazon.com/what-is/bcdr/",
+        "categorias": [
+            "Gestión de Sistemas",
+            "Técnicas"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1517436026563-63b0114092c4?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# BCDR: RTO y RPO\n\n*   **RTO:** Tiempo máximo de inactividad.\n*   **RPO:** Pérdida máxima de datos permitida.",
+        "slug": "continuidade-de-negocios-bcdr"
+    },
+    {
+        "nome": "DevOps y SRE",
+        "descricao": "Cultura de unión entre desarrollo y operaciones, con foco en fiabilidad.",
+        "quando_usar": "Automatizar CI/CD y operar a gran escala.",
+        "link": "https://cloud.google.com/blog/products/devops-sre/sre-vs-devops-whats-the-difference",
+        "categorias": [
+            "Gestión de Sistemas",
+            "DevOps"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1542626991-a2f575a75c8c?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# SRE: Google's DevOps approach\n\nAplicar principios de ingeniería de software a problemas de operaciones.",
+        "slug": "devops-e-sre"
+    },
+    {
+        "nome": "Seguridad de Sistemas",
+        "descricao": "Protección contra amenazas y gestión de vulnerabilidades.",
+        "quando_usar": "En todas las fases: Security by Design.",
+        "link": "https://aws.amazon.com/security/",
+        "categorias": [
+            "Gestión de Sistemas",
+            "Estrategia"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1550645612-83f5d594b671?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# Seguridad: Hardening e IAM\n\nGarantizar confidencialidad, integridad y disponibilidad mediante prevención y SIEM.",
+        "slug": "seguranca-de-sistemas"
+    },
+    {
+        "nome": "Gestión de Capacidad",
+        "descricao": "Asegurar que la infraestructura satisfaga necesidades actuales y futuras de forma eficiente.",
+        "quando_usar": "Evitar cuellos de botella y sobrecostes.",
+        "link": "https://www.cio.com/article/2432128/infrastructure-it-infrastructure-capacity-management-best-practices.html",
+        "categorias": [
+            "Gestión de Sistemas",
+            "Estrategia"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# Capacity Management\n\nPrever tendencias de crecimiento y optimizar el provisionamiento en la nube.",
+        "slug": "gerenciamento-de-capacidade"
+    },
+    {
+        "nome": "FinOps",
+        "descricao": "Disciplina financiera para maximizar el valor de la nube y controlar gastos.",
+        "quando_usar": "Organizaciones con uso intensivo de cloud.",
+        "link": "https://www.finops.org/introduction/what-is-finops/",
+        "categorias": [
+            "Gestión de Sistemas",
+            "Estrategia"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1544377193-33dcf4d68fb5?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# FinOps: Informar, Optimizar, Operar\n\nTraer responsabilidad financiera a los equipos de ingeniería sobre sus costes de nube.",
+        "slug": "otimizacao-financeira-em-ti-finops"
+    }
+]

@@ -1,0 +1,353 @@
+[
+    {
+        "nome": "Design System",
+        "descricao": "A collection of reusable components, guided by clear standards, that can be assembled to build any number of applications. Ensures consistency and efficiency in design and development.",
+        "quando_usar": "In products or companies with multiple teams and applications, to maintain brand and user experience consistency, and accelerate development.",
+        "link": "https://www.nngroup.com/articles/design-systems-101/",
+        "categorias": [
+            "UI",
+            "UX",
+            "Scale"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1611926653458-092a4234cfb2?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-20",
+        "nivel": "Advanced",
+        "tempo_aplicar": "Months (to build)",
+        "detalhes_markdown": "# Design System: Building with Consistency and Scale\n\n**Description:** A Design System is a single source of truth that brings together all the elements that will allow teams to design, realize, and develop a product. It is not just a style guide or a component library; it is a living set of standards, reusable components, and guidelines, accompanied by code, that evolves with the product.\n\n**When to use:** In products or companies with multiple teams and applications, to maintain consistency in branding and user experience, and to accelerate development.\n\n---\n\n## What makes up a Design System?\n\nA mature Design System usually includes:\n\n*   **Purpose and Values:** Why does the system exist? What design principles does it follow? (e.g., \"Simple, Accessible, Modern\").\n\n*   **Design Foundations (Tokens):** The most basic design decisions, stored as variables (tokens). This includes:\n    *   Colors (primary, secondary, feedback palette)\n    *   Typography (font families, sizes, weights)\n    *   Spacing and Grid (layout rules)\n    *   Iconography\n\n*   **Component Library:** The heart of the system. Reusable UI components, from the simplest (atomic) to the most complex.\n    *   **Atoms:** Buttons, inputs, labels.\n    *   **Molecules:** A search field (composed of an input and a button).\n    *   **Organisms:** A page header (composed of logo, navigation menu, and search field).\n\n*   **Usage Patterns:** Guidelines on how and when to use each component. Includes accessibility rules, tone of voice, and 'do' and 'don't' examples.\n\n*   **Governance:** How is the system maintained and updated? Who can propose changes? How are new versions released?\n\n---\n\n## Benefits\n\n*   **Efficiency:** Designers and developers don't need to reinvent the wheel. They can assemble interfaces quickly using pre-fabricated, tested components.\n*   **Consistency:** Ensures that user experience and visual identity are consistent across all parts of the product and different platforms.\n*   **Common Language:** Creates a shared language between design and engineering, facilitating collaboration.\n*   **Quality and Accessibility:** Allows best practices in usability and accessibility to be built into core components, benefiting the entire product.\n\n### Relevant Links\n\n*   [NN/g Guide to Design Systems](https://www.nngroup.com/articles/design-systems-101/)\n*   [Atomic Design by Brad Frost](https://atomicdesign.bradfrost.com/)",
+        "slug": "design-system"
+    },
+    {
+        "nome": "Nielsen's Usability Heuristics",
+        "descricao": "A set of 10 general principles for user interface design. They are not specific rules, but guidelines that help identify and resolve usability issues.",
+        "quando_usar": "During the evaluation of a design (heuristic evaluation) to find usability problems, or as a guide during the interface creation process.",
+        "link": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "categorias": [
+            "UX",
+            "Evaluation"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1587440871875-191322ee64b0?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-20",
+        "nivel": "Beginner",
+        "tempo_aplicar": "Hours (to evaluate)",
+        "detalhes_markdown": "# The 10 Usability Heuristics by Nielsen\n\n**Description:** A set of 10 general principles for user interface design, created by Jakob Nielsen. They are called 'heuristics' because they are broad guidelines, not specific usability rules. They are used to identify usability problems in a design.\n\n**When to use:** During a **Heuristic Evaluation**, where one or more evaluators compare an interface against the list of heuristics to find violations.\n\n---\n\n## The 10 Heuristics\n\n1.  **Visibility of system status:** The system should always keep users informed about what is going on, through appropriate feedback within reasonable time. (e.g., Progress bars, loading indicators).\n\n2.  **Match between system and the real world:** The system should speak the users' language, with words, phrases and concepts familiar to the user, rather than system-oriented terms. (e.g., Using a trash can icon to delete files).\n\n3.  **User control and freedom:** Users often choose system functions by mistake and will need a clearly marked 'emergency exit' to leave the unwanted state. (e.g., 'Undo' and 'Redo' functions, button to cancel an action).\n\n4.  **Consistency and standards:** Users should not have to wonder whether different words, situations, or actions mean the same thing. Follow platform conventions. (e.g., A 'Save' button should look and be located the same way throughout the system).\n\n5.  **Error prevention:** Even better than good error messages is a careful design which prevents a problem from occurring in the first place. (e.g., A date field that uses a calendar instead of free text, or a confirmation dialog before a destructive action).\n\n6.  **Recognition rather than recall:** Minimize the user's memory load by making objects, actions, and options visible. The user should not have to remember information from one part of the dialogue to another. (e.g., Showing recently viewed items).\n\n7.  **Flexibility and efficiency of use:** Accelerators — unseen by the novice user — may often speed up the interaction for the expert user. (e.g., Keyboard shortcuts, gestures, interface customization).\n\n8.  **Aesthetic and minimalist design:** Dialogues should not contain information which is irrelevant or rarely needed. Every extra unit of information in a dialogue competes with the relevant units and diminishes their relative visibility. (e.g., Clean interfaces focused on the main task).\n\n9.  **Help users recognize, diagnose, and recover from errors:** Error messages should be expressed in plain language (no codes), precisely indicate the problem, and constructively suggest a solution. (e.g., Instead of 'Error 502', say 'Invalid password. Please try again.').\n\n10. **Help and documentation:** Even though it is better if the system can be used without documentation, it may be necessary to provide help and documentation. (e.g., FAQ section, guided tours, help tooltips).\n\n### Relevant Links\n\n*   [Original Article by Jakob Nielsen (NN/g)](https://www.nngroup.com/articles/ten-usability-heuristics/)",
+        "slug": "heuristicas-de-usabilidade-de-nielsen"
+    },
+    {
+        "nome": "Double Diamond",
+        "descricao": "A design process model popularized by the British Design Council, describing divergent and convergent modes of thinking. It consists of four phases: Discover, Define, Develop, and Deliver.",
+        "quando_usar": "To structure a design process from start to finish, ensuring the problem is well-defined before jumping into solutions.",
+        "link": "https://www.designcouncil.org.uk/our-resources/guide/double-diamond-our-evolved-model/",
+        "categorias": [
+            "Design Process",
+            "Strategy"
+        ],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Double_diamond.png/640px-Double_diamond.png",
+        "ultima_atualizacao": "2024-05-21",
+        "nivel": "Beginner",
+        "tempo_aplicar": "Weeks/Months (full process)",
+        "detalhes_markdown": "# The Double Diamond Model\n\n**Description:** A design process model popularized by the British Design Council, which describes **divergent** and **convergent** modes of thinking. The model is visualized as two diamonds and helps teams structure their thinking to ensure they are solving the right problem in the right way.\n\n**When to use:** To structure a design process from start to finish, ensuring the problem is well-defined before jumping into solutions.\n\n---\n\n## The 4 Phases of the Process\n\nThe process is divided into four distinct phases, composing the two diamonds.\n\n### First Diamond: Doing the Right Thing (Focus on the Problem)\n\nThe goal of this diamond is to explore the problem space to ensure the team deeply understands the challenge before trying to solve it.\n\n1.  **Discover - Divergent Thinking:**\n    *   **Goal:** Open up possibilities and understand the problem in depth. It is a phase of research and immersion.\n    *   **Common Activities:** Market research, user interviews, competitor analysis, user journey mapping (as-is).\n\n2.  **Define - Convergent Thinking:**\n    *   **Goal:** Synthesize learnings from the discovery phase to arrive at a clear, focused definition of the problem to be solved.\n    *   **Common Activities:** Research data analysis, persona creation, empathy map, defining a clear problem statement (e.g., using the 'How Might We' technique).\n\n### Second Diamond: Doing the thing Right (Focus on the Solution)\n\nWith a well-defined problem, the second diamond focuses on exploring and delivering the best possible solution.\n\n3.  **Develop - Divergent Thinking:**\n    *   **Goal:** Generate a wide variety of possible solutions for the defined problem. Quantity of ideas is more important than quality in this phase.\n    *   **Common Activities:** Brainstorming, co-creation workshops, sketching, Crazy 8s, creating multiple low-fidelity prototypes.\n\n4.  **Deliver - Convergent Thinking:**\n    *   **Goal:** Test, refine, and select the best solution to be implemented and launched. It is a phase of validation and execution.\n    *   **Common Activities:** Usability testing with high-fidelity prototypes, A/B testing, visual design refinement, handoff to the development team.\n\n---\n\n### Fundamental Principles\n\n*   **User-Centered:** The user is at the center of the entire process.\n*   **Collaborative:** Involves multidisciplinary teams and stakeholders.\n*   **Iterative:** The process is not strictly linear; one can return to previous phases as new learnings emerge.\n\n### Relevant Links\n\n*   [Design Council Guide (Evolved Double Diamond)](https://www.designcouncil.org.uk/our-resources/guide/double-diamond-our-evolved-model/)",
+        "slug": "double-diamond"
+    },
+    {
+        "nome": "User Journey Map",
+        "descricao": "A visualization of the process a user or customer goes through to achieve a goal. Maps touchpoints, actions, thoughts, and emotions over time.",
+        "quando_usar": "To understand the end-to-end user experience, identify pain points, and find opportunities for improvement.",
+        "link": "https://www.nngroup.com/articles/journey-mapping-101/",
+        "categorias": [
+            "UX",
+            "Research"
+        ],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Customer_Journey_Map_Template.png/640px-Customer_Journey_Map_Template.png",
+        "ultima_atualizacao": "2024-05-21",
+        "nivel": "Intermediate",
+        "tempo_aplicar": "1-2 days",
+        "detalhes_markdown": "# User Journey Map: Visualizing the Experience\n\n**Description:** A visualization of the process a user or customer goes through to reach a goal. The journey map tells the story of the user experience, mapping touchpoints, actions, thoughts, and emotions over time. It doesn't focus just on product interaction, but on the entire end-to-end experience.\n\n**When to use:** To understand the current user experience ('as-is' journey) from start to finish, identify pain points, and find improvement opportunities. It can also be used to design a future ideal experience ('to-be' journey).\n\n---\n\n## Components of a Journey Map\n\nA journey map is typically a matrix with journey phases in columns and facets of experience in rows.\n\n### Horizontal Axis (Phases)\n\nRepresents the main steps the user goes through. Phases depend on the scenario, but an example for online shopping could be:\n\n1.  **Discovery:** User realizes a need and starts researching.\n2.  **Consideration:** User compares different products and stores.\n3.  **Purchase:** User decides to buy and goes through the checkout process.\n4.  **Delivery:** User waits for and receives the product.\n5.  **Post-purchase:** User uses the product and may need support.\n\n### Vertical Axis (Facets of Experience)\n\nFor each phase, we map:\n\n*   **Actions:** What is the user doing at each stage? (e.g., \"Google search\", \"Add to cart\").\n*   **Thoughts:** What is the user thinking? What are their questions and concerns? (e.g., \"Will this fit?\", \"What is the shipping cost?\").\n*   **Emotions:** How is the user feeling? Is the experience positive, neutral, or negative? (Usually represented by a line going up and down, showing emotional peaks and valleys).\n*   **Touchpoints:** Where does the interaction happen? (e.g., Website, app, email, physical store, phone support).\n*   **Opportunities:** Based on identified pains and frustrations, what are the improvement opportunities for our product or service?\n\n---\n\n### Benefits\n\n*   **Holistic and Empathic View:** Forces the team to see the process from the customer's perspective, building empathy.\n*   **Breaking Down Silos:** Shows how different departments (marketing, sales, product, support) impact the customer experience, encouraging collaboration.\n*   **Identifying Critical Points:** Reveals 'moments of truth' and key friction points that need attention.\n*   **Strategic Prioritization:** Helps prioritize improvements based on the impact they have on the overall user experience.\n\n### Relevant Links\n\n*   [NN/g Guide to Journey Mapping](https://www.nngroup.com/articles/journey-mapping-101/)",
+        "slug": "mapa-da-jornada-do-usuario"
+    },
+    {
+        "nome": "Wireframing",
+        "descricao": "A low-fidelity sketch representing the skeletal structure of an interface. Focuses on space allocation, content prioritization, and functionality, ignoring colors and styles.",
+        "quando_usar": "At the beginning of the interface design process to align structure and layout with the team before investing time in detailed visual design.",
+        "link": "https://www.experienceux.co.uk/faqs/what-is-wireframing/",
+        "categorias": [
+            "UI",
+            "Prototyping"
+        ],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Wireframe_example.png/640px-Wireframe_example.png",
+        "ultima_atualizacao": "2024-05-21",
+        "nivel": "Beginner",
+        "tempo_aplicar": "Hours",
+        "detalhes_markdown": "# Wireframing: The Skeleton of the Interface\n\n**Description:** A wireframe is a low-fidelity sketch representing the skeletal structure of a user interface (UI). Its primary goal is to focus on **structure, content hierarchy, and functionality**, intentionally ignoring visual design elements like colors, fonts, and images.\n\n**When to use:** At the start of the interface design process, to align structure and layout with the team and stakeholders before investing time in detailed visual design (mockups).\n\n---\n\n## What does a Wireframe define?\n\n*   **Page Structure:** Where main content blocks and UI elements will be positioned.\n*   **Information Hierarchy:** What is most important on the screen? Wireframes establish the visual priority of elements.\n*   **Functionality:** What actions can the user perform? Where are buttons and links?\n*   **Navigation Flow:** How the user will move between screens.\n\n## What does a Wireframe NOT define?\n\n*   **Colors:** Usually done in grayscale.\n*   **Fonts:** Uses a default font.\n*   **Real Images:** Images are represented by boxes with an 'X' inside.\n*   **Final Copy:** Often uses placeholder text ('lorem ipsum') or simple descriptions.\n\n---\n\n## Types of Wireframes (by Fidelity)\n\n*   **Low-Fidelity (Lo-Fi):**\n    *   **Description:** Quick sketches, often hand-drawn on paper or a whiteboard.\n    *   **Advantages:** Extremely fast to create and modify, ideal for brainstorming and initial idea exploration.\n\n*   **Mid-Fidelity (Mid-Fi):**\n    *   **Description:** The most common type. Created in digital tools (like Balsamiq, Figma, Sketch), they are cleaner and more organized than paper sketches. May include basic interactivity (clickable wireframes).\n    *   **Advantages:** Clear, easy to share, and good for testing basic user flows.\n\n## Benefits of Wireframing\n\n*   **Focus on Usability:** By removing visual design distractions, the team can focus on creating a functional and intuitive layout.\n*   **Fast and Cheap:** It is much faster and cheaper to make changes to a wireframe than high-fidelity mockups or code.\n*   **Team Alignment:** Serves as a clear document to ensure designers, developers, and stakeholders are on the same page about interface structure.\n*   **Base for Visual Design:** The approved wireframe becomes the blueprint upon which the UI designer will build the final visual design.\n\n### Relevant Links\n\n*   [Experience UX Guide to Wireframing](https://www.experienceux.co.uk/faqs/what-is-wireframing/)",
+        "slug": "wireframing"
+    },
+    {
+        "nome": "Design Thinking",
+        "descricao": "An iterative, human-centered approach to problem-solving. Involves 5 phases: Empathy, Definition, Ideation, Prototyping, and Test.",
+        "quando_usar": "To tackle complex or ill-defined problems, innovate in products and services, or improve user experience.",
+        "link": "https://www.interaction-design.org/literature/topics/design-thinking",
+        "categorias": [
+            "Design Process",
+            "Strategy",
+            "Innovation"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-23",
+        "nivel": "Beginner",
+        "tempo_aplicar": "Weeks/Months (full process)",
+        "detalhes_markdown": "# Design Thinking: A Human-Centered Approach to Innovation\n\n**Description:** Design Thinking is a non-linear, iterative approach for solving complex problems, seeking to understand users, challenge assumptions, and redefine problems to identify alternative strategies and solutions. It is a mindset combining empathy, creativity, and rationality to meet user needs and technological possibilities, aiming for business success.\n\n**When to use:** To tackle complex or poorly defined problems ('wicked problems'), innovate in products and services, or improve user experience. It's a mindset that can be applied to almost any challenge.\n\n---\n\n## The 5 Phases (Stanford d.school)\n\nThe process is iterative, and phases don't need to follow a strict order.\n\n1.  **Empathize:**\n    *   **Goal:** Deeply understand the experience, motivations, and pains of the people you are designing for. It is the foundation of the process.\n    *   **Activities:** User interviews, field observation, empathy maps.\n\n2.  **Define:**\n    *   **Goal:** Synthesize learnings from empathy to articulate the user problem clearly and focused. It is defining the 'Point of View'.\n    *   **Activities:** Research data analysis, persona creation, problem statement definition (e.g., using 'How Might We').\n\n3.  **Ideate:**\n    *   **Goal:** Generate a heavy volume of ideas to solve the defined problem. Quantity is more important than quality in this phase; judgment is delayed.\n    *   **Activities:** Brainstorming, Crazy 8s, sketching.\n\n4.  **Prototype:**\n    *   **Goal:** Build low-fidelity, low-cost versions of proposed solutions to investigate generated ideas.\n    *   **Activities:** Paper prototypes, clickable wireframes, role-playing.\n\n5.  **Test:**\n    *   **Goal:** Collect feedback on prototypes with real users. Test results are used to refine solutions and often to redefine the problem, restarting the cycle.\n    *   **Activities:** Usability tests, feedback collection.\n\n---\n\n## Design Thinking vs. Double Diamond\n\n*   **Design Thinking** is a mindset, a broader philosophical approach.\n*   **Double Diamond** is a process model that visualizes and structures phases of divergent and convergent thinking, being one of the ways to apply Design Thinking in practice.\n\n### Relevant Links\n\n*   [Interaction Design Foundation Guide to Design Thinking](https://www.interaction-design.org/literature/topics/design-thinking)\n*   [IDEO Introduction to Design Thinking](https://www.ideou.com/blogs/inspiration/what-is-design-thinking)",
+        "slug": "design-thinking"
+    },
+    {
+        "nome": "Crazy 8s",
+        "descricao": "A fast-paced ideation technique where each participant sketches 8 different ideas in 8 minutes. It forces creative thinking and moves beyond the first, most obvious ideas.",
+        "quando_usar": "During the ideation phase of a design process to quickly generate a large volume of solutions for a well-defined problem.",
+        "link": "https://designsprintkit.withgoogle.com/methodology/phase3-sketch/crazy-8s",
+        "categorias": [
+            "Design Process",
+            "Ideation"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-23",
+        "nivel": "Beginner",
+        "tempo_aplicar": "10-15 minutes",
+        "detalhes_markdown": "# Crazy 8s: Rapid and Divergent Ideation\n\n**Description:** A fast ideation method popularized by Google Ventures' Design Sprint. Each participant folds a piece of paper into 8 sections and has 8 minutes to sketch 8 different ideas (one per minute). The goal is to push creative thinking, go beyond the first ideas (usually the most obvious), and generate a high volume of solutions in a short time.\n\n**When to use:** During the ideation (divergence) phase of a design process, such as a Design Sprint or brainstorming workshop, to quickly generate a wide range of solutions for a well-defined problem.\n\n---\n\n## How the Process Works\n\n1.  **Preparation:**\n    *   Each participant receives a piece of paper (A4 or similar) and a pen.\n    *   The paper is folded three times to create 8 rectangles.\n    *   The facilitator sets a timer for 8 minutes.\n\n2.  **Sketching (8 minutes):**\n    *   When the timer starts, each participant sketches an idea in each of the 8 rectangles.\n    *   **The rule is 1 minute per idea.** If you get stuck, draw a variation of the previous idea or skip to the next rectangle.\n    *   Sketches should be simple and self-explanatory. The focus is not on artistic quality, but on the clarity of the idea.\n\n3.  **Presentation and Voting (Optional but recommended):**\n    *   After 8 minutes, each participant presents their top 2 or 3 ideas for about 1 minute.\n    *   The papers are displayed on a wall or whiteboard.\n    *   The team can perform dot voting to identify the most promising ideas to explore in more detail.\n\n---\n\n## Benefits of Crazy 8s\n\n*   **Combats Creative Block:** The time constraint forces participants not to overthink and just get ideas on paper.\n*   **Quantity Over Quality:** Encourages high-volume idea generation, increasing the chance of finding innovative solutions.\n*   **Democratic:** Everyone participates individually and in silence, preventing louder voices from dominating.\n*   **Avoids Attachment:** Since there are 8 ideas, people don't get too attached to their first 'only' solution.\n\n### Relevant Links\n\n*   [Google Design Sprint Kit Guide on Crazy 8s](https://designsprintkit.withgoogle.com/methodology/phase3-sketch/crazy-8s)",
+        "slug": "crazy-8s"
+    },
+    {
+        "nome": "How Might We (HMW)",
+        "descricao": "A technique to reframe problems and insights into opportunity questions. Instead of focusing on the problem ('User can't find the button'), the question becomes 'How might we make the button more visible?'.",
+        "quando_usar": "After the research phase and problem definition, to transform identified challenges into starting points for brainstorming and ideation.",
+        "link": "https://www.ideou.com/blog/how-might-we-questions",
+        "categorias": [
+            "Design Process",
+            "Strategy",
+            "Ideation"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-23",
+        "nivel": "Beginner",
+        "tempo_aplicar": "Less than 1 hour",
+        "detalhes_markdown": "# How Might We (HMW): Turning Problems into Opportunities\n\n**Description:** 'How Might We' (HMW) is a technique for reframing problems and insights into opportunity questions. Instead of focusing on a problem's negativity, the HMW question opens the path for optimistic and collaborative brainstorming.\n\n**When to use:** After the research and problem definition phase (e.g., after synthesizing interviews or an empathy map), to transform identified challenges into starting points for idea generation.\n\n---\n\n## The Structure of the Question\n\nEach word has a purpose:\n\n*   **'How':** Assumes solutions exist for the problem.\n*   **'Might':** Suggests ideas might or might not work, encouraging exploration without fear of failure.\n*   **'We':** Emphasizes that the challenge will be solved collaboratively.\n\n## How to Write Good HMW Questions\n\n1.  **Start with an Insight or Problem:** Take an observation from your research.\n    *   *Example Insight:* \"The user feels anxious because they don't know where they are in the checkout process.\"\n\n2.  **Reframe as an HMW Question:**\n    *   **Too broad:** \"How might we redesign the checkout?\" (Too vague).\n    *   **Too narrow:** \"How might we add a green progress bar to the checkout?\" (Already suggests the solution).\n    *   **Ideal HMW:** \"How might we give the user a sense of clarity and progress during checkout?\"\n\n### More Examples\n\n| Insight / Problem | HMW Question |\n| :--- | :--- |\n| \"Parents are too busy to prepare healthy snacks for their children.\" | \"How might we help parents prepare healthy snacks in under 5 minutes?\" |\n| \"Users abandon the signup form because it is too long.\" | \"How might we make the signup process quick and effortless?\" |\n| \"The support team spends too much time answering the same 5 questions.\" | \"How might we empower users to find answers to common questions on their own?\" |\n\n---\n\n### Relevant Links\n\n*   [IDEO Article on HMW](https://www.ideou.com/blog/how-might-we-questions)\n*   [Interaction Design Foundation Guide](https://www.interaction-design.org/literature/article/how-to-write-how-might-we-questions-to-ideate-on-the-right-problems)",
+        "slug": "how-might-we-hmw"
+    },
+    {
+        "nome": "CSD Matrix (Certainties, Suppositions, and Doubts)",
+        "descricao": "A collaborative tool to align a team's knowledge at the start of a project. Information is organized into three columns: Certainties (proven facts), Suppositions (hypotheses to be validated), and Doubts (questions to be answered).",
+        "quando_usar": "At the beginning of a project or a new phase (like a Design Sprint) to map current knowledge, identify risks (suppositions), and direct research efforts (doubts).",
+        "link": "https://brasil.uxdesign.cc/matriz-csd-o-que-e-e-como-usar-735a34952d3f",
+        "categorias": [
+            "Design Process",
+            "Strategy",
+            "Research"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-23",
+        "nivel": "Beginner",
+        "tempo_aplicar": "Less than 1 hour",
+        "detalhes_markdown": "# CSD Matrix (Certainties, Suppositions, and Doubts)\n\n**Description:** A visual and collaborative tool to align team knowledge at the start of a project. The team's perceptions and information about the challenge are organized into three columns: **Certainties**, **Suppositions**, and **Doubts**.\n\n**When to use:** At the start of a project, a discovery sprint, or a Design Sprint. The goal is to map current knowledge, identify risks, and direct research efforts (turning doubts and suppositions into learning).\n\n---\n\n## The 3 Columns\n\n| Column | Description | Example (Meditation app for beginners) |\n| :--- | :--- | :--- |\n| **Certainties (C)** | Proven facts and data the team already has. | - \"The wellness app market is growing 20% annually.\" (Market data).<br>- \"Our main competitor is Calm.\" |\n| **Suppositions (S)** | Hypotheses the team believes are true but aren't validated yet. | - \"We believe users prefer short guided meditations (5-10 min).\" |\n| **Doubts (D)** | Questions the team cannot answer. These are the blind spots. | - \"What is the biggest difficulty a beginner faces when trying to meditate?\" |\n\n---\n\n### Benefits\n\n*   **Quick Alignment:** Gets everyone on the same page about what is known and what isn't.\n*   **Research Direction:** Clearly identifies priorities for the discovery phase.\n*   **Risk Identification:** Suppositions are the project's biggest risks. Bringing them to light early allows them to be validated before building anything.\n\n### Relevant Links\n\n*   [UX Collective Article on CSD Matrix](https://brasil.uxdesign.cc/matriz-csd-o-que-e-e-como-usar-735a34952d3f)",
+        "slug": "matriz-csd-certezas-suposicoes-e-duvidas"
+    },
+    {
+        "nome": "Discovery Mapping",
+        "descricao": "A visual and collaborative technique for structuring the discovery process of a product. It helps map what we know, what we don't know, and how we plan to learn, connecting business goals to user problems and potential solutions.",
+        "quando_usar": "At the beginning of the discovery phase to align the team, plan research activities, and create a clear path from problem understanding to solution validation.",
+        "link": "https://www.producttalk.org/2021/08/product-discovery/",
+        "categorias": [
+            "Research",
+            "Strategy",
+            "Design Process"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-23",
+        "nivel": "Intermediate",
+        "tempo_aplicar": "Days",
+        "detalhes_markdown": "# Discovery Mapping\n\n**Description:** A visual and collaborative technique to structure the discovery process. It helps teams visualize and connect business goals, user problems, assumptions, and research plans in one place. It serves as a guide to navigate uncertainty during discovery.\n\n**When to use:** At the beginning of the discovery phase to align the team, plan research activities, and create a clear path from problem understanding to solution validation.\n\n---\n\n## Common Structure of a Discovery Map\n\n1.  **Business Goal:** What business outcome are we trying to achieve? (e.g., \"Increase new user retention by 15%\").\n2.  **User Problems:** Which user problems, if solved, would help us achieve the goal? (e.g., \"New users feel lost after signup\").\n3.  **Assumptions:** What are our biggest assumptions about users, the problem, and the solution? (e.g., \"A guided tour will help users feel less lost\").\n4.  **Research Questions:** What do we need to learn to validate assumptions? (e.g., \"What is the first obstacle users encounter?\").\n5.  **Research Methods:** How will we answer these questions? (e.g., \"User interviews\", \"Funnel analysis\").\n6.  **Participants:** Who will we talk to? (e.g., \"Users who signed up in the last week and didn't return\").\n\n---\n\n### Relevant Links\n\n*   [Tim Herbig's Articles on Discovery Mapping](https://herbig.co/discovery-mapping/)\n*   [Product Discovery Concepts by Teresa Torres](https://www.producttalk.org/2021/08/product-discovery/)",
+        "slug": "mapa-de-descoberta-discovery-mapping"
+    },
+    {
+        "nome": "LTV (Lifetime Value)",
+        "descricao": "A metric that estimates the total net profit generated by a customer over their entire relationship with the company. Helps understand the long-term value of each customer.",
+        "quando_usar": "To make strategic decisions about marketing, customer acquisition, and retention. Essential for evaluating if Customer Acquisition Cost (CAC) is sustainable.",
+        "link": "https://www.klipfolio.com/resources/kpi-examples/saas/customer-lifetime-value",
+        "categorias": [
+            "Metrics",
+            "Strategy",
+            "Financial"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-23",
+        "nivel": "Intermediate",
+        "tempo_aplicar": "Hours (to calculate)",
+        "detalhes_markdown": "# LTV (Lifetime Value): Customer Value Over Time\n\n**Description:** Lifetime Value (LTV) is an estimate of the average total net profit a customer will generate throughout their entire relationship with the company. Instead of focusing on a single purchase, LTV looks at long-term value.\n\n**When to use:** For strategic decisions on marketing, customer acquisition, and retention. It's essential for evaluating if the Customer Acquisition Cost (CAC) is sustainable.\n\n---\n\n## How to Calculate LTV (Simplified Approach)\n\n`LTV = Average Monthly Ticket * Average Retention Time (in months)`\n\n*   **Average Ticket:** Average spending per customer per month.\n*   **Average Retention Time:** How long, on average, a customer remains active. It is the inverse of the churn rate. If monthly churn is 5% (0.05), retention time is 1 / 0.05 = 20 months.\n\n---\n\n### The LTV/CAC Ratio\n\nLTV becomes powerful when compared to **Customer Acquisition Cost (CAC)**. The rule of thumb is that **LTV should be at least 3 times the CAC**.\n\n### Relevant Links\n\n*   [Klipfolio Guide on LTV](https://www.klipfolio.com/resources/kpi-examples/saas/customer-lifetime-value)",
+        "slug": "ltv-lifetime-value"
+    },
+    {
+        "nome": "CAC (Customer Acquisition Cost)",
+        "descricao": "The metric that calculates the total cost to acquire a new customer. Includes all marketing and sales costs divided by the number of new customers acquired in a period.",
+        "quando_usar": "To evaluate the efficiency of marketing and sales campaigns. Must be analyzed alongside LTV to ensure the business model's profitability (LTV > CAC).",
+        "link": "https://www.klipfolio.com/resources/kpi-examples/saas/customer-acquisition-cost",
+        "categorias": [
+            "Metrics",
+            "Marketing",
+            "Financial"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1579621970795-87facc2f976d?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-23",
+        "nivel": "Intermediate",
+        "tempo_aplicar": "Hours (to calculate)",
+        "detalhes_markdown": "# CAC (Customer Acquisition Cost): How Much Does a New Customer Cost?\n\n**Description:** Customer Acquisition Cost (CAC) is a metric that calculates the total cost to acquire a new customer. It sums all investments in marketing and sales over a period and divides by the number of new customers gained in that same period.\n\n**When to use:** To evaluate the efficiency of marketing and sales campaigns and to ensure business sustainability, especially when analyzed with Lifetime Value (LTV).\n\n---\n\n## How to Calculate CAC\n\n`CAC = (Total Marketing Investments + Total Sales Investments) / Number of New Customers Acquired`\n\n*   **Marketing Investments:** Team salaries, ad spend, marketing tools, etc.\n*   **Sales Investments:** Sales team salaries/commissions, CRM tools, etc.\n*   **Period:** It's important that investments and new customers refer to the same timeframe.\n\n---\n\n### Why CAC Matters\n\nCAC alone doesn't tell the full story. It must be compared to LTV.\n\n*   **LTV/CAC Ratio:** The gold standard is **LTV > 3 * CAC**. If your LTV is $1,000 and CAC is $200, you have a healthy 5:1 ratio.\n\n### How to Reduce CAC?\n\n*   **Optimize the Sales Funnel:** Improve conversion rates at each stage.\n*   **Invest in Organic Channels:** Content marketing and SEO attract customers at a lower long-term cost.\n*   **Increase Retention:** Happy customers generate referrals, which have the lowest possible CAC.\n\n### Relevant Links\n\n*   [Klipfolio Guide on CAC](https://www.klipfolio.com/resources/kpi-examples/saas/customer-acquisition-cost)",
+        "slug": "cac-custo-de-aquisicao-de-cliente"
+    },
+    {
+        "nome": "ARPU (Average Revenue Per User)",
+        "descricao": "The average revenue generated from a single user over a specific period. Calculated by dividing total revenue by the number of users.",
+        "quando_usar": "To understand user base monetization, compare performance across periods or customer segments, and forecast future revenue.",
+        "link": "https://www.investopedia.com/terms/a/arpu.asp",
+        "categorias": [
+            "Metrics",
+            "Financial"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1639754032243-325582a4d04c?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-23",
+        "nivel": "Beginner",
+        "tempo_aplicar": "Hours (to calculate)",
+        "detalhes_markdown": "# ARPU (Average Revenue Per User)\n\n**Description:** Average Revenue Per User (ARPU) indicates how much revenue a company generates from a single user or customer on average during a specific period (usually monthly or annually).\n\n**When to use:** To understand monetization effectiveness, compare performance across different segments, and project future revenue growth.\n\\n---\\n\\n## How to Calculate ARPU\n\n`ARPU = Total Revenue in Period / Number of Active Users in Period`\n\n---\n\n## Why is ARPU Important?\n\n*   **Monetization Analysis:** A growing ARPU indicates more effective monetization of your existing user base.\n*   **Customer Segmentation:** Reveals which groups are most profitable (e.g., comparing Free vs. Premium users).\n*   **Forecasting:** Helps project future earnings based on user growth.\n\n### ARPU vs. LTV\n\n*   **ARPU** is a snapshot of revenue in a **specific period**.\n*   **LTV** is a projection of total revenue over a customer's **entire lifespan**.\n\n### Relevant Links\n\n*   [Investopedia Article on ARPU](https://www.investopedia.com/terms/a/arpu.asp)",
+        "slug": "arpu-average-revenue-per-user"
+    },
+    {
+        "nome": "NPS (Net Promoter Score)",
+        "descricao": "A customer loyalty metric that measures how likely customers are to recommend your product to others. Based on the question: 'On a scale of 0 to 10, how likely are you to recommend...?'",
+        "quando_usar": "To continuously measure customer satisfaction and loyalty, identify promoters and detractors, and get qualitative feedback for improvements.",
+        "link": "https://www.netpromoter.com/know/",
+        "categorias": [
+            "Metrics",
+            "UX",
+            "Customer Satisfaction"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-23",
+        "nivel": "Beginner",
+        "tempo_aplicar": "Days (to collect responses)",
+        "detalhes_markdown": "# NPS (Net Promoter Score): Measuring Customer Loyalty\n\n**Description:** Net Promoter Score (NPS) measures customer loyalty by asking how likely they are to recommend your brand to a friend or colleague. It consists of a quantitative score and a qualitative 'Why?' question.\n\n**When to use:** To track brand health, identify loyal advocates (Promoters), and address unhappy customers (Detractors).\n\n---\n\n## Customer Classification\n\n*   **Promoters (9-10):** Loyal enthusiasts who fuel growth via referrals.\n*   **Passives (7-8):** Satisfied but unenthusiastic; vulnerable to competitors.\n*   **Detractors (0-6):** Unhappy customers who can damage your brand via negative word-of-mouth.\n\n## How to Calculate\n\n`NPS = % Promoters - % Detractors`\n\nScores range from -100 to +100. Above 0 is good; above 50 is excellent; above 70 is world-class.\n\n### Relevant Links\n\n*   [Official Net Promoter System Site](https://www.netpromoter.com/know/)",
+        "slug": "nps-net-promoter-score"
+    },
+    {
+        "nome": "Activation",
+        "descricao": "A metric that measures when a new user performs a key action that indicates they have extracted value for the first time (the 'aha moment'). A crucial step in the user journey.",
+        "quando_usar": "To understand onboarding effectiveness and optimize the first-time user experience, ensuring users find value quickly to increase retention.",
+        "link": "https://amplitude.com/blog/activation-metrics",
+        "categorias": [
+            "Metrics",
+            "UX",
+            "Growth"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-23",
+        "nivel": "Intermediate",
+        "tempo_aplicar": "Continuous (to monitor)",
+        "detalhes_markdown": "# Activation: The 'Aha! Moment'\n\n**Description:** Activation occurs when a user first experiences the core value of your product. It's the moment they 'get it'—the **'aha moment'**. This is a strong predictor of long-term retention.\n\n**When to use:** To identify friction in onboarding and optimize the user's journey toward finding value as fast as possible.\n\n---\n\n## Defining Your Activation Metric\n\nActivation is **product-specific**. Examples include:\n*   **Facebook:** Connecting with 7 friends in 10 days.\n*   **Slack:** 2,000 messages sent within a team.\n*   **Dropbox:** 1 file added to 1 folder on 1 device.\n\n## Why Activation Matters?\n\n*   **Retention Bridge:** Users who don't activate almost always churn. It's the first major hurdle in the customer lifecycle.\n*   **Onboarding Focus:** Gives teams a concrete goal: lead as many users as possible to the 'aha moment' quickly.\n\n### Relevant Links\n\n*   [Amplitude Blog on Activation Metrics](https://amplitude.com/blog/activation-metrics)",
+        "slug": "ativacao-activation"
+    },
+    {
+        "nome": "Continuous Discovery Habits",
+        "descricao": "A structured approach, popularized by Teresa Torres, where product teams engage with customers weekly to conduct small research activities. The goal is to make product decisions based on frequent, up-to-date insights.",
+        "quando_usar": "For teams that want to infuse product discovery into their weekly rhythm, ensuring they are constantly learning from users and reducing the risks of building the wrong thing.",
+        "link": "https://www.producttalk.org/continuous-discovery-habits-book/",
+        "categorias": [
+            "Research",
+            "Continuous Discovery",
+            "Design Process"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-23",
+        "nivel": "Intermediate",
+        "tempo_aplicar": "Continuous",
+        "detalhes_markdown": "# Continuous Discovery Habits\n\n**Description:** A methodology where product teams (the 'product trio': PM, Designer, Lead Engineer) interact with customers **weekly**. This replaces large, sporadic research projects with small, frequent learning loops.\n\n**When to use:** To reduce building risk and ensure user needs stay at the center of daily decision-making.\n\n---\n\n## The Core Habit: Weekly Interviews\n\nThe team commits to talking to at least one customer every week. These focus on understanding customer context, pain points, and 'jobs to be done'.\n\n## Visual Tools\n\n*   **Experience Maps:** Visualizing the journey to find pain points.\n*   **Opportunity Solution Tree (OST):** A framework linking business outcomes to customer opportunities and then to specific solutions and experiments.\n\n### Benefits\n\n*   **Risk Reduction:** Decisions based on constant feedback.\n*   **Learning Velocity:** Much faster iteration speed.\n*   **Team Empowerment:** The builders talk to the users directly.\n\n### Relevant Links\n\n*   [Teresa Torres' Book](https://www.producttalk.org/continuous-discovery-habits-book/)",
+        "slug": "habitos-de-descoberta-continua-continuous-discovery-habits"
+    },
+    {
+        "nome": "Opportunity Solution Tree (OST)",
+        "descricao": "A visual thinking tool to help teams connect their daily activities with desired business outcomes. Maps results through customer opportunities to multiple solutions and experiments.",
+        "quando_usar": "To structure the continuous discovery process, prioritize opportunities based on impact, and ensure the team explores multiple solutions before committing.",
+        "link": "https://www.producttalk.org/opportunity-solution-tree-ost/",
+        "categorias": [
+            "Strategy",
+            "Continuous Discovery",
+            "Design Process"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-23",
+        "nivel": "Advanced",
+        "tempo_aplicar": "Continuous",
+        "detalhes_markdown": "# Opportunity Solution Tree (OST): Connecting Actions to Results\n\n**Description:** OST is a visual tool to connect the 'what' (features/experiments) to the 'why' (customer needs and business results). It forces teams to explore the problem space (opportunities) before jumping to solutions.\n\n**When to use:** To drive continuous discovery and prevent 'solution-first' thinking.\n\n---\n\n## Tree Structure\n\n1.  **Outcome (Top):** The business metric you want to move (e.g., 'Increase retention by 10%').\n2.  **Opportunities:** Customer needs, pains, or desires discovered via research.\n3.  **Solutions:** Multiple ideas to address a specific opportunity.\n4.  **Experiments (Bottom):** Fast, cheap ways to test solution assumptions.\n\n### Benefits\n\n*   **Purpose Clarity:** Everyone knows how their work impacts the big picture.\n*   **Strategic Prioritization:** Focus on opportunities with the highest potential impact.\n*   **Multivariate Thinking:** Encourages generating multiple solutions instead of falling in love with just one.\n\n### Relevant Links\n\n*   [Teresa Torres' OST Introduction](https://www.producttalk.org/opportunity-solution-tree-ost/)",
+        "slug": "opportunity-solution-tree-ost"
+    },
+    {
+        "nome": "Cohort Analysis",
+        "descricao": "A behavioral analysis technique that divides users into groups (cohorts) based on common characteristics, typically acquisition date. Tracks how behavior changes over time.",
+        "quando_usar": "To understand retention, the impact of product changes over time, and long-term product health.",
+        "link": "https://amplitude.com/blog/cohort-analysis",
+        "categorias": [
+            "Metrics",
+            "Data Analysis",
+            "Product Analytics"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-23",
+        "nivel": "Intermediate",
+        "tempo_aplicar": "Hours (to analyze)",
+        "detalhes_markdown": "# Cohort Analysis: Understanding Behavior Over Time\n\n**Description:** Cohort analysis groups users by a shared event (usually signup date) and tracks their behavior over time. It's the most powerful way to measure true product retention.\n\n**When to use:** To see if users are actually sticking around or if growth is just masking a 'leaky bucket' problem.\n\n---\n\n## How to Read a Retention Cohort Chart\n\n*   **Rows:** Cohorts (e.g., Jan 2024 signups).\n*   **Columns:** Time elapsed (Month 0, Month 1, etc.).\n*   **Cells:** % of users still active.\n\n## Insights Revealed\n\n*   **Product-Market Fit:** If retention curves flatten out (instead of going to zero), you have some level of PMF.\n*   **Feature Impact:** If the March cohort retains better than the Feb cohort after a feature launch, it's a sign of success.\n*   **LTV Calculation:** Fundamental for estimating customer lifespan.\n\n### Relevant Links\n\n*   [Amplitude Blog on Cohort Analysis](https://amplitude.com/blog/cohort-analysis)",
+        "slug": "analise-de-coorte-cohort-analysis"
+    },
+    {
+        "nome": "Funnel Analysis",
+        "descricao": "A technique to visualize and measure the user journey through a series of steps toward a goal. Shows conversion and drop-off rates at each stage.",
+        "quando_usar": "To identify bottlenecks in user flows, optimize critical paths (like checkout or signup), and understand where users quit.",
+        "link": "https://mixpanel.com/topics/funnel-analysis/",
+        "categorias": [
+            "Metrics",
+            "UX",
+            "Product Analytics"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-23",
+        "nivel": "Beginner",
+        "tempo_aplicar": "Hours (to analyze)",
+        "detalhes_markdown": "# Funnel Analysis: Optimizing the User Journey\n\n**Description:** Measures the flow of users through a specific sequence of steps (e.g., View Product -> Add to Cart -> Checkout -> Purchase). It highlights where the most significant drop-offs occur.\n\n**When to use:** To find UX friction points and prioritize optimizations that will have the biggest impact on conversion.\n\n---\n\n## Analysis Benefits\n\n*   **Bottleneck Detection:** Pinpoints exactly where users are struggling.\n*   **Impact Measurement:** Validate if a redesign actually improved conversion rates.\n*   **Segmentation:** Compare funnels by device (Mobile vs. Desktop) or traffic source to find specific issues.\n\n### Relevant Links\n\n*   [Mixpanel Guide on Funnel Analysis](https://mixpanel.com/topics/funnel-analysis/)",
+        "slug": "analise-de-funil-funnel-analysis"
+    },
+    {
+        "nome": "Causal Inference",
+        "descricao": "A field of data analysis that seeks to understand cause-and-effect relationships. Instead of just observing correlations, it determines if action X *causes* result Y.",
+        "quando_usar": "To measure the true impact of a feature or change. A/B testing is the most common way to establish causality in digital products.",
+        "link": "https://www.masterclass.com/articles/causal-analysis-explained",
+        "categorias": [
+            "Metrics",
+            "Data Analysis",
+            "Strategy"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-23",
+        "nivel": "Advanced",
+        "tempo_aplicar": "Days/Weeks",
+        "detalhes_markdown": "# Causal Inference: Correlation vs. Causality\n\n**Description:** Determines whether a change in one variable truly *causes* a change in another, rather than just happening alongside it (correlation).\n\n**When to use:** To avoid false conclusions (e.g., 'users who use Dark Mode spend more'—maybe they're just power users?).\n\n---\n\n## Establishing Causality: The A/B Test\n\nThe 'gold standard' for product teams. By randomly assigning users to a control group (current version) and a treatment group (with the change), you ensure any difference in metrics is **causally linked** to your change.\n\n### Other Methods\n\nWhen A/B testing isn't possible (e.g., for ethical or technical reasons), economists use methods like **Difference-in-Differences** or **Instrumental Variables** to infer causality from observational data.\n\n### Relevant Links\n\n*   [Causal Inference Introduction](https://www.masterclass.com/articles/causal-analysis-explained)",
+        "slug": "analise-de-causalidade-causal-inference"
+    },
+    {
+        "nome": "Kano Model",
+        "descricao": "A product development and customer satisfaction theory that classifies customer preferences into five categories to help with feature prioritization.",
+        "quando_usar": "To prioritize the backlog, understand how different feature types impact satisfaction, and guide product strategy.",
+        "link": "https://foldingburritos.com/kano-model/",
+        "categorias": [
+            "Strategy",
+            "Prioritization",
+            "UX"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-24",
+        "nivel": "Intermediate",
+        "tempo_aplicar": "Days (to research)",
+        "detalhes_markdown": "# The Kano Model: Prioritizing for Customer Satisfaction\n\n**Description:** Developed by Noriaki Kano, this model classifies product features based on how they affect customer satisfaction.\n\n**When to use:** To guide prioritization by understanding which features are must-haves versus which ones are delightful innovations.\n\n---\n\n## The 5 Categories\n\n1.  **Must-be (Basic):** Features customers expect. If missing, they are very unhappy. If present, it's just 'normal' (e.g., login, security).\n2.  **Performance:** Satisfaction is proportional to the level of implementation (e.g., speed, battery life).\n3.  **Attractive (Delighters):** Unexpected features that excite customers. Absence doesn't hurt, but presence wows (e.g., smart recommendations).\n4.  **Indifferent:** Customers don't care if it exists or not (e.g., technical backend details).\n5.  **Reverse:** Presence actually causes dissatisfaction (e.g., intrusive popups).\n\n### Relevant Links\n\n*   [Folding Burritos Guide on Kano Model](https://foldingburritos.com/kano-model/)",
+        "slug": "modelo-kano-kano-model"
+    }
+]

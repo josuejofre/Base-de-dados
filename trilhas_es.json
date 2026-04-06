@@ -1,0 +1,383 @@
+[
+    {
+        "id": "gestor_pessoas",
+        "titulo": "Gestor de Personas",
+        "descricao": "Desarrolle y lidere equipos de alto rendimiento con enfoque humano.",
+        "passos": [
+            {
+                "ordem": 1,
+                "titulo": "Conexión Individual",
+                "descricao": "Establezca confianza y alineamiento a través de conversaciones regulares.",
+                "item_nome": "One-on-One (1:1)",
+                "item_arquivo": "gestao_pessoas"
+            },
+            {
+                "ordem": 2,
+                "titulo": "Visión Holística",
+                "descricao": "Utilice múltiples perspectivas para evaluar y desarrollar competencias.",
+                "item_nome": "Feedback 360 Grados",
+                "item_arquivo": "gestao_pessoas"
+            },
+            {
+                "ordem": 3,
+                "titulo": "Crecimiento Estructurado",
+                "descricao": "Cree planes de acción claros para la evolución de la carrera del liderado.",
+                "item_nome": "Plan de Desarrollo Individual (PDI)",
+                "item_arquivo": "gestao_pessoas"
+            },
+            {
+                "ordem": 4,
+                "titulo": "Seguridad Psicológica",
+                "descricao": "Construya un entorno donde el equipo se sienta seguro para innovar y cometer errores.",
+                "item_nome": "Círculo de Confianza",
+                "item_arquivo": "gestao_times"
+            },
+            {
+                "ordem": 5,
+                "titulo": "Monitoreando el Clima",
+                "descricao": "Mida la satisfacción y el compromiso para actuar preventivamente.",
+                "item_nome": "Encuesta de Clima y Compromiso",
+                "item_arquivo": "gestao_pessoas"
+            }
+        ],
+        "slug": "gestor_pessoas"
+    },
+    {
+        "id": "product_owner",
+        "titulo": "Product Owner (PO)",
+        "descricao": "Maximice el valor del producto gestionando el backlog y el flujo de entrega.",
+        "passos": [
+            {
+                "ordem": 1,
+                "titulo": "Especificación de Valor",
+                "descricao": "Traduzca necesidades en requisitos claros centrados en el usuario.",
+                "item_nome": "User Stories (Historias de Usuario)",
+                "item_arquivo": "techniques"
+            },
+            {
+                "ordem": 2,
+                "titulo": "Planeamiento Eficaz",
+                "descricao": "Defina el enfoque y el objetivo de cada ciclo de desarrollo.",
+                "item_nome": "Sprint Planning",
+                "item_arquivo": "metodologias_ageis"
+            },
+            {
+                "ordem": 3,
+                "titulo": "Gestionando el Flujo",
+                "descricao": "Optimice la entrega e identifique cuellos de botella en el proceso.",
+                "item_nome": "Gestión de Flujo (Flow Management)",
+                "item_arquivo": "gestao_times"
+            },
+            {
+                "ordem": 4,
+                "titulo": "Gestión de Dependencias",
+                "descricao": "Evite bloqueos mapeando y gestionando conexiones con otros equipos.",
+                "item_nome": "Gestión de Dependencias",
+                "item_arquivo": "gestao_times"
+            }
+        ],
+        "slug": "gestor_pessoas"
+    },
+    {
+        "id": "product_manager",
+        "titulo": "Product Manager (PM)",
+        "descricao": "Domine la estrategia, el descubrimiento y las métricas de éxito del producto.",
+        "passos": [
+            {
+                "ordem": 1,
+                "titulo": "Descubrimiento Continuo",
+                "descricao": "Mantenga contacto semanal con los usuarios para validar hipótesis.",
+                "item_nome": "Hábitos de Descubrimiento Continuo",
+                "item_arquivo": "design_produto"
+            },
+            {
+                "ordem": 2,
+                "titulo": "Conectando Objetivos",
+                "descricao": "Vincule resultados de negocio con oportunidades y soluciones.",
+                "item_nome": "Opportunity Solution Tree (OST)",
+                "item_arquivo": "design_produto"
+            },
+            {
+                "ordem": 3,
+                "titulo": "Mapeando el Descubrimiento",
+                "descricao": "Visualice lo que sabemos y lo que necesitamos aprender.",
+                "item_nome": "Mapa de Descubrimiento",
+                "item_arquivo": "design_produto"
+            },
+            {
+                "ordem": 4,
+                "titulo": "Viabilidad Financiera (LTV)",
+                "descricao": "Entienda el valor del cliente a lo largo del tiempo.",
+                "item_nome": "LTV (Lifetime Value)",
+                "item_arquivo": "design_produto"
+            },
+            {
+                "ordem": 5,
+                "titulo": "Eficiencia en la Adquisición (CAC)",
+                "descricao": "Mida la eficiencia de las inversiones en adquisición.",
+                "item_nome": "CAC (Costo de Adquisición de Cliente)",
+                "item_arquivo": "design_produto"
+            }
+        ],
+        "slug": "gestor_pessoas"
+    },
+    {
+        "id": "analista_negocios",
+        "titulo": "Analista de Negocios",
+        "descricao": "Entienda problemas, modele soluciones y alinee estrategias.",
+        "passos": [
+            {
+                "ordem": 1,
+                "titulo": "Investigación de Causa Raíz",
+                "descricao": "Vaya más allá de los síntomas para encontrar el verdadero origen de los problemas.",
+                "item_nome": "5 Porqués (5 Whys)",
+                "item_arquivo": "techniques"
+            },
+            {
+                "ordem": 2,
+                "titulo": "Análisis de Escenario",
+                "descricao": "Evalúe fortalezas, debilidades, oportunidades y amenazas.",
+                "item_nome": "Análisis SWOT",
+                "item_arquivo": "techniques"
+            },
+            {
+                "ordem": 3,
+                "titulo": "Modelado de Negocio",
+                "descricao": "Estructure la propuesta de valor y el modelo de operación.",
+                "item_nome": "Business Model Canvas",
+                "item_arquivo": "techniques"
+            },
+            {
+                "ordem": 4,
+                "titulo": "Alineamiento de Certezas",
+                "descricao": "Mapee lo que sabemos, suponemos y dudamos.",
+                "item_nome": "Matriz CSD",
+                "item_arquivo": "design_produto"
+            }
+        ],
+        "slug": "gestor_pessoas"
+    },
+    {
+        "id": "gestao_sistemas",
+        "titulo": "Gestión de Activos y Sistemas",
+        "descricao": "Garantice la confiabilidad, disponibilidad y eficiencia de la infraestructura.",
+        "passos": [
+            {
+                "ordem": 1,
+                "titulo": "Garantizando el Uptime",
+                "descricao": "El indicador básico de que el sistema está funcionando.",
+                "item_nome": "Disponibilidad (Uptime)",
+                "item_arquivo": "gestao_sistemas"
+            },
+            {
+                "ordem": 2,
+                "titulo": "Confiabilidad (MTBF)",
+                "descricao": "Aumente el tiempo medio entre fallos del sistema.",
+                "item_nome": "Tiempo Medio Entre Fallos (MTBF)",
+                "item_arquivo": "gestao_sistemas"
+            },
+            {
+                "ordem": 3,
+                "titulo": "Agilidad en la Respuesta (MTTR)",
+                "descricao": "Reduzca el tiempo necesario para recuperar el servicio.",
+                "item_nome": "Tiempo Medio Para Reparación (MTTR)",
+                "item_arquivo": "gestao_sistemas"
+            },
+            {
+                "ordem": 4,
+                "titulo": "Visibilidad Profunda",
+                "descricao": "Vaya del monitoreo básico a la observabilidad completa.",
+                "item_nome": "Monitoreo y Observabilidad",
+                "item_arquivo": "gestao_sistemas"
+            },
+            {
+                "ordem": 5,
+                "titulo": "Continuidad de Negocios",
+                "descricao": "Prepárese para desastres y garantice la recuperación.",
+                "item_nome": "Continuidad de Negocio (BCDR)",
+                "item_arquivo": "gestao_sistemas"
+            },
+            {
+                "ordem": 6,
+                "titulo": "Eficiencia Financiera (FinOps)",
+                "descricao": "Optimice los costos de la nube sin sacrificar la velocidad.",
+                "item_nome": "Optimización Financiera en TI (FinOps)",
+                "item_arquivo": "gestao_sistemas"
+            }
+        ],
+        "slug": "gestor_pessoas"
+    },
+    {
+        "id": "product_owner",
+        "titulo": "Product Owner (PO)",
+        "descricao": "Maximize o valor do produto gerenciando o backlog e o fluxo de entrega. (Necessita tradución)",
+        "passos": [
+            {
+                "ordem": 1,
+                "titulo": "Especificação de Valor",
+                "descricao": "Traduza necessidades em requisitos claros centrados no usuário.",
+                "item_nome": "Histórias de Usuário (User Stories)",
+                "item_arquivo": "techniques"
+            },
+            {
+                "ordem": 2,
+                "titulo": "Planejamento Eficaz",
+                "descricao": "Defina o foco e o objetivo de cada ciclo de desenvolvimento.",
+                "item_nome": "Sprint Planning",
+                "item_arquivo": "metodologias_ageis"
+            },
+            {
+                "ordem": 3,
+                "titulo": "Gerindo o Fluxo",
+                "descricao": "Otimize a entrega e identifique gargalos no processo.",
+                "item_nome": "Gerenciamento de Fluxo (Flow Management)",
+                "item_arquivo": "gestao_times"
+            },
+            {
+                "ordem": 4,
+                "titulo": "Gestão de Dependências",
+                "descricao": "Evite bloqueios mapeando e gerenciando conexões com outros times.",
+                "item_nome": "Gestão de Dependências",
+                "item_arquivo": "gestao_times"
+            }
+        ],
+        "slug": "product_owner",
+        "nome": "undefined (ES)",
+        "detalhes_markdown": "undefined\n\n*(Contenido en Portugués - Traducción en progreso)*"
+    },
+    {
+        "id": "product_manager",
+        "titulo": "Product Manager (PM)",
+        "descricao": "Domine a estratégia, a descoberta e as métricas de sucesso do produto. (Necessita tradución)",
+        "passos": [
+            {
+                "ordem": 1,
+                "titulo": "Descoberta Contínua",
+                "descricao": "Mantenha contato semanal com usuários para validar hipóteses.",
+                "item_nome": "Hábitos de Descoberta Contínua (Continuous Discovery Habits)",
+                "item_arquivo": "design_produto"
+            },
+            {
+                "ordem": 2,
+                "titulo": "Conectando Objetivos",
+                "descricao": "Ligue resultados de negócio a oportunidades e soluções.",
+                "item_nome": "Opportunity Solution Tree (OST)",
+                "item_arquivo": "design_produto"
+            },
+            {
+                "ordem": 3,
+                "titulo": "Mapeando a Descoberta",
+                "descricao": "Visualize o que sabemos e o que precisamos aprender.",
+                "item_nome": "Mapa de Descoberta (Discovery Mapping)",
+                "item_arquivo": "design_produto"
+            },
+            {
+                "ordem": 4,
+                "titulo": "Viabilidade Financeira (LTV)",
+                "descricao": "Entenda o valor do cliente ao longo do tempo.",
+                "item_nome": "LTV (Lifetime Value)",
+                "item_arquivo": "design_produto"
+            },
+            {
+                "ordem": 5,
+                "titulo": "Custo de Crescimento (CAC)",
+                "descricao": "Meça a eficiência dos investimentos em aquisição.",
+                "item_nome": "CAC (Custo de Aquisição de Cliente)",
+                "item_arquivo": "design_produto"
+            }
+        ],
+        "slug": "product_manager",
+        "nome": "undefined (ES)",
+        "detalhes_markdown": "undefined\n\n*(Contenido en Portugués - Traducción en progreso)*"
+    },
+    {
+        "id": "analista_negocios",
+        "titulo": "Analista de Negócios",
+        "descricao": "Entenda problemas, modele soluções e alinhe estratégias. (Necessita tradución)",
+        "passos": [
+            {
+                "ordem": 1,
+                "titulo": "Investigação de Causa Raiz",
+                "descricao": "Vá além dos sintomas para encontrar a verdadeira origem dos problemas.",
+                "item_nome": "5 Porquês (5 Whys)",
+                "item_arquivo": "techniques"
+            },
+            {
+                "ordem": 2,
+                "titulo": "Análise de Cenário",
+                "descricao": "Avalie forças, fraquezas, oportunidades e ameaças.",
+                "item_nome": "Análise SWOT",
+                "item_arquivo": "techniques"
+            },
+            {
+                "ordem": 3,
+                "titulo": "Modelagem de Negócio",
+                "descricao": "Estruture a proposta de valor e o modelo de operação.",
+                "item_nome": "Business Model Canvas",
+                "item_arquivo": "techniques"
+            },
+            {
+                "ordem": 4,
+                "titulo": "Alinhamento de Certezas",
+                "descricao": "Mapeie o que sabemos, supomos e duvidamos.",
+                "item_nome": "Matriz CSD (Certezas, Suposições e Dúvidas)",
+                "item_arquivo": "design_produto"
+            }
+        ],
+        "slug": "analista_negocios",
+        "nome": "undefined (ES)",
+        "detalhes_markdown": "undefined\n\n*(Contenido en Portugués - Traducción en progreso)*"
+    },
+    {
+        "id": "gestao_sistemas",
+        "titulo": "Gestão de Ativos e Sistemas",
+        "descricao": "Garanta a confiabilidade, disponibilidade e eficiência da infraestrutura. (Necessita tradución)",
+        "passos": [
+            {
+                "ordem": 1,
+                "titulo": "Garantindo o Uptime",
+                "descricao": "O indicador básico de que o sistema está no ar.",
+                "item_nome": "Disponibilidade (Uptime)",
+                "item_arquivo": "gestao_sistemas"
+            },
+            {
+                "ordem": 2,
+                "titulo": "Confiabilidade (MTBF)",
+                "descricao": "Aumente o tempo médio entre as falhas do sistema.",
+                "item_nome": "Tempo Médio Entre Falhas (MTBF)",
+                "item_arquivo": "gestao_sistemas"
+            },
+            {
+                "ordem": 3,
+                "titulo": "Agilidade na Resposta (MTTR)",
+                "descricao": "Reduza o tempo necessário para recuperar o serviço.",
+                "item_nome": "Tempo Médio Para Reparo (MTTR)",
+                "item_arquivo": "gestao_sistemas"
+            },
+            {
+                "ordem": 4,
+                "titulo": "Visibilidade Profunda",
+                "descricao": "Vá do monitoramento básico para a observabilidade completa.",
+                "item_nome": "Monitoramento e Observabilidade",
+                "item_arquivo": "gestao_sistemas"
+            },
+            {
+                "ordem": 5,
+                "titulo": "Continuidade de Negócios",
+                "descricao": "Prepare-se para desastres e garanta a recuperação.",
+                "item_nome": "Continuidade de Negócios (BCDR)",
+                "item_arquivo": "gestao_sistemas"
+            },
+            {
+                "ordem": 6,
+                "titulo": "Eficiência Financeira (FinOps)",
+                "descricao": "Otimize os custos da nuvem sem sacrificar a velocidade.",
+                "item_nome": "Otimização Financeira em TI (FinOps)",
+                "item_arquivo": "gestao_sistemas"
+            }
+        ],
+        "slug": "gestao_sistemas",
+        "nome": "undefined (ES)",
+        "detalhes_markdown": "undefined\n\n*(Contenido en Portugués - Traducción en progreso)*"
+    }
+]

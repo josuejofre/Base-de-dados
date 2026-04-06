@@ -1,0 +1,359 @@
+[
+    {
+        "nome": "LTV (Lifetime Value)",
+        "descricao": "Métrica que estima el beneficio neto total de un cliente durante toda su relación con la empresa.",
+        "quando_usar": "Para decisiones de marketing y retención. Vital para comparar con el CAC.",
+        "link": "https://www.investopedia.com/terms/l/lifetime_value.asp",
+        "categorias": [
+            "Métricas",
+            "Estrategia",
+            "Finanzas"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-23",
+        "nivel": "Intermedio",
+        "tempo_aplicar": "Horas",
+        "detalhes_markdown": "# LTV: Valor del Tiempo de Vida del Cliente\n\nEstimación del beneficio neto de un cliente promedio. Ayuda a evaluar la sostenibilidad del CAC.\n\n`LTV = Ticket Medio Mensual * Tiempo de Retención`.",
+        "slug": "ltv-lifetime-value"
+    },
+    {
+        "nome": "CAC (Costo de Adquisición de Cliente)",
+        "descricao": "Costo total para ganar un nuevo cliente (marketing + ventas / nuevos clientes).",
+        "quando_usar": "Para medir eficiencia de adquisición. Debe ser < LTV.",
+        "link": "https://www.investopedia.com/terms/c/customer-acquisition-cost.asp",
+        "categorias": [
+            "Métricas",
+            "Marketing",
+            "Finanzas"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1579621970795-87facc2f976d?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-23",
+        "nivel": "Intermedio",
+        "tempo_aplicar": "Horas",
+        "detalhes_markdown": "# CAC: Inversión por Cliente\n\nSuma de gastos en marketing y ventas dividida por el número de nuevos clientes en el mismo periodo.",
+        "slug": "cac-custo-de-aquisicao-de-cliente"
+    },
+    {
+        "nome": "ARPU (Average Revenue Per User)",
+        "descricao": "Ingreso promedio por usuario en un periodo determinado.",
+        "quando_usar": "Para entender monetización y segmentación.",
+        "link": "https://www.investopedia.com/terms/a/arpu.asp",
+        "categorias": [
+            "Métricas",
+            "Finanzas"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1639754032243-325582a4d04c?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-23",
+        "nivel": "Principiante",
+        "tempo_aplicar": "Horas",
+        "detalhes_markdown": "# ARPU: Ingreso Promedio\n\n`ARPU = Ingresos Totales / Usuarios Activos`. Útil para medir salud en modelos SaaS.",
+        "slug": "arpu-average-revenue-per-user"
+    },
+    {
+        "nome": "NPS (Net Promoter Score)",
+        "descricao": "Métrica de lealtad: ¿Cuánto recomendarías nuestro servicio?",
+        "quando_usar": "Satisfacción continua del cliente.",
+        "link": "https://www.netpromoter.com/know/",
+        "categorias": [
+            "Métricas",
+            "UX",
+            "Satisfacción"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-23",
+        "nivel": "Principiante",
+        "tempo_aplicar": "Días",
+        "detalhes_markdown": "# NPS: Lealtad\n\n`NPS = % Promotores (9-10) - % Detractores (0-6)`. Clasifica a los usuarios por su disposición a recomendar la marca.",
+        "slug": "nps-net-promoter-score"
+    },
+    {
+        "nome": "Activación",
+        "descricao": "Mide cuando un usuario experimenta por primera vez el valor del producto ('momento aha').",
+        "quando_usar": "Optimizar onboarding y retención inicial.",
+        "link": "https://amplitude.com/blog/activation-metrics",
+        "categorias": [
+            "Métricas",
+            "UX",
+            "Crecimiento"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-23",
+        "nivel": "Intermedio",
+        "tempo_aplicar": "Continuo",
+        "detalhes_markdown": "# Activación: El 'Aha! Moment'\n\nEl punto crítico donde el usuario entiende por qué necesita el producto. Clave para evitar el churn temprano.",
+        "slug": "ativacao-activation"
+    },
+    {
+        "nome": "Análisis de Cohorte",
+        "descricao": "Análisis conductual que divide usuarios en grupos (cohortes) con características comunes.",
+        "quando_usar": "Analizar retención y cambios en el producto a lo largo del tiempo.",
+        "link": "https://amplitude.com/blog/cohort-analysis",
+        "categorias": [
+            "Métricas",
+            "Análisis de Datos"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-23",
+        "nivel": "Intermedio",
+        "tempo_aplicar": "Horas",
+        "detalhes_markdown": "# Cohortes: Retención en el Tiempo\n\nPermite ver si nuevos grupos de usuarios se quedan más o menos que los anteriores tras actualizaciones.",
+        "slug": "analise-de-coorte-cohort-analysis"
+    },
+    {
+        "nome": "Análisis de Embudo (Funnel Analysis)",
+        "descricao": "Visualiza el camino hacia un objetivo (compra, registro) y dónde se pierden usuarios.",
+        "quando_usar": "Identificar cuellos de botella en la UX.",
+        "link": "https://mixpanel.com/topics/funnel-analysis/",
+        "categorias": [
+            "Métricas",
+            "UX"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-23",
+        "nivel": "Principiante",
+        "tempo_aplicar": "Horas",
+        "detalhes_markdown": "# Embudos: Optimización de Conversión\n\nMide la tasa de drop-off en cada paso de un proceso crítico.",
+        "slug": "analise-de-funil-funnel-analysis"
+    },
+    {
+        "nome": "Inferencia Causal",
+        "descricao": "Busca entender relaciones de causa y efecto, no solo correlación.",
+        "quando_usar": "Medir el impacto real de nuevas funcionalidades.",
+        "link": "https://www.masterclass.com/articles/causal-analysis-explained",
+        "categorias": [
+            "Métricas",
+            "Análisis de Datos"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-23",
+        "nivel": "Avanzado",
+        "tempo_aplicar": "Semanas",
+        "detalhes_markdown": "# Causalidad: ¿Por qué cambian las métricas?\n\nUsa A/B Testing para asegurar que una mejora se debe al cambio realizado y no al azar.",
+        "slug": "analise-de-causalidade-causal-inference"
+    },
+    {
+        "nome": "Tasa de Churn",
+        "descricao": "Porcentaje de clientes que cancelan su suscripción.",
+        "quando_usar": "Monitorizar retención y salud del negocio recurrente.",
+        "link": "https://www.gainsight.com/guides/what-is-churn-rate-how-to-calculate-and-reduce-it/",
+        "categorias": [
+            "Métricas",
+            "Retención"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-24",
+        "nivel": "Principiante",
+        "tempo_aplicar": "Horas",
+        "detalhes_markdown": "# Churn: Pérdida de Clientes\n\n`Churn = (Bajas en periodo / Clientes al inicio) * 100`. Alerta crítica si es alto.",
+        "slug": "taxa-de-churn-churn-rate"
+    },
+    {
+        "nome": "Payback del CAC",
+        "descricao": "Meses necesarios para recuperar el costo de adquisición de un cliente.",
+        "quando_usar": "Evaluar eficiencia de capital y flujo de caja.",
+        "link": "https://baremetrics.com/academy/cac-payback-period",
+        "categorias": [
+            "Métricas",
+            "Finanzas"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-24",
+        "nivel": "Intermedio",
+        "tempo_aplicar": "Horas",
+        "detalhes_markdown": "# Payback: Tiempo de recuperación\n\nIdealmente < 12 meses. Mide la velocidad con la que retorna la inversión en marketing.",
+        "slug": "periodo-de-payback-do-cac"
+    },
+    {
+        "nome": "North Star Metric (NSM)",
+        "descricao": "La única métrica que captura el valor principal entregado al cliente.",
+        "quando_usar": "Alinear estrategia de producto y crecimiento.",
+        "link": "https://www.amplitude.com/blog/north-star-metric",
+        "categorias": [
+            "Métricas",
+            "Estrategia"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1590894239316-c33a2a9a15a2?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-24",
+        "nivel": "Avanzado",
+        "tempo_aplicar": "Días",
+        "detalhes_markdown": "# North Star: Brújula de Producto\n\nEjemplos: Spotify (tiempo total de escucha), Airbnb (noches reservadas). Refleja éxito real.",
+        "slug": "north-star-metric-nsm"
+    },
+    {
+        "nome": "ALM (Application Lifecycle Management)",
+        "descricao": "Gestión del ciclo de vida de la aplicación: desde la idea hasta el retiro.",
+        "quando_usar": "Gobernanza y trazabilidad en desarrollo de software complejo.",
+        "link": "https://www.atlassian.com/pt/devops/what-is-devops/alm-vs-sdlc-vs-plm",
+        "categorias": [
+            "Gestión",
+            "Estrategia"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1542744095-291d1f67b221?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-24",
+        "nivel": "Avanzado",
+        "tempo_aplicar": "Continuo",
+        "detalhes_markdown": "# ALM: Gobierno del Software\n\nIntegra procesos, personas y herramientas para gestionar el software como un activo.",
+        "slug": "alm-application-lifecycle-management"
+    },
+    {
+        "nome": "PLM (Product Lifecycle Management)",
+        "descricao": "Visión estratégica del ciclo de vida del producto (negocio).",
+        "quando_usar": "Alinear I+D, marketing y ventas con objetivos de negocio.",
+        "link": "https://www.oracle.com/plm/",
+        "categorias": [
+            "Producto",
+            "Estrategia"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1556761175-577380e344d2?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-24",
+        "nivel": "Avanzado",
+        "tempo_aplicar": "Continuo",
+        "detalhes_markdown": "# PLM: Negocio y Producto\n\nSupervisa fases desde la introducción hasta el declive comercial.",
+        "slug": "plm-product-lifecycle-management"
+    },
+    {
+        "nome": "Metabase",
+        "descricao": "BI Open Source para visualización y dashboards sin SQL.",
+        "quando_usar": "Democratizar el acceso a datos en la empresa.",
+        "link": "https://www.metabase.com/",
+        "categorias": [
+            "Herramientas",
+            "BI"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-24",
+        "nivel": "Principiante",
+        "tempo_aplicar": "Días",
+        "detalhes_markdown": "# Metabase: Datos para todos\n\nPermite a equipos de marketing y producto consultar bases de datos visualmente.",
+        "slug": "metabase"
+    },
+    {
+        "nome": "Google Analytics 4 (GA4)",
+        "descricao": "Análisis web y app centrado en eventos.",
+        "quando_usar": "Visión unificada del comportamiento multiplataforma.",
+        "link": "https://support.google.com/analytics/answer/10089681",
+        "categorias": [
+            "Herramientas",
+            "Analytics"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-24",
+        "nivel": "Intermedio",
+        "tempo_aplicar": "Días",
+        "detalhes_markdown": "# GA4: Análisis por Eventos\n\nAbandona el modelo de sesiones por uno de interacciones flexibles (eventos).",
+        "slug": "google-analytics-4-ga4"
+    },
+    {
+        "nome": "Looker",
+        "descricao": "BI de Google Cloud con gobernanza vía LookML.",
+        "quando_usar": "Crear una 'fuente única de verdad' para métricas corporativas.",
+        "link": "https://cloud.google.com/looker",
+        "categorias": [
+            "Herramientas",
+            "BI"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1591696331111-8527a03b63b8?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-24",
+        "nivel": "Avanzado",
+        "tempo_aplicar": "Semanas",
+        "detalhes_markdown": "# Looker: BI Modelado\n\nUsa LookML para definir métricas una vez y garantizar que todos usen los mismos datos.",
+        "slug": "looker"
+    },
+    {
+        "nome": "Amplitude",
+        "descricao": "Product Analytics experto en comportamiento de usuario.",
+        "quando_usar": "Entender el 'por qué' del churn y optimizar la retención.",
+        "link": "https://amplitude.com/",
+        "categorias": [
+            "Herramientas",
+            "Produto"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1616401784845-18086278e91b?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-24",
+        "nivel": "Intermedio",
+        "tempo_aplicar": "Días",
+        "detalhes_markdown": "# Amplitude: Foco Conductual\n\nIdeal para ver trayectorias de usuarios y correlacionar acciones con el éxito a largo plazo.",
+        "slug": "amplitude"
+    },
+    {
+        "nome": "Análisis de Puntos de Función (APF)",
+        "descricao": "Técnica para medir tamaño funcional de software (basado en requisitos).",
+        "quando_usar": "Estimación de costes, plazos y contratos de desarrollo.",
+        "link": "https://www.ifpug.org/",
+        "categorias": [
+            "Métricas",
+            "Gestión"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-24",
+        "nivel": "Avanzado",
+        "tempo_aplicar": "Días",
+        "detalhes_markdown": "# APF: Tamaño Funcional\n\nIndependiente de la tecnología. Mide entradas, salidas y archivos lógicos para valorar el esfuerzo.",
+        "slug": "apf-analise-de-pontos-de-funcao"
+    },
+    {
+        "nome": "CFR (Change Failure Rate)",
+        "descricao": "Porcentaje de cambios a producción que causan fallos.",
+        "quando_usar": "Evaluar calidad de entrega (DORA Metrics).",
+        "link": "https://dora.dev/",
+        "categorias": [
+            "Métricas",
+            "DevOps"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2026-01-08",
+        "nivel": "Intermedio",
+        "tempo_aplicar": "Continuo",
+        "detalhes_markdown": "# CFR: Calidad del Deploy\n\nMétrica de estabilidad. Elite performers suelen estar por debajo del 15%.",
+        "slug": "cfr-change-failure-rate"
+    },
+    {
+        "nome": "MAU/DAU",
+        "descricao": "Usuarios activos mensuales y diarios. Indican escala y adherencia.",
+        "quando_usar": "Medir crecimiento y formación de hábitos.",
+        "link": "https://amplitude.com/blog/mau-monthly-active-users",
+        "categorias": [
+            "Métricas",
+            "Crecimiento"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2026-01-15",
+        "nivel": "Principiante",
+        "tempo_aplicar": "Continuo",
+        "detalhes_markdown": "# MAU/DAU: Adherencia\n\n`Stickiness = DAU / MAU`. Mide qué tan recurrente es el uso del producto.",
+        "slug": "mau-monthly-active-users"
+    },
+    {
+        "nome": "MTTR (Mean Time To Repair)",
+        "descricao": "Tiempo medio para reparar un fallo del sistema.",
+        "quando_usar": "Eficiencia de soporte y mantenimiento (DORA Metrics).",
+        "link": "https://www.atlassian.com/incident-management/kpis/common-metrics",
+        "categorias": [
+            "Métricas",
+            "DevOps"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2026-01-23",
+        "nivel": "Intermedio",
+        "tempo_aplicar": "Continuo",
+        "detalhes_markdown": "# MTTR: Velocidad de Recuperación\n\nCuanto menor sea, menor es el impacto negativo en los usuarios durante un incidente.",
+        "slug": "mttr-mean-time-to-repair"
+    },
+    {
+        "nome": "DAU (Daily Active Users) (ES)",
+        "descricao": "Usuários Ativos Diários. Uma métrica que conta o número de usuários únicos que interagiram com o produto em um único dia (24 horas). (Necessita tradución)",
+        "quando_usar": "Para produtos de uso frequente (redes sociais, apps de produtividade, jogos) onde o hábito diário é importante. Mede a \"aderência\" (stickiness) do produto.",
+        "link": "https://amplitude.com/blog/dau-daily-active-users",
+        "categorias": [
+            "Métricas",
+            "Engajamento",
+            "Produto"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2026-01-15",
+        "nivel": "Iniciante",
+        "tempo_aplicar": "Contínuo",
+        "detalhes_markdown": "# DAU (Daily Active Users): Engajamento Diário\n\n**Descrição:** O DAU (Daily Active Users) conta o número de usuários **únicos** que realizaram uma ação qualificada no seu produto em um período de **24 horas**. Ele reflete a intensidade do uso do produto.\n\n**Quando usar:** Ideal para produtos que esperam ser parte da rotina diária dos usuários, como redes sociais, ferramentas de comunicação (Slack, Whatsapp), jogos ou apps de notícias.\n\n---\n\n## A Relação DAU/MAU (Stickiness)\n\nA divisão do DAU pelo MAU fornece uma métrica chamada **Stickiness** (Aderência), que mede a frequência com que os usuários mensais retornam diariamente.\n\n`Stickiness = DAU / MAU`\n\n*   **Exemplo:** Se você tem 1.000 MAU e 200 DAU, sua aderência é de 20%. Isso significa que, em média, seus usuários usam o produto 6 dias por mês (30 dias * 20%).\n*   **Benchmark:** Produtos de classe mundial (como Facebook) costumam ter uma taxa de aderência acima de 50%.\n\n*(Contenido en Portugués - Traducción en progreso)*",
+        "slug": "dau-daily-active-users"
+    }
+]

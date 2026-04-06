@@ -1,43 +1,107 @@
 document.addEventListener('DOMContentLoaded', async () => {
     const container = document.getElementById('grafo-container');
     const loadingMsg = document.getElementById('loading-msg');
+    const langBtns = document.querySelectorAll('.lang-btn');
 
-    // Mapeamento dos arquivos (Mesmo do script.js, idealmente seria centralizado)
+    let currentLang = localStorage.getItem('preferredLang') || 'pt-br';
+    let translations = {};
+
+    // Mapeamento dos arquivos
     const subjectFiles = {
-        'techniques': 'Análise de Negócios',
-        'gestao_pessoas': 'Gestão de Pessoas',
-        'gestao_times': 'Gestão de Times',
-        'ferramentas_ia': 'Ferramentas de IA',
-        'metodologias_ageis': 'Metodologias Ágeis',
-        'design_produto': 'Design de Produto',
-        'metricas_indicadores': 'Métricas',
-        'gestao_sistemas': 'Gestão de Sistemas'
+        'techniques': 'techniques',
+        'gestao_pessoas': 'gestao_pessoas',
+        'gestao_times': 'gestao_times',
+        'ferramentas_ia': 'ferramentas_ia',
+        'metodologias_ageis': 'metodologias_ageis',
+        'design_produto': 'design_produto',
+        'metricas_indicadores': 'metricas_indicadores',
+        'gestao_sistemas': 'gestao_sistemas',
+        'estudos_futuros': 'estudos_futuros'
     };
+
+    // --- Lógica de Tradução ---
+    async function loadTranslations() {
+        try {
+            const response = await fetch('translations.json');
+            translations = await response.json();
+            applyTranslations();
+        } catch (error) {
+            console.error("Erro ao carregar traduções:", error);
+        }
+    }
+
+    function applyTranslations() {
+        const langData = translations[currentLang];
+        if (!langData) return;
+
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            const keys = key.split('.');
+            let val = langData;
+            keys.forEach(k => val = val?.[k]);
+            if (val) el.textContent = val;
+        });
+
+        langBtns.forEach(btn => {
+            btn.classList.toggle('active', btn.getAttribute('data-lang') === currentLang);
+        });
+    }
+
+    function changeLanguage(lang) {
+        if (lang === currentLang) return;
+        currentLang = lang;
+        localStorage.setItem('preferredLang', lang);
+        applyTranslations();
+        initGrafo(); // Recria o grafo no novo idioma
+    }
+
+    langBtns.forEach(btn => {
+        btn.addEventListener('click', () => changeLanguage(btn.getAttribute('data-lang')));
+    });
 
     // Estrutura de dados para o grafo
     let nodes = [];
     let edges = [];
     let nodeIdCounter = 1;
+    let network = null;
 
-    // Adiciona nó central
-    const centralNodeId = 0;
-    nodes.push({ id: centralNodeId, label: 'Base de\nConhecimento', color: '#ff5252', size: 40, font: { size: 20, color: '#ffffff' } });
+    async function initGrafo() {
+        nodes = [];
+        edges = [];
+        nodeIdCounter = 1;
+        if (network) network.destroy();
 
-    try {
-        // Carrega TODOS os arquivos JSON em paralelo
-        const promises = Object.entries(subjectFiles).map(async ([key, label]) => {
-            try {
-                const response = await fetch(`${key}.json?t=${new Date().getTime()}`);
-                if (!response.ok) return null;
-                const data = await response.json();
-                return { key, label, data };
-            } catch (e) {
-                console.warn(`Erro ao carregar ${key}`, e);
-                return null;
-            }
-        });
+        loadingMsg.style.display = 'block';
+        container.innerHTML = '';
 
-        const results = await Promise.all(promises);
+        // Adiciona nó central
+        const centralNodeId = 0;
+        const mainLabel = translations[currentLang]?.title || 'Base de\nConhecimento';
+        nodes.push({ id: centralNodeId, label: mainLabel, color: '#ff5252', size: 40, font: { size: 20, color: '#ffffff' } });
+
+        try {
+            // Carrega TODOS os arquivos JSON em paralelo
+            const promises = Object.entries(subjectFiles).map(async ([key, baseName]) => {
+                const label = translations[currentLang]?.subjects?.[key] || key;
+                try {
+                    const fileName = currentLang === 'pt-br' ? `${key}.json` : `${key}_${currentLang}.json`;
+                    const response = await fetch(`${fileName}?t=${new Date().getTime()}`);
+                    if (!response.ok) {
+                        // Fallback para PT-BR se tradução não existir
+                        const fallbackResponse = await fetch(`${key}.json?t=${new Date().getTime()}`);
+                        if (!fallbackResponse.ok) return null;
+                        const data = await fallbackResponse.json();
+                        return { key, label, data };
+                    }
+                    const data = await response.json();
+                    return { key, label, data };
+                } catch (e) {
+                    console.warn(`Erro ao carregar ${key}`, e);
+                    return null;
+                }
+            });
+
+            const results = await Promise.all(promises);
 
         results.forEach(result => {
             if (!result) return;
@@ -105,9 +169,9 @@ document.addEventListener('DOMContentLoaded', async () => {
             }
         };
 
-        // Inicializa o grafo
-        loadingMsg.style.display = 'none';
-        const network = new vis.Network(container, data, options);
+            // Inicializa o grafo
+            loadingMsg.style.display = 'none';
+            network = new vis.Network(container, data, options);
 
         // Evento de duplo clique para abrir detalhes
         network.on("doubleClick", function (params) {
@@ -121,8 +185,13 @@ document.addEventListener('DOMContentLoaded', async () => {
             }
         });
 
-    } catch (error) {
-        console.error("Erro geral no grafo:", error);
-        loadingMsg.innerHTML = "Erro ao carregar o grafo. Verifique o console.";
+        } catch (error) {
+            console.error("Erro geral no grafo:", error);
+            loadingMsg.innerHTML = "Erro ao carregar o grafo. Verifique o console.";
+        }
     }
+
+    // Inicialização
+    loadTranslations();
+    initGrafo();
 });

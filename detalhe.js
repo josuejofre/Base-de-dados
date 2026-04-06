@@ -1,45 +1,113 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
     const mainContainer = document.getElementById('detalhe-main');
+    const langBtns = document.querySelectorAll('.lang-btn');
+
+    let currentLang = localStorage.getItem('preferredLang') || 'pt-br';
+    let translations = {};
 
     // Mapeia os valores do select para os nomes dos arquivos JSON.
     const subjectFiles = {
-        'techniques': 'techniques.json',
-        'gestao_pessoas': 'gestao_pessoas.json',
-        'gestao_times': 'gestao_times.json',
-        'ferramentas_ia': 'ferramentas_ia.json',
-        'metodologias_ageis': 'metodologias_ageis.json',
-        'design_produto': 'design_produto.json',
-        'metricas_indicadores': 'metricas_indicadores.json',
-        'gestao_sistemas': 'gestao_sistemas.json',
-        'estudos_futuros': 'estudos_futuros.json',
+        'techniques': 'techniques',
+        'gestao_pessoas': 'gestao_pessoas',
+        'gestao_times': 'gestao_times',
+        'ferramentas_ia': 'ferramentas_ia',
+        'metodologias_ageis': 'metodologias_ageis',
+        'design_produto': 'design_produto',
+        'metricas_indicadores': 'metricas_indicadores',
+        'gestao_sistemas': 'gestao_sistemas',
+        'estudos_futuros': 'estudos_futuros',
     };
 
     // Pega os parâmetros da URL.
     const params = new URLSearchParams(window.location.search);
     const subjectKey = params.get('subject'); // Ex: 'techniques'
-    const itemName = params.get('name'); // Ex: 'Análise SWOT'
+    const itemName = params.get('name'); // Legado: busca por nome
+    const itemSlug = params.get('slug'); // Novo padrão: busca por slug 
 
-    const subjectFile = subjectFiles[subjectKey];
+    // --- Lógica de Tradução ---
+    async function loadTranslations() {
+        try {
+            const response = await fetch('translations.json');
+            translations = await response.json();
+            applyTranslations();
+        } catch (error) {
+            console.error("Erro ao carregar traduções:", error);
+        }
+    }
 
-    if (!subjectFile || !itemName) {
+    function applyTranslations() {
+        const langData = translations[currentLang];
+        if (!langData) return;
+
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            const keys = key.split('.');
+            let val = langData;
+            keys.forEach(k => val = val?.[k]);
+            if (val) el.textContent = val;
+        });
+
+        langBtns.forEach(btn => {
+            btn.classList.toggle('active', btn.getAttribute('data-lang') === currentLang);
+        });
+    }
+
+    function changeLanguage(lang) {
+        if (lang === currentLang) return;
+        currentLang = lang;
+        localStorage.setItem('preferredLang', lang);
+        // Ao mudar idioma na tela de detalhes, voltamos para a home no novo idioma
+        // pois os nomes dos itens (usados na URL) mudam entre idiomas.
+        window.location.href = `index.html`;
+    }
+
+    langBtns.forEach(btn => {
+        btn.addEventListener('click', () => changeLanguage(btn.getAttribute('data-lang')));
+    });
+
+    const subjectBase = subjectFiles[subjectKey];
+
+    if (!subjectBase || !itemName) {
         mainContainer.innerHTML = '<p>Informações não encontradas. Por favor, volte para a página inicial.</p>';
         return;
     }
 
-    // Função para carregar os dados e encontrar o item específico.
+    // Função para carregar os dados e encontrar o item específico com suporte a fallback.
     async function loadItemDetails() {
         try {
-            const response = await fetch(subjectFile + '?t=' + new Date().getTime());
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
-            const items = await response.json();
+            // Primeiro, carregamos a base em PT-BR para garantir que temos o item caso a tradução falte.
+            const ptResponse = await fetch(`${subjectBase}.json?t=` + new Date().getTime());
+            if (!ptResponse.ok) throw new Error(`Erro ao carregar base ${subjectBase}`);
+            const ptItems = await ptResponse.json();
 
-            // Encontra o item pelo nome.
-            const item = items.find(i => i.nome === itemName);
+            let item = null;
+            let isFallback = false;
+
+            if (currentLang === 'pt-br') {
+                // No idioma original, buscamos por slug ou nome (legado)
+                item = ptItems.find(i => i.slug === itemSlug || i.nome === itemName);
+            } else {
+                // Em outro idioma, tentamos o arquivo traduzido
+                const fileName = `${subjectBase}_${currentLang}.json`;
+                try {
+                    const response = await fetch(fileName + '?t=' + new Date().getTime());
+                    if (response.ok) {
+                        const langItems = await response.json();
+                        item = langItems.find(i => i.slug === itemSlug || i.nome === itemName);
+                    }
+                } catch (e) {
+                    console.warn(`Erro ao carregar tradução ${fileName}:`, e);
+                }
+
+                // Se não encontrou na tradução, usa o PT-BR como fallback
+                if (!item) {
+                    item = ptItems.find(i => i.slug === itemSlug || i.nome === itemName);
+                    if (item) isFallback = true;
+                }
+            }
 
             if (item) {
-                displayItemDetails(item);
+                displayItemDetails(item, isFallback);
             } else {
                 mainContainer.innerHTML = '<p>Item não encontrado.</p>';
             }
@@ -51,8 +119,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Função para exibir os detalhes na página.
-    function displayItemDetails(item) {
+    function displayItemDetails(item, isFallback = false) {
         document.title = item.nome; // Atualiza o título da aba do navegador.
+
+        const fallbackNotice = isFallback ? `
+            <div class="fallback-notice">
+                <span>🇧🇷</span> Esta página ainda não foi traduzida para o idioma selecionado. Exibindo versão original em Português.
+            </div>
+        ` : '';
 
         const imageHtml = item.imagem ? `
             <div style="text-align: center;"> <!-- Centraliza a imagem -->
@@ -138,6 +212,7 @@ Este é um exemplo genérico. Para um uso real, consulte a documentação oficia
 
         mainContainer.innerHTML = `
             <div class="detalhe-wrapper">
+                ${fallbackNotice}
                 <div class="detalhe-container">
                     ${imageHtml}
                     ${audioHtml}
@@ -149,5 +224,6 @@ Este é um exemplo genérico. Para um uso real, consulte a documentação oficia
         `;
     }
 
+    loadTranslations();
     loadItemDetails();
 });

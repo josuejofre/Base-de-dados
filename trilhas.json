@@ -39,7 +39,8 @@
                 "item_nome": "Pesquisa de Clima e Engajamento",
                 "item_arquivo": "gestao_pessoas"
             }
-        ]
+        ],
+        "slug": "gestor_pessoas"
     },
     {
         "id": "product_owner",
@@ -74,7 +75,8 @@
                 "item_nome": "Gestão de Dependências",
                 "item_arquivo": "gestao_times"
             }
-        ]
+        ],
+        "slug": "product_owner"
     },
     {
         "id": "product_manager",
@@ -116,7 +118,8 @@
                 "item_nome": "CAC (Custo de Aquisição de Cliente)",
                 "item_arquivo": "design_produto"
             }
-        ]
+        ],
+        "slug": "product_manager"
     },
     {
         "id": "analista_negocios",
@@ -151,7 +154,8 @@
                 "item_nome": "Matriz CSD (Certezas, Suposições e Dúvidas)",
                 "item_arquivo": "design_produto"
             }
-        ]
+        ],
+        "slug": "analista_negocios"
     },
     {
         "id": "gestao_sistemas",
@@ -200,6 +204,7 @@
                 "item_nome": "Otimização Financeira em TI (FinOps)",
                 "item_arquivo": "gestao_sistemas"
             }
-        ]
+        ],
+        "slug": "gestao_sistemas"
     }
 ]

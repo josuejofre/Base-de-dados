@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grafo de Conhecimento - Visão Sistêmica</title>
+    <title data-i18n="nav_grafo_title">Grafo de Conhecimento - Visão Sistêmica</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700&display=swap"
         rel="stylesheet">
@@ -49,19 +43,24 @@
 
 <body>
     <header>
-        <div class="header-grafo">
+        <div class="header-content">
             <div class="logo-area">
-                <h1>Visão Sistêmica (Grafo)</h1>
-                <p>Conexões entre Técnicas e Áreas</p>
+                <h1 data-i18n="nav_grafo_header">Visão Sistêmica (Grafo)</h1>
+                <p data-i18n="nav_grafo_subheader">Conexões entre Técnicas e Áreas</p>
             </div>
-            <a href="index.html" class="btn-voltar">← Voltar para Lista</a>
+            <div class="language-selector">
+                <button class="lang-btn" data-lang="pt-br" title="Português">🇧🇷</button>
+                <button class="lang-btn" data-lang="en" title="English">🇺🇸</button>
+                <button class="lang-btn" data-lang="es" title="Español">🇪🇸</button>
+            </div>
+            <a href="index.html" class="nav-btn" data-i18n="nav_voltar">← Voltar para Lista</a>
         </div>
     </header>
 
     <main style="padding: 1rem 5%;">
-        <div id="loading-msg" style="text-align: center; color: #a0a0a0;">Carregando conexões...</div>
+        <div id="loading-msg" style="text-align: center; color: #a0a0a0;" data-i18n="loading_msg">Carregando conexões...</div>
         <div id="grafo-container"></div>
-        <p style="text-align: center; margin-top: 1rem; color: #80868b; font-size: 0.9rem;">
+        <p style="text-align: center; margin-top: 1rem; color: #80868b; font-size: 0.9rem;" data-i18n="grafo_dica">
             Dica: Use o scroll para dar zoom e arraste os nós para organizar. Dê um duplo clique em um item para ver
             detalhes.
         </p>

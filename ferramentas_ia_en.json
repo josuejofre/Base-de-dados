@@ -1,0 +1,336 @@
+[
+    {
+        "nome": "ChatGPT (OpenAI)",
+        "descricao": "A large-scale language model trained to understand and generate text in a conversational way. Can be used for brainstorming, writing, programming, translation, and much more.",
+        "quando_usar": "To accelerate writing tasks, generate ideas, debug code, or as a research assistant to get summaries on complex topics.",
+        "link": "https://chat.openai.com/",
+        "categorias": [
+            "Text Generation",
+            "Virtual Assistant"
+        ],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/640px-ChatGPT_logo.svg.png",
+        "detalhes_markdown": "# ChatGPT (OpenAI)\n\n**Description:** ChatGPT is a large language model (LLM) developed by OpenAI, designed to understand and generate text in a conversational and coherent way. It is trained on a vast amount of internet data to answer questions, write texts, translate, generate code, and much more.\n\n**When to use:** To accelerate writing tasks (emails, reports), generate ideas (brainstorming), debug code, learn about new topics, or as a research assistant.\n\n---\n\n## Main Use Cases\n\n*   **Content Generation:** Write blog articles, social media posts, video scripts.\n*   **Programming Assistant:** Generate code snippets, explain algorithms, find bugs (debugging).\n*   **Brainstorming and Ideation:** Generate ideas for a new product, names for a company, or solutions to a problem.\n*   **Learning:** Ask for simplified explanations of complex concepts.\n*   **Communication:** Draft professional emails, summarize long documents, translate texts.\n\n## Tips for Better Results (Prompt Engineering)\n\n*   **Be Specific:** Instead of \"Write about cars\", say \"Write a paragraph about the impact of electric cars on the automotive industry, with an optimistic tone.\"\n*   **Give Context:** Provide relevant background information for your question.\n*   **Define a Role (Persona):** Start the prompt with \"Act as a digital marketing expert...\" or \"You are a film screenwriter...\".\n*   **Use Examples (Few-shot prompting):** Provide one or two examples of the output format you want.\n\n### Relevant Links\n\n*   [Access ChatGPT](https://chat.openai.com/)",
+        "slug": "chatgpt-openai"
+    },
+    {
+        "nome": "Midjourney",
+        "descricao": "An artificial intelligence tool that generates images from textual descriptions (prompts). It is known for creating artistic and high-quality images.",
+        "quando_usar": "To create concept art, illustrations for marketing, storyboards, or to visualize design ideas quickly.",
+        "link": "https://www.midjourney.com/",
+        "categorias": [
+            "Image Generation"
+        ],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Midjourney_Emblem.jpg/640px-Midjourney_Emblem.jpg",
+        "detalhes_markdown": "# Midjourney\n\n**Description:** Midjourney is an independent research lab and also the name of its artificial intelligence program that creates images from textual descriptions, known as 'prompts'. It is famous for generating images with an artistic, detailed, and often surreal style. Currently, interaction with Midjourney happens mainly through a bot on the Discord communication app.\n\n**When to use:** To create concept art, illustrations for marketing campaigns, storyboards for videos, or to quickly visualize design ideas and abstract concepts.\n\n---\n\n## How It Works\n\n1.  **Access Discord:** The user joins the Midjourney server on Discord.\n2.  **Use the `/imagine` Command:** In an appropriate channel, the user types the `/imagine` command followed by the text prompt describing the desired image.\n3.  **Generation:** The Midjourney bot processes the prompt and generates four low-resolution images as options.\n4.  **Refinement:** The user can then choose one of the images to upscale it (Upscale) or generate four new variations based on it (Variations).\n\n## Tips for Good Prompts\n\n*   **Be Descriptive:** Include details about the subject, environment, lighting, colors, and style.\n*   **Use Parameters:** Midjourney accepts parameters at the end of the prompt to control aspects like image aspect ratio (`--ar 16:9`), style (`--style raw`), or model version (`--v 6.0`).\n*   **Get Inspired:** Explore the Midjourney gallery to see what other users are creating and learn from their prompts.\n\n### Relevant Links\n\n*   Official Midjourney Website\n*   Official Documentation",
+        "slug": "midjourney"
+    },
+    {
+        "nome": "GitHub Copilot",
+        "descricao": "An AI pair programmer that suggests code and entire functions in real-time, directly in your code editor. It is powered by OpenAI's Codex model.",
+        "quando_usar": "During software development to accelerate coding, learn new libraries, reduce repetitive code writing, and find solutions to programming problems.",
+        "link": "https://github.com/features/copilot",
+        "categorias": [
+            "Software Development",
+            "Automation"
+        ],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Github-copilot-logo.svg/640px-Github-copilot-logo.svg.png",
+        "detalhes_markdown": "# GitHub Copilot\n\n**Description:** GitHub Copilot is an AI 'pair programmer' developed by GitHub and OpenAI. It works as an extension for code editors (like VS Code, JetBrains, etc.) and provides intelligent autocomplete suggestions, from individual lines to entire functions and classes, in real-time.\n\n**When to use:** During software development to accelerate coding, learn new languages or libraries, reduce repetitive (boilerplate) code writing, and get suggestions for solving programming problems.\n\n---\n\n## How Copilot Helps\n\n*   **Suggestions from Comments:** You can write a comment describing the function you want, and Copilot will try to generate the corresponding code.\n    *   *Example:* `// function to fetch user data from an API and return it as JSON`\n*   **Contextual Autocomplete:** It analyzes the code you've already written to suggest the next line or block of logical code.\n*   **Test Generation:** It can help write unit tests for your functions.\n*   **Learning:** It's a great tool to see how to implement something in a language or framework you're unfamiliar with.\n\n## Important Considerations\n\n*   **Not Infallible:** The code generated by Copilot is not always perfect or optimized. It may contain bugs or not follow best practices. It is essential for the developer to review, understand, and test the suggested code.\n*   **Security and Licensing:** Copilot was trained on code from public GitHub repositories. This raises questions about the licensing of the generated code and the possibility of introducing security vulnerabilities. The developer remains ultimately responsible for the code.\n\n### Relevant Links\n\n*   Official GitHub Copilot Page",
+        "slug": "github-copilot"
+    },
+    {
+        "nome": "Tableau (with Einstein)",
+        "descricao": "A visual analytics platform that helps people see and understand data. With Einstein integration (Salesforce AI), it offers predictive analytics and automated insights.",
+        "quando_usar": "To create interactive dashboards, explore large datasets, identify trends and patterns, and communicate business insights visually.",
+        "link": "https://www.tableau.com/products/einstein-discovery",
+        "categorias": [
+            "Data Analysis",
+            "Business Intelligence"
+        ],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Tableau_Software_Logo.svg/640px-Tableau_Software_Logo.svg.png",
+        "detalhes_markdown": "# Tableau (with Einstein)\n\n**Description:** Tableau is one of the leading visual analytics and Business Intelligence (BI) platforms on the market, allowing users to connect to various data sources and create interactive dashboards and data visualizations. With its acquisition by Salesforce, Tableau integrated **Einstein**, the Salesforce AI layer, to add predictive analysis capabilities and automated insights.\n\n**When to use:** To create KPI tracking dashboards, explore large datasets to find trends, communicate business insights in a visual and accessible way, and perform predictive analysis without the need for deep data science knowledge.\n\n---\n\n## AI Features (Einstein)\n\n*   **Einstein Discovery:** Allows business analysts to build predictive models to forecast future outcomes (e.g., predict which customer is more likely to churn). It analyzes data and provides natural language explanations about the key factors influencing the prediction.\n*   **Data Stories:** Automatically generates text summaries that describe the key insights from a dashboard, making analysis more accessible to non-technical users.\n*   **Ask Data:** Allows users to ask questions of their data using natural language (e.g., \"what were total sales in Brazil in the last quarter?\") and Tableau responds with a data visualization.\n\n## Benefits\n\n*   **Data Democratization:** Makes data analysis accessible to a wider audience beyond data scientists.\n*   **Speed to Insights:** Accelerates the process of finding patterns and trends in data.\n*   **Effective Communication:** Transforms raw data into visual stories that are easy to understand and share.\n\n### Relevant Links\n\n*   Tableau with Einstein Page",
+        "slug": "tableau-com-einstein"
+    },
+    {
+        "nome": "Zapier",
+        "descricao": "An online automation tool that connects your favorite apps and services. It allows you to create workflows (Zaps) that automate repetitive tasks without the need for coding.",
+        "quando_usar": "To automate business processes, such as notifying a Slack team about a new sales lead, creating tasks in a project manager from emails, etc.",
+        "link": "https://zapier.com/",
+        "categorias": [
+            "Automation",
+            "Productivity"
+        ],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Zapier_logo.svg",
+        "detalhes_markdown": "# Zapier: Automate Your Work\n\n**Description:** Zapier is an online automation tool that acts as a 'bridge' between different web apps and services. It allows you to create automated workflows, called **Zaps**, that connect two or more applications without the need to write a single line of code. The logic is simple: \"When this happens (Trigger), do that (Action)\".\n\n**When to use:** To automate manual and repetitive tasks, saving time and reducing errors. Ideal for connecting tools that don't have native integration.\n\n---\n\n## Components of a Zap\n\n*   **Trigger:** The event that starts the Zap. (e.g., \"New email received in Gmail\", \"New lead filled in Facebook Ads\").\n*   **Action:** The task the Zap performs when the trigger is fired. (e.g., \"Create a row in a Google Sheets spreadsheet\", \"Send a Slack message\").\n*   **Filters and Formatting (Optional):** More complex Zaps can have intermediate steps to format data or to run only if certain conditions are met.\n\n## Examples of Zaps\n\n*   **Trigger:** New attachment received in Gmail.\n    **Action:** Save the attachment to a specific folder in Dropbox.\n\n*   **Trigger:** New form filled in Typeform.\n    **Action 1:** Add the contact to a Mailchimp list.\n    **Action 2:** Create a Trello card for the sales team.\n    **Action 3:** Send a notification to a Slack channel.\n\n*   **Trigger:** New video published on a YouTube channel.\n    **Action:** Create a Twitter post with the link to the video.\n\n## Benefits\n\n*   **Time Savings:** Automates tasks that would take hours of manual work.\n*   **Accessibility:** Allows people without technical knowledge to create powerful automations.\n*   **Integration:** Connects thousands of apps, creating an ecosystem of tools that work together.\n\n### Relevant Links\n\n*   Official Zapier Website",
+        "slug": "zapier"
+    },
+    {
+        "nome": "Make (formerly Integromat)",
+        "descricao": "A visual automation platform that allows you to design, build, and automate anything from simple tasks to complex workflows, connecting hundreds of apps and services.",
+        "quando_usar": "To create advanced automations that require complex logic, data manipulation, and multiple steps, surpassing the capabilities of simpler tools.",
+        "link": "https://www.make.com/",
+        "categorias": [
+            "Automation",
+            "Productivity"
+        ],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Make_com_logo.svg/640px-Make_com_logo.svg.png",
+        "detalhes_markdown": "# Make (formerly Integromat)\n\n**Description:** Make (formerly known as Integromat) is a visual automation platform that allows you to design, build, and automate workflows. Similar to Zapier, it connects different apps and services, but stands out for its visual interface, which allows for creating more complex scenarios with branching, loops, and advanced data manipulation.\n\n**When to use:** To create automations that require complex logic (if/else), iterations over data lists, error handling, and data manipulation between steps. It is often considered more powerful and flexible than Zapier for advanced use cases.\n\n---\n\n## Key Concepts\n\n*   **Scenario:** The equivalent of a 'Zap' in Zapier. It's the visual workflow you build.\n*   **Modules:** The building blocks of a scenario. They can be triggers, actions, iterators, aggregators, or logic tools.\n*   **Visual Interface:** Instead of a linear list of trigger and actions, Make uses a drag-and-drop interface where you connect modules visually, facilitating understanding of complex flows.\n*   **Operations:** Make's pricing model is based on the number of 'operations' (the number of times a module in your scenario is executed).\n\n## Make vs. Zapier\n\n| Feature | **Make** | **Zapier** |\n| :--- | :--- | :--- |\n| **Interface** | Visual, diagram-based (drag-and-drop) | Linear, form-based |\n| **Complexity** | Excellent for complex flows with logic, loops, and branching | Excellent for linear and simple automations |\n| **Learning Curve** | Moderate | Low |\n| **Pricing Model** | Based on operations and data volume | Based on number of Zaps and execution frequency |\n\n### Relevant Links\n\n*   Official Make Website",
+        "slug": "make-formerly-integromat"
+    },
+    {
+        "nome": "n8n",
+        "descricao": "An open-source and extensible workflow automation tool. It allows you to connect any app with an API to pass and manipulate data between them without needing code.",
+        "quando_usar": "When you need a self-hosted (on-premises) automation solution for greater data control, or to create custom nodes for services not natively supported.",
+        "link": "https://n8n.io/",
+        "categorias": [
+            "Automation",
+            "Software Development"
+        ],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/N8n-logo.svg/640px-N8n-logo.svg.png",
+        "detalhes_markdown": "# n8n\n\n**Description:** n8n (pronounced 'nodemation') is an open-source workflow automation tool. Similar to Zapier and Make, it allows you to connect different apps and services to automate tasks. Its main difference is being 'source-available' and 'fair-code', meaning you can **host it on your own servers (self-hosting)**, offering greater data control, privacy, and costs.\n\n**When to use:** When data sovereignty is a concern, when SaaS platform costs become prohibitive, or when you need extreme flexibility to create custom integrations with internal systems or APIs not supported by other platforms.\n\n---\n\n## Key Features\n\n*   **Open Source and Self-hosting:** You can run n8n on your own infrastructure (locally, on a cloud server, etc.), giving you full control over your data and workflows.\n*   **Extensibility:** Being open source, developers can create their own 'nodes' (integrations) to connect any service that has an API.\n*   **Visual Interface:** Like Make, n8n uses a visual node interface to build workflows, facilitating the creation of complex logic.\n*   **Developer Focus:** Although it's a 'low-code' tool, n8n is particularly powerful in the hands of developers, who can use JavaScript to manipulate data within nodes and create advanced integrations.\n*   **Cloud Version:** For those who don't want to worry about hosting, n8n also offers a paid cloud version.\n\n### Relevant Links\n\n*   Official n8n Website\n*   GitHub Repository",
+        "slug": "n8n"
+    },
+    {
+        "nome": "Canva (Magic Studio)",
+        "descricao": "A graphic design platform that has integrated a set of AI tools called Magic Studio. It allows you to generate images, text, animations, and layouts, plus edit photos and videos with simple commands.",
+        "quando_usar": "To quickly create marketing materials, social media posts, presentations, and other visual designs, using AI to accelerate the creative process.",
+        "link": "https://www.canva.com/magic-studio/",
+        "categorias": [
+            "Image Generation",
+            "Text Generation",
+            "Design"
+        ],
+        "imagem": "https://upload.wikimedia.org/wikipedia/en/thumb/c/ca/Canva_logo.svg/640px-Canva_logo.svg.png",
+        "detalhes_markdown": "# Canva (Magic Studio)\n\n**Description:** Canva is an extremely popular online graphic design platform, known for its ease of use. **Magic Studio** is the suite of AI tools integrated into Canva, designed to further accelerate and simplify the creative process for users without technical design knowledge.\n\n**When to use:** To quickly create marketing materials, social media posts, presentations, short videos, and other visual designs, leveraging AI to generate content and edit media.\n\n---\n\n## Main Magic Studio Tools\n\n*   **Magic Write:** A writing assistant that can generate drafts, rewrite sentences, summarize text, and adapt tone of voice, all within your design.\n*   **Magic Media:** Generates images and videos from a text prompt (text-to-image and text-to-video).\n*   **Magic Design:** Creates custom design templates from a prompt or an image you upload.\n*   **Magic Edit:** Allows you to select an area of an image and, with a text prompt, add, remove, or replace objects.\n*   **Magic Grab:** Identifies and makes any object or text in an image editable, allowing you to move, resize, or change it.\n*   **Magic Switch:** Transforms a design into different formats with a click (e.g., transform a presentation into a blog post or an Instagram post into a story).\n\n## Benefits\n\n*   **Accessibility:** Puts generative AI tools in the hands of millions of non-professional designers.\n*   **Speed:** Automates and accelerates many design tasks that were previously manual and time-consuming.\n*   **All-in-One:** Integrates text, image, and video generation within the same design platform, creating a continuous workflow.\n\n### Relevant Links\n\n*   Canva Magic Studio Page",
+        "slug": "canva-magic-studio"
+    },
+    {
+        "nome": "Google Vertex AI",
+        "descricao": "Google Cloud's unified machine learning platform. Allows developers to build, deploy, and scale ML models faster, with pre-trained and custom tools.",
+        "quando_usar": "For enterprise-level machine learning projects, such as training custom models, creating MLOps pipelines, and using Google's AI APIs for vision, language, and structured data.",
+        "link": "https://cloud.google.com/vertex-ai",
+        "categorias": [
+            "Software Development",
+            "Data Analysis",
+            "MLOps"
+        ],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Google_Cloud_Vertex_AI_logo.svg/640px-Google_Cloud_Vertex_AI_logo.svg.png",
+        "detalhes_markdown": "# Google Vertex AI\n\n**Description:** Vertex AI is Google Cloud's unified machine learning (ML) platform. It was designed to accelerate the machine learning project lifecycle, from data preparation to training, deployment, and monitoring models in production. The platform combines AutoML tools (for users with less technical knowledge) and AI Platform tools (for experienced data scientists) into a single API and interface.\n\n**When to use:** For enterprise-level machine learning projects that require scalability, reliability, and a managed environment for the entire ML lifecycle (MLOps).\n\n---\n\n## Main Components\n\n*   **Vertex AI Studio:** An interface for prototyping and customizing Google's generative AI models (like Gemini) for text, image, code, and speech tasks.\n*   **AutoML:** Allows training high-quality models for vision, language, and tabular data tasks with minimal effort and ML knowledge.\n*   **Custom Training:** Offers full control for data scientists who want to train their own models using frameworks like TensorFlow, PyTorch, or Scikit-learn.\n*   **Vertex AI Pipelines:** A tool for orchestrating and automating ML workflows, facilitating the implementation of MLOps practices (CI/CD for machine learning).\n*   **Model Garden:** A repository of state-of-the-art AI models, both from Google and partners, ready to be used or customized.\n*   **Vertex AI Search and Conversation:** Allows for quickly creating production-level search applications and chatbots based on your own data.\n\n## Benefits\n\n*   **Unified Platform:** Centralizes all tools necessary for ML development.\n*   **Scalability:** Leverages Google Cloud's entire infrastructure to train and serve models at scale.\n*   **Integrated MLOps:** Facilitates automation, monitoring, and governance of models in production.\n\n### Relevant Links\n\n*   Official Vertex AI Page",
+        "slug": "google-vertex-ai"
+    },
+    {
+        "nome": "NotebookLM",
+        "descricao": "An AI-based research and writing assistant from Google. Allows you to upload your own sources (documents, PDFs, notes) and use AI to ask questions, generate summaries, and get insights into your own content.",
+        "quando_usar": "For researchers, students, and writers who need to synthesize information from multiple sources, find connections in their documents, and accelerate drafting articles or reports.",
+        "link": "https://notebooklm.google.com/",
+        "categorias": [
+            "Virtual Assistant",
+            "Research",
+            "Text Generation"
+        ],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/NotebookLM_logo.svg/640px-NotebookLM_logo.svg.png",
+        "detalhes_markdown": "# NotebookLM\n\n**Description:** NotebookLM (formerly known as Project Tailwind) is an AI-based research and writing assistant from Google. Its main feature is that it is 'grounded' (based) on **your own content sources**. You upload your documents (Google Docs, PDFs, notes) and NotebookLM becomes an expert in that specific material, allowing you to ask questions, generate summaries, and gain insights about your own content.\n\n**When to use:** Ideal for researchers, students, analysts, and writers who need to synthesize information from multiple sources, find connections in their documents, and accelerate the writing of articles, reports, or studies.\n\n---\n\n## How It Works\n\n1.  **Add Sources:** You create a 'notebook' and add your data sources, like Google Drive documents, PDFs, or copied text.\n2.  **Interact with AI:** NotebookLM processes the content and offers a chat interface. You can then:\n    *   **Ask Questions:** \"What are the author's main arguments in document X?\"\n    *   **Request Summaries:** \"Summarize the key points of meeting Y.\"\n    *   **Generate Ideas:** \"Generate 5 ideas for a blog post based on these articles.\"\n3.  **Citations and Sources:** A crucial feature is that NotebookLM always shows **citations** and direct links to the exact passages in your source documents that were used to generate the response, allowing for quick fact-checking.\n\n## Benefits\n\n*   **Personalized Content:** AI becomes an expert in your knowledge domain, not the entire internet.\n*   **Reduced Hallucinations:** As responses are based on your sources, the risk of AI 'making up' information (hallucinating) is significantly reduced.\n*   **Fact-Checking:** Integrated citations make info validation easy.\n*   **Accelerated Research:** Transforms a manual reading and synthesis process into an interactive conversation.\n\n### Relevant Links\n\n*   Official NotebookLM Website",
+        "slug": "notebooklm"
+    },
+    {
+        "nome": "Auto-GPT",
+        "descricao": "An experimental, open-source AI agent that utilizes OpenAI's GPT-4 models to try and achieve complex goals autonomously by breaking them down into subtasks and using the internet and other tools.",
+        "quando_usar": "To explore the capabilities of autonomous agents, perform complex research, or automate multifaceted tasks that require internet access and command execution. Requires technical knowledge to configure.",
+        "link": "https://github.com/Significant-Gravitas/Auto-GPT",
+        "categorias": [
+            "AI Agents",
+            "Software Development",
+            "Automation"
+        ],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Auto-GPT_logo.svg/640px-Auto-GPT_logo.svg.png",
+        "detalhes_markdown": "# Auto-GPT\n\n**Description:** Auto-GPT is an experimental, open-source AI agent that, given a goal in natural language, tries to achieve it autonomously. It uses OpenAI's language models (like GPT-4) to break the main goal into subtasks, create a plan, and then execute that plan using tools like internet access for research, file management, and code execution.\n\n**When to use:** Mainly for exploration and experimentation with the capabilities of autonomous AI agents. It can be used for performing complex research, generating reports, or automating multifaceted tasks. **Requires technical knowledge to configure and run**, including an OpenAI API key.\n\n---\n\n## Operating Loop\n\nAuto-GPT operates in a loop:\n\n1.  **Thought:** The AI reflects on the goal and its current state. \"My goal is X. I've already done Y. What should I do next?\"\n2.  **Reasoning:** The AI decides what the next logical step is to get closer to the goal.\n3.  **Plan:** The AI creates a short-term plan.\n4.  **Criticism:** The AI critiques its own plan, looking for flaws or improvements.\n5.  **Action:** The AI executes the next action, like doing a Google search, saving a file, or running a script.\n\nThis loop continues until the goal is achieved or the user interrupts it.\n\n## Challenges\n\n*   **Infinite Loops:** The agent can get stuck in a loop, repeating the same actions without progress.\n*   **Cost:** Since it makes many GPT-4 API calls, it can quickly become expensive.\n*   **Effectiveness:** While a powerful concept, its practical effectiveness for complex real-world tasks is still limited and often requires human supervision.\n\n### Relevant Links\n\n*   Official GitHub Repository",
+        "slug": "auto-gpt"
+    },
+    {
+        "nome": "AgentGPT",
+        "descricao": "A platform that lets you assemble and deploy autonomous AI agents directly in the browser. The user defines a goal and the agent attempts to achieve it by creating and executing a task list.",
+        "quando_usar": "To experiment with creating AI agents without needing local environment configuration. Useful for research, planning, and autonomous content creation tasks.",
+        "link": "https://agentgpt.reworkd.ai/",
+        "categorias": [
+            "AI Agents",
+            "Productivity",
+            "Virtual Assistant"
+        ],
+        "detalhes_markdown": "# AgentGPT\n\n**Description:** AgentGPT is a platform that allows you to assemble and deploy autonomous AI agents directly in the browser, making the concept of Auto-GPT accessible to non-technical users. The user defines a name and an objective for their agent, and the platform runs it, showing in real-time the task list the agent is creating and executing to try and achieve that goal.\n\n**When to use:** To experiment with the concept of AI agents without the need for local environment configuration or API keys. It's useful for research tasks, travel planning, creating content drafts, and other activities that can be broken down into logical steps.\n\n---\n\n## How It Works\n\n1.  **Define the Goal:** The user accesses the site and provides a clear objective for the agent (e.g., \"Plan a 5-day trip to Rio de Janeiro focusing on cultural and gastronomic activities\").\n2.  **Execution:** The agent starts working, using a language model to:\n    *   Create a task list (e.g., \"Search for main museums in Rio\", \"List highly-rated restaurants in Copacabana\", \"Create a day-by-day itinerary\").\n    *   Execute each task (usually by performing web searches).\n    *   Mark tasks as completed and add new tasks to the list based on results found.\n3.  **Visualization:** The user can see the agent's 'chain of thought' and the results of each executed task.\n\n## AgentGPT vs. Auto-GPT\n\n*   **Accessibility:** AgentGPT is a ready-to-use web application. Auto-GPT is a code project that needs local installation and configuration.\n*   **Control:** Auto-GPT offers more control and flexibility for developers. AgentGPT is simpler and more limited in its capabilities.\n\n### Relevant Links\n\n*   Official AgentGPT Website",
+        "slug": "agentgpt"
+    },
+    {
+        "nome": "BabyAGI",
+        "descricao": "An AI task management script that creates, prioritizes, and executes tasks based on an initial goal. It is more of a conceptual framework than a finished tool, inspiring many other agent projects.",
+        "quando_usar": "As a basis for understanding how an autonomous agent loop works (creation, prioritization, execution). Ideal for developers who want to build their own AI agents.",
+        "link": "https://github.com/yoheinakajima/babyagi",
+        "categorias": [
+            "AI Agents",
+            "Software Development"
+        ],
+        "detalhes_markdown": "# BabyAGI\n\n**Description:** BabyAGI is a remarkably simple Python script (about 140 lines of code in its original version) that functions as an AI task management system. Given a goal, it creates, prioritizes, and executes tasks in an infinite loop. It is less of a ready-to-use tool and more of a **conceptual framework** that demonstrated the power of an autonomous AI loop, inspiring many other agent projects.\n\n**When to use:** Primarily as a starting point for developers who want to understand the basic architecture of an autonomous AI agent and build their own custom versions.\n\n---\n\n## The BabyAGI Loop\n\nBabyAGI operates in a simple, continuous loop:\n\n1.  **Pull Task:** Grabs the first task from the task list.\n2.  **Execute Task:** Sends the task to an LLM (like OpenAI's) to be executed. 'Execution' here is the generation of text/results based on the task.\n3.  **Create New Tasks:** Sends the result and original goal to an LLM and asks it to create new tasks based on the context.\n4.  **Prioritize Tasks:** Sends the task list to an LLM and asks it to reprioritize them based on the overall goal.\n\nThis cycle repeats, allowing the system to 'think' and adapt as it completes tasks.\n\n## BabyAGI vs. Auto-GPT\n\n*   **Focus:** BabyAGI focuses on simplicity and being a framework for building. Auto-GPT is more complex and tries to be a more complete tool, with internet access and other capabilities.\n*   **Complexity:** BabyAGI's code is intentionally minimal and easy to understand, while Auto-GPT is a much larger software project.\n\n### Relevant Links\n\n*   Official GitHub Repository",
+        "slug": "babyagi"
+    },
+    {
+        "nome": "CrewAI",
+        "descricao": "A framework for orchestrating collaborative AI agents. It allows creating teams of specialized agents that work together to solve complex tasks, each with its own role and tools.",
+        "quando_usar": "To build sophisticated multi-agent systems, such as a virtual market research team or an automated software development crew. Requires Python programming.",
+        "link": "https://www.crewai.com/",
+        "categorias": [
+            "AI Agents",
+            "Software Development",
+            "Automation"
+        ],
+        "detalhes_markdown": "# CrewAI\n\n**Description:** CrewAI is a Python framework designed for orchestrating **collaborative AI agents**. Instead of having a single agent trying to do everything, CrewAI allows you to create a 'crew' (team) of specialized agents, each with its own role, context, and tools, working together to solve complex tasks.\n\n**When to use:** To build sophisticated multi-agent systems that mimic human team collaboration. Examples include a virtual market research team (research agent, analyst agent, writer agent) or an automated software development team. **Requires Python programming.**\n\n---\n\n## Fundamental Concepts\n\n*   **Agents:** Team members. Each agent is defined with:\n    *   **Role:** Their specialty (e.g., 'Senior Marketing Analyst').\n    *   **Goal:** What they are responsible for achieving.\n    *   **Backstory:** Context that helps the LLM better embody the role.\n    *   **Tools:** Capabilities the agent can use (e.g., web search tool, API access tool).\n\n*   **Tasks:** Activities that agents need to perform. Each task is assigned to a specific agent.\n\n*   **Crew:** The set of agents and tasks that will work together.\n\n*   **Process:** How the team collaborates. It can be sequential (one agent finishes, the next starts) or hierarchical.\n\n## Team Example\n\n**Goal:** Create a report on the future of AI in Brazil.\n\n*   **Agent 1: Researcher**\n    *   **Role:** Specialist in finding information on the web.\n    *   **Task:** Find 5 recent articles on the AI market in Brazil.\n\n*   **Agent 2: Analyst**\n    *   **Role:** Specialist in synthesizing information and identifying trends.\n    *   **Task:** Read the articles found by the researcher and create a summary of key points and trends.\n\n*   **Agent 3: Writer**\n    *   **Role:** Expert writer in creating clear and concise content.\n    *   **Task:** Use the analyst's summary to write a final 500-word report.\n\n### Relevant Links\n\n*   Official CrewAI Website\n*   CrewAI Documentation",
+        "slug": "crewai"
+    },
+    {
+        "nome": "Google Imagem 4",
+        "descricao": "The evolution of image creation, raising the bar for hallmark imaging. Delivers impressive photorealism and masterfully handles textures within art, focusing on the visual precision that was missing.",
+        "quando_usar": "For creating photorealistic and artistic images with a focus on visual precision and textures.",
+        "link": "https://ai.google.dev/imagem4",
+        "categorias": [
+            "Image Generation",
+            "Design"
+        ],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Google_Cloud_Vertex_AI_logo.svg/640px-Google_Cloud_Vertex_AI_logo.svg.png",
+        "detalhes_markdown": "# Google Imagem 4\n\n**Description:** Evolution of image creation, raising the bar for hallmark imaging. Delivers impressive photorealism and masterfully handles textures within the art, focusing on missing visual precision.\n\n**When to use:** For creation of photorealistic and artistic images with a focus on visual precision and textures.",
+        "slug": "google-imagem-4"
+    },
+    {
+        "nome": "Google Antigravity",
+        "descricao": "The future of \"agnostic\" programming. In this advanced IDE, you act as an architect while AI assistants (via Gemini Gems) do the heavy lifting: plan, code, test, and debug software for you.",
+        "quando_usar": "For developers who want to act as architects, delegating planning, coding, testing, and debugging to AI assistants.",
+        "link": "https://ai.google.dev/antigravity",
+        "categorias": [
+            "Software Development",
+            "Automation",
+            "AI Agents"
+        ],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Google_Cloud_Vertex_AI_logo.svg/640px-Google_Cloud_Vertex_AI_logo.svg.png",
+        "detalhes_markdown": "# Google Antigravity\n\n**Description:** The future of \"agnostic\" programming. In this advanced IDE, you act as an architect, while AI assistants (via Gemini Gems) do the heavy lifting: plan, code, test, and debug software for you.\n\n**When to use:** For developers who want to act as architects, delegating planning, coding, testing, and debugging software to AI assistants.",
+        "slug": "google-antigravity"
+    },
+    {
+        "nome": "Google Stitch",
+        "descricao": "The direct bridge between your imagination and UI design. Simply describe what you want and the tool creates the layout, functional interactions, and code, drastically cutting prototyping time.",
+        "quando_usar": "For designers and developers who want to create UI layouts, functional interactions, and code from text descriptions, accelerating prototyping time.",
+        "link": "https://ai.google.dev/stitch",
+        "categorias": [
+            "Design",
+            "Software Development",
+            "Code Generation"
+        ],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Google_Cloud_Vertex_AI_logo.svg/640px-Google_Cloud_Vertex_AI_logo.svg.png",
+        "detalhes_markdown": "# Google Stitch\n\n**Description:** The direct bridge between your imagination and UI design. Just describe what you want and the tool creates the layout, functional interactions, and code, drastically cutting prototyping time.\n\n**When to use:** For designers and developers who want to create UI layouts, functional interactions, and code from textual descriptions, accelerating prototyping time.",
+        "slug": "google-stitch"
+    },
+    {
+        "nome": "Gemini Gems",
+        "descricao": "Your digital clones for repetitive tasks. Set up AI assistants with custom instructions to act as managers, reviewers, or specialists in specific routine processes.",
+        "quando_usar": "To automate repetitive tasks and delegate specific roles to custom AI assistants, such as management, review, or process specialization.",
+        "link": "https://ai.google.dev/gems",
+        "categorias": [
+            "AI Agents",
+            "Automation",
+            "Productivity"
+        ],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Google_Cloud_Vertex_AI_logo.svg/640px-Google_Cloud_Vertex_AI_logo.svg.png",
+        "detalhes_markdown": "# Gemini Gems\n\n**Description:** Your digital clones for repetitive tasks. Set up AI assistants with custom instructions to act as managers, reviewers, or specialists in specific processes of your routine.\n\n**When to use:** To automate repetitive tasks and delegate specific functions to custom AI assistants, like management, review, or process specialization.",
+        "slug": "gemini-gems"
+    },
+    {
+        "nome": "Google Whisk",
+        "descricao": "For those who see AI as a brush. An experimental tool that lets you fuse styles, objects, and scenarios to create photo-montages with a unique and artistic aesthetic.",
+        "quando_usar": "For artists and designers who want to create unique photo-montages, fusing styles, objects, and scenarios with AI help.",
+        "link": "https://ai.google.dev/whisk",
+        "categorias": [
+            "Image Generation",
+            "Design"
+        ],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Google_Cloud_Vertex_AI_logo.svg/640px-Google_Cloud_Vertex_AI_logo.svg.png",
+        "detalhes_markdown": "# Google Whisk\n\n**Description:** For those who see AI as a brush. An experimental tool that allows you to fuse styles, objects, and scenarios to create photo-montages with a unique and artistic aesthetic.\n\n**When to use:** For artists and designers who want to create unique photo-montages, fusing styles, objects, and scenarios with the help of AI.",
+        "slug": "google-whisk"
+    },
+    {
+        "nome": "Nano Banana Pro",
+        "descricao": "The power of image editing via conversation. Adds a prompt layer that lets you request complex image changes using simple language, executed by AI with professional quality.",
+        "quando_usar": "For advanced image editing via natural language commands, allowing complex changes with ease and professional quality.",
+        "link": "https://nanobanana.pro/",
+        "categorias": [
+            "Image Editing",
+            "Image Generation"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1550645612-83f5d594b671?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# Nano Banana Pro\n\n**Description:** The power of image editing via conversations. Adds a prompt layer that allows you to request complex image changes using simple language, and the AI executes with professional quality.\n\n**When to use:** For advanced image editing through natural language commands, allowing complex changes with ease and professional quality.",
+        "slug": "nano-banana-pro"
+    },
+    {
+        "nome": "Google Veo 3.1",
+        "descricao": "The final frontier of generative video. Using a new diffusion architecture, it creates videos with fluid motion and realistic coherence from simple text commands.",
+        "quando_usar": "For creating generative videos with fluid motion and realism from textual descriptions.",
+        "link": "https://ai.google.dev/veo",
+        "categorias": [
+            "Video Generation",
+            "Media Generation"
+        ],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Google_Cloud_Vertex_AI_logo.svg/640px-Google_Cloud_Vertex_AI_logo.svg.png",
+        "detalhes_markdown": "# Google Veo 3.1\n\n**Description:** The final frontier of generative video. Using a new diffusion architecture, it creates videos with fluid motion and realistic coherence from simple text commands.\n\n**When to use:** For creation of generative videos with fluid motion and realism from textual descriptions.",
+        "slug": "google-veo-31"
+    },
+    {
+        "nome": "Google Opal",
+        "descricao": "The democratization of AI development. Create small functional applications in minutes, without being a code expert, and share the link with anyone instantly.",
+        "quando_usar": "To quickly create small AI-based functional apps without needing advanced programming knowledge, and share them easily.",
+        "link": "https://ai.google.dev/opal",
+        "categorias": [
+            "Software Development",
+            "Low-Code/No-Code",
+            "AI"
+        ],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Google_Cloud_Vertex_AI_logo.svg/640px-Google_Cloud_Vertex_AI_logo.svg.png",
+        "detalhes_markdown": "# Google Opal\n\n**Description:** The democratization of AI development. Create small functional apps in minutes, without needing to be a code expert, and share the link with anyone instantly.\n\n**When to use:** To create small functional apps based on AI quickly, without the need for advanced programming knowledge, and share them easily.",
+        "slug": "google-opal"
+    },
+    {
+        "nome": "Google AI Studio",
+        "descricao": "The ultimate developer playground. An agile website to test, iterate, and integrate Google's latest models directly into your app prototypes.",
+        "quando_usar": "For developers who want to agilely test, iterate, and integrate Google's AI models into their app prototypes.",
+        "link": "https://ai.google.dev/studio",
+        "categorias": [
+            "Software Development",
+            "AI",
+            "Tools"
+        ],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Google_Cloud_Vertex_AI_logo.svg/640px-Google_Cloud_Vertex_AI_logo.svg.png",
+        "detalhes_markdown": "# Google AI Studio\n\n**Description:** The ultimate playground for developers. An agile website to test, iterate, and integrate Google's latest models directly into your app prototypes.\n\n**When to use:** For developers who want to test, iterate, and integrate Google AI models into their app prototypes agilely.",
+        "slug": "google-ai-studio"
+    },
+    {
+        "nome": "Google Pomelli",
+        "descricao": "Brand creativity at scale. This AI generates custom marketing assets that not only engage but strictly adhere to your company's style guide and visual identity.",
+        "quando_usar": "To generate custom marketing assets at scale, ensuring engagement and adherence to brand visual identity.",
+        "link": "https://labs.google.com/pomelli/about/",
+        "categorias": [
+            "Marketing",
+            "Content Generation",
+            "Design"
+        ],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Google_Cloud_Vertex_AI_logo.svg/640px-Google_Cloud_Vertex_AI_logo.svg.png",
+        "detalhes_markdown": "# Google Pomelli\n\n**Description:** Brand creativity at scale. This AI generates custom marketing assets that not only engage, but strictly respect your company's style guide and visual identity.\n\n**When to use:** To generate custom marketing assets at scale, ensuring engagement and adherence to the brand's visual identity.",
+        "slug": "google-pomelli"
+    },
+    {
+        "nome": "Napkin AI",
+        "descricao": "Artificial intelligence tool that transforms text into graphics, diagrams, and illustrations instantly, facilitating visual communication.",
+        "quando_usar": "To quickly create diagrams, flowcharts, and mind maps from notes or text, ideal for presentations and documentation.",
+        "link": "https://www.napkin.ai/",
+        "categorias": [
+            "Image Generation",
+            "Productivity",
+            "Design"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1542626991-cbc4e32524cc?ixlib=rb-4.0.3&auto=format&fit=crop&w=640&q=80",
+        "detalhes_markdown": "# Napkin AI\n\n**Description:** Napkin AI is an innovative tool that converts plain text into visually explanatory graphics and diagrams. Using artificial intelligence, it analyzes your text and generates visual representations like flowcharts, Venn diagrams, user journeys, and much more, all automatically.\n\n**When to use:** When you need to explain complex ideas visually and quickly, without spending hours drawing shapes and arrows in traditional diagramming software. It's perfect for creating visual assets for product documents, presentations, and meeting notes.\n\n---\n\n## Main Use Cases\n\n*   **Dynamic Documentation:** Transform PRDs (Product Requirements Documents) and wikis into attractive visual documents.\n*   **Brainstorming:** Convert loose notes and ideas from planning sessions into structured mind maps.\n*   **Agile Presentations:** Create slides with complex diagrams just by typing what you want to show.\n\n## Benefits\n\n*   **Time Savings:** Generates diagrams in seconds that would take minutes or hours.\n*   **Focus on Action:** Keeps focus on 'what' (content) instead of 'how' (visual design).\n\n### Relevant Links\n\n*   [Official Napkin AI Website](https://www.napkin.ai/)",
+        "slug": "napkin-ai"
+    }
+]

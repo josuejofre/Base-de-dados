@@ -1,0 +1,174 @@
+[
+    {
+        "nome": "Availability (Uptime)",
+        "descricao": "Measures the percentage of time that the system is operational and available for use.",
+        "quando_usar": "To monitor the ongoing health of systems, evaluate compliance with Service Level Agreements (SLAs), and justify infrastructure investments.",
+        "link": "https://aws.amazon.com/what-is/uptime/",
+        "categorias": [
+            "Systems Management",
+            "Key Performance Indicators (KPIs)"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1581092921539-a0a18a033334?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# Availability (Uptime)\n\n**Description:** Measures the percentage of time a system, service, or component is operational and accessible. It is one of the most critical indicators for customer satisfaction and business continuity.\n\n**When to use:** Constantly, as part of real-time monitoring dashboards. Essential for evaluating Service Level Agreement (SLA) compliance and making strategic decisions about high availability and redundancy.\n\n---\n\n## How to Calculate\n\nBasic formula:\n\n`Uptime (%) = (Total Available Time - Downtime) / Total Available Time * 100`\n\n'Total Available Time' is the full measurement period (e.g., one month).\n\n### The Famous 'Nines'\n\nAvailability is often expressed in 'nines':\n\n| Availability | Downtime per Year |\n| :--- | :--- |\n| 99% (\"Two nines\") | 3.65 days |\n| 99.9% (\"Three nines\") | 8.77 hours |\n| 99.99% (\"Four nines\") | 52.6 minutes |\n| 99.999% (\"Five nines\") | 5.26 minutes |\n\n---\n\n### Factors Impacting Uptime\n\n*   **Redundancy:** Having duplicate components (servers, network links) that take over in case of failure.\n*   **Monitoring:** Tools that proactively detect problems before they cause an outage.\n*   **Recovery Processes:** Well-tested disaster recovery plans and backups.",
+        "slug": "disponibilidade-uptime"
+    },
+    {
+        "nome": "Mean Time Between Failures (MTBF)",
+        "descricao": "Indicates system reliability by measuring the average operating time without failure.",
+        "quando_usar": "To evaluate hardware or software reliability, plan preventive maintenance, and make purchase or replacement decisions.",
+        "link": "https://www.atlassian.com/incident-management/kpis/mtbf",
+        "categorias": [
+            "Systems Management",
+            "Key Performance Indicators (KPIs)"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# Mean Time Between Failures (MTBF)\n\n**Description:** MTBF is a reliability indicator measuring the average time a system or component operates before failing. A high MTBF indicates a more reliable system.\n\n**When to use:** To evaluate and compare the reliability of different hardware components or software versions. Crucial for preventive maintenance planning and predicting IT asset lifespan.\n\n---\n\n## How to Calculate\n\n`MTBF = Total Operating Time / Number of Failures`\n\n*   **Total Operating Time:** Total scheduled uptime minus downtime for repairs.\n*   **Number of Failures:** Total count of failures in the period.\n\n### Practical Example\n\nA server operated for 1,000 hours in a month. During this period, it failed twice, and each repair took 1 hour.\n\n*   Operating Time = 1,000 hours - (2 failures * 1 hour/failure) = 998 hours.\n*   MTBF = 998 hours / 2 failures = 499 hours.\n\nAverage expected time before a new failure is 499 hours.\n\n---\n\n## MTBF vs. MTTF\n\n*   **MTBF (Mean Time Between Failures):** Used for **repairable** systems. Measures time between one failure and the next.\n*   **MTTF (Mean Time To Failure):** Used for **non-repairable** systems (like a lightbulb). Measures total time until definitive failure.",
+        "slug": "tempo-medio-entre-falhas-mtbf"
+    },
+    {
+        "nome": "Mean Time To Repair (MTTR)",
+        "descricao": "Measures system recovery speed after failure, indicating support team efficiency.",
+        "quando_usar": "To evaluate operations team efficiency, identify bottlenecks in incident resolution, and justify investments in automation and training.",
+        "link": "https://www.atlassian.com/incident-management/kpis/mttr",
+        "categorias": [
+            "Systems Management",
+            "Key Performance Indicators (KPIs)"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# Mean Time To Repair (MTTR)\n\n**Description:** MTTR measures the average time required to repair a system and restore functionality after a failure. Low MTTR indicates an efficient incident response team and well-defined recovery processes.\n\n**When to use:** Key metric for DevOps and SRE teams. Used to evaluate operational efficiency and justify monitoring, automation, and training investments.\n\n---\n\n## How to Calculate\n\n`MTTR = Total Repair Time / Number of Incidents`\n\n### The Many Faces of 'R'\n\n*   **Mean Time to Repair:** Average time spent effectively fixing the issue.\n*   **Mean Time to Recovery:** Average time for full system recovery, including tests.\n*   **Mean Time to Resolution:** Total time from detection to root-cause elimination.\n*   **Mean Time to Respond:** Average time until work begins on the incident after alerting.",
+        "slug": "tempo-medio-para-reparo-mttr"
+    },
+    {
+        "nome": "Latency / Response Time",
+        "descricao": "Processing speed of requests, measuring time between user request and system response.",
+        "quando_usar": "To measure user experience performance in web apps and APIs. Essential for identifying performance bottlenecks.",
+        "link": "https://aws.amazon.com/what-is/latency/",
+        "categorias": [
+            "Systems Management",
+            "Key Performance Indicators (KPIs)"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1545989253-02b27039a389?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# Latency and Response Time\n\n**Description:** **Latency** is the time for a request to travel (delay). **Response Time** is the total time the client waits, including server processing.\n\n**What to Measure:** Monitor percentiles (p50, p95, p99) to see the majority experience and identify slow outliers affecting key users.\n\n### Factors Influencing Latency\n\n*   Geographic distance.\n*   Network congestion.\n*   Server performance (DB, logic).\n*   System load.",
+        "slug": "latenciatempo-de-resposta"
+    },
+    {
+        "nome": "Resource Utilization",
+        "descricao": "Monitoring CPU, memory, and disk for capacity management and failure prevention.",
+        "quando_usar": "Continuously, to ensure systems have sufficient resources, predict needs (capacity planning), and optimize costs, especially in the cloud.",
+        "link": "https://www.datadoghq.com/blog/monitoring-101-collecting-data/",
+        "categorias": [
+            "Systems Management",
+            "Key Performance Indicators (KPIs)"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1591453089873-1f32420045ac?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# Resource Utilization\n\n**Description:** Monitoring CPU, Memory (RAM), and Storage (Disk) usage.\n\n**Key Metrics:**\n*   **CPU:** Utilization (%) and Load Average.\n*   **Memory:** Used Memory (%) and Page Faults.\n*   **Storage:** Used Disk Space (%) and IOPS (I/O Operations per Second).\n\nEssential for **Capacity Management** and **Cost Optimization**.",
+        "slug": "utilizacao-de-recursos"
+    },
+    {
+        "nome": "IT Service Management (ITSM/ITIL)",
+        "descricao": "Implementing structured processes for Incident, Problem, and Change Management, aligning IT with the business.",
+        "quando_usar": "To standardize IT service delivery, improve efficiency, reduce downtime, and increase customer satisfaction.",
+        "link": "https://www.atlassian.com/itsm",
+        "categorias": [
+            "Systems Management",
+            "Management Techniques and Practices"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# IT Service Management (ITSM/ITIL)\n\n**Core Processes:**\n*   **Incident Management:** Restore service fast (focus: MTTR).\n*   **Problem Management:** Root-cause analysis (RCA) to prevent repeat incidents.\n*   **Change Management:** Controlled implementation (CAB approval) to minimize risk.\n*   **Service Catalog:** Menu of IT services available to users.",
+        "slug": "gerenciamento-de-servicos-de-ti-itsmitil"
+    },
+    {
+        "nome": "Infrastructure as Code (IaC)",
+        "descricao": "Managing and provisioning IT infrastructure through definition files, treating infrastructure like software.",
+        "quando_usar": "To create dev, test, and production environments quickly and reliably, eliminating manual configuration.",
+        "link": "https://aws.amazon.com/what-is/infrastructure-as-code/",
+        "categorias": [
+            "Systems Management",
+            "Management Techniques and Practices",
+            "DevOps and SRE"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1605648916319-448373a0b1f7?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# Infrastructure as Code (IaC)\n\n**Tools:**\n*   **Declarative:** Terraform (Industry standard), AWS CloudFormation.\n*   **Imperative:** Ansible (Agentless), Puppet/Chef.\n\n**Benefits:** Repeatability, Speed, and Version Control via Git.",
+        "slug": "infraestrutura-como-codigo-iac"
+    },
+    {
+        "nome": "Monitoring and Observability",
+        "descricao": "Monitoring says 'what' is broken; Observability helps understand 'why', allowing debugging of complex problems.",
+        "quando_usar": "On all production systems. Monitoring for known issues; Observability for unplanned distributed system failures.",
+        "link": "https://www.redhat.com/en/topics/cloud-native-apps/observability-vs-monitoring",
+        "categorias": [
+            "Systems Management",
+            "Management Techniques and Practices",
+            "DevOps and SRE"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# Monitoring and Observability\n\n**Three Pillars of Observability:**\n1.  **Logs:** Event records (ELK Stack, Splunk).\n2.  **Metrics:** Numeric measures (Prometheus, Grafana).\n3.  **Traces:** End-to-end request lifecycle (Jaeger, OpenTelemetry).",
+        "slug": "monitoramento-e-observabilidade"
+    },
+    {
+        "nome": "Business Continuity (BCDR)",
+        "descricao": "Ensuring business operation during and after a disaster, defining recovery time (RTO) and data loss (RPO) goals.",
+        "quando_usar": "For critical systems where downtime or data loss has high financial or reputational impact.",
+        "link": "https://aws.amazon.com/what-is/bcdr/",
+        "categorias": [
+            "Systems Management",
+            "Management Techniques and Practices"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1517436026563-63b0114092c4?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# Business Continuity and Disaster Recovery (BCDR)\n\n**Key Concepts:**\n*   **RTO (Recovery Time Objective):** Maximum tolerable downtime.\n*   **RPO (Recovery Point Objective):** Maximum tolerable data loss.\n\n**Strategies:** Backup/Restore, Pilot Light, Warm Standby, Hot Standby (Active/Active).",
+        "slug": "continuidade-de-negocios-bcdr"
+    },
+    {
+        "nome": "DevOps and SRE",
+        "descricao": "Culture and practices unifying development and operations (DevOps), with engineering-focused reliability implementation (SRE).",
+        "quando_usar": "To break team silos, automate CI/CD, and operate large-scale systems reliably.",
+        "link": "https://cloud.google.com/blog/products/devops-sre/sre-vs-devops-whats-the-difference",
+        "categorias": [
+            "Systems Management",
+            "Strategic Knowledge and Approaches",
+            "DevOps and SRE"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1542626991-a2f575a75c8c?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# DevOps and SRE (Site Reliability Engineering)\n\n**Concepts:**\n*   **CI/CD:** Automated testing and integration (CI) and automated deployment (CD).\n*   **SLI/SLO/SLA:** Indicators, Objectives, and Agreements for service levels.\n*   **Error Budget:** Tolerable failure allowance (e.g., 0.1% for 99.9% uptime).",
+        "slug": "devops-e-sre"
+    },
+    {
+        "nome": "System Security",
+        "descricao": "Practices to protect systems from threats, including vulnerability management, hardening, and security monitoring.",
+        "quando_usar": "Throughout the entire system lifecycle, from design (Security by Design) to ongoing operations.",
+        "link": "https://aws.amazon.com/security/",
+        "categorias": [
+            "Systems Management",
+            "Strategic Knowledge and Approaches"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1550645612-83f5d594b671?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# System Security\n\n**Domains:**\n*   **Vulnerability Management:** Scanning and patching.\n*   **Infrastructure Hardening:** Reducing attack surface (CIS benchmarks).\n*   **IAM:** Least Privilege and Multi-Factor Auth (MFA).\n*   **SIEM:** Centralized security log analysis.",
+        "slug": "seguranca-de-sistemas"
+    },
+    {
+        "nome": "Capacity Management",
+        "descricao": "Process of ensuring IT infrastructure meets current and future business needs efficiently and cost-effectively.",
+        "quando_usar": "Continuously, to avoid performance bottlenecks or excessive spending due to over-provisioning.",
+        "link": "https://www.cio.com/article/2432128/infrastructure-it-infrastructure-capacity-management-best-practices.html",
+        "categorias": [
+            "Systems Management",
+            "Strategic Knowledge and Approaches"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# Capacity Management\n\nAnalyses growth trends and models resource needs. Challenges include demand forecasting and managing cloud elasticity costs.",
+        "slug": "gerenciamento-de-capacidade"
+    },
+    {
+        "nome": "IT Financial Optimization (FinOps)",
+        "descricao": "Cultural discipline seeking to maximize cloud business value, bringing financial responsibility to spending.",
+        "quando_usar": "In organizations with significant cloud usage to control costs and enable data-driven spending balanced with speed and quality.",
+        "link": "https://www.finops.org/introduction/what-is-finops/",
+        "categorias": [
+            "Systems Management",
+            "Strategic Knowledge and Approaches"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1544377193-33dcf4d68fb5?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# IT Financial Optimization (FinOps)\n\n**Lifecycle:**\n1.  **Inform:** Cost visibility (tags, dashboards).\n2.  **Optimize:** Reduce waste (right-sizing, reserved instances).\n3.  **Operate:** Automate FinOps habits into daily ops.\n\n*\"The responsibility for cloud costs belongs to those who generate them.\"*",
+        "slug": "otimizacao-financeira-em-ti-finops"
+    }
+]

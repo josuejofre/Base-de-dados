@@ -21,35 +21,40 @@
     <header>
         <div class="header-content">
             <div class="logo-area">
-                <h1>Base de Conhecimento</h1>
-                <p>Gestão de Produtos, Pessoas e Sistemas</p>
+                <h1 data-i18n="title">Base de Conhecimento</h1>
+                <p data-i18n="subtitle">Gestão de Produtos, Pessoas e Sistemas</p>
                 <div class="nav-links">
-                    <a href="grafo.html" class="nav-btn">🕸️ Grafo</a>
-                    <a href="trilhas.html" class="nav-btn">🛤️ Trilhas</a>
+                    <a href="grafo.html" class="nav-btn" data-i18n="nav_grafo">🕸️ Grafo</a>
+                    <a href="trilhas.html" class="nav-btn" data-i18n="nav_trilhas">Tracks</a>
                 </div>
             </div>
             <div class="controles-container">
+                <div class="language-selector">
+                    <button class="lang-btn" data-lang="pt-br" title="Português">🇧🇷</button>
+                    <button class="lang-btn" data-lang="en" title="English">🇺🇸</button>
+                    <button class="lang-btn" data-lang="es" title="Español">🇪🇸</button>
+                </div>
                 <div class="assunto-container">
-                    <label for="assunto-select">Assunto:</label>
+                    <label for="assunto-select" data-i18n="label_assunto">Assunto:</label>
                     <select id="assunto-select">
-                        <option value="techniques" selected>Análise de Negócios</option>
-                        <option value="gestao_pessoas">Gestão de Pessoas</option>
-                        <option value="gestao_times">Gestão de Times</option>
-                        <option value="ferramentas_ia">Ferramentas de IA</option>
-                        <option value="metodologias_ageis">Metodologias Ágeis</option>
-                        <option value="design_produto">Design de Produto</option>
-                        <option value="metricas_indicadores">Métricas e Indicadores</option>
-                        <option value="gestao_sistemas">Gestão de Sistemas</option>
-                        <option value="estudos_futuros">Estudos de Futuros</option>
+                        <option value="techniques" selected data-i18n="subjects.techniques">Análise de Negócios</option>
+                        <option value="gestao_pessoas" data-i18n="subjects.gestao_pessoas">Gestão de Pessoas</option>
+                        <option value="gestao_times" data-i18n="subjects.gestao_times">Gestão de Times</option>
+                        <option value="ferramentas_ia" data-i18n="subjects.ferramentas_ia">Ferramentas de IA</option>
+                        <option value="metodologias_ageis" data-i18n="subjects.metodologias_ageis">Metodologias Ágeis</option>
+                        <option value="design_produto" data-i18n="subjects.design_produto">Design de Produto</option>
+                        <option value="metricas_indicadores" data-i18n="subjects.metricas_indicadores">Métricas e Indicadores</option>
+                        <option value="gestao_sistemas" data-i18n="subjects.gestao_sistemas">Gestão de Sistemas</option>
+                        <option value="estudos_futuros" data-i18n="subjects.estudos_futuros">Estudos de Futuros</option>
                     </select>
                 </div>
-                <input id="caixa-busca" type="text" placeholder="Digite para buscar...">
+                <input id="caixa-busca" type="text" placeholder="Digite para buscar..." data-i18n-placeholder="placeholder_busca">
                 <div id="ai-controls">
-                    <button id="btn-activate-ai" class="nav-btn" title="Ativar busca por inteligência artificial (NLP)">
+                    <button id="btn-activate-ai" class="nav-btn" title="Ativar busca por inteligência artificial (NLP)" data-i18n="btn_ia">
                         ✨ Ativar Busca Inteligente
                     </button>
                     <div id="ai-loading-container" style="display: none; flex-direction: column; gap: 0.25rem;">
-                        <span id="ai-status" style="font-size: 0.75rem; color: var(--primary-accent);">Carregando IA...</span>
+                        <span id="ai-status" style="font-size: 0.75rem; color: var(--primary-accent);" data-i18n="btn_ia_loading">Carregando IA...</span>
                         <div style="width: 150px; height: 8px; background: var(--bg-surface); border-radius: 10px; overflow: hidden; border: 1px solid var(--border-subtle);">
                             <div id="ai-progress-bar" style="width: 0%; height: 8px; background: var(--primary-accent); transition: width 0.3s ease;"></div>
                         </div>
@@ -64,8 +69,8 @@
         <!-- Contêiner para os botões de filtro de categoria -->
         <div class="filtros-wrapper">
             <div class="filtros-header">
-                <span class="filtro-label">Filtre por categoria</span>
-                <button id="btn-toggle-filtros" class="btn-text-toggle">Ver mais filtros ▾</button>
+                <span class="filtro-label" data-i18n="label_filtros">Filtre por categoria</span>
+                <button id="btn-toggle-filtros" class="btn-text-toggle" data-i18n="btn_ver_mais">Ver mais filtros ▾</button>
             </div>
             <div id="filtros-categoria" class="filtros-container collapsed"></div>
         </div>
@@ -76,7 +81,7 @@
 
     <!-- Seção do rodapé da página -->
     <footer class="footer">
-        <p class="footer-credit">Página criada por Josué Jofre, acesse <a href="https://www.linkedin.com/in/josuejofre/"
+        <p class="footer-credit"><span data-i18n="footer_credit">Página criada por Josué Jofre, acesse</span> <a href="https://www.linkedin.com/in/josuejofre/"
                 target="_blank">linkedin</a></p>
     </footer>
     <script type="module" src="script.js"></script> <!-- Vincula o arquivo JavaScript para adicionar interatividade -->

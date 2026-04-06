@@ -1,0 +1,293 @@
+[
+    {
+        "nome": "Análisis SWOT",
+        "descricao": "Un marco de planificación estratégica utilizado para evaluar las Fortalezas, Debilidades, Oportunidades y Amenazas involucradas en un proyecto o negocio.",
+        "quando_usar": "Al inicio de un proyecto, en la planificación estratégica trimestral/anual, o al evaluar una nueva iniciativa para entender el escenario interno y externo.",
+        "link": "https://www.atlassian.com/team-playbook/plays/swot-analysis",
+        "categorias": [
+            "Introducción",
+            "Madurez"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# Análisis SWOT\n\n**Descripción:** Un marco de planificación estratégica utilizado para evaluar las **Fortalezas**, **Debilidades**, **Oportunidades** y **Amenazas** involucradas en un proyecto o negocio.\n\n**Cuándo usar:** Al inicio de un proyecto, en la planificación estratégica trimestral/anual, o al evaluar una nueva iniciativa para entender el escenario interno y externo.\n\n---\n\n## Ejemplo Práctico: Lanzamiento de una App de Delivery\n\nImagine una startup que quiere lanzar una nueva aplicación de entrega de comida en una ciudad de tamaño mediano. El equipo se reúne para realizar un Análisis SWOT:\n\n| Factores Internos | Factores Externos |\n| :--- | :--- |\n| **Fortalezas** | **Oportunidades** |\n| - Equipo de desarrollo ágil y experimentado.<br>- Interfaz de usuario intuitiva y moderna.<br>- Asociación inicial con 3 restaurantes populares. | - Crecimiento del mercado de delivery en la región.<br>- Competidores con altas tarifas de envío.<br>- Población joven y conectada. |\n| **Debilidades** | **Amenazas** |\n| - Presupuesto de marketing limitado.<br>- Marca desconocida en el mercado.<br>- Poca experiencia en logística de entrega. | - Fuerte competencia de apps establecidas.<br>- Posible crisis económica que disminuya el gasto promedio.<br>- Cambios en la legislación laboral para repartidores. |\n\n### Estrategias Derivadas\n\n* **Aprovechamiento (Fortalezas + Oportunidades):** Usar la interfaz intuitiva en campañas de marketing digital enfocadas en jóvenes para resaltar la facilidad de uso frente a la competencia.\n* **Mitigación (Debilidades + Amenazas):** Buscar una inversión ángel para aumentar el presupuesto de marketing y competir de manera más agresiva con los actores establecidos.\n ",
+        "slug": "analise-swot"
+    },
+    {
+        "nome": "5 Porqués (5 Whys)",
+        "descricao": "Una técnica de análisis de causa raíz que consiste en preguntar '¿Por qué?' repetidamente (generalmente cinco veces) para explorar las relaciones de causa y efecto que subyacen a un problema específico y encontrar su origen.",
+        "quando_usar": "En la resolución de problemas, análisis de incidentes o cuando se encuentra un defecto, para entender la causa raíz en lugar de solo tratar los síntomas.",
+        "link": "https://www.mindtools.com/pages/article/newTMC_5W.htm",
+        "categorias": [
+            "Desarrollo",
+            "Madurez",
+            "Declive"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1506935078239-1506dd94a260?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# 5 Porqués: Encontrando la Causa Raíz\n\n**Descripción:** Una técnica de análisis de causa raíz que consiste en preguntar '¿Por qué?' repetidamente (generalmente cinco veces) para explorar las relaciones de causa y efecto que subyacen a un problema específico y encontrar su origen.\n\n**Cuándo usar:** En la resolución de problemas, análisis de incidentes o cuando se encuentra un defecto, para entender la causa raíz en lugar de solo tratar los síntomas.\n\n---\n\n## Cómo Aplicar\n\n1.  **Definir el Problema:** Escriba una declaración del problema clara y concisa.\n2.  **Preguntar '¿Por qué?':** Pregunte por qué ocurrió el problema y anote la respuesta.\n3.  **Seguir Preguntando:** Use la respuesta anterior como base para la siguiente pregunta de '¿Por qué?'.\n4.  **Repetir:** Continúe hasta que el equipo sienta que ha llegado a la causa raíz del problema. El número '5' es solo una guía.\n5.  **Proponer una Solución:** Una vez identificada la causa raíz, el equipo puede discutir e implementar una contramedida para evitar que el problema vuelva a ocurrir.\n\n### Ejemplo Práctico\n\n* **Problema:** El sitio web se cayó hoy al mediodía.\n\n1.  **¿Por qué se cayó el sitio web?**\n    * Porque la base de datos estaba sobrecargada con demasiadas conexiones.\n\n2.  **¿Por qué estaba sobrecargada la base de datos?**\n    * Porque una nueva función de informes estaba realizando consultas muy pesadas e ineficientes.\n\n3.  **¿Por qué se implementó la función con consultas ineficientes?**\n    * Porque el desarrollador responsable carecía de experiencia con la optimización de consultas y estaba bajo un plazo ajustado.\n\n4.  **¿Por qué el desarrollador carecía de experiencia y el plazo era corto?**\n    * Porque no hubo una capacitación adecuada sobre las mejores prácticas de base de datos y la planificación del sprint subestimó la complejidad de la tarea.\n\n5.  **¿Por qué no se proporcionó la capacitación y la planificación fue defectuosa?**\n    * **Causa Raíz:** La empresa carece de un proceso formal de capacitación y planificación de capacidad, lo que lleva a fallas en la ejecución y sobrecarga del equipo. Las acciones de mejora deben centrarse en capacitar a los desarrolladores y ajustar el proceso de planificación de sprints.\n",
+        "slug": "5-porques-5-whys"
+    },
+    {
+        "nome": "User Stories (Historias de Usuario)",
+        "descricao": "Una descripción informal y general de una característica de software escrita desde la perspectiva del usuario final. El formato común es: 'Como [tipo de usuario], quiero [un objetivo] para que [un beneficio]'.",
+        "quando_usar": "En entornos ágiles, para definir los requisitos y características del producto de una manera centrada en el usuario, conformando el backlog del producto.",
+        "link": "https://www.atlassian.com/agile/project-management/user-stories",
+        "categorias": [
+            "Desarrollo"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1587614295999-6c1c13675123?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# User Stories: La Voz del Cliente\n\n**Descripción:** Una descripción informal y general de una característica de software escrita desde la perspectiva del usuario final. Una historia de usuario no es una especificación detallada, sino más bien un **recordatorio para una conversación** sobre un requisito.\n\n**Cuándo usar:** En entornos ágiles, para definir los requisitos y características del producto de una manera centrada en el usuario, conformando el backlog del producto.\n\n---\n\n## El Formato Estándar\n\nEl formato más común ayuda a asegurar que el equipo piense en tres aspectos cruciales:\n\n**Como** `[tipo de usuario]`, **quiero** `[un objetivo]` **para que** `[un beneficio]`.\n\n* **Como... (Persona):** Define quién está pidiendo. Esto genera empatía y dirige el diseño hacia un público específico.\n* **Quiero... (Acción):** Describe la intención, lo que el usuario quiere hacer. Es el 'qué' de la historia.\n* **Para que... (Valor):** Explica la razón, el valor que el usuario espera obtener. Es el 'por qué', y es la parte más importante para la priorización.\n\n---\n\n## Las 3 Cs: Card, Conversation, Confirmation\n\nEste concepto de Ron Jeffries resume el ciclo de vida de una historia:\n\n1.  **Card (Tarjeta):** La historia se escribe en una tarjeta (física o digital, como una tarjeta en Jira/Trello). Contiene solo el texto esencial, suficiente para identificar el requisito.\n\n2.  **Conversation (Conversación):** El detalle de la historia ocurre a través de conversaciones entre el Product Owner, el equipo de desarrollo y las partes interesadas. Aquí es donde se aclaran las dudas y se profundiza el entendimiento.\n\n3.  **Confirmation (Confirmación):** ¿Cómo sabremos que la historia está lista y funciona como se espera? La confirmación se realiza a través de los **Criterios de Aceptación**.",
+        "slug": "historias-de-usuario-user-stories"
+    },
+    {
+        "nome": "Business Model Canvas",
+        "descricao": "Una herramienta de gestión estratégica que permite describir, diseñar, desafiar, inventar y pivotar su modelo de negocio. Consiste en 9 bloques que cubren las áreas principales de un negocio.",
+        "quando_usar": "Al crear un nuevo negocio, desarrollar un nuevo producto, o revisar e innovar un modelo de negocio existente.",
+        "link": "https://www.strategyzer.com/canvas/business-model-canvas",
+        "audio": "assets/audio/Business_Model_Canvas.mp3",
+        "categorias": [
+            "Introducción"
+        ],
+        "imagem": "assets/images/business_model_canvas.png",
+        "video": "https://youtu.be/IJNwN2Sj4aQ",
+        "detalhes_markdown": "# Business Model Canvas: El Mapa de su Negocio\n\n**Descripción:** Una herramienta de gestión estratégica que permite describir, diseñar, desafiar, inventar y pivotar su modelo de negocio en una sola página. Consiste en 9 bloques que cubren las cuatro áreas principales de un negocio: clientes, oferta, infraestructura y viabilidad financiera.\n\n**Cuándo usar:** Al crear un nuevo negocio, desarrollar un nuevo producto, o revisar e innovar un modelo de negocio existente.\n\n---\n\n## Los 9 Bloques del Canvas\n\nEl lienzo se completa de derecha a izquierda, comenzando por el cliente.\n\n### Lado Derecho (Enfoque en Valor/Cliente)\n\n1.  **Segmentos de Cliente:** ¿Para quién estamos creando valor? ¿Quiénes son nuestros clientes más importantes?\n\n2.  **Propuestas de Valor:** ¿Qué valor entregamos al cliente? ¿Qué problema estamos ayudando a resolver o qué necesidad estamos satisfaciendo?\n\n3.  **Canales:** ¿Cómo llegamos a nuestros segmentos de clientes para entregar nuestra propuesta de valor? (Canales de comunicación, distribución y ventas).\n\n4.  **Relaciones con Clientes:** ¿Qué tipo de relación espera cada segmento de clientes que establezcamos y mantengamos con ellos?\n\n5.  **Fuentes de Ingresos:** ¿Cómo y cuánto están dispuestos a pagar los clientes por el valor que reciben? (Ej: venta de activos, tarifa de uso, suscripción, licenciamiento).\n\n### Lado Izquierdo (Enfoque en Eficiencia/Infraestructura)\n\n6.  **Recursos Clave:** ¿Qué recursos (físicos, intelectuales, humanos, financieros) son esenciales para crear y entregar nuestra propuesta de valor?\n\n7.  **Actividades Clave:** ¿Cuáles son las acciones más importantes que la empresa debe realizar para que su modelo de negocio funcione?\n\n8.  **Asociaciones Clave:** ¿Quiénes son nuestros socios y proveedores clave? ¿Qué actividades clave realizan?\n\n### Lado Financiero (Costo)\n\n9.  **Estructura de Costes:** ¿Cuáles son los costes más importantes inherentes a nuestro modelo de negocio? (Costes fijos, variables, economías de escala, etc.)",
+        "slug": "business-model-canvas"
+    },
+    {
+        "nome": "Jobs to be Done (JTBD)",
+        "descricao": "Un enfoque que se centra en el 'trabajo' que el cliente está tratando de realizar. Ayuda a entender la motivación principal del cliente para 'contratar' un producto o servicio, yendo más allá de las características demográficas o del producto.",
+        "quando_usar": "En la fase de descubrimiento de producto, para innovar y crear soluciones que satisfagan las necesidades reales y profundas de los clientes, en lugar de solo agregar funcionalidades.",
+        "link": "https://jtbd.info/2-what-is-jobs-to-be-done-jtbd-796f7218a4c5",
+        "categorias": [
+            "Introducción",
+            "Crecimiento"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# Jobs to be Done (JTBD): Enfoque en el Progreso del Cliente\n\n**Descripción:** Un enfoque que se centra en el 'trabajo' (job) que el cliente está tratando de realizar. La idea central es que las personas no compran productos; las personas 'contratan' productos para hacer un trabajo y lograr un progreso en sus vidas.\n\n**Cuándo usar:** En la fase de descubrimiento de producto, para innovar y crear soluciones que satisfagan las necesidades reales y profundas de los clientes, en lugar de solo agregar funcionalidades.\n\n---\n\n## El Concepto Central: El 'Trabajo' a realizar\n\nJTBD cambia el enfoque de las **personas** (quiénes son los usuarios) a la **situación** (el contexto y la motivación). En lugar de preguntar '¿Qué tipo de persona compraría nuestro producto?', la pregunta se convierte en '¿En qué circunstancia una persona 'contrataría' nuestro producto para hacer qué trabajo?'.\n\nEsto revela que sus competidores no son solo productos similares, sino cualquier cosa que el cliente pueda usar para realizar el mismo trabajo.\n\n### El Ejemplo Clásico del Milkshake\n\nUno de los ejemplos más famosos, popularizado por Clayton Christensen, involucra a una cadena de comida rápida que quería aumentar las ventas de batidos (milkshakes). Intentaron de todo: nuevos sabores, precios más bajos, etc., pero nada funcionó.\n\nAl aplicar el JTBD, descubrieron que casi la mitad de los batidos se vendían temprano en la mañana, a personas solas en sus autos. El 'trabajo' para el que se contrataba el batido era:\n\n* **'Ayúdame a enfrentar un trayecto largo y aburrido al trabajo.'**\n\nEl batido era la mejor solución porque era fácil de consumir con una mano, tardaba mucho en terminarse (llenando el tiempo) y era lo suficientemente sustancial como para saciar el hambre hasta el almuerzo. Los verdaderos competidores no eran otros batidos, sino plátanos (se acaban rápido), bagels (difíciles de comer conduciendo) y barras de cereales.\n\nCon este insight, en lugar de centrarse en el sabor, la empresa hizo el batido más espeso (para que durara más) y colocó el punto de venta más cerca del drive-thru para agilizar la compra matutina.",
+        "slug": "jobs-to-be-done-jtbd"
+    },
+    {
+        "nome": "Design Sprint",
+        "descricao": "Un proceso de cinco días, con tiempo limitado, para responder a preguntas críticas de negocios a través del diseño, la creación de prototipos y el testeo de ideas con los clientes. Popularizado por Google Ventures.",
+        "quando_usar": "Para dar el puntapié inicial a un gran proyecto, validar una idea de alto riesgo, o resolver un problema complejo de diseño o negocio de forma rápida y colaborativa.",
+        "link": "https://www.thesprintbook.com/the-design-sprint",
+        "categorias": [
+            "Introducción",
+            "Desarrollo"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# Design Sprint: Del Problema al Test en 5 Días\n\n**Descripción:** Un proceso de cinco días, con tiempo limitado, para responder a preguntas críticas de negocios a través del diseño, la creación de prototipos y el testeo de ideas con clientes reales. Creado en Google Ventures, es una \"receta\" paso a paso para reducir los riesgos de llevar un nuevo producto, funcionalidad o servicio al mercado.\n\n**Cuándo usar:** Para dar el puntapié inicial a un gran proyecto, validar una idea de alto riesgo, o resolver un problema complejo de diseño o negocio de forma rápida y colaborativa.\n\n---\n\n## El Proceso de 5 Días\n\nCada día del Sprint tiene un objetivo claro y actividades específicas para evitar discusiones abstractas y centrarse en la acción.\n\n### Día 1: Map (Lunes)\nEl objetivo es crear un camino claro para el Sprint. El equipo define la meta a largo plazo, mapea el desafío, entrevista a expertos de la empresa y elige un objetivo: un cliente específico y un momento crítico en su jornada.\n\n* **Actividades:** Definir Meta, Mapear la Jornada, Entrevistas con Expertos, Votación HMW (How Might We), Elegir el Objetivo.\n\n### Día 2: Sketch (Martes)\nCon el problema enfocado, el equipo busca inspiración en soluciones existentes (dentro y fuera de su sector) y luego cada miembro esboza su propia solución detallada, individualmente y en silencio.\n\n* **Actividades:** Lightning Demos, Boceto en 4 Pasos (Notas, Ideas, Crazy 8s, Boceto de la Solución).\n\n### Día 3: Decide (Miércoles)\nEs hora de decidir qué solución será prototipada. En lugar de un debate prolongado, el equipo utiliza un proceso de votación estructurado. Las mejores ideas se combinan en un guion gráfico (storyboard), que será el plan para el prototipo.\n\n* **Actividades:** Museo de Arte (exhibición de bocetos), Mapa de Calor (votación silenciosa), Crítica Rápida, Voto del Decisor, Storyboard.\n\n### Día 4: Prototipar (Jueves)\nEl enfoque es crear una fachada realista. El equipo construye un prototipo de alta fidelidad que parezca lo suficientemente real como para que los clientes actúen naturalmente con él. Es importante \"fingir\" el producto completo, sin preocuparse por el código subyacente.\n\n### Día 5: Testear (Viernes)\nEl último día se dedica a probar el prototipo con 5 clientes reales. Esta es la fase más crucial, ya que las entrevistas estructuradas con los clientes proporcionan datos directos e insights sobre lo que funciona y lo que necesita ser ajustado.",
+        "slug": "design-sprint"
+    },
+    {
+        "nome": "Personas",
+        "descricao": "Creación de personajes ficticios que representan los diferentes tipos de usuarios de un producto o servicio. Las personas ayudan al equipo a tomar decisiones de diseño centradas en el usuario.",
+        "quando_usar": "Durante todo el ciclo de vida del producto, desde la concepción hasta el diseño y el marketing, para asegurar que las necesidades y objetivos del público objetivo sean siempre considerados.",
+        "link": "https://www.interaction-design.org/literature/topics/personas",
+        "categorias": [
+            "Introducción",
+            "Crecimiento"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# Personas: Poniendo un Rostro al Usuario\n\n**Descripción:** Las personas son arquetipos de usuarios, representados como personajes ficticios, creados a partir de **datos de investigación** para representar los diferentes tipos de usuarios que podrían usar su producto. No son personas reales, sino una síntesis de los comportamientos, objetivos y frustraciones de un grupo de usuarios.\n\n**Cuándo usar:** Durante todo el ciclo de vida del producto, desde la concepción hasta el diseño y el marketing, para asegurar que las necesidades y objetivos del público objetivo sean siempre considerados.\n\n---\n\n## ¿Qué compone una Persona?\n\nUna persona eficaz va más allá de simples datos demográficos e incluye:\n\n* **Nombre y Foto:** Para humanizar el arquetipo y hacerlo memorable.\n* **Datos Demográficos:** Edad, ocupación, ubicación (solo lo esencial para dar contexto).\n* **Objetivos:** ¿Qué quiere lograr la persona en relación con su producto o servicio? Esta es la parte más importante.\n* **Frustraciones (Dolores/Frustraciones):** ¿Cuáles son los principales obstáculos y dolores que enfrenta actualmente?\n* **Motivaciones:** ¿Qué la impulsa? ¿Cuál es la necesidad emocional o práctica detrás de sus objetivos?\n* **Escenario:** Una pequeña historia que describe cómo la persona interactúa con el problema que su producto se propone resolver.\n* **Cita:** Una frase corta que resume la actitud de la persona.\n\n### Ejemplo Simplificado:\n\n* **Nombre:** Ana, la Gerente de Proyectos\n* **Objetivo:** \"Necesito una forma de visualizar el progreso de todos mis equipos en un solo lugar.\"\n* **Frustración:** \"Pierdo mucho tiempo recopilando informes de diferentes herramientas, y la información siempre está desactualizada.\"\n\n---\n\n## ¿Por qué usar Personas?\n\n* **Empatía:** Ayudan al equipo a ponerse en el lugar del usuario.\n* **Enfoque:** Mantienen al equipo enfocado en resolver los problemas de un grupo específico de usuarios, evitando la trampa de intentar complacer a todos.\n* **Consenso:** Sirven como una referencia común para discusiones y decisiones de diseño.",
+        "slug": "personas"
+    },
+    {
+        "nome": "Mapa de Empatía",
+        "descricao": "Una herramienta colaborativa para obtener una comprensión más profunda de los clientes. Ayuda a visualizar lo que el usuario dice, piensa, siente y hace, revelando sus verdaderas necesidades y dolores.",
+        "quando_usar": "Al inicio del proceso de diseño, para sintetizar investigaciones sobre usuarios y construir personas más robustas.",
+        "link": "https://www.nngroup.com/articles/empathy-mapping/",
+        "categorias": [
+            "Introducción"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1593445839332-7d9a4433d34c?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# Mapa de Empatía: Entendiendo el Universo del Usuario\n\n**Descripción:** Una herramienta colaborativa para obtener una comprensión más profunda de los clientes. Ayuda al equipo a visualizar y sintetizar lo que sabe sobre un tipo de usuario, organizando la información en cuatro cuadrantes principales: **Dice, Piensa, Siente y Hace**.\n\n**Cuándo usar:** Al inicio del proceso de diseño, después de realizar investigaciones (como entrevistas), para sintetizar los datos y construir personas más robustas y empáticas.\n\n---\n\n## Los Cuadrantes del Mapa\n\nEl mapa se centra en un usuario o persona específica.\n\n1.  **¿Qué PIENSA y SIENTE?**\n    * ¿Qué es lo que realmente importa al usuario? ¿Cuáles son sus principales preocupaciones, aspiraciones y emociones? (A menudo, esto no se dice abiertamente).\n    * *Ejemplos:* \"Estoy preocupado por la seguridad de mis datos.\", \"Me siento ansioso por terminar esta tarea pronto.\"\n\n2.  **¿Qué VE?**\n    * ¿Qué ve en su entorno? ¿Qué ofrece el mercado? ¿Qué están haciendo sus amigos?\n    * *Ejemplos:* Ve anuncios de productos competidores, ve a sus colegas usando otras herramientas.\n\n3.  **¿Qué DICE e HACE?**\n    * ¿Cuál es su actitud en público? ¿Qué les dice a los demás? ¿Cómo se comporta? ¿Cuáles son sus acciones observables?\n    * *Ejemplos:* Dice que \"el precio es importante,\" pero termina comprando la marca más cara. Pasa horas investigando antes de comprar.\n\n4.  **¿Qué OYE?**\n    * ¿Qué dicen sus amigos, jefe e influencers? ¿Qué escucha en los medios y en los canales de comunicación?\n    * *Ejemplos:* Escucha a su jefe decir que \"necesitamos reducir costes,\" escucha a amigos recomendando un producto.\n\n### Sección de Dolores y Ganancias\n\nEn la base del mapa, sintetizamos la información de los cuadrantes en dos categorías:\n\n* **DOLORES (Pains):** ¿Cuáles son sus frustraciones, miedos y obstáculos?\n    * *Ejemplos:* Miedo a cometer un error, frustración con la lentitud del sistema actual.\n* **GANANCIAS (Gains):** ¿Qué significa el éxito para el usuario? ¿Cuáles son sus necesidades y cómo mide el éxito?\n    * *Ejemplos:* Quiere ahorrar tiempo, quiere parecer competente ante su jefe.",
+        "slug": "mapa-de-empatia"
+    },
+    {
+        "nome": "Test A/B",
+        "descricao": "Un método de experimentación que consiste en comparar dos versiones de una página web, correo electrónico u otro activo de marketing para determinar cuál de ellos tiene un mejor rendimiento. La versión A es el 'control' y la B es la 'variante'.",
+        "quando_usar": "Para optimizar las tasas de conversión, mejorar la experiencia del usuario o validar hipótesis sobre lo que funciona mejor con su público. Ideal para refinar elementos específicos.",
+        "link": "https://vwo.com/ab-testing/",
+        "categorias": [
+            "Crecimiento",
+            "Madurez"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# Test A/B: Tomando Decisiones Basadas en Datos\n\n**Descripción:** Un método de experimentación que consiste en comparar dos versiones de un elemento (página, botón, texto, etc.) para determinar cuál tiene un mejor rendimiento en relación con una métrica específica. La versión A es el 'control' (original) y la B es la 'variante' (modificada).\n\n**Cuándo usar:** Para optimizar las tasas de conversión, mejorar la experiencia del usuario o validar hipótesis sobre lo que funciona mejor con su público. Ideal para refinar elementos específicos.\n\n---\n\n## El Proceso de un Test A/B\n\n1.  **Definir la Hipótesis:** Comience con una hipótesis clara basada en una observación o insight. El formato es: \"Creemos que [hacer el cambio X] para [el público Y] resultará en [el resultado Z] porque [razonamiento]\".\n    * *Ejemplo:* \"Creemos que cambiar el color del botón 'Comprar Ahora' a verde aumentará la tasa de clics porque el verde tiene un mayor contraste con el fondo de la página.\"\n\n2.  **Crear la Variación (B):** Cree la nueva versión con el único cambio que desea probar.\n\n3.  **Dividir el Tráfico:** Divida aleatoriamente a los usuarios entre la versión A y la B. Generalmente, 50% para cada una.\n\n4.  **Recopilar Datos:** Deje que la prueba se ejecute hasta alcanzar un **tamaño de muestra estadísticamente significativo**. No detenga la prueba ante la primera señal de victoria de una de las versiones.\n\n5.  **Analizar los Resultados:** Compare el rendimiento de la métrica principal (ej: tasa de clics) entre las dos versiones. ¿La variante B superó a la A? ¿Es el resultado estadísticamente significativo?\n\n---\n\n## Consideraciones Importantes\n\n* **Significancia Estadística:** Es la confianza de que el resultado no ocurrió por puro azar. Un nivel de confianza del 95% o más es el estándar de la industria. Las herramientas de Test A/B calculan esto automáticamente.\n\n* **Probar Solo una Cosa a la Vez:** En un Test A/B clásico, cambie solo un elemento (el título, el color del botón, la imagen). Si cambia varias cosas, no sabrá qué causó la diferencia de rendimiento (a menos que esté ejecutando un Test Multivariable).",
+        "slug": "teste-ab"
+    },
+    {
+        "nome": "WSJF (Weighted Shortest Job First)",
+        "descricao": "Un modelo de priorización utilizado para secuenciar trabajos (como funcionalidades, capacidades y épicos) para producir el máximo valor económico. En SAFe, el WSJF se estima como el Coste del Retraso dividido por el tamaño del trabajo.",
+        "quando_usar": "En el planeamiento de Program Increments (PI) en entornos SAFe o para priorizar el backlog de forma continua basándose en el valor económico.",
+        "link": "https://www.scaledagileframework.com/wsjf/",
+        "categorias": [
+            "Desarrollo",
+            "Crecimiento"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# WSJF (Weighted Shortest Job First): Priorización Económica\n\n**Descripción:** Un modelo de priorización utilizado para secuenciar trabajos (como funcionalidades, capacidades y épicos) para producir el máximo valor económico en un flujo continuo. La regla es simple: **siempre ejecute primero el trabajo con el mayor WSJF**.\n\n**Cuándo usar:** En la planificación de Program Increments (PI) en entornos SAFe o para priorizar cualquier backlog de forma continua basándose en el impacto económico.\n\n---\n\n## La Fórmula\n\nEl WSJF se calcula dividiendo el **Coste del Retraso (Cost of Delay - CoD)** por el **Tamaño del Trabajo (Job Size)**.\n\n`WSJF = Coste del Retraso / Tamaño del Trabajo`\n\nEsto significa que los elementos de alto valor y corta duración se priorizan, mientras que los elementos de bajo valor y larga duración se despriorizan.\n\n### Calculando el Coste del Retraso (CoD)\n\nEl Coste del Retraso es la suma de tres factores. En lugar de usar valores absolutos, el SAFe recomienda el uso de una escala relativa (como la secuencia de Fibonacci modificada: 1, 2, 3, 5, 8, 13, 20).\n\n1.  **Valor para el Usuario/Negocio:**\n    * ¿Cuál es el valor relativo para el cliente o el negocio? ¿Preferirían tener esto o aquello? ¿Cuál es el impacto en los ingresos?\n\n2.  **Criticidad del Tiempo:**\n    * ¿Qué tan urgente es? ¿Hay un plazo fijo? ¿El valor decae rápidamente con el tiempo? ¿Los clientes esperarán por ello?\n\n3.  **Reducción de Riesgos / Habilitación de Oportunidades (RR|OE):**\n    * ¿Esto reduce un riesgo de negocio o técnico? ¿Esto habilita nuevas oportunidades de negocio?\n\n**Coste del Retraso = Valor para el Usuario + Criticidad del Tiempo + RR|OE**\n\n### Calculando el Tamaño del Trabajo (Job Size)\n\n* Es una estimación del esfuerzo necesario para implementar la funcionalidad. También se mide en una escala relativa. El equipo que hará el trabajo es el mejor para estimar su tamaño.\n\n---\n\n## Ejemplo Práctico\n\nComparemos dos funcionalidades:\n\n| Funcionalidad | Valor (CoD) | Tamaño | WSJF (CoD/Tamaño) | Prioridad |\n| :--- | :--- | :--- | :--- | :--- |\n| **A:** Notificación de Stock Bajo | 13 | 5 | 2.6 | 1ª (Mayor WSJF) |\n| **B:** Informe de Ventas (Mensual) | 8 | 13 | 0.6 | 2ª (Menor WSJF) |\n\nEn este ejemplo, aunque la Funcionalidad B tiene un valor de negocio considerable (8), el alto coste y el largo tiempo para la entrega (13) hacen que la Funcionalidade A (que es de valor mayor y menor esfuerzo) sea priorizada para maximizar el flujo de valor económico.",
+        "slug": "wsjf-weighted-shortest-job-first"
+    },
+    {
+        "nome": "Casos de Uso (Use Cases)",
+        "descricao": "Una técnica para capturar requisitos funcionales de un sistema. Los casos de uso describen la interacción paso a paso entre un actor (un usuario u otro sistema) y el sistema para lograr un objetivo específico.",
+        "quando_usar": "Durante la fase de análisis y elicitación de requisitos para detallar cómo los usuarios interactuarán con el sistema y qué debe hacer el sistema como respuesta.",
+        "link": "https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-use-case-diagram/",
+        "categorias": [
+            "Desarrollo"
+        ],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Use_case_restaurant_model.svg/640px-Use_case_restaurant_model.svg.png",
+        "detalhes_markdown": "# Casos de Uso (Use Cases): Detallando la Interacción\n\n**Descripción:** Una técnica para capturar requisitos funcionales de un sistema. Los casos de uso describen la interacción paso a paso entre un **actor** (un usuario u otro sistema) y el sistema para lograr un objetivo específico. Se centran en el **'qué'** debe hacer el sistema, no en el 'cómo'.\n\n**Cuándo usar:** Durante la fase de análisis y elicitación de requisitos para detallar cómo los usuarios interactuarán con el sistema y qué debe hacer el sistema como respuesta.\n\n---\n\n## Estructura de un Caso de Uso Detallado\n\nMientras que un diagrama de caso de uso ofrece una visión general, la especificación textual detalla el flujo.\n\n* **Nombre del Caso de Uso:** Verbo + Sustantivo (ej: \"Sacar Dinero\").\n* **Actores:** Actor principal y secundarios (ej: Cliente).\n* **Precondiciones:** Lo que debe ser cierto antes de que el caso de uso pueda comenzar (ej: \"El cliente debe estar autenticado en el cajero automático\").\n* **Poscondiciones:** El estado del sistema tras la conclusión con éxito del caso de uso (ej: \"El saldo de la cuenta del cliente se actualiza\").\n* **Flujo Principal (Happy Path):** La secuencia de pasos ideal, sin errores ni desviaciones.\n    1.  El cliente selecciona la opción \"Retiro\".\n    2.  El sistema solicita el importe.\n    3.  El cliente introduce el importe.\n    4.  El sistema valida si hay saldo suficiente.\n    5.  El sistema entrega el dinero.\n    6.  El sistema emite el comprobante.\n* **Flujos Alternativos (Excecciones):** Qué sucede si algo sale mal o si hay un camino diferente.\n    * **4a. Saldo Insuficiente:**\n        1.  El sistema muestra el mensaje \"Saldo insuficiente\".\n        2.  El caso de uso termina.\n    * **5a. Error en la entrega del dinero:**\n        1.  El sistema registra el error.\n        2.  El sistema muestra un mensaje de error al cliente.\n\n---\n\n## Casos de Uso frente a Historias de Usuario\n\nAmbos definen requisitos, pero con enfoques diferentes:\n\n| Característica | **Casos de Uso** | **Historias de Usuario** |\n| :--- | :--- | :--- |\n| **Enfoque** | El sistema, el flujo paso a paso y las excepciones. | El usuario, el valor y la conversación. |\n| **Formato** | Descripción textual estructurada y diagramas. | 'Como un... quiero... para que...' |\n| **Nivel de Detalle** | Alto (detalles técnicos y de flujo). | Bajo (solo lo suficiente para iniciar la conversación). |\n| **Uso Común** | Ingeniería de Requisitos, Sistemas Heredados. | Metodologías Ágiles (Scrum, Kanban). |",
+        "slug": "casos-de-uso-use-cases"
+    },
+    {
+        "nome": "Diagramas UML",
+        "descricao": "El Lenguaje Unificado de Modelado (UML) es un lenguaje estándar para especificar, visualizar, construir y documentar los artefactos de un sistema de software. Incluye diagramas como el de Clase, Secuencia, Actividad, etc.",
+        "quando_usar": "Durante el diseño y la documentación de sistemas para comunicar la arquitectura, el comportamiento y la estructura del software al equipo de desarrollo y a otras partes interesadas.",
+        "link": "https://www.uml.org/",
+        "categorias": [
+            "Desarrollo",
+            "Introducción"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# Diagramas UML: El Lenguaje Visual del Software\n\n**Descripción:** El Lenguaje Unificado de Modelado (UML) es un lenguaje estándar para especificar, visualizar, construir y documentar los artefactos de un sistema de software. No es una metodología, sino un conjunto de notaciones gráficas para crear modelos abstractos de un sistema.\n\n**Cuándo usar:** Durante el diseño y la documentación de sistemas para comunicar la arquitectura, el comportamiento y la estructura del software al equipo de desarrollo y a otras partes interesadas.\n\n---\n\n## Tipos de Diagramas UML\n\nLos diagramas UML se dividen en dos categorías principales:\n\n### 1. Diagramas Estructurales\n\nMuestran la estructura estática del sistema y sus componentes. No muestran el comportamiento dinámico.\n\n* **Diagrama de Clases:** El más común. Describe la estructura del sistema mostrando sus clases, atributos, métodos y las relaciones entre ellos.\n* **Diagrama de Componentes:** Muestra cómo se organizan los componentes de software y las dependencias entre ellos.\n* **Diagrama de Objetos:** Muestra un conjunto de objetos y sus relaciones en un momento específico. Es una 'foto' de una instancia del Diagrama de Clases.\n* **Diagrama de Paquetes:** Organiza los elementos del sistema en grupos (paquetes), mostrando las dependencias entre ellos.\n* **Diagrama de Despliegue (Deployment):** Describe la configuración del hardware (nodos) y cómo los componentes de software se distribuyen en ellos.\n\n### 2. Diagramas de Comportamiento\n\nMuestran el comportamiento dinámico del sistema, incluyendo flujos e interacciones.\n\n* **Diagrama de Casos de Uso:** Describe gráficamente lo que hace el sistema en relación con los actores (usuarios u otros sistemas).\n* **Diagrama de Secuencia:** Muestra cómo interactúan los objetos entre sí en una secuencia de tiempo.\n* **Diagrama de Actividades:** Modela el flujo de trabajo de una actividad o proceso, mostrando las etapas y los caminos de decisión.\n* **Diagrama de Máquina de Estados (State Machine):** Modela el comportamiento de un único objeto, mostrando sus estados y las transiciones entre ellos en respuesta a eventos.",
+        "slug": "diagramas-uml"
+    },
+    {
+        "nome": "Answer First (Comunicación)",
+        "descricao": "Una técnica de comunicación y resolución de problemas que comienza con la conclusión o recomendación principal, seguida de los argumentos de apoyo. Popularizada por consultoras como McKinsey.",
+        "quando_usar": "Al presentar recomendaciones a ejecutivos, escribir correos electrónicos importantes o estructurar razonamientos complejos para asegurar claridad e impacto inmediato.",
+        "link": "https://minto.com/",
+        "categorias": [
+            "Comunicación",
+            "Estrategia",
+            "Consultoría"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2026-01-15",
+        "nivel": "Intermedio",
+        "tempo_aplicar": "Minutos (para estructurar)",
+        "detalhes_markdown": "# Answer First: Comience con la Conclusión\n\n**Descripción:** Answer First (o el Principio de la Pirámide) es una técnica de comunicación en la que se presenta la **conclusión, respuesta o recomendación** al principio, y solo después se proporcionan los datos y argumentos que sustentan esa conclusión. Es lo opuesto al estilo académico o científico, que construye el argumento hasta llegar a la conclusión al final.\n\n**Cuándo usar:** Esencial para la comunicación ejecutiva, donde el tiempo es escaso. Utilícelo en presentaciones, correos electrónicos decisivos y reuniones de estrategia.\n\n---\n\n## La Estructura de la Pirámide\n\n1.  **Cúspide (La Respuesta):** ¿Qué recomienda? ¿Cuál es la conclusión principal? (Ej: \"Debemos lanzar el producto al mercado X ahora\").\n2.  **Mitad (Argumentos Clave):** ¿Por qué recomienda eso? Agrúpelo en 3 puntos principales. (Ej: \"1. El mercado está creciendo. 2. La competencia es débil. 3. Tenemos la tecnología lista\").\n3.  **Base (Datos de Apoyo):** Las evidencias detalladas de cada argumento. (Ej: Gráficos de crecimiento, análisis de competidores, demos técnicas).\n\n## Beneficios\n\n*   **Eficiencia:** El oyente entiende el punto principal de inmediato.\n*   **Persuasión:** Muestra confianza en la recomendación.\n*   **Enfoque:** Evita que la discusión se pierda en detalles irrelevantes antes de conocer el objetivo.",
+        "slug": "answer-first-comunicacao"
+    },
+    {
+        "nome": "Experimentación (Mindset)",
+        "descricao": "Un enfoque cultural y procedimental en el que las decisiones se toman basándose en pruebas y datos, no en opiniones. Implica formular hipótesis, realizar experimentos (como Tests A/B) y aprender de los resultados.",
+        "quando_usar": "Para validar nuevas ideas, reducir los riesgos de los lanzamientos y optimizar los productos de forma continua. Es la base del Growth Hacking y del Lean Startup.",
+        "link": "https://hbr.org/2020/03/building-a-culture-of-experimentation",
+        "categorias": [
+            "Crecimiento",
+            "Inovación",
+            "Cultura"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2026-01-15",
+        "nivel": "Avanzado",
+        "tempo_aplicar": "Continuo",
+        "detalhes_markdown": "# Experimentación: Decisiones Basadas en Evidencias\n\n**Descripción:** La experimentación no consiste simplemente en realizar un Test A/B aislado; es una **mentalidad organizacional**. Significa admitir que no conocemos la respuesta correcta y utilizar el método científico para descubrirla. Implica un ciclo continuo de: **Hipótesis -> Experimento -> Datos -> Aprendizaje -> Acción**.\n\n**Cuándo usar:** Siempre que haya incertidumbre sobre el impacto de un cambio o el valor de una nueva idea. \"En caso de duda, prueba\".\n\n---\n\n## El Ciclo de Experimentación\n\n1.  **Hipótesis:** Una afirmación falsable. \"Si hacemos [X], entonces ocurrirá [Y], debido a [Z]\".\n2.  **Priorización:** Utilizar marcos como ICE o RICE para decidir qué probar primero.\n3.  **Diseño de la Prueba:** Definir métricas de éxito, grupos de control y garantizar la significancia estadística.\n4.  **Ejecución:** Ejecutar la prueba durante el tiempo necesario.\n5.  **Análisis y Aprendizaje:** ¿Qué dicen los datos? Incluso si la prueba falla (la hipótesis no se confirma), el aprendizaje es valioso.\n\n## Cultura del Fracaso\n\nPara que la experimentación funcione, la organización debe aceptar el fracaso. La mayoría de los experimentos no logran probar la hipótesis. Esto no es un error, es un ahorro de recursos que se gastarían construyendo algo que no funciona.",
+        "slug": "experimentacao-mindset"
+    },
+    {
+        "nome": "Creatividad Programática",
+        "descricao": "El uso de métodos sistemáticos, algoritmos o restricciones predefinidas para generar ideas creativas y soluciones. En lugar de esperar 'inspiración', se utiliza el proceso para forzar la innovación.",
+        "quando_usar": "Cuando el brainstorming tradicional se estanca, o para explorar sistemáticamente todas las variaciones posibles de una solución (ej: en diseño generativo u optimización de campañas).",
+        "link": "https://en.wikipedia.org/wiki/Computational_creativity",
+        "categorias": [
+            "Inovación",
+            "Ideación",
+            "Proceso Creativo"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2026-01-15",
+        "nivel": "Intermedio",
+        "tempo_aplicar": "Horas",
+        "detalhes_markdown": "# Creatividad Programática: Innovación Sistemática\n\n**Descripción:** La Creatividad Programática es la aplicación de la lógica, los sistemas e incluso los algoritmos al proceso creativo. Desafía el mito del \"genio creativo\" caótico. Técnicas como SCAMPER, TRIZ o el uso de la IA para generar variaciones de diseño son ejemplos de cómo estructurar la creatividad.\n\n**Cuándo usar:** Para romper bloqueos creativos, generar un gran volumen de ideas o encontrar soluciones no obvias a través de combinaciones sistemáticas.\n\n---\n\n## Técnicas Comunes\n\n*   **SCAMPER:** Una lista de verificación para modificar una idea existente: **S**ustituir, **C**ombinar, **A**daptar, **M**odificar, **P**roponer otro uso, **E**liminar, **R**eordenar.\n*   **Morfología:** Desglosar un problema en dimensiones (ej: material, forma, función) y enumerar variaciones para cada una, combinándolas aleatoriamente para crear nuevas soluciones.\n*   **Restricciones Creativas:** Imponer límites artificiales (ej: \"¿Cómo resolver esto sin usar texto?\", \"¿Cómo hacer que esto cueste cero?\") para obligar al cerebro a pensar lateralmente.",
+        "slug": "criatividade-programatica"
+    },
+    {
+        "nome": "Fraccionar Problemas (Problem Slicing)",
+        "descricao": "La técnica de desglosar un problema grande y complejo en fragmentos más pequeños, verticales y entregables, que agregan valor por sí mismos. Fundamental para el desarrollo ágil.",
+        "quando_usar": "Para planificar entregas de software (User Stories), gestionar alcances complejos y garantizar un feedback rápido y continuo.",
+        "link": "https://www.humanizingwork.com/the-humanizing-work-guide-to-splitting-user-stories/",
+        "categorias": [
+            "Gestión de Proyectos",
+            "Ágil",
+            "Resolución de Problemas"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1546552356-3fae876a61ca?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2026-01-15",
+        "nivel": "Intermedio",
+        "tempo_aplicar": "Minutos (durante el planeamiento)",
+        "detalhes_markdown": "# Fraccionar Problemas (Problem Slicing): Dividir para Entregar\n\n**Descripción:** Fraccionar problemas (o *Story Splitting* en Agile) es el arte de dividir una funcionalidad grande o un problema complejo en trozos más pequeños que mantengan un valor independiente. El objetivo es evitar el desarrollo en capas horizontales (hacer toda la base de datos, luego todo el backend, luego todo el frontend) y centrarse en fragmentos verticales (una funcionalidad pequeña completa de principio a fin).\n\n**Cuándo usar:** Siempre que una tarea parezca \"demasiado grande\" para caber en un sprint o iteración, o cuando la complejidad impida el progreso.\n\n---\n\n## Patrones de Fraccionamiento\n\n1.  **Por Etapa del Flujo de Trabajo:** En lugar de realizar todo el flujo, haga solo la primera etapa (ej: solo \"Crear Pedido\", sin \"Pago\" ni \"Entrega\").\n2.  **Por Regla de Negocio:** Comience con la regla más simple (ej: \"Envío gratuito\") y deje las reglas complejas para más adelante.\n3.  **Happy Path frente a Rainy Path:** Implemente primero el camino feliz y luego gestione los errores y las excepciones.\n4.  **Simple frente a Complejo:** Comience con una versión manual o codificada a mano antes de realizar la versión dinámica y automatizada.",
+        "slug": "fatiar-problemas-problem-slicing"
+    },
+    {
+        "nome": "Reducción de Etapas (Friction Reduction)",
+        "descricao": "El proceso de analizar un flujo de usuario y eliminar sistemáticamente cualquier paso, clic o campo innecesario para aumentar la conversión y la satisfacción.",
+        "quando_usar": "En la optimización de los embudos de conversión (CRO), el diseño UX y la mejora de los procesos operativos.",
+        "link": "https://growth.design/psychology#friction",
+        "categorias": [
+            "UX",
+            "Optimización",
+            "Procesos"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2026-01-15",
+        "nivel": "Principiante",
+        "tempo_aplicar": "Continuo",
+        "detalhes_markdown": "# Reducción de Etapas: Menos es Más\n\n**Descripción:** La Ley de Hick dice que el tiempo que se tarda en tomar una decisión aumenta con el número y la complejidad de las opciones. La reducción de etapas es la aplicación práctica de esto: eliminar la fricción. Cada campo adicional en un formulario, cada clic adicional para llegar al checkout, reduce la probabilidad de que el usuario complete la acción.\n\n**Cuándo usar:** Al analizar embudos con una alta tasa de abandono o procesos que parecen lentos y burocráticos.\n\n---\n\n## Cómo Aplicar\n\n1.  **Mapee el Flujo:** Dibuje cada paso que debe dar el usuario.\n2.  **Cuestione Todo:** \"¿Es este campo *realmente* necesario ahora?\" \"¿Podemos inferir esta información?\" \"¿Podemos usar un patrón inteligente?\".\n3.  **Posponga el Registro:** Permita que el usuario experimente el valor antes de pedirle el correo electrónico (Lazy Registration).\n4.  **Autenticación Social:** Utilice el inicio de sesión de Google/Apple para evitar la creación de contraseñas.\n5.  **Valores Predeterminados Inteligentes:** Complete previamente todo lo que sea posible.",
+        "slug": "reducao-de-etapas-friction-reduction"
+    },
+    {
+        "nome": "MECE (Mutually Exclusive, Collectively Exhaustive)",
+        "descricao": "Un principio de agrupación de información en el que los elementos son mutuamente excluyentes (no se solapan) y colectivamente exhaustivos (cubren todas las posibilidades).",
+        "quando_usar": "Para estructurar problemas, organizar datos, crear categorías de productos o planificar proyectos sin dejar lagunas ni crear duplicidades.",
+        "link": "https://en.wikipedia.org/wiki/MECE_principle",
+        "categorias": [
+            "Estrategia",
+            "Resolución de Problemas",
+            "Consultoría"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1543286386-713bdd548da4?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2026-01-15",
+        "nivel": "Avanzado",
+        "tempo_aplicar": "Minutos",
+        "detalhes_markdown": "# MECE: Organización Perfecta\n\n**Descripción:** MECE (se pronuncia \"mi-si\") es un acrónimo de **Mutually Exclusive, Collectively Exhaustive** (Mutuamente Excluyente, Colectivamente Exhaustivo). Es el estándar de oro para la estructuración de problemas en la consultoría estratégica (McKinsey).\n\n*   **Mutuamente Excluyente:** Los elementos no se solapan. Un cliente no puede estar en el \"Grupo A\" y en el \"Grupo B\" al mismo tiempo.\n*   **Colectivamente Exhaustivo:** La lista cubre todas las posibilidades. No queda nada fuera (no hay un \"Otros\" gigante y misterioso).\n\n**Cuándo usar:** Al crear árboles de problemas, definir segmentos de clientes o listas de tareas.\n\n---\n\n## Ejemplo: Categorizar Edades\n\n*   **No MECE:** \"Jóvenes (0-20)\", \"Estudiantes\", \"Adultos (20-60)\". (Problema: \"Estudiantes\" se solapa con las demás; ¿qué pasa con los mayores de 60?).\n*   **MECE:** \"0-18\", \"19-35\", \"36-60\", \"60+\". (Sin solapamientos, cubre todas las edades).",
+        "slug": "mece-mutually-exclusive-collectively-exhaustive"
+    },
+    {
+        "nome": "Divide and Conquer (Dividir y Vencerás)",
+        "descricao": "Un paradigma de resolución de problemas (y algoritmos) que implica desglosar un problema difícil en subproblemas más pequeños, resolverlos de forma independiente y combinar las soluciones.",
+        "quando_usar": "Para abordar problemas complejos de ingeniería, arquitectura de sistemas o gestión de grandes proyectos.",
+        "link": "https://en.wikipedia.org/wiki/Divide-and-conquer_algorithm",
+        "categorias": [
+            "Ingeniería",
+            "Resolución de Problemas",
+            "Algoritmos"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1505315570889-aa87af245fa7?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2026-01-15",
+        "nivel": "Avanzado",
+        "tempo_aplicar": "Variable",
+        "detalhes_markdown": "# Divide and Conquer: La Estrategia de Guerra e Ingeniería\n\n**Descripción:** Inspirado en la estrategia militar, 'Dividir y Vencerás' es un enfoque fundamental tanto en la ciencia de la computación como en la gestión. La idea es que es más fácil resolver varios problemas pequeños y sencillos que un problema gigante y complejo.\n\n**Cuándo usar:** Cuando un problema parece imposible de resolver en su conjunto.\n\n---\n\n## El Proceso de 3 Pasos\n\n1.  **Dividir (Divide):** Desglose el problema original en un conjunto de subproblemas más pequeños que sean instancias menores del mismo problema.\n2.  **Vencer (Conquer):** Resuelva los subproblemas, a menudo de forma recursiva. Si son lo suficientemente pequeños, resuélvalos directamente (caso base).\n3.  **Combinar (Combine):** Reúna las soluciones de los subproblemas para formar la solución del problema original.\n\n## Ejemplo en la Gestión\n\nUn proyecto gigante como \"Lanzar un nuevo Banco Digital\" es imposible de \"hacer\". Pero si aplicamos el 'Dividir y Vencerás':\n*   Dividir en: App móvil, Backend, Legal, Marketing.\n*   El backend se divide en: Core Banking, Integración PIX, Tarjetas.\n*   ... hasta llegar a tareas diarias ejecutables.",
+        "slug": "divide-and-conquer-dividir-e-conquistar"
+    },
+    {
+        "nome": "Diagram as Code (DaC)",
+        "descricao": "La práctica de definir diagramas a través de código o texto, permitiendo que sean versionados, revisados y automatizados como cualquier otro producto de software.",
+        "quando_usar": "Para la documentación técnica que necesita evolucionar con el código, garantizando la coherencia y facilitando el mantenimiento en equipos distribuidos.",
+        "link": "https://www.thoughtworks.com/radar/techniques/diagrams-as-code",
+        "categorias": [
+            "Documentación",
+            "Ingeniería",
+            "DevOps"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2026-01-15",
+        "nivel": "Intermedio",
+        "tempo_aplicar": "Minutos",
+        "detalhes_markdown": "# Diagram as Code (DaC): Diagramas como Código\n\n**Descripción:** Diagram as Code (DaC) es un enfoque en el que los diagramas de arquitectura, flujo y procesos se escriben en lenguajes de texto sencillos (DSL) y se representan automáticamente mediante herramientas. Esto trata la documentación como código (Docs as Code).\n\n**Cuándo usar:** Ideal para evolucionar los diagramas junto con el software, permitiendo el Code Review en los diagramas y evitando el problema clásico del \"dibujo desactualizado\".\n\n---\n\n## Principales DSL (Lenguajes de Dominio Específico)\n\n*   **Mermaid:**\n    *   **Enfoque:** Integración nativa con Markdown (GitHub, Notion, Obsidian). Sencillo y directo.\n    *   **Uso:** Diagramas de flujo, secuencia, Gantt, C4 (básico).\n\n*   **PlantUML:**\n    *   **Enfoque:** El \"padre\" del DaC. Extremadamente potente y compatible con casi todos los tipos de UML y otros diagramas.\n    *   **Uso:** UML complejo, arquitectura, componentes.\n\n*   **Structurizr (DSL):**\n    *   **Enfoque:** Específico para el **Modelo C4** (Context, Containers, Components, Code). Centrado en la arquitectura de software.\n    *   **Uso:** Modelado de arquitectura formal y múltiples vistas del mismo modelo.\n\n*   **D2 (Declarative Diagramming):**\n    *   **Enfoque:** Moderno, centrado en la estética y la legibilidad del código. Posee un motor de diseño superior.\n    *   **Uso:** Diagramas generales con un aspecto profesional de serie.\n\n---\n\n## Comparativa: Manual frente a DaC\n\n| Característica | Diagrama Manual (Drag & Drop) | Diagram as Code (DaC) |\n| :--- | :--- | :--- |\n| **Herramientas** | Visio, Lucidchart, Miro, Draw.io | Mermaid, PlantUML, Structurizr |\n| **Versionado** | Difícil. Normalmente binarios o blobs opacos. El diff visual es complejo. | **Nativo (Git)**. Es texto puro. El diff de líneas muestra exactamente lo que ha cambiado. |\n| **Mantenimiento** | **Laborioso**. Requiere arrastrar cuadros y reconectar flechas manualmente con cada cambio. | **Automático**. Usted cambia el texto y el motor redibuja el diseño por sí solo. |\n| **Consistencia** | Depende de la disciplina del autor (tamaño de fuente, colores). | **Garantizada**. El estilo se aplica globalmente mediante la herramienta. |\n| **Integración** | Manual (Copiar y Pegar la imagen). | **CI/CD**. Se puede generar en el build e insertar en la documentación automáticamente. |\n| **Curva de Aprendizaje** | Baja (Intuitivo). | Media (Requiere aprender la sintaxis). |\n| **Naturaleza** | \"Arte\" estático. | \"Ingeniería\" viva. |",
+        "slug": "diagram-as-code-dac"
+    }
+]

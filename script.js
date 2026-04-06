@@ -10,6 +10,10 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     const filtersWrapper = document.querySelector('.filtros-wrapper');
     const btnToggleFiltros = document.getElementById('btn-toggle-filtros');
+    const langBtns = document.querySelectorAll('.lang-btn');
+
+    let currentLang = localStorage.getItem('preferredLang') || 'pt-br';
+    let translations = {};
 
     // --- Lógica de Expandir/Retrair Filtros ---
     if (btnToggleFiltros) {
@@ -42,16 +46,64 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // Mapeia os valores do select para os nomes dos arquivos JSON.
     const subjectFiles = {
-        'techniques': 'techniques.json',
-        'gestao_pessoas': 'gestao_pessoas.json',
-        'gestao_times': 'gestao_times.json',
-        'ferramentas_ia': 'ferramentas_ia.json',
-        'gestao_sistemas': 'gestao_sistemas.json',
-        'metodologias_ageis': 'metodologias_ageis.json',
-        'design_produto': 'design_produto.json',
-        'metricas_indicadores': 'metricas_indicadores.json',
-        'estudos_futuros': 'estudos_futuros.json',
+        'techniques': 'techniques',
+        'gestao_pessoas': 'gestao_pessoas',
+        'gestao_times': 'gestao_times',
+        'ferramentas_ia': 'ferramentas_ia',
+        'gestao_sistemas': 'gestao_sistemas',
+        'metodologias_ageis': 'metodologias_ageis',
+        'design_produto': 'design_produto',
+        'metricas_indicadores': 'metricas_indicadores',
+        'estudos_futuros': 'estudos_futuros',
     };
+
+    // --- Lógica de Tradução ---
+    async function loadTranslations() {
+        try {
+            const response = await fetch('translations.json');
+            translations = await response.json();
+            applyTranslations();
+        } catch (error) {
+            console.error("Erro ao carregar traduções:", error);
+        }
+    }
+
+    function applyTranslations() {
+        const langData = translations[currentLang];
+        if (!langData) return;
+
+        // Traduz textos simples
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            const keys = key.split('.');
+            let val = langData;
+            keys.forEach(k => val = val?.[k]);
+            if (val) el.textContent = val;
+        });
+
+        // Traduz placeholders
+        document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+            const key = el.getAttribute('data-i18n-placeholder');
+            if (langData[key]) el.placeholder = langData[key];
+        });
+
+        // Atualiza botões de idioma
+        langBtns.forEach(btn => {
+            btn.classList.toggle('active', btn.getAttribute('data-lang') === currentLang);
+        });
+    }
+
+    function changeLanguage(lang) {
+        if (lang === currentLang) return;
+        currentLang = lang;
+        localStorage.setItem('preferredLang', lang);
+        applyTranslations();
+        loadData(); // Recarrega os dados no novo idioma
+    }
+
+    langBtns.forEach(btn => {
+        btn.addEventListener('click', () => changeLanguage(btn.getAttribute('data-lang')));
+    });
 
     // Função assíncrona para carregar todos os dados de todos os arquivos JSON.
     async function loadData() {
@@ -60,12 +112,45 @@ document.addEventListener('DOMContentLoaded', async () => {
             categoryFiltersContainer.innerHTML = ''; // Limpa os filtros de categoria antigos.
             
             // Cria um array de promessas para carregar todos os assuntos simultaneamente.
-            const fetchPromises = Object.entries(subjectFiles).map(async ([key, fileName]) => {
-                const response = await fetch(fileName + '?t=' + new Date().getTime());
-                if (!response.ok) throw new Error(`Erro ao carregar ${fileName}`);
-                const data = await response.json();
-                // Adiciona a propriedade 'subject' em cada item para sabermos de onde ele veio.
-                return data.map(item => ({ ...item, subject: key }));
+            const fetchPromises = Object.entries(subjectFiles).map(async ([key, baseName]) => {
+                // Sempre carrega a base em PT-BR primeiro como referência
+                const ptResponse = await fetch(`${baseName}.json?t=${new Date().getTime()}`);
+                if (!ptResponse.ok) throw new Error(`Erro ao carregar base ${baseName}`);
+                const ptData = await ptResponse.json();
+                
+                // Mapeia os itens base, marcando-os como fallback inicialmente se o idioma não for PT
+                const baseItemsArray = ptData.map(item => ({ 
+                    ...item, 
+                    subject: key, 
+                    isFallback: currentLang !== 'pt-br' 
+                }));
+
+                if (currentLang === 'pt-br') {
+                    return baseItemsArray;
+                }
+
+                // Tenta carregar a tradução correspondente
+                const fileName = `${baseName}_${currentLang}.json`;
+                try {
+                    const response = await fetch(fileName + '?t=' + new Date().getTime());
+                    if (!response.ok) {
+                        console.warn(`Arquivo de tradução não encontrado: ${fileName}`);
+                        return baseItemsArray;
+                    }
+                    const langData = await response.json();
+                    
+                    // Realiza o merge: substitui itens da base pelos traduzidos onde o slug coincide
+                    return baseItemsArray.map(ptItem => {
+                        const translated = langData.find(t => t.slug === ptItem.slug);
+                        if (translated) {
+                            return { ...translated, subject: key, isFallback: false };
+                        }
+                        return ptItem;
+                    });
+                } catch (e) {
+                    console.warn(`Erro ao processar tradução ${fileName}:`, e);
+                    return baseItemsArray;
+                }
             });
 
             // Aguarda a conclusão de todas as requisições.
@@ -188,6 +273,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
             article.innerHTML = `
                 ${tech.aiScore ? `<div class="ai-badge">✨ IA Score: ${Math.round(tech.aiScore * 100)}%</div>` : ''}
+                ${tech.isFallback ? `<div class="fallback-badge" title="Original em Português">🇧🇷 PT-BR</div>` : ''}
                 <button class="btn-favorito ${isFavorite ? 'active' : ''}" title="Favoritar">
                     ★
                 </button>
@@ -199,8 +285,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                     <strong>📍 Quando usar:</strong> ${tech.quando_usar}
                 </div>
                 <div class="card-footer">
-                    <span>📂 ${subjectSelect.querySelector(`option[value="${tech.subject}"]`).textContent}</span>
-                    <span>Saiba mais →</span>
+                    <span>📂 ${translations[currentLang]?.subjects?.[tech.subject] || tech.subject}</span>
+                    <span>${translations[currentLang]?.saiba_mais || 'Saiba mais →'}</span>
                 </div>
             `;
 
@@ -211,8 +297,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                 toggleFavorite(tech.nome, favBtn);
             });
 
-            // Usa o subject do item para o link, não o selecionado no dropdown global
-            const detailUrl = `detalhe.html?subject=${tech.subject}&name=${encodeURIComponent(tech.nome)}`;
+            // Usa o slug para o link, garantindo persistência entre idiomas
+            const detailUrl = `detalhe.html?subject=${tech.subject}&slug=${tech.slug}`;
             article.addEventListener('click', () => {
                 window.open(detailUrl, '_blank');
             });
@@ -323,5 +409,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
 
     // Inicialização
+    loadTranslations();
     loadData();
 });

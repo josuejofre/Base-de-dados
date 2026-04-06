@@ -1,0 +1,421 @@
+[
+    {
+        "nome": "Design System",
+        "descricao": "Una colección de componentes reutilizables, guiada por estándares claros, que se pueden ensamblar para construir cualquier número de aplicaciones. Garantiza coherencia y eficiencia en el diseño y desarrollo.",
+        "quando_usar": "En productos o empresas con múltiples equipos y aplicaciones, para mantener la coherencia de la marca y la experiencia del usuario, y acelerar el desarrollo.",
+        "link": "https://www.nngroup.com/articles/design-systems-101/",
+        "categorias": [
+            "UI",
+            "UX",
+            "Escla"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1611926653458-092a4234cfb2?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-20",
+        "nivel": "Avanzado",
+        "tempo_aplicar": "Meses (para construir)",
+        "detalhes_markdown": "# Design System: Construyendo con Coherencia y Escala\n\n**Descripción:** Un Design System (Sistema de Diseño) es la única fuente de verdad que agrupa todos los elementos que permitirán a los equipos diseñar, realizar y desarrollar un producto. No es solo una guía de estilo o una biblioteca de componentes; es un conjunto vivo de estándares, componentes reutilizables y directrices, acompañado de código, que evoluciona con el producto.\n\n**Cuándo usar:** En productos o empresas con múltiples equipos y aplicaciones, para mantener la coherencia de la marca y la experiencia del usuario, y acelerar el desarrollo.\n\n---\n\n## Componentes de un Design System\n\n*   **Propósito y Valores:** ¿Por qué existe el sistema? ¿Qué principios de diseño sigue? (Ej: \"Simple, Accesible, Moderno\").\n*   **Fundamentos (Tokens):** Decisiones básicas de diseño almacenadas como variables (colores, tipografía, espaciado).\n*   **Biblioteca de Componentes:** UI reutilizable (Átomos, Moléculas, Organismos).\n*   **Patrones de Uso:** Directrices sobre cómo y cuándo usar cada componente.\n*   **Gobernanza:** Cómo se mantiene y actualiza el sistema.\n\n### Beneficios\n\n*   **Eficiencia:** No reinventar la rueda; ensamblar interfaces rápidamente.\n*   **Coherencia:** Experiencia de usuario e identidad visual constantes en todas las plataformas.\n*   **Lenguaje Común:** Facilita la colaboración entre diseño e ingeniería.\n\n### Enlaces Relevantes\n\n*   [Guía del NN/g sobre Design Systems](https://www.nngroup.com/articles/design-systems-101/)",
+        "slug": "design-system"
+    },
+    {
+        "nome": "Heurísticas de Usabilidad de Nielsen",
+        "descricao": "Un conjunto de 10 principios generales para el diseño de interfaces de usuario. No son reglas específicas, sino directrices que ayudan a identificar y resolver problemas de usabilidad.",
+        "quando_usar": "Durante la evaluación de un diseño (evaluación heurística) para encontrar problemas de usabilidad, o como guía durante el proceso de creación de la interfaz.",
+        "link": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "categorias": [
+            "UX",
+            "Evaluación"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1587440871875-191322ee64b0?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-20",
+        "nivel": "Principiante",
+        "tempo_aplicar": "Horas (para evaluar)",
+        "detalhes_markdown": "# Las 10 Heurísticas de Usabilidad de Nielsen\n\n**Descripción:** 10 principios generales para el diseño de interfaces de usuario creados por Jakob Nielsen. Se utilizan para identificar problemas de usabilidad.\n\n**Cuándo usar:** Durante una **Evaluación Heurística**, donde los evaluadores comparan una interfaz con esta lista de principios.\n\n---\n\n## Las 10 Heurísticas\n\n1.  **Visibilidad del estado del sistema:** Mantener informados a los usuarios (Ej: barras de progreso).\n2.  **Relación entre el sistema y el mundo real:** Hablar el lenguaje del usuario (Ej: icono de papelera).\n3.  **Control y libertad del usuario:** Proporcionar 'salidas de emergencia' (Ej: Deshacer/Rehacer).\n4.  **Consistencia y estándares:** Seguir las convenciones de la plataforma.\n5.  **Prevención de errores:** Diseños que eviten problemas antes de que ocurran.\n6.  **Reconocimiento antes que recuerdo:** Hacer visibles objetos, acciones y opciones.\n7.  **Flexibilidad y eficiencia de uso:** Atajos para usuarios expertos.\n8.  **Diseño estético y minimalista:** Evitar información irrelevante.\n9.  **Ayudar a reconocer, diagnosticar y recuperarse de errores:** Mensajes de error en lenguaje sencillo.\n10. **Ayuda y documentación:** Proporcionar FAQs o guías cuando sea necesario.\n\n### Enlaces Relevantes\n\n*   [Artículo Original (NN/g)](https://www.nngroup.com/articles/ten-usability-heuristics/)",
+        "slug": "heuristicas-de-usabilidade-de-nielsen"
+    },
+    {
+        "nome": "Double Diamond",
+        "descricao": "Un modelo de proceso de diseño que describe los modos de pensar divergente y convergente. Consiste en cuatro fases: Descubrir, Definir, Desarrollar y Entregar.",
+        "quando_usar": "Para estructurar un proceso de diseño de principio a fin, asegurando que el problema esté bien definido antes de buscar soluciones.",
+        "link": "https://www.designcouncil.org.uk/our-resources/guide/double-diamond-our-evolved-model/",
+        "categorias": [
+            "Proceso de Diseño",
+            "Estrategia"
+        ],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Double_diamond.png/640px-Double_diamond.png",
+        "ultima_atualizacao": "2024-05-21",
+        "nivel": "Principiante",
+        "tempo_aplicar": "Semanas/Meses",
+        "detalhes_markdown": "# El Modelo Double Diamond\n\n**Descripción:** Modelo de proceso de diseño que visualiza el pensamiento **divergente** y **convergente** en dos diamantes. Ayuda a asegurar que se está resolviendo el problema correcto de la manera correcta.\n\n**Cuándo usar:** Para estructurar un proyecto de diseño completo.\n\n---\n\n## Las 4 Fases\n\n### Primer Diamante: Foco en el Problema\n1.  **Descubrir:** Explorar el espacio del problema a través de la investigación.\n2.  **Definir:** Sintetizar aprendizajes para definir claramente el reto.\n\n### Segundo Diamante: Foco en la Solución\n3.  **Desarrollar:** Generar una amplia variedad de posibles soluciones.\n4.  **Entregar:** Testear, refinar y seleccionar las mejores soluciones.\n\n### Enlaces Relevantes\n\n*   [Guía del Design Council](https://www.designcouncil.org.uk/our-resources/guide/double-diamond-our-evolved-model/)",
+        "slug": "double-diamond"
+    },
+    {
+        "nome": "Mapa del Viaje del Usuario (User Journey Map)",
+        "descricao": "Visualización del proceso que sigue un usuario para alcanzar un objetivo. Mapea puntos de contacto, acciones, pensamientos y emociones a lo largo del tiempo.",
+        "quando_usar": "Para entender la experiencia de extremo a extremo, identificar puntos de dolor y encontrar oportunidades de mejora.",
+        "link": "https://www.nngroup.com/articles/journey-mapping-101/",
+        "categorias": [
+            "UX",
+            "Investigación"
+        ],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Customer_Journey_Map_Template.png/640px-Customer_Journey_Map_Template.png",
+        "ultima_atualizacao": "2024-05-21",
+        "nivel": "Intermedio",
+        "tempo_aplicar": "1-2 días",
+        "detalhes_markdown": "# Mapa del Viaje del Usuario\n\n**Descripción:** Narrativa visual de la experiencia del usuario, mapeando sus interacciones, sentimientos y obstáculos en un proceso determinado.\n\n**Cuándo usar:** Para empatizar con el usuario e identificar momentos críticos de la experiencia actual o diseñar una futura.\n\n---\n\n## Componentes Principales\n*   **Fases:** Etapas del proceso (Ej: Descubrimiento, Compra, Post-venta).\n*   **Acciones:** Qué hace el usuario en cada etapa.\n*   **Pensamientos y Emociones:** Qué siente y qué se pregunta.\n*   **Puntos de Contacto:** Dónde ocurre la interacción (web, app, tienda).\n*   **Oportunidades:** Áreas de mejora basadas en las frustraciones detectadas.\n\n### Enlaces Relevantes\n\n*   [Guía del NN/g sobre Journey Mapping](https://www.nngroup.com/articles/journey-mapping-101/)",
+        "slug": "mapa-da-jornada-do-usuario"
+    },
+    {
+        "nome": "Wireframing",
+        "descricao": "Un esquema de baja fidelidad que representa la estructura esquelética de una interfaz. Se centra en la disposición del espacio e importancia del contenido.",
+        "quando_usar": "Al inicio del diseño de interfaz para alinear la estructura con el equipo antes del diseño visual detallado.",
+        "link": "https://www.experienceux.co.uk/faqs/what-is-wireframing/",
+        "categorias": [
+            "UI",
+            "Prototipado"
+        ],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Wireframe_example.png/640px-Wireframe_example.png",
+        "ultima_atualizacao": "2024-05-21",
+        "nivel": "Principiante",
+        "tempo_aplicar": "Horas",
+        "detalhes_markdown": "# Wireframing: El Esqueleto de la Interfaz\n\n**Descripción:** Esbozo de baja fidelidad para definir la **estructura, jerarquía y funcionalidad**, ignorando colores y tipografía detallada.\n\n**Cuándo usar:** Para acordar la arquitectura de la pantalla con el equipo antes de crear diseños visuales de alta fidelidade.\n\n---\n\n## Beneficios\n*   **Foco en Usabilidad:** Elimina distracciones estéticas.\n*   **Rápido y Barato:** Cambios fáciles sin coste de desarrollo.\n*   **Alineación:** Documento base para el diseño visual final y desarrollo.\n\n### Enlaces Relevantes\n\n*   [Guía de Experience UX](https://www.experienceux.co.uk/faqs/what-is-wireframing/)",
+        "slug": "wireframing"
+    },
+    {
+        "nome": "Design Thinking",
+        "descricao": "Un enfoque iterativo centrado en el humano para la resolución de problemas. Involucra 5 fases: Empatizar, Definir, Idear, Prototipar y Testear.",
+        "quando_usar": "Para abordar problemas complejos, innovar en productos o mejorar la experiencia del usuario.",
+        "link": "https://www.interaction-design.org/literature/topics/design-thinking",
+        "categorias": [
+            "Proceso de Diseño",
+            "Estrategia",
+            "Innovación"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-23",
+        "nivel": "Principiante",
+        "tempo_aplicar": "Semanas/Meses",
+        "detalhes_markdown": "# Design Thinking: Innovación Centrada en el Humano\n\n**Fases:**\n1.  **Empatizar:** Comprender profundamente al usuario.\n2.  **Definir:** Articular el problema central.\n3.  **Idear:** Generar múltiples ideas sin juzgar.\n4.  **Prototipar:** Crear versiones baratas de las soluciones.\n5.  **Testear:** Obtener feedback de usuarios reales.\n\n### Enlaces Relevantes\n\n*   [Interaction Design Foundation Guide](https://www.interaction-design.org/literature/topics/design-thinking)",
+        "slug": "design-thinking"
+    },
+    {
+        "nome": "Crazy 8s",
+        "descricao": "Método de ideación rápida donde cada participante esboza 8 ideas diferentes en 8 minutos.",
+        "quando_usar": "Para generar volumen de soluciones rápido y superar bloqueos creativos.",
+        "link": "https://designsprintkit.withgoogle.com/methodology/phase3-sketch/crazy-8s",
+        "categorias": [
+            "Proceso de Diseño",
+            "Ideación"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-23",
+        "nivel": "Principiante",
+        "tempo_aplicar": "15 minutos",
+        "detalhes_markdown": "# Crazy 8s: Ideación Rápida\n\nCada persona dobla una hoja en 8 y dibuja una idea por minuto. El objetivo es cantidad sobre calidad para desbloquear la creatividad.\n\n### Enlaces Relevantes\n\n*   [Google Design Sprint Kit - Crazy 8s](https://designsprintkit.withgoogle.com/methodology/phase3-sketch/crazy-8s)",
+        "slug": "crazy-8s"
+    },
+    {
+        "nome": "How Might We (HMW)",
+        "descricao": "Técnica para replantear problemas en preguntas de oportunidad optimistas. ¿Cómo podríamos...?",
+        "quando_usar": "Para transformar retos identificados en puntos de partida para el brainstorming.",
+        "link": "https://www.ideou.com/blog/how-might-we-questions",
+        "categorias": [
+            "Proceso de Diseño",
+            "Estrategia",
+            "Ideación"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-23",
+        "nivel": "Principiante",
+        "tempo_aplicar": "1 hora",
+        "detalhes_markdown": "# HMW: Retos como Oportunidades\n\nConvierte problemas en retos colaborativos. Ejemplo: \"¿Cómo podríamos dar claridad al usuario en el pago?\" en lugar de \"El pago es confuso\".\n\n### Enlaces Relevantes\n\n*   [IDEO - How Might We](https://www.ideou.com/blog/how-might-we-questions)",
+        "slug": "how-might-we-hmw"
+    },
+    {
+        "nome": "Matriz CSD",
+        "descricao": "Herramienta colaborativa para alinear conocimientos en Cervidumbres, Suposiciones y Dudas.",
+        "quando_usar": "Al inicio de un proyecto para mapear riesgos e investigación necesaria.",
+        "link": "https://brasil.uxdesign.cc/matriz-csd-o-que-e-e-como-usar-735a34952d3f",
+        "categorias": [
+            "Proceso de Diseño",
+            "Estrategia",
+            "Investigación"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-23",
+        "nivel": "Principiante",
+        "tempo_aplicar": "1 hora",
+        "detalhes_markdown": "# Matriz CSD: Alineación Inicial\n\nOrganiza lo que el equipo sabe (Certezas), lo que cree (Suposiciones) y lo que no sabe (Dudas). Las suposiciones son riesgos a validar y las dudas son guías de investigación.\n\n### Enlaces Relevantes\n\n*   [Artículo sobre Matriz CSD](https://brasil.uxdesign.cc/matriz-csd-o-que-e-e-como-usar-735a34952d3f)",
+        "slug": "matriz-csd-certezas-suposicoes-e-duvidas"
+    },
+    {
+        "nome": "LTV (Lifetime Value)",
+        "descricao": "Métrica que estima el beneficio neto total de un cliente durante toda su relación con la empresa.",
+        "quando_usar": "Para evaluar sostenibilidad y rentabilidad a largo plazo de la adquisición de clientes.",
+        "link": "https://www.investopedia.com/terms/l/lifetime_value.asp",
+        "categorias": [
+            "Métricas",
+            "Estrategia",
+            "Finanzas"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-23",
+        "nivel": "Intermedio",
+        "tempo_aplicar": "Horas",
+        "detalhes_markdown": "# LTV: Valor de Vida del Cliente\n\nCalcula cuánto dinero aporta un cliente antes de irse. Es vital compararlo con el CAC (Costo de Adquisición). Si LTV/CAC > 3, el negocio es saludable.\n\n### Enlaces Relevantes\n\n*   [Investopedia - LTV](https://www.investopedia.com/terms/l/lifetime_value.asp)",
+        "slug": "mapa-de-descoberta-discovery-mapping"
+    },
+    {
+        "nome": "CAC (Costo de Adquisición de Cliente)",
+        "descricao": "Costo total para conseguir un nuevo cliente (marketing + ventas / nuevos clientes).",
+        "quando_usar": "Para medir eficiencia de adquisición de mercado.",
+        "link": "https://www.investopedia.com/terms/c/customer-acquisition-cost.asp",
+        "categorias": [
+            "Métricas",
+            "Marketing",
+            "Finanzas"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1579621970795-87facc2f976d?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-23",
+        "nivel": "Intermedio",
+        "tempo_aplicar": "Horas",
+        "detalhes_markdown": "# CAC: ¿Cuánto cuesta cada cliente?\n\nSuma inversiones en marketing y ventas y divide por clientes ganados. Se debe buscar siempre reducir este coste u optimizar la conversión.\n\n### Enlaces Relevantes\n\n*   [Investopedia - CAC](https://www.investopedia.com/terms/c/customer-acquisition-cost.asp)",
+        "slug": "ltv-lifetime-value"
+    },
+    {
+        "nome": "NPS (Net Promoter Score)",
+        "descricao": "Métrica de lealtad basada en la disposición de recomendar el producto (escala 0-10).",
+        "quando_usar": "Para monitorizar satisfacción y clasificar clientes en Promotores, Pasivos o Detractores.",
+        "link": "https://www.netpromoter.com/know/",
+        "categorias": [
+            "Métricas",
+            "UX",
+            "Satisfacción"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-23",
+        "nivel": "Principiante",
+        "tempo_aplicar": "Días",
+        "detalhes_markdown": "# NPS: Lealtad del Cliente\n\n`NPS = % Promotores - % Detractores`. Un score alto indica crecimiento orgánico fuerte. El valor real está en el feedback cualitativo de las notas bajas.\n\n### Enlaces Relevantes\n\n*   [Net Promoter System Official](https://www.netpromoter.com/know/)",
+        "slug": "nps-net-promoter-score"
+    },
+    {
+        "nome": "Kano Model",
+        "descricao": "Priorización de funciones según el impacto en la satisfacción del cliente.",
+        "quando_usar": "Para backlogs de producto y estrategia competitiva.",
+        "link": "https://foldingburritos.com/kano-model/",
+        "categorias": [
+            "Estrategia",
+            "Priorización",
+            "UX"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-24",
+        "nivel": "Intermedio",
+        "tempo_aplicar": "Días",
+        "detalhes_markdown": "# Modelo Kano: Clasificación de Features\n\n1. **Básicas:** Obligatorias (Login).\n2. **Performance:** Más es mejor (Velocidad).\n3. **Delighters:** Sorpresas agradables.\n4. **Indiferentes:** Sin impacto.\n5. **Reversas:** Causan descontento.\n\n### Enlaces Relevantes\n\n*   [Kano Model Guide](https://foldingburritos.com/kano-model/)",
+        "slug": "modelo-kano-kano-model"
+    },
+    {
+        "nome": "Discovery Mapping",
+        "descricao": "Una técnica visual y colaborativa para estructurar el proceso de descubrimiento de un producto. Ayuda a mapear lo que sabemos, lo que no sabemos y cómo planeamos aprender.",
+        "quando_usar": "Al inicio de la fase de descubrimiento para alinear al equipo, planificar actividades de investigación y crear un camino claro.",
+        "link": "https://www.producttalk.org/2021/08/product-discovery/",
+        "categorias": [
+            "Investigación",
+            "Estrategia",
+            "Proceso de Diseño"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-23",
+        "nivel": "Intermedio",
+        "tempo_aplicar": "Días",
+        "detalhes_markdown": "# Discovery Mapping (Mapa de Descubrimiento)\n\n**Descripción:** Una técnica colaborativa para estructurar el proceso de descubrimiento. Ayuda a conectar objetivos de negocio con problemas de usuario y planes de investigación.\n\n**Cuándo usar:** Al inicio de un nuevo proyecto para alinear al equipo y reducir la incertidumbre.\n\n---\n\n## Estructura Común\n\n1.  **Objetivo de Negocio:** ¿Qué queremos lograr?\n2.  **Problemas del Usuario:** ¿Qué necesidades resolveremos?\n3.  **Suposiciones:** ¿Qué creemos que es cierto?\n4.  **Preguntas de Investigación:** ¿Qué necesitamos aprender?\n\n### Enlaces Relevantes\n\n*   [Product Discovery por Teresa Torres](https://www.producttalk.org/2021/08/product-discovery/)",
+        "slug": "mapa-de-descoberta-discovery-mapping"
+    },
+    {
+        "nome": "CAC (Costo de Adquisición de Cliente)",
+        "descricao": "La métrica que calcula el costo total para adquirir un nuevo cliente. Incluye todos los costos de marketing y ventas divididos por el número de nuevos clientes.",
+        "quando_usar": "Para evaluar la eficiencia de las campañas y asegurar la rentabilidad del modelo de negocio (LTV > CAC).",
+        "link": "https://resultadosdigitais.com.br/blog/custo-de-aquisicao-por-cliente/",
+        "categorias": [
+            "Métricas",
+            "Marketing",
+            "Finanzas"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1579621970795-87facc2f976d?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-23",
+        "nivel": "Intermedio",
+        "tempo_aplicar": "Horas",
+        "detalhes_markdown": "# CAC (Costo de Adquisición de Cliente)\n\n**Descripción:** El CAC es el costo promedio de convertir a un prospecto en cliente. Suma todos los gastos de ventas y marketing durante un periodo.\n\n`CAC = (Gastos Marketing + Gastos Ventas) / Nuevos Clientes`\n\n### Relación LTV/CAC\n\nLo ideal es que el **LTV sea al menos 3 veces el CAC**.",
+        "slug": "cac-custo-de-aquisicao-de-cliente"
+    },
+    {
+        "nome": "LTV (Lifetime Value)",
+        "descricao": "Una métrica que estima el beneficio neto total generado por un cliente a lo largo de toda su relación con la empresa.",
+        "quando_usar": "Para tomar decisiones estratégicas sobre adquisición y retención. Vital para saber cuánto podemos gastar en adquirir un cliente.",
+        "link": "https://resultadosdigitais.com.br/blog/ltv-lifetime-value/",
+        "categorias": [
+            "Métricas",
+            "Estrategia",
+            "Finanzas"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-23",
+        "nivel": "Intermedio",
+        "tempo_aplicar": "Horas",
+        "detalhes_markdown": "# LTV (Valor de Vida del Cliente)\n\n**Descripción:** El LTV estima los ingresos totales que un cliente aportará antes de dejar de serlo.\n\n`LTV = Ticket Promedio * Tiempo de Retención`\n\n### Cómo mejorar el LTV\n\n*   **Aumentar la Retención:** Reducir el churn.\n*   **Up-selling:** Vender planes superiores.",
+        "slug": "ltv-lifetime-value"
+    },
+    {
+        "nome": "Análisis de Causalidad (Causal Inference)",
+        "descricao": "Un campo del análisis de datos que busca entender las relaciones de causa y efecto, no solo correlaciones.",
+        "quando_usar": "Para medir el impacto real de un cambio. Las Pruebas A/B son la forma más común de establecer causalidad.",
+        "link": "https://www.masterclass.com/articles/causal-analysis-explained",
+        "categorias": [
+            "Métricas",
+            "Análisis de Datos",
+            "Estrategia"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-23",
+        "nivel": "Avanzado",
+        "tempo_aplicar": "Días/Semanas",
+        "detalhes_markdown": "# Análisis de Causalidad: ¿Acción X causa Resultado Y?\n\n**Descripción:** Diferencia entre correlación (dos cosas pasan juntas) y causalidad (una causa la otra).\n\n### Pruebas A/B\n\nLa randomización permite asegurar que cualquier diferencia en los resultados se debe al cambio realizado y no a otras variables.",
+        "slug": "analise-de-causalidade-causal-inference"
+    },
+    {
+        "nome": "Análisis de Embudo (Funnel Analysis)",
+        "descricao": "Una técnica para visualizar y medir el viaje del usuario a través de una serie de pasos hacia un objetivo.",
+        "quando_usar": "Para identificar cuellos de botella y puntos de fricción donde los usuarios abandonan el proceso.",
+        "link": "https://mixpanel.com/topics/funnel-analysis/",
+        "categorias": [
+            "Métricas",
+            "UX",
+            "Product Analytics"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-23",
+        "nivel": "Principiante",
+        "tempo_aplicar": "Horas",
+        "detalhes_markdown": "# Análisis de Embudo: Maximizando la Conversión\n\n**Descripción:** Mide cuántos usuarios pasan de un paso a otro (ej: Ver producto -> Carrito -> Pago).\n\n### Beneficios\n\n*   **Detectar Fugas:** ¿Dónde perdemos más usuarios?\n*   **Priorizar:** Arreglar el paso con mayor caída.",
+        "slug": "analise-de-funil-funnel-analysis"
+    },
+    {
+        "nome": "Modelo Kano",
+        "descricao": "Una teoría para priorizar funcionalidades basada en la satisfacción del cliente.",
+        "quando_usar": "Para entender qué características son básicas, cuáles generan rendimiento y cuáles deleitan al usuario.",
+        "link": "https://foldingburritos.com/kano-model/",
+        "categorias": [
+            "Estrategia",
+            "Priorización",
+            "UX"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-24",
+        "nivel": "Intermedio",
+        "tempo_aplicar": "Días",
+        "detalhes_markdown": "# Modelo Kano: Priorización Estratégica\n\n1.  **Básicas:** El usuario las da por hecho (ej: freno en un coche).\n2.  **Performance:** Más es mejor (ej: velocidad).\n3.  **Encanto (Delighters):** Inesperadas y emocionantes.",
+        "slug": "modelo-kano-kano-model"
+    },
+    {
+        "nome": "ARPU (Promedio de Ingresos por Usuario)",
+        "descricao": "Ingresos totales divididos por el número de usuarios activos en un periodo.",
+        "quando_usar": "Para monitorear la monetización y comparar segmentos de clientes.",
+        "link": "https://www.investopedia.com/terms/a/arpu.asp",
+        "categorias": [
+            "Métricas",
+            "Finanzas"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1639754032243-325582a4d04c?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-23",
+        "nivel": "Principiante",
+        "tempo_aplicar": "Horas",
+        "detalhes_markdown": "# ARPU: ¿Cuánto vale un usuario al mes?\n\n**Cálculo:** `Ingresos Totales / Usuarios Activos`.",
+        "slug": "arpu-average-revenue-per-user"
+    },
+    {
+        "nome": "NPS (Net Promoter Score)",
+        "descricao": "Métrica de lealtad que mide la probabilidad de recomendación.",
+        "quando_usar": "Para identificar promotores y detractores de la marca.",
+        "link": "https://www.netpromoter.com/know/",
+        "categorias": [
+            "Métricas",
+            "UX",
+            "Satisfacción"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-23",
+        "nivel": "Principiante",
+        "tempo_aplicar": "Días",
+        "detalhes_markdown": "# NPS: Lealtad del Cliente\n\nClassificación: Promotores, Pasivos y Detractores.",
+        "slug": "nps-net-promoter-score"
+    },
+    {
+        "nome": "Ativação (Activation) (ES)",
+        "descricao": "Uma métrica que mede quando um novo usuário realiza uma ação chave em seu produto que indica que ele extraiu valor pela primeira vez (o 'momento aha'). É um passo crucial na jornada do usuário, após a aquisição. (Necessita tradución)",
+        "quando_usar": "Para entender a eficácia do onboarding de novos usuários e otimizar a primeira experiência do produto, garantindo que os usuários entendam seu valor rapidamente para aumentar a retenção.",
+        "link": "https://amplitude.com/blog/activation-metrics",
+        "categorias": [
+            "Métricas",
+            "UX",
+            "Crescimento"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-23",
+        "nivel": "Intermediário",
+        "tempo_aplicar": "Contínuo (para monitorar)",
+        "detalhes_markdown": "# Ativação (Activation): O 'Momento Aha!'\n\n**Descrição:** A Ativação é uma métrica que mede quando um novo usuário realiza uma ação ou um conjunto de ações chave em seu produto que indicam que ele extraiu valor pela primeira vez. É o momento em que o usuário 'entende' a proposta de valor do produto, conhecido como o **'momento aha!'**. A ativação é um passo crucial na jornada do usuário, ocorrendo após a aquisição e sendo um forte preditor da retenção a longo prazo.\n\n**Quando usar:** Para entender a eficácia do processo de onboarding de novos usuários e para otimizar a primeira experiência do produto, garantindo que os usuários entendam seu valor rapidamente.\n\n---\n\n## Definindo sua Métrica de Ativação\n\nA ativação não é uma métrica universal; ela é **específica para cada produto**. Definir o que significa 'ativado' é um exercício estratégico.\n\nO processo geralmente envolve:\n1.  **Analisar Dados:** Identificar quais ações ou comportamentos dos novos usuários têm a maior correlação com a retenção a longo prazo.\n2.  **Formular uma Hipótese:** Com base na análise, criar uma definição para a ativação.\n\n### Exemplos Famosos de Métricas de Ativação:\n\n*   **Facebook:** Conectar-se com 7 amigos nos primeiros 10 dias.\n    *   *Insight:* Usuários que atingiam esse marco eram muito mais propensos a se tornarem usuários ativos a longo prazo.\n\n*   **Twitter:** Seguir 30 pessoas, com pelo menos um terço delas seguindo de volta.\n    *   *Insight:* A experiência do Twitter só se torna valiosa quando o feed do usuário é preenchido com conteúdo relevante.\n\n*   **Slack:** Trocar 2.000 mensagens dentro de uma equipe.\n    *   *Insight:* Esse era o ponto em que a equipe realmente via o valor da ferramenta e a incorporava em seu fluxo de trabalho.\n\n*   **Dropbox:** Adicionar um arquivo em uma pasta do Dropbox em um dispositivo.\n    *   *Insight:* A ação mais simples que demonstra o valor central do produto.\n\n---\n\n## Por que a Ativação é Importante?\n\n*   **Ponte para a Retenção:** Usuários que não são ativados têm uma probabilidade muito maior de dar 'churn' (cancelar ou abandonar o produto). A ativação é o primeiro grande obstáculo a ser superado na jornada do cliente.\n*   **Foco para o Onboarding:** Uma métrica de ativação clara dá à equipe de produto um objetivo concreto para o processo de onboarding: projetar uma experiência que leve o maior número possível de novos usuários a atingir o 'momento aha!' o mais rápido possível.\n*   **Métrica Acionável:** Diferente de métricas vagas como 'engajamento', a taxa de ativação é uma métrica clara que a equipe pode trabalhar para melhorar.\n\n### Links Relevantes\n\n*   Blog da Amplitude sobre Métricas de Ativação\n\n*(Contenido en Portugués - Traducción en progreso)*",
+        "slug": "ativacao-activation"
+    },
+    {
+        "nome": "Hábitos de Descoberta Contínua (Continuous Discovery Habits) (ES)",
+        "descricao": "Uma abordagem estruturada, popularizada por Teresa Torres, onde a equipe de produto (trio de produto) interage com clientes semanalmente para realizar pequenas atividades de pesquisa, como entrevistas contínuas. O objetivo é tomar decisões de produto com base em insights frequentes e atualizados. (Necessita tradución)",
+        "quando_usar": "Para equipes que desejam infundir a descoberta de produtos em seu ritmo semanal, garantindo que estão constantemente aprendendo com os usuários e reduzindo os riscos de construir a coisa errada.",
+        "link": "https://www.producttalk.org/continuous-discovery-habits-book/",
+        "categorias": [
+            "Pesquisa",
+            "Discovery Contínuo",
+            "Processo de Design"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-23",
+        "nivel": "Intermediário",
+        "tempo_aplicar": "Contínuo",
+        "detalhes_markdown": "# Hábitos de Descoberta Contínua (Continuous Discovery Habits)\n\n**Descrição:** Uma abordagem estruturada, popularizada por Teresa Torres, onde as equipes de produto (lideradas pelo 'trio de produto': Product Manager, Designer e Engenheiro Líder) interagem com clientes **semanalmente** para realizar pequenas atividades de pesquisa. O objetivo é tomar decisões diárias de produto com base em insights frequentes e atualizados, em vez de depender de grandes projetos de pesquisa esporádicos.\n\n**Quando usar:** Para equipes que desejam infundir a descoberta de produtos (discovery) em seu ritmo semanal, garantindo que estão constantemente aprendendo com os usuários e reduzindo os riscos de construir a coisa errada.\n\n---\n\n## O Hábito Fundamental: Entrevistas Semanais\n\nO cerne da abordagem é a **entrevista semanal com clientes**. A equipe se compromete a falar com pelo menos um cliente toda semana. Essas não são entrevistas longas e formais, mas conversas curtas e focadas para entender o contexto do cliente, suas dores e seus 'jobs to be done'.\n\n## Ferramentas Visuais de Apoio\n\nPara dar sentido a esses aprendizados contínuos, Teresa Torres propõe o uso de ferramentas visuais, principalmente a **Opportunity Solution Tree (OST)**.\n\n1.  **Mapeamento da Experiência (Experience Maps):** Visualizar a jornada do cliente para identificar os pontos de dor e as necessidades.\n\n2.  **Opportunity Solution Tree (OST):** Uma árvore que conecta visualmente:\n    *   **O Resultado de Negócio (Outcome):** A métrica que a equipe quer impactar (ex: \"Aumentar a retenção\").\n    *   **Oportunidades (Opportunities):** As necessidades, dores e desejos dos clientes que, se atendidos, podem levar ao resultado desejado. (Ex: \"Eu quero encontrar conteúdo relevante rapidamente\").\n    *   **Soluções (Solutions):** As ideias de funcionalidades ou produtos que podem atender a uma oportunidade.\n    *   **Experimentos (Experiments):** As maneiras de testar rapidamente se uma solução realmente funciona antes de construí-la por completo.\n\n---\n\n## O Ciclo de Descoberta Contínua\n\n1.  **Definir o Resultado:** A equipe alinha qual métrica de negócio quer mover.\n2.  **Descobrir Oportunidades:** Através das entrevistas semanais, a equipe mapeia as dores e necessidades dos clientes (oportunidades).\n3.  **Priorizar Oportunidades:** A equipe decide em qual oportunidade focar, com base no seu potencial de impactar o resultado de negócio.\n4.  **Gerar e Testar Soluções:** A equipe gera múltiplas soluções para a oportunidade priorizada e as testa rapidamente com protótipos e experimentos.\n5.  **Iterar:** O aprendizado dos testes alimenta a árvore e informa as próximas decisões.\n\n### Benefícios\n\n*   **Redução de Riscos:** As decisões são baseadas em feedback constante, não em suposições.\n*   **Velocidade de Aprendizagem:** A equipe aprende e itera muito mais rápido.\n*   **Foco no Cliente:** Mantém as necessidades do cliente no centro das decisões diárias.\n*   **Empoderamento da Equipe:** A equipe que constrói o produto é a mesma que fala com os clientes, criando um senso de propriedade e um entendimento profundo do problema.\n\n### Links Relevantes\n\n*   Livro 'Continuous Discovery Habits' de Teresa Torres\n\n*(Contenido en Portugués - Traducción en progreso)*",
+        "slug": "habitos-de-descoberta-continua-continuous-discovery-habits"
+    },
+    {
+        "nome": "Opportunity Solution Tree (OST) (ES)",
+        "descricao": "Uma ferramenta visual de pensamento criada por Teresa Torres para ajudar as equipes a conectar suas atividades diárias com os resultados de negócio desejados. Mapeia o caminho de um resultado, através de oportunidades (necessidades do cliente), para múltiplas soluções e experimentos. (Necessita tradución)",
+        "quando_usar": "Para estruturar o processo de descoberta contínua, priorizar oportunidades com base em seu impacto no resultado e garantir que a equipe não se apaixone por uma única solução antes de validar a oportunidade.",
+        "link": "https://www.producttalk.org/opportunity-solution-tree-ost/",
+        "categorias": [
+            "Estratégia",
+            "Discovery Contínuo",
+            "Processo de Design"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-23",
+        "nivel": "Avançado",
+        "tempo_aplicar": "Contínuo",
+        "detalhes_markdown": "# Opportunity Solution Tree (OST): Conectando Ações a Resultados\n\n**Descrição:** A Opportunity Solution Tree (OST), ou Árvore de Oportunidades e Soluções, é uma ferramenta visual de pensamento criada por Teresa Torres. Ela ajuda as equipes de produto a conectar suas atividades diárias (construir funcionalidades, rodar experimentos) com os resultados de negócio desejados, passando pelas necessidades dos clientes. A OST combate a tendência das equipes de pularem direto para as soluções.\n\n**Quando usar:** Para estruturar o processo de descoberta contínua, priorizar oportunidades com base em seu impacto no resultado e garantir que a equipe explore múltiplas soluções antes de se comprometer com uma.\n\n---\n\n## A Estrutura da Árvore\n\nA árvore é lida de cima para baixo e da esquerda para a direita.\n\n1.  **Resultado (Outcome):**\n    *   **O que é:** O topo da árvore. É a métrica de negócio que a equipe quer impactar. Deve ser um resultado, não uma saída (output).\n    *   *Exemplo:* \"Aumentar a retenção semanal de novos usuários em 10%.\"\n\n2.  **Oportunidades (Opportunities):**\n    *   **O que são:** O segundo nível. São as necessidades, dores e desejos dos clientes. Elas representam o espaço do problema. A equipe descobre essas oportunidades através de pesquisa (ex: entrevistas).\n    *   *Exemplo:* \"Eu quero encontrar conteúdo relevante sem esforço\", \"Eu me sinto sobrecarregado com muitas notificações\", \"Eu não sei por onde começar\".\n\n3.  **Soluções (Solutions):**\n    *   **O que são:** O terceiro nível. São as ideias de funcionalidades ou produtos que podem atender a uma oportunidade específica. Para cada oportunidade, a equipe deve gerar múltiplas soluções.\n    *   *Exemplo (para a oportunidade \"quero encontrar conteúdo relevante\"):* \"Um feed personalizado\", \"Uma função de busca aprimorada\", \"Categorias de conteúdo mais claras\".\n\n4.  **Experimentos (Experiments):**\n    *   **O que são:** O último nível. Para cada solução, a equipe projeta experimentos para testar suas suposições subjacentes de forma rápida e barata, antes de construir a solução completa.\n    *   *Exemplo (para a solução \"feed personalizado\"):* \"Testar um protótipo de feed com 5 usuários para ver se eles encontram conteúdo relevante mais rápido\", \"Rodar um teste A/B com um algoritmo de recomendação simples\".\n\n---\n\n## Como a OST Ajuda\n\n*   **Clareza de Propósito:** Conecta visualmente o trabalho da equipe (soluções e experimentos) ao porquê (oportunidades e resultado). Todos sabem por que estão trabalhando em algo.\n*   **Evita a 'Fábrica de Funcionalidades':** Desacopla o espaço do problema (oportunidades) do espaço da solução. A equipe se apaixona pelo problema, não pela primeira solução que aparece.\n*   **Priorização Estratégica:** Ajuda a equipe a decidir em qual oportunidade focar, com base no seu potencial de impactar o resultado.\n*   **Geração de Múltiplas Ideias:** Incentiva a explorar várias soluções para a mesma oportunidade, aumentando a chance de encontrar a melhor.\n\n### Links Relevantes\n\n*   Artigo Original de Teresa Torres sobre OST\n*   Vídeo Explicativo de Teresa Torres\n\n*(Contenido en Portugués - Traducción en progreso)*",
+        "slug": "opportunity-solution-tree-ost"
+    },
+    {
+        "nome": "Análise de Coorte (Cohort Analysis) (ES)",
+        "descricao": "Uma forma de análise comportamental que divide os usuários em grupos (coortes) com características comuns, geralmente baseadas na data em que começaram a usar o produto. Permite analisar como o comportamento desses grupos muda ao longo do tempo. (Necessita tradución)",
+        "quando_usar": "Para entender a retenção de usuários, o impacto de mudanças no produto ao longo do tempo e como diferentes grupos de usuários se comportam. Essencial para medir a saúde do produto a longo prazo.",
+        "link": "https://amplitude.com/blog/cohort-analysis",
+        "categorias": [
+            "Métricas",
+            "Análise de Dados",
+            "Product Analytics"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2024-05-23",
+        "nivel": "Intermediário",
+        "tempo_aplicar": "Horas (para analisar)",
+        "detalhes_markdown": "# Análise de Coorte (Cohort Analysis): Entendendo o Comportamento ao Longo do Tempo\n\n**Descrição:** A Análise de Coorte é uma forma de análise comportamental que divide os usuários em grupos com características comuns, chamados **coortes**. A coorte mais comum é a de aquisição, que agrupa os usuários pela data em que começaram a usar o produto (ex: a coorte de 'Janeiro de 2024' são todos os usuários que se cadastraram em janeiro). A análise então acompanha como o comportamento desses grupos muda ao longo do tempo.\n\n**Quando usar:** Para entender a retenção de usuários, medir o impacto de mudanças no produto ao longo do tempo e comparar o comportamento de diferentes grupos de usuários. É uma das ferramentas mais poderosas para medir a saúde de um produto a longo prazo.\n\n---\n\n## Como Ler um Gráfico de Coorte de Retenção\n\nUm gráfico de coorte de retenção é tipicamente uma tabela triangular onde:\n\n*   **Linhas:** Representam as coortes (ex: usuários de Janeiro, Fevereiro, Março).\n*   **Colunas:** Representam o tempo decorrido desde a aquisição (Mês 0, Mês 1, Mês 2, etc.).\n*   **Células:** Mostram a porcentagem de usuários daquela coorte que ainda estavam ativos naquele período de tempo.\n\n| Coorte | Mês 0 | Mês 1 | Mês 2 | Mês 3 |\n| :--- | :--- | :--- | :--- | :--- |\n| **Jan/24** | 100% | 40% | 35% | 30% |\n| **Fev/24** | 100% | 45% | 41% | - |\n| **Mar/24** | 100% | 55% | - | - |\n\n**Como interpretar:**\n*   A coorte de **Janeiro** teve uma retenção de 40% no primeiro mês, 35% no segundo, e assim por diante.\n*   A coorte de **Março** teve uma retenção de 55% no primeiro mês. Isso é uma melhora significativa em relação a Janeiro!\n\n---\n\n## O que a Análise de Coorte Revela?\n\n*   **Retenção Real do Produto:** Métricas como 'Usuários Ativos Mensais' podem ser enganosas. Se você adquire mais usuários do que perde, a métrica pode subir, mascarando um problema de retenção. A análise de coorte mostra se os usuários estão realmente continuando a usar o produto ao longo do tempo.\n\n*   **Impacto de Mudanças:** No exemplo acima, a melhora na retenção da coorte de Março pode indicar que uma nova funcionalidade ou uma melhoria no onboarding lançada em Março foi bem-sucedida.\n\n*   **Valor do Tempo de Vida (LTV):** A análise de coorte é fundamental para calcular o tempo médio de vida de um cliente, um componente chave do LTV.\n\n*   **Product-Market Fit:** Uma característica de produtos com bom product-market fit é que as curvas de retenção das coortes se estabilizam (achatam) após alguns meses, em vez de caírem para zero. Isso mostra que um grupo de usuários continua extraindo valor do produto.\n\n### Links Relevantes\n\n*   Blog da Amplitude sobre Análise de Coorte\n\n*(Contenido en Portugués - Traducción en progreso)*",
+        "slug": "analise-de-coorte-cohort-analysis"
+    }
+]

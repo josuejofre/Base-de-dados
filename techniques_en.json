@@ -1,0 +1,293 @@
+[
+    {
+        "nome": "SWOT Analysis",
+        "descricao": "A strategic planning framework used to evaluate the Strengths, Weaknesses, Opportunities, and Threats involved in a project or business.",
+        "quando_usar": "At the beginning of a project, in quarterly/annual strategic planning, or when evaluating a new initiative to understand the internal and external scenario.",
+        "link": "https://www.atlassian.com/team-playbook/plays/swot-analysis",
+        "categorias": [
+            "Introduction",
+            "Maturity"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# SWOT Analysis\n\n**Description:** A strategic planning framework used to evaluate the **Strengths**, **Weaknesses**, **Opportunities**, and **Threats** involved in a project or business.\n\n**When to use:** At the beginning of a project, in quarterly/annual strategic planning, or when evaluating a new initiative to understand the internal and external scenario.\n\n---\n\n## Practical Example: Launching a Delivery App\n\nImagine a startup that wants to launch a new food delivery app in a medium-sized city. The team meets to perform a SWOT Analysis:\n\n| Internal Factors | External Factors |\n| :--- | :--- |\n| **Strengths** | **Opportunities** |\n| - Agile and experienced development team.<br>- Intuitive and modern user interface.<br>- Initial partnership with 3 popular restaurants. | - Growth of the delivery market in the region.<br>- Competitors with high delivery fees.<br>- Young and connected population. |\n| **Weaknesses** | **Threats** |\n| - Limited marketing budget.<br>- Unknown brand in the market.<br>- Little experience in delivery logistics. | - Strong competition from established apps.<br>- Possible economic crisis decreasing average spending.<br>- Changes in labor legislation for delivery workers. |\n\n### Derived Strategies\n\n* **Leveraging (Strengths + Opportunities):** Use the intuitive interface in digital marketing campaigns focused on young people to highlight ease of use compared to competitors.\n* **Mitigation (Weaknesses + Threats):** Seek an angel investment to increase the marketing budget and compete more aggressively with established players.\n\n---\n\n### Relevant Links\n\n* [Atlassian Guide on SWOT](https://www.atlassian.com/team-playbook/plays/swot-analysis)\n* [Explanatory Video (Example)](https://www....)",
+        "slug": "analise-swot"
+    },
+    {
+        "nome": "5 Whys",
+        "descricao": "A root cause analysis technique that involves asking 'Why?' repeatedly (usually five times) to explore the cause-and-effect relationships underlying a specific problem and find its origin.",
+        "quando_usar": "In problem solving, incident analysis, or when a defect is found, to understand the root cause instead of just treating the symptoms.",
+        "link": "https://www.mindtools.com/pages/article/newTMC_5W.htm",
+        "categorias": [
+            "Development",
+            "Maturity",
+            "Decline"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1506935078239-1506dd94a260?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# 5 Whys: Finding the Root Cause\n\n**Description:** A root cause analysis technique that involves asking 'Why?' repeatedly (usually five times) to explore the cause-and-effect relationships underlying a specific problem and find its origin.\n\n**When to use:** In problem solving, incident analysis, or when a defect is found, to understand the root cause instead of just treating the symptoms.\n\n---\n\n## How to Apply\n\n1.  **Define the Problem:** Write a clear and concise problem statement.\n2.  **Ask 'Why?':** Ask why the problem occurred and write down the answer.\n3.  **Keep Asking:** Use the previous answer as the basis for the next 'Why?' question.\n4.  **Repeat:** Continue until the team feels they have reached the root cause of the problem. The number '5' is just a guideline.\n5.  **Propose a Solution:** Once the root cause is identified, the team can discuss and implement a countermeasure to prevent the problem from reoccurring.\n\n### Practical Example\n\n* **Problem:** The website went down today at noon.\n\n1.  **Why did the website go down?**\n    * Because the database was overloaded with too many connections.\n\n2.  **Why was the database overloaded?**\n    * Because a new reporting feature was making very heavy and inefficient queries.\n\n3.  **Why was the feature implemented with inefficient queries?**\n    * Because the developer responsible lacked experience with query optimization and was under a tight deadline.\n\n4.  **Why did the developer lack experience and the deadline was short?**\n    * Because there was no proper training on database best practices and the sprint planning underestimated the task's complexity.\n\n5.  **Why was the training not provided and the planning flawed?**\n    * **Root Cause:** The company lacks a formal process for training and capacity planning, leading to failures in execution and team overload. Improvement actions should focus on training developers and adjusting the sprint planning process.\n",
+        "slug": "5-porques-5-whys"
+    },
+    {
+        "nome": "User Stories",
+        "descricao": "An informal, general description of a software feature written from the perspective of the end user. The common format is: 'As a [type of user], I want [a goal] so that [a benefit]'.",
+        "quando_usar": "In agile environments, to define product requirements and features in a user-centered way, making up the product backlog.",
+        "link": "https://www.atlassian.com/agile/project-management/user-stories",
+        "categorias": [
+            "Development"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1587614295999-6c1c13675123?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# User Stories: The Voice of the Customer\n\n**Description:** An informal, general description of a software feature written from the perspective of the end user. A user story is not a detailed specification, but rather a **reminder for a conversation** about a requirement.\n\n**When to use:** In agile environments, to define product requirements and features in a user-centered way, making up the product backlog.\n\n---\n\n## The Standard Format\n\nThe most common format helps ensure the team thinks about three crucial aspects:\n\n**As a** `[type of user]`, **I want** `[a goal]` **so that** `[a benefit]`.\n\n* **As a... (Persona):** Defines who is asking. This creates empathy and directs design toward a specific audience.\n* **I want... (Action):** Describes the intention, what the user wants to do. It's the 'what' of the story.\n* **So that... (Value):** Explains the reason, the value the user expects to get. It's the 'why', and it's the most important part for prioritization.\n\n---\n\n## The 3 Cs: Card, Conversation, Confirmation\n\nThis concept by Ron Jeffries summarizes the lifecycle of a story:\n\n1.  **Card:** The story is written on a card (physical or digital, like a card in Jira/Trello). It contains only the essential text, enough to identify the requirement.\n\n2.  **Conversation:** The detailing of the story happens through conversations between the Product Owner, the development team, and stakeholders. This is where doubts are cleared and understanding is deepened.\n\n3.  **Confirmation:** How will we know the story is ready and works as expected? Confirmation is done through **Acceptance Criteria**.",
+        "slug": "historias-de-usuario-user-stories"
+    },
+    {
+        "nome": "Business Model Canvas",
+        "descricao": "A strategic management tool that allows you to describe, design, challenge, invent, and pivot your business model. It consists of 9 building blocks that cover the main areas of a business.",
+        "quando_usar": "When creating a new business, developing a new product, or reviewing and innovating an existing business model.",
+        "link": "https://www.strategyzer.com/canvas/business-model-canvas",
+        "audio": "assets/audio/Business_Model_Canvas.mp3",
+        "categorias": [
+            "Introduction"
+        ],
+        "imagem": "assets/images/business_model_canvas.png",
+        "video": "https://youtu.be/IJNwN2Sj4aQ",
+        "detalhes_markdown": "# Business Model Canvas: Your Business Map\n\n**Description:** A strategic management tool that allows you to describe, design, challenge, invent, and pivot your business model on a single page. It consists of 9 blocks that cover the four main areas of a business: customers, offer, infrastructure, and financial viability.\n\n**When to use:** When creating a new business, developing a new product, or reviewing and innovating an existing business model.\n\n---\n\n## The 9 Blocks of the Canvas\n\nThe canvas is filled from right to left, starting with the customer.\n\n### Right Side (Focus on Value/Customer)\n\n1.  **Customer Segments:** For whom are we creating value? Who are our most important customers?\n\n2.  **Value Propositions:** What value do we deliver to the customer? Which problem are we helping to solve or which need are we satisfying?\n\n3.  **Channels:** How do we reach our customer segments to deliver our value proposition? (Communication, distribution, and sales channels).\n\n4.  **Customer Relationships:** What type of relationship does each customer segment expect us to establish and maintain with them?\n\n5.  **Revenue Streams:** How and how much are customers willing to pay for the value they receive? (E.g., asset sale, usage fee, subscription, licensing).\n\n### Left Side (Focus on Efficiency/Infrastructure)\n\n6.  **Key Resources:** Which resources (physical, intellectual, human, financial) are essential to create and deliver our value proposition?\n\n7.  **Key Activities:** What are the most important actions the company must perform to make its business model work?\n\n8.  **Key Partnerships:** Who are our key partners and suppliers? Which key activities do they perform?\n\n### Financial Side (Cost)\n\n9.  **Cost Structure:** What are the most important costs inherent in our business model? (Fixed costs, variable costs, economies of scale, etc.)",
+        "slug": "business-model-canvas"
+    },
+    {
+        "nome": "Jobs to be Done (JTBD)",
+        "descricao": "An approach that focuses on the 'job' the customer is trying to perform. It helps understand the customer's primary motivation for 'hiring' a product or service, going beyond demographic or product characteristics.",
+        "quando_usar": "In the product discovery phase, to innovate and create solutions that meet real and deep customer needs, rather than just adding features.",
+        "link": "https://jtbd.info/2-what-is-jobs-to-be-done-jtbd-796f7218a4c5",
+        "categorias": [
+            "Introduction",
+            "Growth"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# Jobs to be Done (JTBD): Focus on Customer Progress\n\n**Description:** An approach that focuses on the 'job' (job) that the customer is trying to perform. The central idea is that people don't buy products; they 'hire' products to do a job and achieve progress in their lives.\n\n**When to use:** In the product discovery phase, to innovate and create solutions that meet real and deep customer needs, rather than just adding features.\n\n---\n\n## The Central Concept: The 'Job' to be Done\n\nJTBD changes the focus from **personas** (who the users are) to the **situation** (the context and motivation). Instead of asking 'What kind of person would buy our product?', the question becomes 'In what circumstance would a person 'hire' our product to do what job?'.\n\nThis reveals that your competitors are not just similar products, but anything the customer can use to perform the same job.\n\n### The Classic Milkshake Example\n\nOne of the most famous examples, popularized by Clayton Christensen, involves a fast-food chain that wanted to increase milkshake sales. They tried everything: new flavors, lower prices, etc., but nothing worked.\n\nBy applying JTBD, they discovered that nearly half of the milkshakes were sold early in the morning, to people alone in their cars. The 'job' the milkshake was being hired to do was:\n\n* **'Help me face a long and boring commute to work.'**\n\nThe milkshake was the best solution because it was easy to consume with one hand, took a long time to finish (filling the time), and was substantial enough to stave off hunger until lunch. The real competitors were not other milkshakes, but bananas (finish quickly), bagels (hard to eat while driving), and cereal bars.\n\nWith this insight, rather than focusing on the flavor, the company made the milkshake thicker (to last longer) and placed the sales point closer to the drive-thru to speed up the morning purchase.",
+        "slug": "jobs-to-be-done-jtbd"
+    },
+    {
+        "nome": "Design Sprint",
+        "descricao": "A five-day, time-limited process to answer critical business questions through design, prototyping, and testing ideas with customers. Popularized by Google Ventures.",
+        "quando_usar": "To kickstart a large project, validate a high-risk idea, or solve a complex design or business problem quickly and collaboratively.",
+        "link": "https://www.thesprintbook.com/the-design-sprint",
+        "categorias": [
+            "Introduction",
+            "Development"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# Design Sprint: From Problem to Test in 5 Days\n\n**Description:** A five-day, time-limited process for answering critical business questions through design, prototyping, and testing ideas with real customers. Created at Google Ventures, it's a step-by-step \"recipe\" for reducing the risks of bringing a new product, feature, or service to market.\n\n**When to use:** To kickstart a large project, validate a high-risk idea, or solve a complex design or business problem quickly and collaboratively.\n\n---\n\n## The 5-Day Process\n\nEach day of the Sprint has a clear goal and specific activities to avoid abstract discussions and focus on action.\n\n### Day 1: Map (Monday)\nThe objective is to create a clear path for the Sprint. The team defines the long-term goal, maps the challenge, interviews company experts, and chooses a target: a specific customer and a critical moment in their journey.\n\n* **Activities:** Define Goal, Map the Journey, Expert Interviews, HMW (How Might We) Voting, Choose Target.\n\n### Day 2: Sketch (Tuesday)\nWith the problem focused, the team seeks inspiration in existing solutions (inside and outside their sector) and then each member sketches their own detailed solution, individually and in silence.\n\n* **Activities:** Lightning Demos, 4-Step Sketch (Notes, Ideas, Crazy 8s, Solution Sketch).\n\n### Day 3: Decide (Wednesday)\nIt's time to decide which solution will be prototyped. Instead of a long debate, the team uses a structured voting process. The best ideas are combined into a storyboard, which will be the plan for the prototype.\n\n* **Activities:** Art Museum (exhibition of sketches), Heat Map (silent voting), Speed Critique, Decider Vote, Storyboard.\n\n### Day 4: Prototype (Thursday)\nThe focus is on creating a realistic facade. The team builds a high-fidelity prototype that feels real enough for customers to act naturally with it. It's important to \"fake\" the entire product without worrying about the underlying code.\n\n### Day 5: Test (Friday)\nThe last day is dedicated to testing the prototype with 5 real customers. This is the most crucial phase, as structured interviews with customers provide direct data and insights about what works and what needs to be adjusted.",
+        "slug": "design-sprint"
+    },
+    {
+        "nome": "Personas",
+        "descricao": "Creation of fictional characters that represent the different types of users of a product or service. Personas help the team make user-centered design decisions.",
+        "quando_usar": "Throughout the entire project lifecycle, from conception to design and marketing, to ensure that the needs and goals of the target audience are always considered.",
+        "link": "https://www.interaction-design.org/literature/topics/personas",
+        "categorias": [
+            "Introduction",
+            "Growth"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# Personas: Putting a Face on the User\n\n**Description:** Personas are user archetypes, represented as fictional characters, created from **research data** to represent the different types of users who might use your product. They are not real people, but a synthesis of the behaviors, goals, and frustrations of a group of users.\n\n**When to use:** Throughout the entire product lifecycle, from conception through design and marketing, to ensure the target audience's needs and goals are always at the forefront.\n\n---\n\n## What makes up a Persona?\n\nAn effective persona goes beyond simple demographics and includes:\n\n* **Name and Photo:** To humanize the archetype and make it memorable.\n* **Demographics:** Age, occupation, location (only what's essential to give context).\n* **Goals:** What does the persona want to achieve in relation to your product or service? This is the most important part.\n* **Frustrations (Pains/Frustrations):** What are the main obstacles and pains they currently face?\n* **Motivations:** What drives them? What is the emotional or practical need behind their goals?\n* **Scenario:** A short story describing how the persona interacts with the problem your product aims to solve.\n* **Quote:** A short phrase that summarizes the persona's attitude.\n\n### Simplified Example:\n\n* **Name:** Ana, the Project Manager\n* **Goal:** \"I need a way to visualize all my teams' progress in one place.\"\n* **Frustration:** \"I waste a lot of time compiling reports from different tools, and the information is always outdated.\"\n\n---\n\n## Why use Personas?\n\n* **Empathy:** Helps the team put themselves in the user's shoes.\n* **Focus:** Keeps the team focused on solving problems for a specific group of users, avoiding the trap of trying to please everyone.\n* **Consensus:** Serves as a common reference for design discussions and decisions.",
+        "slug": "personas"
+    },
+    {
+        "nome": "Empathy Map",
+        "descricao": "A collaborative tool to gain a deeper understanding of customers. It helps visualize what the user says, thinks, feels, and does, revealing their true needs and pains.",
+        "quando_usar": "At the beginning of the design process, to synthesize user research and build more robust personas.",
+        "link": "https://www.nngroup.com/articles/empathy-mapping/",
+        "categorias": [
+            "Introduction"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1593445839332-7d9a4433d34c?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# Empathy Map: Understanding the User's Universe\n\n**Description:** A collaborative tool for gaining a deeper understanding of customers. It helps the team visualize and synthesize what it knows about a type of user, organizing information into four main quadrants: **Says, Thinks, Feels, and Does**.\n\n**When to use:** At the beginning of the design process, after conducting research (such as interviews), to synthesize data and build more robust and empathetic personas.\n\n---\n\n## The Quadrants of the Map\n\nThe map is centered on a specific user or persona.\n\n1.  **What does he/she THINK and FEEL?**\n    * What really matters to the user? What are their main concerns, aspirations, and emotions? (Often, this isn't spoken openly).\n    * *Examples:* \"I'm worried about my data security.\", \"I feel anxious to finish this task soon.\"\n\n2.  **What does he/she SEE?**\n    * What do they see in their environment? What does the market offer? What are their friends doing?\n    * *Examples:* Sees ads for competing products, sees their colleagues using other tools.\n\n3.  **What does he/she SAY and DO?**\n    * What is their public attitude? What do they say to others? How do they behave? What are their observable actions?\n    * *Examples:* Says that \"price is important,\" but ends up buying the most expensive brand. Spends hours researching before buying.\n\n4.  **What does he/she HEAR?**\n    * What do their friends, boss, and influencers say? What do they hear in the media and in communication channels?\n    * *Examples:* Hears their boss say \"we need to cut costs,\" hears friends recommending a product.\n\n### Pains and Gains Section\n\nAt the bottom of the map, we synthesize the information from the quadrants into two categories:\n\n* **PAINS:** What are their frustrations, fears, and obstacles?\n    * *Examples:* Fear of making a mistake, frustration with the current system's slowness.\n* **GAINS:** What does success mean to the user? What are their needs and how do they measure success?\n    * *Examples:* Wants to save time, wants to look competent to the boss.",
+        "slug": "mapa-de-empatia"
+    },
+    {
+        "nome": "A/B Test",
+        "descricao": "An experimentation method that consists of comparing two versions of a web page, email, or other marketing asset to determine which one performs better. Version A is the 'control' and B is the 'variant'.",
+        "quando_usar": "To optimize conversion rates, improve user experience, or validate hypotheses about what works best with your audience. Ideal for refining specific elements.",
+        "link": "https://vwo.com/ab-testing/",
+        "categorias": [
+            "Growth",
+            "Maturity"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# A/B Testing: Making Data-Driven Decisions\n\n**Description:** An experimentation method that consists of comparing two versions of an element (page, button, text, etc.) to determine which one performs better relative to a specific metric. Version A is the 'control' (original) and B is the 'variant' (modified).\n\n**When to use:** To optimize conversion rates, improve user experience, or validate hypotheses about what works best for your audience. Ideal for refining specific elements.\n\n---\n\n## The A/B Testing Process\n\n1.  **Define the Hypothesis:** Start with a clear hypothesis based on an observation or insight. The format is: \"We believe that [making change X] for [audience Y] will result in [result Z] because [rationale]\".\n    * *Example:* \"We believe that changing the color of the 'Buy Now' button to green will increase the click-through rate because green has higher contrast with the page background.\"\n\n2.  **Create Variation (B):** Create the new version with the single change you want to test.\n\n3.  **Split Traffic:** Randomly divide users between version A and B. Generally, 50% for each.\n\n4.  **Collect Data:** Let the test run until it reaches a **statistically significant sample size**. Don't stop the test at the first sign of victory for one of the versions.\n\n5.  **Analyze Results:** Compare the performance of the primary metric (e.g., click-through rate) between the two versions. Did variation B beat A? Is the result statistically significant?\n\n---\n\n## Important Considerations\n\n* **Statistical Significance:** The confidence that the result did not occur by pure chance. A 95% or higher confidence level is the industry standard. A/B Testing tools calculate this automatically.\n\n* **Test Only One Thing at a Time:** In a classic A/B Test, change only one element (the headline, the button color, the image). If you change multiple things, you won't know what caused the performance difference (unless you are running a Multivariate Test).",
+        "slug": "teste-ab"
+    },
+    {
+        "nome": "WSJF (Weighted Shortest Job First)",
+        "descricao": "A prioritization model used to sequence jobs (such as features, capabilities, and epics) to produce the maximum economic value. In SAFe, WSJF is estimated as the Cost of Delay divided by job size.",
+        "quando_usar": "In Program Increment (PI) planning in SAFe environments or to prioritize the backlog continuously based on economic value.",
+        "link": "https://www.scaledagileframework.com/wsjf/",
+        "categorias": [
+            "Development",
+            "Growth"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# WSJF (Weighted Shortest Job First): Economic Prioritization\n\n**Description:** A prioritization model used to sequence work (such as features, capabilities, and epics) to produce maximum economic value in a continuous flow. The rule is simple: **always perform the job with the highest WSJF first**.\n\n**When to use:** In Program Increment (PI) planning in SAFe environments or to prioritize any backlog continuously based on economic impact.\n\n---\n\n## The Formula\n\nWSJF is calculated by dividing the **Cost of Delay (CoD)** by the **Job Size**.\n\n`WSJF = Cost of Delay / Job Size`\n\nThis means high-value, short-duration items are prioritized, while low-value, long-duration items are deprioritized.\n\n### Calculating the Cost of Delay (CoD)\n\nCost of Delay is the sum of three factors. Instead of using absolute values, SAFe recommends using a relative scale (like the modified Fibonacci sequence: 1, 2, 3, 5, 8, 13, 20).\n\n1.  **User-Business Value:**\n    * What is the relative value to the customer or business? Would they rather have this or that? What is the impact on revenue?\n\n2.  **Time Criticality:**\n    * How urgent is it? Is there a fixed deadline? Does the value decay rapidly over time? Will customers wait for it?\n\n3.  **Risk Reduction / Opportunity Enablement (RR|OE):**\n    * Does this reduce a business or technical risk? Does it enable new business opportunities?\n\n**Cost of Delay = User Value + Time Criticality + RR|OE**\n\n### Calculating Job Size\n\n* It is an estimate of the effort required to implement the functionality. It is also measured on a relative scale. The team that will do the work is best suited to estimate its size.\n\n---\n\n## Practical Example\n\nLet's compare two features:\n\n| Feature | Value (CoD) | Size | WSJF (CoD/Size) | Priority |\n| :--- | :--- | :--- | :--- | :--- |\n| **A:** Low Stock Notification | 13 | 5 | 2.6 | 1st (Highest WSJF) |\n| **B:** Sales Report (Monthly) | 8 | 13 | 0.6 | 2nd (Lowest WSJF) |\n\nIn this example, even though Feature B has considerable business value (8), the high cost and long time to delivery (13) cause Feature A (which is of higher value and lower effort) to be prioritized to maximize economic value flow.",
+        "slug": "wsjf-weighted-shortest-job-first"
+    },
+    {
+        "nome": "Use Cases",
+        "descricao": "A technique for capturing functional requirements of a system. Use cases describe the step-by-step interaction between an actor (a user or another system) and the system to achieve a specific goal.",
+        "quando_usar": "During the requirements analysis and elicitation phase to detail how users will interact with the system and what the system should do in response.",
+        "link": "https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-use-case-diagram/",
+        "categorias": [
+            "Development"
+        ],
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Use_case_restaurant_model.svg/640px-Use_case_restaurant_model.svg.png",
+        "detalhes_markdown": "# Use Cases: Detailing the Interaction\n\n**Description:** A technique for capturing functional requirements of a system. Use cases describe the step-by-step interaction between an **actor** (a user or another system) and the system to achieve a specific goal. They focus on **'what'** the system should do, not 'how'.\n\n**When to use:** During the requirements analysis and elicitation phase to detail how users will interact with the system and what the system should do in response.\n\n---\n\n## Structure of a Detailed Use Case\n\nWhile a use case diagram provides an overview, the textual specification details the flow.\n\n* **Use Case Name:** Verb + Noun (e.g., \"Withdraw Cash\").\n* **Actors:** Primary and secondary actors (e.g., Customer).\n* **Preconditions:** What must be true before the use case can start (e.g., \"Customer must be authenticated at the ATM\").\n* **Postconditions:** The system state after successful completion of the use case (e.g., \"Customer's account balance is updated\").\n* **Main Flow (Happy Path):** The ideal sequence of steps, without errors or deviations.\n    1.  Customer selects the \"Withdraw\" option.\n    2.  System requests the amount.\n    3.  Customer enters the amount.\n    4.  System validates if there is sufficient balance.\n    5.  System releases the cash.\n    6.  System issues the receipt.\n* **Alternative Flows (Exceptions):** What happens if something goes wrong or if there's a different path.\n    * **4a. Insufficient Balance:**\n        1.  System displays the message \"Insufficient balance\".\n        2.  Use case ends.\n    * **5a. Cash release failure:**\n        1.  System logs the error.\n        2.  System displays an error message to the customer.\n\n---\n\n## Use Cases vs. User Stories\n\nBoth define requirements, but with different focuses:\n\n| Characteristic | **Use Cases** | **User Stories** |\n| :--- | :--- | :--- |\n| **Focus** | The system, step-by-step flow, and exceptions. | The user, the value, and the conversation. |\n| **Format** | Structured textual description and diagrams. | 'As a... I want... so that...' |\n| **Level of Detail** | High (technical and flow details). | Low (only enough to start the conversation). |\n| **Common Use** | Requirements Engineering, Legacy Systems. | Agile Methodologies (Scrum, Kanban). |",
+        "slug": "casos-de-uso-use-cases"
+    },
+    {
+        "nome": "UML Diagrams",
+        "descricao": "The Unified Modeling Language (UML) is a standard language for specifying, visualizing, constructing, and documenting the artifacts of a software system. Includes diagrams like Class, Sequence, Activity, etc.",
+        "quando_usar": "During system design and documentation to communicate the software architecture, behavior, and structure to the development team and other stakeholders.",
+        "link": "https://www.uml.org/",
+        "categorias": [
+            "Development",
+            "Introduction"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# UML Diagrams: The Visual Language of Software\n\n**Description:** The Unified Modeling Language (UML) is a standard language for specifying, visualizing, constructing, and documenting the artifacts of a software system. It is not a methodology, but rather a set of graphic notations for creating abstract models of a system.\n\n**When to use:** During system design and documentation to communicate software architecture, behavior, and structure to the development team and other stakeholders.\n\n---\n\n## Types of UML Diagrams\n\nUML diagrams are divided into two main categories:\n\n### 1. Structural Diagrams\n\nShow the static structure of the system and its components. They do not show dynamic behavior.\n\n* **Class Diagram:** The most common. Describes the system structure by showing its classes, attributes, methods, and the relationships between them.\n* **Component Diagram:** Shows how software components are organized and the dependencies between them.\n* **Object Diagram:** Shows a set of objects and their relations at a specific moment. It's a 'snapshot' of an instance of a Class Diagram.\n* **Package Diagram:** Organizes system elements into groups (packages), showing the dependencies between them.\n* **Deployment Diagram:** Describes hardware configuration (nodes) and how software components are distributed on them.\n\n### 2. Behavioral Diagrams\n\nShow the system's dynamic behavior, including flows and interactions.\n\n* **Use Case Diagram:** Graphically describes what the system does in relation to actors (users or other systems).\n* **Sequence Diagram:** Shows how objects interact with each other in a time sequence.\n* **Activity Diagram:** Models the workflow of an activity or process, showing steps and decision paths.\n* **State Machine Diagram:** Models the behavior of a single object, showing its states and transitions in response to events.",
+        "slug": "diagramas-uml"
+    },
+    {
+        "nome": "Answer First (Communication)",
+        "descricao": "A communication and problem-solving technique that starts with the main conclusion or recommendation, followed by supporting arguments. Popularized by consultancies like McKinsey.",
+        "quando_usar": "When presenting recommendations to executives, writing important emails, or structuring complex reasoning to ensure clarity and immediate impact.",
+        "link": "https://minto.com/",
+        "categorias": [
+            "Communication",
+            "Strategy",
+            "Consulting"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2026-01-15",
+        "nivel": "Intermediate",
+        "tempo_aplicar": "Minutes (to structure)",
+        "detalhes_markdown": "# Answer First: Start with the Conclusion\n\n**Description:** Answer First (or the Pyramid Principle) is a communication technique where you present your **conclusion, answer, or recommendation** right at the beginning, and only then provide the data and arguments that support that conclusion. It is the opposite of the academic or scientific style, which builds the argument before reaching the conclusion at the end.\n\n**When to use:** Essential for executive communication, where time is scarce. Use in presentations, decisive emails, and strategy meetings.\n\n---\n\n## The Pyramid Structure\n\n1.  **Top (The Answer):** What do you recommend? What is the main conclusion? (E.g., \"We should launch the product in market X now.\")\n2.  **Middle (Key Arguments):** Why do you recommend that? Group into 3 main points. (E.g., \"1. The market is growing. 2. Competition is weak. 3. We have the technology ready.\")\n3.  **Base (Supporting Data):** Detailed evidence for each argument. (E.g., Growth charts, competitor analysis, technical demos.)\n\n## Benefits\n\n*   **Efficiency:** The listener understands the main point immediately.\n*   **Persuasion:** Shows confidence in the recommendation.\n*   **Focus:** Prevents the discussion from getting lost in irrelevant details before knowing the goal.",
+        "slug": "answer-first-comunicacao"
+    },
+    {
+        "nome": "Experimentation (Mindset)",
+        "descricao": "A cultural and procedural approach where decisions are made based on tests and data, not opinions. Involves formulating hypotheses, running experiments (such as A/B Tests), and learning from results.",
+        "quando_usar": "To validate new ideas, reduce launch risks, and continuously optimize products. It is the basis for Growth Hacking and Lean Startup.",
+        "link": "https://hbr.org/2020/03/building-a-culture-of-experimentation",
+        "categorias": [
+            "Growth",
+            "Innovation",
+            "Culture"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2026-01-15",
+        "nivel": "Advanced",
+        "tempo_aplicar": "Continuous",
+        "detalhes_markdown": "# Experimentation: Evidence-Based Decisions\n\n**Description:** Experimentation is not just about running an isolated A/B Test; it is an **organizational mindset**. It means admitting we don't know the right answer and using the scientific method to discover it. It involves a continuous cycle of: **Hypothesis -> Experiment -> Data -> Learning -> Action**.\n\n**When to use:** Whenever there is uncertainty about the impact of a change or the value of a new idea. \"When in doubt, test.\"\n\n---\n\n## The Experimentation Cycle\n\n1.  **Hypothesis:** A falsifiable statement. \"If we do [X], then [Y] will happen, due to [Z].\"\n2.  **Prioritization:** Use frameworks like ICE or RICE to decide what to test first.\n3.  **Test Design:** Define success metrics, control groups, and ensure statistical significance.\n4.  **Execution:** Run the test for as long as necessary.\n5.  **Analysis and Learning:** What does the data say? Even if the test fails (the hypothesis is not confirmed), the learning is valuable.\n\n## Culture of Failure\n\nFor experimentation to work, the organization must accept failure. Most experiments fail to prove the hypothesis. This is not a mistake, but a saving of resources that would have been spent building something that doesn't work.",
+        "slug": "experimentacao-mindset"
+    },
+    {
+        "nome": "Programmatic Creativity",
+        "descricao": "The use of systematic methods, algorithms, or predefined constraints to generate creative ideas and solutions. Instead of waiting for 'inspiration', process is used to force innovation.",
+        "quando_usar": "When traditional brainstorming stalls, or to systematically explore all possible variations of a solution (e.g., in generative design or campaign optimization).",
+        "link": "https://en.wikipedia.org/wiki/Computational_creativity",
+        "categorias": [
+            "Innovation",
+            "Ideation",
+            "Creative Process"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2026-01-15",
+        "nivel": "Intermediate",
+        "tempo_aplicar": "Hours",
+        "detalhes_markdown": "# Programmatic Creativity: Systematic Innovation\n\n**Description:** Programmatic Creativity is the application of logic, systems, and even algorithms to the creative process. It challenges the myth of the chaotic \"creative genius.\" Techniques like SCAMPER, TRIZ, or using AI to generate design variations are examples of how to structure creativity.\n\n**When to use:** To break creative blocks, generate a large volume of ideas, or find non-obvious solutions through systematic combinations.\n\n---\n\n## Common Techniques\n\n*   **SCAMPER:** A checklist for modifying an existing idea: **S**ubstitute, **C**ombine, **A**dapt, **M**odify, **P**ut to another use, **E**liminate, **R**everse.\n*   **Morphology:** Breaking a problem into dimensions (e.g., material, shape, function) and listing variations for each, randomly combining them to create new solutions.\n*   **Creative Constraints:** Imposing artificial limits (e.g., \"How to solve this without using text?\", \"How to make this cost zero?\") to force the brain to think laterally.",
+        "slug": "criatividade-programatica"
+    },
+    {
+        "nome": "Problem Slicing",
+        "descricao": "The technique of breaking a large and complex problem into smaller, vertical, and deliverable slices that add value themselves. Fundamental to Agile development.",
+        "quando_usar": "To plan software deliveries (User Stories), manage complex scope, and ensure fast and continuous feedback.",
+        "link": "https://www.humanizingwork.com/the-humanizing-work-guide-to-splitting-user-stories/",
+        "categorias": [
+            "Project Management",
+            "Agile",
+            "Problem Solving"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1546552356-3fae876a61ca?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2026-01-15",
+        "nivel": "Intermediate",
+        "tempo_aplicar": "Minutes (during planning)",
+        "detalhes_markdown": "# Problem Slicing: Divide to Deliver\n\n**Description:** Slicing problems (or *Story Splitting* in Agile) is the art of dividing a large feature or complex problem into smaller pieces that still maintain independent value. The goal is to avoid horizontal layer development (doing all the database, then all the backend, then all the frontend) and focus on vertical slices (a complete small end-to-end feature).\n\n**When to use:** Whenever a task seems \"too big\" to fit into a sprint or iteration, or when complexity hinders progress.\n\n---\n\n## Slicing Patterns\n\n1.  **By Workflow Step:** Instead of doing the whole flow, do just the first step (e.g., Only \"Create Order\", without \"Payment\" and \"Delivery\").\n2.  **By Business Rule:** Start with the simplest rule (e.g., \"Free Shipping\") and leave complex rules for later.\n3.  **Happy Path vs. Rainy Path:** Implement the happy path first, then handle errors and exceptions.\n4.  **Simple vs. Complex:** Start with a manual or hard-coded version before creating the dynamic and automated version.",
+        "slug": "fatiar-problemas-problem-slicing"
+    },
+    {
+        "nome": "Friction Reduction",
+        "descricao": "The process of analyzing a user flow and systematically removing any unnecessary steps, clicks, or fields to increase conversion and satisfaction.",
+        "quando_usar": "In conversion funnel optimization (CRO), UX design, and operational process improvement.",
+        "link": "https://growth.design/psychology#friction",
+        "categorias": [
+            "UX",
+            "Optimization",
+            "Processes"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2026-01-15",
+        "nivel": "Beginner",
+        "tempo_aplicar": "Continuous",
+        "detalhes_markdown": "# Friction Reduction: Less is More\n\n**Description:** Hick's Law says that the time it takes to make a decision increases with the number and complexity of choices. Friction Reduction is the practical application of this: removing friction. Every extra field in a form, every extra click to get to checkout, reduces the probability of the user completing the action.\n\n**When to use:** When analyzing funnels with a high bounce rate or processes that seem slow and bureaucratic.\n\n---\n\n## How to Apply\n\n1.  **Map the Flow:** Draw each step the user must take.\n2.  **Question Everything:** \"Is this field *really* necessary now?\" \"Can we infer this information?\" \"Can we use a smart default?\"\n3.  **Delay Registration:** Allow the user to experience value before asking for email (Lazy Registration).\n4.  **Social Auth:** Use Google/Apple login to avoid creating passwords.\n5.  **Smart Defaults:** Pre-fill as much as possible.",
+        "slug": "reducao-de-etapas-friction-reduction"
+    },
+    {
+        "nome": "MECE (Mutually Exclusive, Collectively Exhaustive)",
+        "descricao": "An information grouping principle where items are mutually exclusive (do not overlap) and collectively exhaustive (cover all possibilities).",
+        "quando_usar": "To structure problems, organize data, create product categories, or plan projects without leaving gaps or creating duplications.",
+        "link": "https://en.wikipedia.org/wiki/MECE_principle",
+        "categorias": [
+            "Strategy",
+            "Problem Solving",
+            "Consulting"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1543286386-713bdd548da4?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2026-01-15",
+        "nivel": "Advanced",
+        "tempo_aplicar": "Minutes",
+        "detalhes_markdown": "# MECE: Perfect Organization\n\n**Description:** MECE (pronounced \"mee-see\") is an acronym for **Mutually Exclusive, Collectively Exhaustive**. It is the gold standard for structuring strategic consulting problems (McKinsey).\n\n*   **Mutually Exclusive:** Items do not overlap. A customer cannot be in \"Group A\" and \"Group B\" at the same time.\n*   **Collectively Exhaustive:** The list covers all possibilities. Nothing is left out (there is no giant and mysterious \"Other\" category).\n\n**When to use:** When creating problem trees, defining customer segments, or task lists.\n\n---\n\n## Example: Categorizing Ages\n\n*   **Not MECE:** \"Young (0-20)\", \"Students\", \"Adults (20-60)\". (Problem: \"Students\" overlaps with the others; what happens to someone over 60?)\n*   **MECE:** \"0-18\", \"19-35\", \"36-60\", \"60+\". (No overlap, covers all ages.)",
+        "slug": "mece-mutually-exclusive-collectively-exhaustive"
+    },
+    {
+        "nome": "Divide and Conquer",
+        "descricao": "A problem-solving (and algorithm) paradigm that involves breaking a difficult problem into smaller subproblems, solving them independently, and combining the solutions.",
+        "quando_usar": "To deal with complex engineering problems, system architecture, or large-scale project management.",
+        "link": "https://en.wikipedia.org/wiki/Divide-and-conquer_algorithm",
+        "categorias": [
+            "Engineering",
+            "Problem Solving",
+            "Algorithms"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1505315570889-aa87af245fa7?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2026-01-15",
+        "nivel": "Advanced",
+        "tempo_aplicar": "Variable",
+        "detalhes_markdown": "# Divide and Conquer: The Strategy of War and Engineering\n\n**Description:** Inspired by military strategy, 'Divide and Conquer' is a fundamental approach in both computer science and management. The idea is that it's easier to solve several small and simple problems than one giant and complex problem.\n\n**When to use:** When a problem seems impossible to solve as a whole.\n\n---\n\n## The 3-Step Process\n\n1.  **Divide:** Break the original problem into a set of smaller subproblems that are smaller instances of the same problem.\n2.  **Conquer:** Solve the subproblems, often recursively. If they are small enough, solve them directly (base case).\n3.  **Combine:** Put the solutions to the subproblems together to form the solution to the original problem.\n\n## Example in Management\n\nA giant project like \"Launching a new Digital Bank\" is impossible to just \"do.\" But if we apply Divide and Conquer:\n*   Divide into: Mobile App, Backend, Legal, Marketing.\n*   Backend divide into: Core Banking, PIX Integration, Cards.\n*   ... until you reach executable daily tasks.",
+        "slug": "divide-and-conquer-dividir-e-conquistar"
+    },
+    {
+        "nome": "Diagram as Code (DaC)",
+        "descricao": "The practice of defining diagrams through code or text, allowing them to be versioned, reviewed, and automated like any other software artifact.",
+        "quando_usar": "For technical documentation that needs to evolve with the code, ensuring consistency and facilitating maintenance in distributed teams.",
+        "link": "https://www.thoughtworks.com/radar/techniques/diagrams-as-code",
+        "categorias": [
+            "Documentation",
+            "Engineering",
+            "DevOps"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "ultima_atualizacao": "2026-01-15",
+        "nivel": "Intermediate",
+        "tempo_aplicar": "Minutes",
+        "detalhes_markdown": "# Diagram as Code (DaC): Diagrams as Code\n\n**Description:** Diagram as Code (DaC) is an approach where architecture, flow, and process diagrams are written in simple text languages (DSLs) and automatically rendered by tools. This treats documentation as code (Docs as Code).\n\n**When to use:** Ideal for evolving diagrams along with software, allowing Code Review on diagrams and avoiding the classic \"outdated drawing\" problem.\n\n---\n\n## Main DSLs (Domain Specific Languages)\n\n*   **Mermaid:**\n    *   **Focus:** Native integration with Markdown (GitHub, Notion, Obsidian). Simple and direct.\n    *   **Usage:** Flowcharts, Sequence, Gantt, C4 (basic).\n\n*   **PlantUML:**\n    *   **Focus:** The \"father\" of DaC. Extremely powerful and supports almost all types of UML and other diagrams.\n    *   **Usage:** Complex UML, Architecture, Components.\n\n*   **Structurizr (DSL):**\n    *   **Focus:** Specific to the **C4 Model** (Context, Containers, Components, Code). Focused on software architecture.\n    *   **Usage:** Formal architecture modeling and multiple views of the same model.\n\n*   **D2 (Declarative Diagramming):**\n    *   **Focus:** Modern, focused on aesthetics and code readability. Has a superior layout engine.\n    *   **Usage:** General diagrams with a professional look out-of-the-box.\n\n---\n\n## Comparison: Manual vs. DaC\n\n| Characteristic | Manual Diagram (Drag & Drop) | Diagram as Code (DaC) |\n| :--- | :--- | :--- |\n| **Tools** | Visio, Lucidchart, Miro, Draw.io | Mermaid, PlantUML, Structurizr |\n| **Versioning** | Difficult. Usually binary or opaque blobs. Visual diff is complex. | **Native (Git)**. It's pure text. Line diff shows exactly what changed. |\n| **Maintenance** | **Laborious**. Requires dragging boxes and reconnecting arrows manually with every change. | **Automatic**. You change the text and the engine redraws the layout for you. |\n| **Consistency** | Depends on the author's discipline (font size, colors). | **Guaranteed**. Style is applied globally by the tool. |\n| **Integration** | Manual (Copy & Paste image). | **CI/CD**. Can be generated at build and inserted into documentation automatically. |\n| **Learning Curve** | Low (Intuitive). | Medium (Requires learning syntax). |\n| **Nature** | Static \"Art\". | Living \"Engineering\". |",
+        "slug": "diagram-as-code-dac"
+    }
+]

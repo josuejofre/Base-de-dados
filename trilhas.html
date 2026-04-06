@@ -17,11 +17,16 @@
     <header>
         <div class="header-content">
             <div class="logo-area">
-                <h1>Trilhas de Conhecimento</h1>
-                <p>Caminhos guiados para o seu desenvolvimento</p>
+                <h1 data-i18n="nav_trilhas_title">Trilhas de Conhecimento</h1>
+                <p data-i18n="nav_trilhas_subtitle">Caminhos guiados para o seu desenvolvimento</p>
                 <div class="nav-links">
-                    <a href="index.html" class="nav-btn">← Voltar para Lista</a>
+                    <a href="index.html" class="nav-btn" data-i18n="nav_voltar">← Voltar para Lista</a>
                 </div>
+            </div>
+            <div class="language-selector">
+                <button class="lang-btn" data-lang="pt-br" title="Português">🇧🇷</button>
+                <button class="lang-btn" data-lang="en" title="English">🇺🇸</button>
+                <button class="lang-btn" data-lang="es" title="Español">🇪🇸</button>
             </div>
         </div>
     </header>
@@ -30,7 +35,7 @@
 
         <!-- Lista de Trilhas -->
         <div id="lista-trilhas">
-            <h2 class="trilhas-header">Escolha sua jornada</h2>
+            <h2 class="trilhas-header" data-i18n="trilhas_escolha">Escolha sua jornada</h2>
             <div id="cards-container" class="cards-trilha-container">
                 <!-- Cards inseridos via JS -->
             </div>
@@ -40,7 +45,7 @@
         <div id="detalhe-trilha" class="timeline-container">
             <div style="margin-bottom: 2rem;">
                 <button id="btn-voltar-trilhas"
-                    style="background: none; border: none; color: #a0a0a0; cursor: pointer; font-size: 1rem;">← Voltar
+                    style="background: none; border: none; color: #a0a0a0; cursor: pointer; font-size: 1rem;" data-i18n="btn_voltar_todas">← Voltar
                     para todas as trilhas</button>
                 <h2 id="titulo-trilha-ativa" style="color: var(--primary-color); margin-top: 0.5rem;">Título da Trilha
                 </h2>

@@ -1,0 +1,195 @@
+[
+    {
+        "nome": "Driver Mapping",
+        "descricao": "Identifies and analyzes the driving forces (social, technological, economic, environmental, and political) shaping the future of a sector or organization.",
+        "quando_usar": "At the beginning of a foresight process to understand what is changing and why, separating surface trends from deep causes.",
+        "link": "https://insightandforesight.com.au/driver-mapping/",
+        "categorias": [
+            "Exploration"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# Driver Mapping: Identifying the Forces of Change\n\n**Framework (STEEP):**\n*   **Social:** Demographics, lifestyles, values.\n*   **Technological:** Innovations, automation.\n*   **Economic:** Global trends, trade, purchasing power.\n*   **Environmental:** Resources, climate, sustainability.\n*   **Political:** Legislation, international relations.\n\n**Example (Future of Work):**\n*   **Trend:** Increase in remote work.\n*   **Driver:** 5G connectivity (Tech) + Work-life balance shift (Social).",
+        "slug": "mapeamento-de-drivers-driver-mapping"
+    },
+    {
+        "nome": "Verge Framework",
+        "descricao": "A tool to explore change through six domains of human experience: Define, Relate, Connect, Create, Consume, and Destroy.",
+        "quando_usar": "To gain a holistic, human-centered view of how new technology or events change daily life.",
+        "link": "https://www.iftf.org/insights/the-verge-framework/",
+        "categorias": [
+            "Exploration"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# Verge: A Human Lens for the Future\n\n1.  **Define:** Values, identity, culture.\n2.  **Relate:** Governance, family, social structures.\n3.  **Connect:** Networks, infrastructure, communication.\n4.  **Create:** Goods, services, knowledge.\n5.  **Consume:** Economy, lifestyle, markets.\n6.  **Destroy:** Obsolescence, decay, elimination.",
+        "slug": "framework-verge"
+    },
+    {
+        "nome": "Futures Wheel",
+        "descricao": "A visual way to map direct and indirect consequences (1st, 2nd, and 3rd order impacts) of a change or decision.",
+        "quando_usar": "When evaluating a new policy or technology to discover non-obvious 'side effects'.",
+        "link": "https://en.wikipedia.org/wiki/Futures_wheel",
+        "categorias": [
+            "Exploration"
+        ],
+        "imagem": "assets/images/RodadeFuturos.png",
+        "detalhes_markdown": "# Futures Wheel: Mapping the Ripple Effect\n\n**How it Works:**\n1.  **Center:** Main change (e.g., Autonomous cars).\n2.  **1st Order:** Immediate impact (Fewer accidents).\n3.  **2nd Order:** Consequence of 1st floor (Reduced hospital trauma revenue).\n4.  **3rd Order:** Long-term shifts (Hospitals pivot to chronic care).",
+        "slug": "roda-de-futuros-futures-wheel"
+    },
+    {
+        "nome": "SWOT (Foresight)",
+        "descricao": "An adaptation of the classic SWOT matrix focusing on how current Strengths/Weaknesses behave against future Opportunities/Threats.",
+        "quando_usar": "To connect future insights with the organization's present operational reality.",
+        "categorias": [
+            "Exploration"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# SWOT in Foresight\n\nConnects the present with the future by asking if current strengths will remain relevant in projected scenarios.",
+        "slug": "swot-foresight"
+    },
+    {
+        "nome": "2x2 Scenario Matrix",
+        "descricao": "Method to create four distinct plausible futures by crossing the two most critical identified uncertainties.",
+        "quando_usar": "When there is high uncertainty and you need to test strategy against extreme possibilities.",
+        "link": "https://en.wikipedia.org/wiki/Scenario_planning",
+        "categorias": [
+            "Imagination"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# 2x2 Scenario Matrix: Exploring Uncertainty\n\nCrossing two independent, high-impact uncertainties (e.g., Regulation vs. Adoption) to generate four unique future worlds.",
+        "slug": "cenarios-2x2-scenario-matrix"
+    },
+    {
+        "nome": "Future Archetypes",
+        "descricao": "Framework using standard future change categories (Growth, Constraint, Collapse, Transformation) to challenge conventional thinking.",
+        "quando_usar": "To avoid bias that the future will simply be a 'better version' of the present.",
+        "categorias": [
+            "Imagination"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1518173946687-a4c8a9ba332f?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# The 4 Future Archetypes (Jim Dator)\n\n*   **Continued Growth:** Infinite progress.\n*   **Constraint:** Limits imposed (sustainability, scarcity).\n*   **Collapse:** System failure or disintegration.\n*   **Transformation:** Radical change (tech/bio) alters the rules.",
+        "slug": "swot-foresight"
+    },
+    {
+        "nome": "Branch Analysis",
+        "descricao": "Maps critical decision points or events (forks) that could lead the future in drastically different directions.",
+        "quando_usar": "To identify 'warning signs' or milestones where strategy needs to pivot.",
+        "categorias": [
+            "Imagination"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1505315570889-aa87af245fa7?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# Branch Analysis: Fork in the Road\n\nFocuses on the journey and choice points over time, monitoring data to see which branch is becoming reality.",
+        "slug": "swot-foresight"
+    },
+    {
+        "nome": "Visioning",
+        "descricao": "Collaborative process defining the ideal future the organization wishes to create and inhabit.",
+        "quando_usar": "To inspire and align the team around a long-term purpose beyond quarterly goals.",
+        "categorias": [
+            "Imagination"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1493246507139-91e8bef99c1e?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# Visioning: The Strategic North\n\nNormative and aspirational exercise. \"The best way to predict the future is to create it.\"",
+        "slug": "swot-foresight"
+    },
+    {
+        "nome": "Backcasting",
+        "descricao": "Planning method starting from a desired future and working backward to the present to identify necessary actions.",
+        "quando_usar": "Planning disruptive innovations or transformations where extrapolating the past doesn't work.",
+        "link": "https://en.wikipedia.org/wiki/Backcasting",
+        "categorias": [
+            "Action"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1454165833772-d996d49513d7?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# Backcasting: Planning Backwards\n\n1. Define Vision -> 2. Look at Present Gap -> 3. Work Backwards (Milestones) -> 4. Immediate Action.",
+        "slug": "backcasting"
+    },
+    {
+        "nome": "Wind Tunnelling",
+        "descricao": "Strategy testing technique putting plans 'inside' different future scenarios to see if they survive under pressure.",
+        "quando_usar": "Before approving major investments or multi-year strategic plans.",
+        "categorias": [
+            "Action"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1541888941255-081d746ed26e?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# Wind Tunnelling: Robustness Testing\n\nAssessing if a strategy is Resilient (works in most scenarios) or Vulnerable (only works in optimistic ones).",
+        "slug": "swot-foresight"
+    },
+    {
+        "nome": "Three Horizons",
+        "descricao": "Framework managing transition between current system (H1), disruptive innovations (H2), and emergent future (H3).",
+        "quando_usar": "To balance focus between day-to-day operations and long-term disruptive innovation.",
+        "link": "https://shapingtomorrowsworld.org/bill-sharpe-three-horizons/",
+        "categorias": [
+            "Action"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1507537362145-165f171221f1?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# Three Horizons: Navigating Change\n\n*   **Horizon 1:** Current engine (efficiency).\n*   **Horizon 2:** Transition zone (turbulent innovation).\n*   **Horizon 3:** Emergent future (transformation).",
+        "slug": "tres-horizontes-three-horizons"
+    },
+    {
+        "nome": "Roadmap",
+        "descricao": "Visual layout organizing goals, milestones, and actions along a timeline to realize a vision.",
+        "quando_usar": "To communicate execution plans and align stakeholder expectations.",
+        "categorias": [
+            "Action"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1513001900722-370f803f498d?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# Roadmap: From Plan to Reality\n\nA living document detailing when and how actions occur, including triggers for route changes.",
+        "slug": "swot-foresight"
+    },
+    {
+        "nome": "Arquétipos de Futuro",
+        "descricao": "Framework que utiliza categorias padrão de mudanças futuras (Crescimento, Disciplina, Colapso, Transformação) para desafiar o pensamento convencional.",
+        "quando_usar": "Para evitar o viés de acreditar que o futuro será apenas uma 'versão melhorada' do presente.",
+        "categorias": [
+            "Imaginação"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1518173946687-a4c8a9ba332f?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# Os 4 Arquétipos de Futuro (Jim Dator)\n\n**Descrição:** Pesquisas mostram que a maioria das visões de futuro se encaixa em um desses quatro padrões. Usá-los força a equipe a considerar alternativas desconfortáveis.\n\n---\n\n## Os Arquétipos\n\n*   **Crescimento (Continued Growth):** O futuro é uma continuação do presente, mas mais rápido/maior. Foco em progresso tecnológico e econômico infinito.\n*   **Disciplina (Constraint):** O futuro onde limites físicos ou sociais são impostos (sustentabilidade, escassez de recursos, novas leis). O foco muda de 'mais' para 'melhor' ou 'o que é essencial'.\n*   **Colapso (Collapse):** O futuro onde o sistema atual falha. Pode ser catastrófico ou apenas uma desintegração lenta (caos social, falha infraestrutural).\n*   **Transformação (Transformation):** O futuro onde uma mudança radical (tecnológica, biológica ou espiritual) altera as regras do jogo e cria algo totalmente novo e imprevisível.\n\n*(Portuguese Content - Translation coming soon)*",
+        "slug": "arquetipos-de-futuro"
+    },
+    {
+        "nome": "Análise de Ramos (Branch Analysis)",
+        "descricao": "Mapeia os pontos críticos de decisão ou eventos (bifurcações) que podem levar o futuro em direções drasticamente diferentes.",
+        "quando_usar": "Para identificar 'sinais de alerta' ou marcos temporais onde a estratégia precisará ser pivotada.",
+        "categorias": [
+            "Imaginação"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1505315570889-aa87af245fa7?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# Análise de Ramos: Os Caminhos que Divergem\n\n**Descrição:** O futuro não é uma linha reta, mas uma árvore de decisões. Esta ferramenta identifica os momentos em que o caminho se divide.\n\n---\n\n## Como Aplicar\n\n1.  **Identifique os Pontos de Ramificação (Branch Points):** Eventos binários (Sim/Não) ou decisões críticas (Lançar/Não Lançar).\n2.  **Mapeie as Consequências:** Se o Ramos A for tomado, o que acontece? Se for o B, o que muda?\n3.  **Monitore os Sinais:** Quais dados no presente indicam que estamos nos movendo para o Ramo A em vez do B?\n\n### Diferença para Cenários:\nEnquanto Cenários dão uma visão panorâmica do destino final, a Análise de Ramos foca na **jornada** e nos pontos de escolha ao longo do tempo.\n\n*(Portuguese Content - Translation coming soon)*",
+        "slug": "analise-de-ramos-branch-analysis"
+    },
+    {
+        "nome": "Visão de Futuro (Visioning)",
+        "descricao": "Processo colaborativo para definir o futuro ideal que a organização deseja criar e habitar.",
+        "quando_usar": "Para inspirar e alinhar a equipe em torno de um propósito de longo prazo, indo além das metas trimestrais.",
+        "categorias": [
+            "Imaginação"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1493246507139-91e8bef99c1e?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# Visão de Futuro: O Norte Estratégico\n\n**Descrição:** Foresight não é apenas olhar o que *pode* acontecer, mas decidir o que *queremos* fazer acontecer. Visioning é um exercício normativo e aspiracional.\n\n---\n\n## Criando uma Visão Poderosa\n\n*   **Escrita no Presente:** Descreva o futuro como se ele já estivesse acontecendo (ex: \"Em 2035, somos a principal fonte de energia limpa do hemisfério sul\").\n*   **Visual e Sensorial:** Use descrições que as pessoas possam ver e sentir.\n*   **Desafiadora mas Plausível:** Deve exigir esforço, mas não ser impossível.\n*   **Compartilhada:** Não é a visão do CEO, mas uma visão que a equipe se sinta proprietária.\n\n> \"A melhor maneira de prever o futuro é criá-lo.\"\n\n*(Portuguese Content - Translation coming soon)*",
+        "slug": "visao-de-futuro-visioning"
+    },
+    {
+        "nome": "Túnel de Vento (Wind Tunnelling)",
+        "descricao": "Técnica de teste de estratégia que coloca seus planos atuais 'dentro' de diferentes cenários futuros para ver se eles sobrevivem ou falham sob pressão.",
+        "quando_usar": "Antes de aprovar grandes investimentos ou planos estratégicos plurianuais.",
+        "categorias": [
+            "Ação"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1541888941255-081d746ed26e?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# Wind Tunnelling: Testando a Robustez\n\n**Descrição:** Nomeado após o processo em engenharia onde modelos de aviões são testados em túneis de vento. Aqui, o 'vento' são os diferentes cenários futuros.\n\n---\n\n## Como Executar\n\n1.  **Pegue sua Estratégia Atual:** Liste as principais iniciativas.\n2.  **Escolha seus Cenários:** Use os cenários criados na Matriz 2x2 ou Arquétipos.\n3.  **Rode o Teste:** Pergunte: \"Se o Cenário X acontecer, como nossa estratégia performa?\".\n    *   **Resiliente:** A estratégia funciona bem na maioria dos cenários.\n    *   **Vulnerável:** A estratégia só funciona em um cenário otimista.\n4.  **Ajuste:** Modifique a estratégia para torná-la mais robusta ou prepare 'Planos B' para cenários específicos.\n\n*(Portuguese Content - Translation coming soon)*",
+        "slug": "tunel-de-vento-wind-tunnelling"
+    },
+    {
+        "nome": "Roteiro Estratégico (Roadmap)",
+        "descricao": "Layout visual que organiza metas, marcos e ações ao longo de uma linha do tempo para realizar a visão de futuro.",
+        "quando_usar": "Para comunicar o plano de execução e alinhar as expectativas de prazos e recursos com os stakeholders.",
+        "categorias": [
+            "Ação"
+        ],
+        "imagem": "https://images.unsplash.com/photo-1513001900722-370f803f498d?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+        "detalhes_markdown": "# Roadmap: Do Plano à Realidade\n\n**Descrição:** Enquanto o Backcasting identifica o que deve ser feito, o Roadmap detalha **quando** e **como**.\n\n---\n\n## Componentes de um Roadmap de Foresight\n\n*   **Linha do Tempo:** Geralmente de 3 a 10 anos.\n*   **Marcos (Milestones):** Pontos de verificação cruciais (ex: 'Certificação XYZ obtida').\n*   **Fluxos de Trabalho:** Trilhas paralelas de ação (ex: Tecnologia, Jurídico, Pessoas).\n*   **Gatilhos (Triggers):** Pontos de monitoramento baseados na 'Análise de Ramos' que indicam se devemos mudar de rota.\n\n### Importância:\nUm bom roadmap não é estático; ele é um documento vivo que se adapta conforme os sinais de futuro se tornam mais claros no presente.\n\n*(Portuguese Content - Translation coming soon)*",
+        "slug": "roteiro-estrategico-roadmap"
+    }
+]
