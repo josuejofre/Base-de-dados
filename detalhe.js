@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     const subjectBase = subjectFiles[subjectKey];
 
-    if (!subjectBase || !itemName) {
+    if (!subjectBase || (!itemName && !itemSlug)) {
         mainContainer.innerHTML = '<p>Informações não encontradas. Por favor, volte para a página inicial.</p>';
         return;
     }

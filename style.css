@@ -200,16 +200,16 @@ select:focus, input[type="text"]:focus {
     padding: 0.2rem 0.4rem;
     border-radius: var(--radius-sm);
     transition: all 0.2s ease;
-    filter: grayscale(0.8) opacity(0.6);
+    opacity: 0.5;
 }
 
 .lang-btn:hover {
-    filter: grayscale(0) opacity(1);
+    opacity: 1;
     background: var(--bg-surface-hover);
 }
 
 .lang-btn.active {
-    filter: grayscale(0) opacity(1);
+    opacity: 1;
     background: rgba(99, 102, 241, 0.2);
     border-color: var(--primary-accent);
     box-shadow: 0 0 10px var(--primary-accent-glow);
